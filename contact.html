@@ -17,25 +17,22 @@
 <div class="contact-grid">
 <aside class="panel"><div class="eyebrow">What we can help with</div><h2>Bring us the marketing challenge.</h2><p>You don't need a perfectly defined brief. A short description of your goals, market and current challenge is enough to start.</p><ul class="list"><li><b>Strategy & planning</b><span>GTM, ICP, positioning and campaign strategy</span></li><li><b>ABM & growth intelligence</b><span>Accounts, buying signals, contacts and competitive research</span></li><li><b>Demand & content</b><span>Lead generation, outbound, email and thought leadership</span></li><li><b>Digital & AI-powered marketing</b><span>SEO, website optimization, automation and AI-assisted workflows</span></li></ul></aside>
 <section class="panel" id="contact-form"><div class="eyebrow">Start a conversation</div><h2>How can we help?</h2>
-<form id="contactForm">
+<form id="contactForm" action="https://formsubmit.co/hello@marketcentaur.com" method="POST">
+<input type="hidden" name="_subject" value="New MarketCentaur website inquiry">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://marketcentaur.com/contact-success.html">
+<input type="text" name="_honey" style="display:none">
 <div class="form-grid"><div class="field"><label for="name">Name *</label><input id="name" name="name" required></div><div class="field"><label for="email">Work email *</label><input id="email" name="email" type="email" required></div></div>
 <div class="form-grid"><div class="field"><label for="company">Company</label><input id="company" name="company"></div><div class="field"><label for="website">Company website</label><input id="website" name="website" type="url" placeholder="https://"></div></div>
 <div class="field"><label for="service">What do you need help with?</label><select id="service" name="service"><option value="">Select an area</option><option>Strategy & Planning</option><option>Account-Based Marketing</option><option>Demand Generation</option><option>Content & Thought Leadership</option><option>Digital & Growth Marketing</option><option>Market & Competitive Intelligence</option><option>AI-Powered Marketing Operations</option><option>Not sure yet</option></select></div>
 <div class="field"><label for="message">Tell us about your goals or challenge *</label><textarea id="message" name="message" required placeholder="What are you trying to achieve, and where are you currently stuck?"></textarea></div>
 <button class="btn primary" type="submit">Send inquiry</button>
-<p class="form-note">Submitting this form will open your email application with your inquiry prepared for hello@marketcentaur.com. No pricing is required to get started.</p>
+<p class="form-note">Your inquiry will be sent to the MarketCentaur contact inbox. No pricing or lengthy brief is required to get started.</p>
 </form></section>
 </div>
 </div></main>
 <div class="wrap"><footer class="footer"><strong>MarketCentaur</strong><span>AI-assisted B2B Growth Intelligence • Serving global B2B teams</span></footer></div>
-<script>
-document.getElementById('contactForm').addEventListener('submit',function(e){
-e.preventDefault();
-const f=new FormData(this);
-const subject=encodeURIComponent('MarketCentaur inquiry — '+(f.get('company')||f.get('name')));
-const body=encodeURIComponent('Name: '+f.get('name')+'\nWork email: '+f.get('email')+'\nCompany: '+f.get('company')+'\nWebsite: '+f.get('website')+'\nService: '+f.get('service')+'\n\nGoals / challenge:\n'+f.get('message'));
-window.location.href='mailto:hello@marketcentaur.com?subject='+subject+'&body='+body;
-});
-</script>
+
 </body>
 </html>
