@@ -1,0 +1,21 @@
+# MarketCentaur
+
+> MarketCentaur provides marketing and growth support for B2B and B2C businesses, with a focus on B2B growth intelligence and account-based marketing.
+
+## Main pages
+- [Home](https://marketcentaur.com/): Overview of services and working approach.
+- [About](https://marketcentaur.com/about.html): MarketCentaur's approach to growth intelligence.
+- [Services](https://marketcentaur.com/#services): Strategy, ABM, demand generation, content, digital growth, market intelligence and AI-assisted marketing operations.
+- [B2C services](https://marketcentaur.com/#b2c-services): Brand, social content, SEO, campaign support, ecommerce conversion, email, retention and customer research.
+- [FAQs](https://marketcentaur.com/faq.html): Answers about services, audience, process and outcomes.
+- [Contact](https://marketcentaur.com/contact.html): Business inquiries.
+- [Privacy Policy](https://marketcentaur.com/privacy-policy.html): Website information handling.
+- [Terms of Service](https://marketcentaur.com/terms-of-service.html): Website use terms.
+
+## Contact
+- Email: hello@marketcentaur.com
+
+## Summary
+MarketCentaur supports B2B and B2C businesses with marketing strategy, account-based marketing, demand generation, content marketing, SEO, market and competitive research, conversion optimization, retention strategy and AI-assisted workflows. B2B growth intelligence focuses on ICP fit, target-account research, relevant stakeholders, buying signals and practical next actions.
+
+This file is a navigational summary, not a replacement for the linked pages. Site content and service descriptions are authoritative over this summary.
