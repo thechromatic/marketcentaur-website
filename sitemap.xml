@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://marketcentaur.com/</loc></url>
+  <url><loc>https://marketcentaur.com/services.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/strategy-growth.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/content-creative.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/digital-presence.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/demand-revenue.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/ai-automation.html</loc></url>
+  <url><loc>https://marketcentaur.com/services/analytics-optimisation.html</loc></url>
   <url><loc>https://marketcentaur.com/about.html</loc></url>
   <url><loc>https://marketcentaur.com/contact.html</loc></url>
   <url><loc>https://marketcentaur.com/faq.html</loc></url>
