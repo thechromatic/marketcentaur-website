@@ -440,3 +440,70 @@ h3 {
     padding: 16px !important;
   }
 }
+
+
+/* Consistent light editorial theme: calm surfaces, restrained contrast, readable type. */
+:root {
+  color-scheme: light !important;
+  --bg: #fafaf8 !important;
+  --surface: #ffffff !important;
+  --surface2: #f1f3f5 !important;
+  --text: #19212b !important;
+  --muted: #5e6875 !important;
+  --line: #e1e5e9 !important;
+  --accent: #2459a6 !important;
+  --accent2: #edf3fb !important;
+  --success: #28785a !important;
+}
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+.nav {
+  border-color: var(--line) !important;
+}
+.btn.primary {
+  box-shadow: none !important;
+}
+.card,
+.panel,
+.step,
+.fit-item,
+.method,
+.note,
+.notice,
+.report {
+  box-shadow: none !important;
+}
+.panel,
+.card,
+.step,
+.fit-item,
+.method,
+.note,
+.notice,
+.report {
+  border-color: var(--line) !important;
+}
+.card,
+.panel,
+.step,
+.fit-item {
+  background: var(--surface) !important;
+}
+.cta,
+.reporthead,
+.reportfoot {
+  background: var(--surface2) !important;
+}
+.eyebrow,
+.num,
+.label {
+  letter-spacing: .12em;
+}
+h1, h2, h3 {
+  text-wrap: balance;
+}
+p, li {
+  text-wrap: pretty;
+}
