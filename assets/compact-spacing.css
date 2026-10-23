@@ -252,8 +252,22 @@ h3 {
 
 .faq summary {
   cursor: pointer;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.service-expander {
+  display: block;
+}
+
+.service-expander summary {
+  font-size: 21px;
+  padding: 4px 0;
+}
+
+.service-expander[open] summary {
+  margin-bottom: 16px;
 }
 
 .faq summary::marker {
