@@ -1,0 +1,264 @@
+/* MarketCentaur compact spacing pass
+   Reduces excess whitespace site-wide while preserving comfortable text readability. */
+:root {
+  --mc-section-space: 24px;
+  --mc-card-space: 9px;
+  --mc-content-gap: 7px;
+}
+
+.wrap {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+.nav {
+  min-height: 60px !important;
+  height: auto !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  gap: 10px !important;
+}
+
+.logo {
+  height: 44px !important;
+}
+
+.logo img {
+  width: 154px !important;
+  max-height: 52px !important;
+}
+
+.navlinks {
+  gap: 12px !important;
+}
+
+main .hero {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  gap: 18px !important;
+}
+
+.hero-grid {
+  gap: 18px !important;
+}
+
+.hero h1 {
+  margin-bottom: 12px !important;
+}
+
+.hero p {
+  margin-bottom: 12px !important;
+  line-height: 1.55 !important;
+}
+
+section,
+.content {
+  padding-top: var(--mc-section-space) !important;
+  padding-bottom: var(--mc-section-space) !important;
+}
+
+.sectionhead {
+  margin-bottom: 12px !important;
+}
+
+.sectionhead h2,
+h2 {
+  margin-bottom: 8px !important;
+}
+
+.sectionhead p,
+.intro {
+  margin-bottom: 10px !important;
+  line-height: 1.55 !important;
+}
+
+.cards,
+.process,
+.fit-grid {
+  gap: var(--mc-content-gap) !important;
+}
+
+.card,
+.panel,
+.step,
+.fit-item,
+.method,
+.note,
+.notice {
+  padding: var(--mc-card-space) !important;
+}
+
+.card h3,
+h3 {
+  margin-bottom: 6px !important;
+}
+
+.card p,
+.step p,
+.fit-item p {
+  margin-bottom: 8px !important;
+  line-height: 1.55 !important;
+}
+
+.cardtop,
+.cardhead,
+.panelhead {
+  margin-bottom: 8px !important;
+  gap: 7px !important;
+}
+
+.actions {
+  gap: 6px !important;
+  margin-top: 10px !important;
+}
+
+.btn {
+  padding: 9px 12px !important;
+}
+
+.trustline {
+  gap: 6px !important;
+  margin-top: 12px !important;
+}
+
+.proof {
+  gap: 6px !important;
+  margin-top: 14px !important;
+}
+
+.proof div {
+  padding: 8px !important;
+}
+
+.signal {
+  padding: 6px 0 !important;
+  gap: 7px !important;
+}
+
+.panelnote {
+  margin-top: 4px !important;
+  padding-top: 8px !important;
+}
+
+.deliverables li,
+.list li,
+.sample-list li {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.sample-list {
+  margin-top: 10px !important;
+}
+
+.reporthead {
+  padding: 10px 12px !important;
+}
+
+.reportrow {
+  gap: 8px !important;
+  padding: 8px 10px !important;
+}
+
+.step .stepnum {
+  margin-bottom: 8px !important;
+}
+
+.cta {
+  gap: 10px !important;
+  padding: 14px !important;
+}
+
+.cta h2 {
+  margin-bottom: 6px !important;
+}
+
+.footer {
+  gap: 10px !important;
+  padding-top: 14px !important;
+  padding-bottom: 20px !important;
+}
+
+.contact-grid {
+  gap: 8px !important;
+  padding-top: 14px !important;
+  padding-bottom: 26px !important;
+}
+
+.contact-grid .panel {
+  padding: 14px !important;
+}
+
+.form-grid {
+  gap: 8px !important;
+}
+
+.field {
+  margin-bottom: 8px !important;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 9px 10px !important;
+}
+
+.field textarea {
+  min-height: 115px !important;
+}
+
+.form-note {
+  margin-top: 8px !important;
+}
+
+.faq {
+  margin-bottom: 8px !important;
+  padding: 12px !important;
+}
+
+.notice {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 850px) {
+  .nav {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .hero-grid {
+    gap: 14px !important;
+  }
+
+  .cards,
+  .process,
+  .fit-grid {
+    gap: 7px !important;
+  }
+
+  section,
+  .content {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .contact-grid {
+    padding-top: 12px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero h1 {
+    margin-bottom: 10px !important;
+  }
+
+  .actions .btn {
+    margin-top: 0 !important;
+  }
+
+  .cta {
+    padding: 12px !important;
+  }
+}
