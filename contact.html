@@ -29,7 +29,7 @@
 <input type="hidden" name="_next" value="https://marketcentaur.com/contact-success.html">
 <input type="text" name="_honey" style="display:none">
 <div class="form-grid"><div class="field"><label for="name">Name *</label><input id="name" name="name" required></div><div class="field"><label for="email">Work email *</label><input id="email" name="email" type="email" required></div></div>
-<div class="form-grid"><div class="field"><label for="company">Company</label><input id="company" name="company"></div><div class="field"><label for="website">Company website</label><input id="website" name="website" type="url" placeholder="https://"></div></div>
+<div class="form-grid"><div class="field"><label for="company">Company</label><input id="company" name="company"></div><div class="field"><label for="website">Company website</label><input id="website" name="website" type="text" inputmode="url" autocomplete="url" placeholder="marketcentaur.com"></div></div>
 <div class="field"><label for="service">Which service are you interested in?</label><select id="service" name="service"><option value="">Select an area</option><option value="abm-account-mapping">ABM Account & Persona Mapping</option><option value="market-intelligence">Market & Competitor Intelligence</option><option value="partner-discovery">Partner & Channel Discovery</option><option value="signal-watch">Weekly Growth Signal Watch</option><option value="other-marketing">Other Marketing Support</option><option value="not-sure">Not sure yet</option></select></div>
 <div class="field"><label for="message">Tell us about your goals or challenge *</label><textarea id="message" name="message" required placeholder="What are you trying to achieve, and where are you currently stuck?"></textarea></div>
 <button class="btn primary" type="submit">Send inquiry</button>
@@ -46,6 +46,42 @@
   var selector = document.getElementById("service");
   if (selector && requested && Array.from(selector.options).some(function(option){ return option.value === requested; })) {
     selector.value = requested;
+  }
+
+  // Accept domains with or without a protocol and default bare domains to HTTPS.
+  var website = document.getElementById("website");
+  var form = document.getElementById("contactForm");
+  function normalizeWebsite() {
+    if (!website) return;
+    var value = website.value.trim();
+    if (!value) {
+      website.setCustomValidity("");
+      return;
+    }
+    if (value.indexOf("://") === -1) value = "https://" + value;
+    try {
+      var parsed = new URL(value);
+      if ((parsed.protocol !== "https:" && parsed.protocol !== "http:") || !parsed.hostname || parsed.hostname.indexOf(".") === -1) {
+        throw new Error("Enter a valid website address.");
+      }
+      website.value = parsed.href;
+      website.setCustomValidity("");
+    } catch (error) {
+      website.setCustomValidity("Enter a valid website, such as marketcentaur.com.");
+    }
+  }
+  if (website) {
+    website.addEventListener("blur", normalizeWebsite);
+    website.addEventListener("input", function() { website.setCustomValidity(""); });
+  }
+  if (form) {
+    form.addEventListener("submit", function(event) {
+      normalizeWebsite();
+      if (website && !website.checkValidity()) {
+        event.preventDefault();
+        website.reportValidity();
+      }
+    });
   }
 })();
 </script>
