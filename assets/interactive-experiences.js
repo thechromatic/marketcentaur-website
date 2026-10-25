@@ -74,6 +74,38 @@ function initFinder(){
       ["Activation","Demand & Revenue Generation","Plan campaigns and acquisition activity around the audience, message and conversion goal.","/services/demand-revenue.html"]
     ]
   };
+  if((type==="small-local" || type==="retail-ecommerce" || type==="traditional") && goal==="customers"){
+    var profiles={
+      "small-local":{
+        title:"Bring more relevant customers to your local business",
+        intro:"Start with local discovery, a clear offer, trustworthy business information and a simple path from search or social media to enquiry or visit.",
+        services:[
+          ["Local discovery","Local Visibility & Digital Presence","Improve the clarity of your website, local search presence and customer contact paths.","/services/small-business-local-growth.html"],
+          ["Customer reach","Social Media & Content","Plan useful social content and local promotions around your customers and community.","/services/content-creative.html"],
+          ["Enquiries & visits","Demand & Revenue Generation","Connect campaigns, offers and calls to action to a practical enquiry or store-visit goal.","/services/demand-revenue.html"]
+        ]
+      },
+      "retail-ecommerce":{
+        title:"Turn product discovery into store visits and online orders",
+        intro:"Connect product presentation, social content, search visibility and the purchase journey across your retail store or ecommerce shop.",
+        services:[
+          ["Product discovery","Ecommerce & Digital Presence","Improve product messaging, search visibility and the journey from product page to purchase.","/services/small-business-local-growth.html"],
+          ["Campaigns","Social Media & Content","Plan product-led content, promotions and creator collaborations that fit your audience.","/services/content-creative.html"],
+          ["Repeat purchases","Analytics & Optimisation","Identify useful measures and opportunities to improve conversion and customer retention.","/services/analytics-optimisation.html"]
+        ]
+      },
+      "traditional":{
+        title:"Modernise marketing without losing what makes your business trusted",
+        intro:"For established businesses and traditional industries, begin with customer and market clarity, a practical digital foundation and manageable improvements.",
+        services:[
+          ["Market understanding","Strategy & Growth","Review customer segments, competitors and the clearest opportunities for growth.","/services/strategy-growth.html"],
+          ["Digital foundation","Digital Presence","Improve website clarity, search discoverability and enquiry paths step by step.","/services/small-business-local-growth.html"],
+          ["Practical execution","AI & Marketing Automation","Identify appropriate workflow improvements with human review and a realistic implementation scope.","/services/ai-automation.html"]
+        ]
+      }
+    };
+    item=profiles[type];
+  }
   var title=root.querySelector("[data-finder-title]"); var intro=root.querySelector("[data-finder-intro]"); var list=root.querySelector("[data-finder-results]");
   title.textContent=item.title; intro.textContent=item.intro; list.textContent="";
   item.services.forEach(function(service){
@@ -84,7 +116,8 @@ function initFinder(){
    var a=document.createElement("a");a.href=service[3];a.textContent="Explore service →";
    article.append(tag,h,p,a);list.appendChild(article);
   });
-  var typeText=type==="both"?"B2B and B2C":type;
+  var typeLabels={"both":"B2B and B2C","small-local":"small and local businesses","retail-ecommerce":"retail and ecommerce businesses","traditional":"established businesses and traditional industries"};
+  var typeText=typeLabels[type]||type;
   root.querySelector("[data-finder-context]").textContent="Selected audience: "+typeText+". These are starting points to consider, not a guarantee of results; the best mix depends on your offer, market and available evidence.";
   root.querySelectorAll("[data-goal]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.goal===goal));});
   root.querySelectorAll("[data-business-type]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.businessType===type));});
