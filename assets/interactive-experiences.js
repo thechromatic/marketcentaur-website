@@ -265,8 +265,8 @@ function initGrowthCheck(){
  document.querySelector("[data-growth-description]").textContent=config.description;
  document.querySelectorAll("[data-journey-link]").forEach(function(link){if(link.dataset.journeyLink===journey)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current");});
  config.questions.forEach(function(q,index){
-  var field=document.createElement("fieldset");field.className="growth-check-question";
-  var legend=document.createElement("legend");legend.textContent=(index+1)+". "+q[1];
+  var field=document.createElement("div");field.className="growth-check-question";
+  var legend=document.createElement("h3");legend.className="question-title";legend.id="growth-question-"+index;legend.textContent=(index+1)+". "+q[1];field.setAttribute("role","group");field.setAttribute("aria-labelledby",legend.id);
   var help=document.createElement("p");help.className="question-help";help.textContent=q[2];
   var choices=document.createElement("div");choices.className="choice-row";
   [["2","Yes, consistently"],["1","Partly / not sure"],["0","Not yet"]].forEach(function(option){
