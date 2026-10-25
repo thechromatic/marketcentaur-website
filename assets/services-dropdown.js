@@ -10,7 +10,11 @@
     ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
     ["Business Operations & Automation", "/services/business-operations.html"],
     ["Business & Financial Performance", "/services/business-operations.html#performance"],
-    ["Customer & People Experience", "/services/business-operations.html#experience"]
+    ["Customer & People Experience", "/services/business-operations.html#experience"],
+    ["Business Intelligence & Data Reporting", "/services/business-intelligence.html#business-intelligence"],
+    ["Supplier & Partner Intelligence", "/services/business-intelligence.html#supplier-intelligence"],
+    ["Risk, Continuity & Sustainability", "/services/business-intelligence.html#risk-sustainability"],
+    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"]
   ];
   var specialists = [
     ["B2B Growth Intelligence", "/services/b2b-growth-intelligence.html"],
