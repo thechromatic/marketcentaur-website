@@ -155,7 +155,7 @@ function initFinder(){
   });
   var typeLabels={"both":"B2B and B2C","small-local":"small and local businesses","retail-ecommerce":"retail and ecommerce businesses","traditional":"established businesses and traditional industries"};
   var typeText=typeLabels[type]||type;
-  root.querySelector("[data-finder-context]").textContent="Selected audience: "+typeText+". These are starting points to consider, not a guarantee of results; the best mix depends on your offer, market and available evidence.";
+  root.querySelector("[data-finder-context]").textContent="Recommendations tailored to "+typeText+". Explore the options below to find a practical next step for your business.";
   root.querySelectorAll("[data-goal]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.goal===goal));});
   root.querySelectorAll("[data-business-type]").forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.businessType===type));});
  }
