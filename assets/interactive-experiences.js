@@ -29,6 +29,15 @@ var serviceFinder = {
         ["Ongoing context","Weekly Growth Signal Watch","Review selected developments over time against agreed priorities.","/services/weekly-growth-signal-watch.html"]
       ]
     },
+    operations: {
+      title: "Improve customer retention and day-to-day marketing operations",
+      intro: "Find practical ways to strengthen follow-up, customer journeys, reporting and repeat engagement. Start with the process or outcome that matters most.",
+      services: [
+        ["Customer lifecycle","Lifecycle, Retention & Loyalty","Map useful onboarding, repeat-purchase or win-back journeys around customer needs.","/services/ai-automation.html"],
+        ["Workflow improvement","AI & Marketing Automation","Identify suitable workflow improvements with clear boundaries and human review.","/services/ai-automation.html"],
+        ["Measurement","Analytics & Optimisation","Choose practical measures to understand follow-up, conversion and retention.","/services/analytics-optimisation.html"]
+      ]
+    },
     partners: {
       title: "Find potential partners and routes to market",
       intro: "Define partner fit first, then build a shortlist and a practical approach for evaluating possible collaborations.",
