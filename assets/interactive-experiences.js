@@ -119,6 +119,7 @@ function initExplorer(){
 function initReadiness(){
  var form=document.querySelector("[data-readiness-form]");if(!form)return;
  var result=document.querySelector("[data-readiness-result]");
+ form.addEventListener("reset",function(){result.hidden=true;result.textContent="";});
  form.addEventListener("submit",function(e){
   e.preventDefault();
   var data=new FormData(form), score=0, gaps=[];
