@@ -442,18 +442,18 @@ h3 {
 }
 
 
-/* Consistent light editorial theme: calm surfaces, restrained contrast, readable type. */
+/* Consistent dark editorial theme: restrained contrast, readable type. */
 :root {
-  color-scheme: light !important;
-  --bg: #fafaf8 !important;
-  --surface: #ffffff !important;
-  --surface2: #f1f3f5 !important;
-  --text: #19212b !important;
-  --muted: #5e6875 !important;
-  --line: #e1e5e9 !important;
-  --accent: #2459a6 !important;
-  --accent2: #edf3fb !important;
-  --success: #28785a !important;
+  color-scheme: dark !important;
+  --bg: #111827 !important;
+  --surface: #1f2937 !important;
+  --surface2: #263244 !important;
+  --text: #f5f7fa !important;
+  --muted: #b7c0cc !important;
+  --line: #374151 !important;
+  --accent: #7fb0ff !important;
+  --accent2: #142640 !important;
+  --success: #82d0ab !important;
 }
 body {
   background: var(--bg) !important;
