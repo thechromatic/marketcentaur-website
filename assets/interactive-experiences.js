@@ -64,7 +64,17 @@ function initFinder(){
  var root=document.querySelector("[data-service-finder]"); if(!root)return;
  var goal="customers", type="both";
  function render(){
-  var item=serviceFinder.goals[goal]; var title=root.querySelector("[data-finder-title]"); var intro=root.querySelector("[data-finder-intro]"); var list=root.querySelector("[data-finder-results]");
+  var item=serviceFinder.goals[goal];
+  if(type==="B2C" && goal==="customers") item={
+    title:"Reach and convert the right customer audiences",
+    intro:"For B2C goals, start with audience clarity and a relevant customer journey, then align campaigns with the action you want people to take.",
+    services:[
+      ["Audience & offer","Strategy & Growth","Clarify priority audiences, positioning and the customer problem your offer addresses.","/services/strategy-growth.html"],
+      ["Digital journey","Digital Presence","Review the website, landing pages and discovery paths that help visitors understand the offer.","/services/digital-presence.html"],
+      ["Activation","Demand & Revenue Generation","Plan campaigns and acquisition activity around the audience, message and conversion goal.","/services/demand-revenue.html"]
+    ]
+  };
+  var title=root.querySelector("[data-finder-title]"); var intro=root.querySelector("[data-finder-intro]"); var list=root.querySelector("[data-finder-results]");
   title.textContent=item.title; intro.textContent=item.intro; list.textContent="";
   item.services.forEach(function(service){
    var article=document.createElement("article");article.className="recommendation-item";
