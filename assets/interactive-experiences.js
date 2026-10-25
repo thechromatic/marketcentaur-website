@@ -186,5 +186,84 @@ function initReadiness(){
   result.append(h,p,heading,ul,note,link);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
  });
 }
-document.addEventListener("DOMContentLoaded",function(){initFinder();initExplorer();initReadiness();});
+
+function initGrowthCheck(){
+ var form=document.querySelector("[data-growth-check-form]");if(!form)return;
+ var result=document.querySelector("[data-growth-check-result]");
+ var params=new URLSearchParams(window.location.search);
+ var journey=params.get("journey")||"local";
+ var configs={
+  local:{title:"Local Business Growth Check",intro:"A practical starting point for small businesses and local services that want to improve discovery, trust and the path to enquiries or visits.",heading:"Review your local growth basics",description:"Answer six questions about how customers find, evaluate and contact your business.",service:"small-business-local-growth",questions:[
+   ["visibility","Can nearby customers find accurate information about your business?","Think about your website, business profile, opening hours, location and contact details."],
+   ["offer","Is your offer and target customer clear at a glance?","A new visitor should quickly understand what you offer and who it is for."],
+   ["trust","Do you provide useful trust signals?","Examples include current photos, clear service details, genuine reviews and helpful FAQs."],
+   ["contact","Is it easy to enquire, call, book or visit?","Check the next step on both desktop and mobile."],
+   ["social","Do your social channels or local promotions help customers decide?","Prioritise useful, current information over posting for its own sake."],
+   ["followup","Do you have a consistent way to respond to new enquiries?","Consider response ownership, follow-up and how you learn from customer questions."]
+  ],priorities:["Check and align your business name, location, hours and contact details across key listings.","Rewrite your main page headline to explain your offer and who you serve.","Make one primary action easy to find: call, enquire, book or visit.","Add accurate trust information such as current photos, clear process details and genuine reviews.","Choose a manageable local content or partnership activity and review whether it generates useful conversations.","Set a simple process for responding to and learning from enquiries."]},
+  ecommerce:{title:"Ecommerce Growth Check",intro:"A guided review for retail stores, Shopify merchants and ecommerce businesses looking to make product discovery and the buying journey clearer.",heading:"Review your store journey",description:"Answer six questions about product discovery, purchase confidence and repeat business.",service:"ecommerce-growth-check",questions:[
+   ["discovery","Can shoppers find relevant products quickly?","Consider navigation, categories, on-site search and product filtering."],
+   ["product","Do product pages answer the main buying questions?","Check descriptions, sizing or specifications, images, availability and intended use."],
+   ["trust","Are delivery, returns and support details easy to understand?","Important conditions should be visible before checkout."],
+   ["checkout","Is the path from product page to checkout straightforward?","Look for unnecessary steps, unclear costs or confusing form fields."],
+   ["mobile","Is the store easy to browse and buy from on a phone?","Check text, images, navigation, buttons and checkout flow."],
+   ["retention","Do customers have a useful reason to return?","Consider product care, replenishment, relevant follow-up and customer service—without over-messaging."]
+  ],priorities:["Review navigation and product categories using the terms customers naturally use.","Improve the highest-priority product pages with clear details, helpful imagery and answers to common questions.","Make delivery, returns, payment and support information easy to find before checkout.","Walk through the mobile purchase journey and record avoidable steps or surprises.","Review checkout friction and test one change at a time using suitable analytics.","Create a relevant post-purchase experience that supports service, repeat purchase or feedback."]
+  },
+  modernisation:{title:"Business Modernisation Roadmap",intro:"A practical starting point for established businesses and traditional industries that want to modernise marketing, customer acquisition and reporting step by step.",heading:"Review your operating foundations",description:"Answer six questions about customer visibility, lead handling, marketing processes and decision-making.",service:"business-modernisation",questions:[
+   ["audience","Do you have a current view of your priority customer groups?","Consider which customers are most valuable to serve and why."],
+   ["presence","Can customers clearly understand your offer through digital channels?","Review the website, search presence and key customer information."],
+   ["leads","Is there a consistent process for recording and following up leads?","Think about ownership, handoffs, response times and lost opportunities."],
+   ["content","Do marketing activities follow a clear plan?","A simple calendar and defined audience can be more useful than more channels."],
+   ["reporting","Can you see which activities lead to meaningful business conversations or sales?","Choose a small number of useful measures before building complex dashboards."],
+   ["workflow","Have you identified repetitive tasks that could be simplified?","Start with a defined process and safeguards before adopting new technology."]
+  ],priorities:["Document your priority customer groups, their needs and the reasons they choose your business.","Review the website and key customer touchpoints for outdated or unclear information.","Define a simple lead-recording, ownership and follow-up process.","Choose a manageable marketing rhythm with a clear audience, purpose and owner.","Create a small monthly scorecard tied to enquiries, opportunities, sales or retention where data is available.","Map one repetitive workflow and assess whether a simple process change or appropriately scoped automation would help."]
+  }
+ };
+ if(!configs[journey])journey="local";
+ var config=configs[journey];
+ document.querySelector("[data-growth-title]").textContent=config.title;
+ document.querySelector("[data-growth-intro]").textContent=config.intro;
+ document.querySelector("[data-growth-heading]").textContent=config.heading;
+ document.querySelector("[data-growth-description]").textContent=config.description;
+ document.querySelectorAll("[data-journey-link]").forEach(function(link){if(link.dataset.journeyLink===journey)link.setAttribute("aria-current","page");else link.removeAttribute("aria-current");});
+ config.questions.forEach(function(q,index){
+  var field=document.createElement("fieldset");field.className="growth-check-question";
+  var legend=document.createElement("legend");legend.textContent=(index+1)+". "+q[1];
+  var help=document.createElement("p");help.className="question-help";help.textContent=q[2];
+  var choices=document.createElement("div");choices.className="choice-row";
+  [["2","Yes, consistently"],["1","Partly / not sure"],["0","Not yet"]].forEach(function(option){
+   var label=document.createElement("label"),input=document.createElement("input"),span=document.createElement("span");
+   input.type="radio";input.name=q[0];input.value=option[0];input.required=index===0;
+   span.textContent=option[1];label.append(input,span);choices.appendChild(label);
+  });
+  field.append(legend,help,choices);form.appendChild(field);
+ });
+ var actions=document.createElement("div");actions.className="growth-check-actions";
+ var submit=document.createElement("button");submit.type="submit";submit.className="experience-btn";submit.textContent="Show my priorities";
+ var reset=document.createElement("button");reset.type="reset";reset.className="experience-btn secondary";reset.textContent="Start again";actions.append(submit,reset);form.appendChild(actions);
+ form.addEventListener("reset",function(){result.hidden=true;result.textContent="";});
+ form.addEventListener("submit",function(e){
+  e.preventDefault();var data=new FormData(form),score=0,answered=0;
+  config.questions.forEach(function(q){var v=data.get(q[0]);if(v!==null){score+=Number(v);answered++;}});
+  if(answered!==config.questions.length){result.hidden=false;result.textContent="Please answer each question to see your summary.";return;}
+  var gaps=config.questions.filter(function(q){return Number(data.get(q[0]))<2;});
+  var heading=score>=10?"Several foundations appear to be in place":score>=6?"There are some foundations to build on":"Start with a few practical essentials";
+  var summary=score>=10?"Your answers suggest the basics are reasonably established. Validate the journey with customer feedback and choose one improvement to test.":score>=6?"Your answers suggest a mix of strengths and possible friction. Focus on the gaps most likely to affect your customers.":"Your answers suggest it may help to clarify the fundamentals before adding more channels, tools or complexity.";
+  result.textContent="";
+  var h=document.createElement("h3");h.textContent=heading;
+  var p=document.createElement("p");p.textContent=summary+" Self-assessment score: "+score+" out of 12.";
+  var strong=document.createElement("strong");strong.textContent="Suggested priorities";
+  var ul=document.createElement("ul");
+  var priorities=gaps.length?gaps.map(function(q){return config.priorities[config.questions.indexOf(q)];}):["Ask a small number of customers to describe what works well and where they experience friction.","Choose one measurable improvement, record a baseline where possible and review the result before making more changes."];
+  priorities.forEach(function(item){var li=document.createElement("li");li.textContent=item;ul.appendChild(li);});
+  var note=document.createElement("p");note.textContent="This is a directional result based on your answers, not a technical or commercial audit. Validate priorities against real customer feedback and available evidence.";
+  var context="I completed the "+config.title+". My self-assessment score was "+score+"/12. Areas to review: "+(priorities.join(" "));
+  var link=document.createElement("a");link.className="experience-btn";link.href="/contact.html?service="+encodeURIComponent(config.service)+"&context="+encodeURIComponent(context);link.textContent="Discuss these priorities with MarketCentaur";
+  var secondary=document.createElement("a");secondary.className="experience-btn secondary";secondary.href="/";secondary.textContent="Back to homepage";
+  result.append(h,p,strong,ul,note,link,document.createTextNode(" "),secondary);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
+ });
+}
+
+document.addEventListener("DOMContentLoaded",function(){initFinder();initExplorer();initReadiness();initGrowthCheck();});
 })();
