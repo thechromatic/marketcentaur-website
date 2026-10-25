@@ -7,7 +7,10 @@
     ["Digital Presence", "/services/digital-presence.html"],
     ["Demand & Revenue Generation", "/services/demand-revenue.html"],
     ["AI & Marketing Automation", "/services/ai-automation.html"],
-    ["Analytics & Optimisation", "/services/analytics-optimisation.html"]
+    ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
+    ["Business Operations & Automation", "/services/business-operations.html"],
+    ["Business & Financial Performance", "/services/business-operations.html#performance"],
+    ["Customer & People Experience", "/services/business-operations.html#experience"]
   ];
   var specialists = [
     ["B2B Growth Intelligence", "/services/b2b-growth-intelligence.html"],
