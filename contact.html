@@ -48,6 +48,9 @@
   if (selector && requested && Array.from(selector.options).some(function(option){ return option.value === requested; })) {
     selector.value = requested;
   }
+  var messageField = document.getElementById("message");
+  var context = params.get("context");
+  if (messageField && context && !messageField.value) { messageField.value = context.slice(0, 1800); }
 
   // Accept domains with or without a protocol and default bare domains to HTTPS.
   var website = document.getElementById("website");
