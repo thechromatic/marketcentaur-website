@@ -210,6 +210,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .resource-links a{font-weight:750}
 </style>
   <link rel="stylesheet" href="/assets/services-dropdown.css">
+  <link rel="stylesheet" href="/assets/interactive-experiences.css">
 </head>
 <body class="homepage">
 <div class="wrap home-wrap">
@@ -232,6 +233,47 @@ section{padding:72px 0;border-top:1px solid var(--line)}
         <a class="home-text-link" href="/services.html">Explore services <span aria-hidden="true">→</span></a>
       </div>
     </header>
+
+
+    <section class="interactive-section" aria-labelledby="finder-heading" data-service-finder>
+      <div class="interactive-intro">
+        <div class="eyebrow">Find your starting point</div>
+        <h2 id="finder-heading">What are you trying to achieve?</h2>
+        <p>Choose a goal and business type to explore services that may fit. You can refine the recommendations as your priorities become clearer.</p>
+      </div>
+      <div class="experience-panel">
+        <div class="experience-fields">
+          <div>
+            <div class="experience-field"><span class="question-label">Your main goal</span></div>
+            <div class="choice-row" aria-label="Choose your main goal">
+              <button class="choice-button" type="button" data-goal="customers" aria-pressed="true">Find the right customers</button>
+              <button class="choice-button" type="button" data-goal="conversion" aria-pressed="false">Improve enquiries</button>
+              <button class="choice-button" type="button" data-goal="market" aria-pressed="false">Understand the market</button>
+              <button class="choice-button" type="button" data-goal="partners" aria-pressed="false">Find partners</button>
+            </div>
+          </div>
+          <div>
+            <div class="experience-field"><span class="question-label">Business type</span></div>
+            <div class="choice-row" aria-label="Choose your business type">
+              <button class="choice-button" type="button" data-business-type="B2B" aria-pressed="false">B2B</button>
+              <button class="choice-button" type="button" data-business-type="B2C" aria-pressed="false">B2C</button>
+              <button class="choice-button" type="button" data-business-type="both" aria-pressed="true">Both</button>
+            </div>
+          </div>
+        </div>
+        <div class="recommendation-output" aria-live="polite" aria-atomic="true">
+          <h3 data-finder-title>Find and prioritise the right customers</h3>
+          <p data-finder-intro>Start by defining which organisations fit, which people influence a decision, and where focused demand-generation activity may be useful.</p>
+          <div class="recommendation-list" data-finder-results>
+            <article class="recommendation-item"><span>Core intelligence</span><h4>B2B Growth Intelligence</h4><p>Build a clearer view of target markets, account fit and relevant developments.</p><a href="/services/b2b-growth-intelligence.html">Explore service →</a></article>
+            <article class="recommendation-item"><span>Account focus</span><h4>Account &amp; Persona Mapping</h4><p>Turn an ideal-customer profile into a more usable account list and relevant buying-role map.</p><a href="/services/account-persona-mapping.html">Explore service →</a></article>
+            <article class="recommendation-item"><span>Activation</span><h4>Demand &amp; Revenue Generation</h4><p>Plan outreach and campaigns around the audience and qualification criteria you have defined.</p><a href="/services/demand-revenue.html">Explore service →</a></article>
+          </div>
+          <p class="experience-note" data-finder-context>Selected audience: B2B and B2C. These are starting points to consider, not a guarantee of results; the best mix depends on your offer, market and available evidence.</p>
+          <p class="experience-note">B2B Growth Intelligence and account mapping are primarily designed for B2B account-based work. For B2C, the most useful mix may lean more heavily on audience, campaign and conversion services.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="home-services" aria-labelledby="home-services-title">
       <div class="home-section-head">
@@ -260,7 +302,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
           <a href="/services/weekly-growth-signal-watch.html" aria-label="Learn about Weekly Growth Signal Watch">Explore <span aria-hidden="true">→</span></a>
         </article>
       </div>
-      <p class="home-secondary-links"><a href="/how-it-works.html">How it works</a><span aria-hidden="true">·</span><a href="/sample-intelligence-brief.html">View a sample report</a></p>
+      <p class="home-secondary-links"><a href="/how-it-works.html">How it works</a><span aria-hidden="true">·</span><a href="/sample-intelligence-brief.html">View a sample report</a><span aria-hidden="true">·</span><a href="/website-enquiry-readiness.html">Free website enquiry check</a></p>
     </section>
 
     <section class="home-final-cta">
@@ -274,11 +316,12 @@ section{padding:72px 0;border-top:1px solid var(--line)}
   </main>
   <footer class="footer">
     <strong>MarketCentaur</strong>
-    <span><a href="/services.html">All marketing services</a> · <a href="/about.html">About</a> · <a href="/faq.html">FAQs</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a></span>
+    <span><a href="/website-enquiry-readiness.html">Free website enquiry check</a> · <a href="/services.html">All marketing services</a> · <a href="/about.html">About</a> · <a href="/faq.html">FAQs</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a></span>
   <div class="social-links" aria-label="Follow MarketCentaur" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:13px"><span style="color:var(--muted)">Follow us:</span><a href="https://www.linkedin.com/company/marketcentaur" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/marketcentaur" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://x.com/marketcentaur" target="_blank" rel="noopener noreferrer">X</a></div>
   </footer>
 </div>
 <script src="/assets/language-selector.js" defer></script>
   <script src="/assets/services-dropdown.js" defer></script>
+<script src="/assets/interactive-experiences.js" defer></script>
 </body>
 </html>
