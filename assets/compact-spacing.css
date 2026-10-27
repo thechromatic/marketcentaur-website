@@ -648,3 +648,45 @@ main > section.home-final-cta > .btn {
   }
 }
 
+
+
+/* Final homepage alignment fix: prevent the growth cards from overflowing the viewport. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+main .growth-paths {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: clamp(18px, 3vw, 48px) !important;
+  padding-right: clamp(18px, 3vw, 48px) !important;
+}
+main .growth-paths > .interactive-intro,
+main .growth-paths > .growth-path-grid,
+main .growth-paths > .experience-note {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+main .growth-paths > .growth-path-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+main .growth-paths .growth-path-card {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+@media (max-width: 850px) {
+  main .growth-paths > .growth-path-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 600px) {
+  main .growth-paths > .growth-path-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
