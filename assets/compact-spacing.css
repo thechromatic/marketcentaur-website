@@ -786,3 +786,58 @@ footer.footer > .footer-content {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+
+/* Definitive alignment: keep CTA and footer content on one shared left-aligned grid. */
+main > section.home-final-cta > .home-final-cta-content {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 32px !important;
+  box-sizing: border-box !important;
+  width: min(1120px, calc(100vw - 96px)) !important;
+  max-width: 1120px !important;
+  margin-inline: auto !important;
+}
+main > section.home-final-cta > .home-final-cta-content > div {
+  flex: 0 1 760px !important;
+  width: auto !important;
+  max-width: 760px !important;
+  margin: 0 !important;
+}
+main > section.home-final-cta > .home-final-cta-content > .btn {
+  flex: 0 0 auto !important;
+  margin: 8px 0 0 !important;
+}
+footer.footer > .footer-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  box-sizing: border-box !important;
+  width: min(1120px, calc(100vw - 96px)) !important;
+  max-width: 1120px !important;
+  margin-inline: auto !important;
+}
+footer.footer > .footer-content > strong,
+footer.footer > .footer-content > span,
+footer.footer > .footer-content > .social-links {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+@media (max-width: 700px) {
+  main > section.home-final-cta > .home-final-cta-content {
+    flex-direction: column !important;
+    width: calc(100vw - 36px) !important;
+    gap: 18px !important;
+  }
+  main > section.home-final-cta > .home-final-cta-content > .btn {
+    margin-top: 0 !important;
+    max-width: 100%;
+  }
+  footer.footer > .footer-content {
+    width: calc(100vw - 36px) !important;
+  }
+}
