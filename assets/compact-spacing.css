@@ -757,3 +757,32 @@ footer.footer > .footer-content > span {
     flex-direction: column;
   }
 }
+
+
+/* Correct the CTA wrapper: older direct-child rules were overriding its centering. */
+main > section.home-final-cta > .home-final-cta-content {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+main > section.home-final-cta > .home-final-cta-content > div {
+  width: auto !important;
+  max-width: 760px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+main > section.home-final-cta > .home-final-cta-content > .btn {
+  width: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+footer.footer > .footer-content {
+  box-sizing: border-box !important;
+  flex: 0 1 1120px !important;
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
