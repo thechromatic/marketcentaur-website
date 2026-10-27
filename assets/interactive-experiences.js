@@ -46,6 +46,69 @@ var serviceFinder = {
         ["Market context","B2B Growth Intelligence","Understand the target segment and commercial context around potential partners.","/services/b2b-growth-intelligence.html"],
         ["Activation","Demand & Revenue Generation","Plan co-marketing, referral or channel activation around a clear audience.","/services/demand-revenue.html"]
       ]
+    },
+    strategy: {
+      title: "Set a clearer direction and plan your next stage of growth",
+      intro: "Connect your goals, customer needs, market context and available resources to a practical set of priorities.",
+      services: [
+        ["Business direction","Strategy & Growth","Clarify the opportunity, audience, positioning and priorities that should guide your next steps.","/services/strategy-growth.html"],
+        ["Market context","Market & Competitor Intelligence","Bring relevant market and competitor evidence into planning decisions.","/services/market-competitor-intelligence.html"],
+        ["Practical roadmap","Business Modernisation Roadmap","Turn broad ambitions into manageable improvements across customer acquisition, processes and reporting.","/growth-check.html?journey=modernisation"]
+      ]
+    },
+    ai: {
+      title: "Find practical ways to use AI and automation",
+      intro: "Start with a real business task, assess whether technology is appropriate, and define the workflow, safeguards and human oversight needed.",
+      services: [
+        ["Workflow review","AI & Marketing Automation","Identify repetitive tasks and assess suitable automation opportunities with clear boundaries and human review.","/services/ai-automation.html"],
+        ["Process improvement","Strategy & Growth","Clarify the underlying process and desired outcome before choosing tools.","/services/strategy-growth.html"],
+        ["Measurement","Analytics & Optimisation","Define how to assess usefulness, quality and operational impact.","/services/analytics-optimisation.html"]
+      ]
+    },
+    digital: {
+      title: "Improve your website and digital experience",
+      intro: "Review how people discover your business, understand your offer, build confidence and take the next step.",
+      services: [
+        ["Digital foundation","Digital Presence","Improve website clarity, navigation, discoverability and the path to contact or purchase.","/services/digital-presence.html"],
+        ["Quick starting point","Website Enquiry Readiness Check","Review key foundations of your website's enquiry journey.","/website-enquiry-readiness.html"],
+        ["Evidence & iteration","Analytics & Optimisation","Choose useful measures and a practical sequence for testing improvements.","/services/analytics-optimisation.html"]
+      ]
+    },
+    data: {
+      title: "Make clearer decisions with data and evidence",
+      intro: "Identify the decisions you need to make, the information that would help, and the gaps or assumptions worth checking.",
+      services: [
+        ["Measurement","Analytics & Optimisation","Choose practical metrics and a review process tied to business decisions.","/services/analytics-optimisation.html"],
+        ["Market evidence","Market & Competitor Intelligence","Organise relevant external signals and competitor context for clearer planning.","/services/market-competitor-intelligence.html"],
+        ["Ongoing awareness","Weekly Growth Signal Watch","Track selected developments against agreed priorities over time.","/services/weekly-growth-signal-watch.html"]
+      ]
+    },
+    risk: {
+      title: "Strengthen governance, privacy and risk-aware decisions",
+      intro: "Clarify the risks, responsibilities and controls that matter to your context before introducing new processes or technology.",
+      services: [
+        ["Governance & oversight","AI Governance & Responsible Adoption","Review appropriate oversight, accountability and human review for AI-enabled work.","/services/ai-governance.html"],
+        ["Process clarity","Strategy & Growth","Map decision points, responsibilities and practical implementation priorities.","/services/strategy-growth.html"],
+        ["Evidence & monitoring","Analytics & Optimisation","Define useful indicators and review practices for ongoing oversight.","/services/analytics-optimisation.html"]
+      ]
+    },
+    innovation: {
+      title: "Explore new ideas, products or business opportunities",
+      intro: "Turn an initial idea into questions you can investigate: who it serves, what problem it solves, what evidence exists and what to test next.",
+      services: [
+        ["Opportunity framing","Strategy & Growth","Clarify the customer problem, value proposition and priorities for exploration.","/services/strategy-growth.html"],
+        ["Market validation","Market & Competitor Intelligence","Research market context, alternatives and relevant competitor activity.","/services/market-competitor-intelligence.html"],
+        ["Potential collaborators","Partner & Channel Discovery","Explore complementary organisations and possible routes to market.","/services/partner-channel-discovery.html"]
+      ]
+    },
+    unsure: {
+      title: "Start by finding the business question that matters most",
+      intro: "You do not need a fully formed brief. We can help you explore your goals, current challenges, available evidence and realistic next steps.",
+      services: [
+        ["Clarify direction","Strategy & Growth","Bring your goals and open questions into a more focused set of priorities.","/services/strategy-growth.html"],
+        ["Explore the landscape","Market & Competitor Intelligence","Build context around customers, competitors and possible opportunities.","/services/market-competitor-intelligence.html"],
+        ["Review the foundations","Business Modernisation Roadmap","Explore practical starting points across customer acquisition, processes and reporting.","/growth-check.html?journey=modernisation"]
+      ]
     }
   }
 };
