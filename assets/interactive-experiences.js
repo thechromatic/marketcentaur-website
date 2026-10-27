@@ -87,7 +87,7 @@ var serviceFinder = {
       title: "Strengthen governance, privacy and risk-aware decisions",
       intro: "Clarify the risks, responsibilities and controls that matter to your context before introducing new processes or technology.",
       services: [
-        ["Governance & oversight","AI Governance & Responsible Adoption","Review appropriate oversight, accountability and human review for AI-enabled work.","/services/ai-governance.html"],
+        ["Governance & oversight","AI Governance & Responsible Adoption","Review appropriate oversight, accountability and human review for AI-enabled work.","/services/ai-automation.html"],
         ["Process clarity","Strategy & Growth","Map decision points, responsibilities and practical implementation priorities.","/services/strategy-growth.html"],
         ["Evidence & monitoring","Analytics & Optimisation","Define useful indicators and review practices for ongoing oversight.","/services/analytics-optimisation.html"]
       ]
