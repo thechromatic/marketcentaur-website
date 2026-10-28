@@ -1,26 +1,29 @@
 (function () {
   "use strict";
 
-  // Broad, inclusive entry points first; none is promoted as a preferred service.
+  // Lead with AI-enabled and forward-looking systems, then list the broader service areas.
   var divisions = [
-    ["Business Strategy & Growth", "/services/strategy-growth.html"],
+    ["AI & Intelligent Automation", "/services/ai-automation.html"],
+    ["Growth Intelligence System", "/services.html#growth-intelligence-system"],
+    ["Emerging AI Systems & Innovation", "/services.html#next-generation-systems"],
+    ["AI-Enabled Growth Intelligence", "/services/b2b-growth-intelligence.html"],
+    ["Intelligent Signal Monitoring", "/services/weekly-growth-signal-watch.html"],
+    ["Market & Competitor Intelligence", "/services/market-competitor-intelligence.html"],
+    ["Business Intelligence & Decision Support", "/services/business-intelligence.html#business-intelligence"],
+    ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
+    ["Account & Persona Mapping", "/services/account-persona-mapping.html"],
     ["Marketing & Customer Engagement", "/services/demand-revenue.html"],
-    ["Digital Experience & Technology", "/services/digital-presence.html"],
+    ["Business Strategy & Growth", "/services/strategy-growth.html"],
     ["Operations & Automation", "/services/business-operations.html"],
-    ["Intelligence & Decision Support", "/services/business-intelligence.html#business-intelligence"],
+    ["Digital Experience & Technology", "/services/digital-presence.html"],
     ["Content & Creative", "/services/content-creative.html"],
     ["AI & Marketing Automation", "/services/ai-automation.html"],
-    ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
     ["Business & Financial Performance", "/services/business-operations.html#performance"],
     ["Customer & People Experience", "/services/business-operations.html#experience"],
     ["Supplier & Partner Intelligence", "/services/business-intelligence.html#supplier-intelligence"],
-    ["Risk, Continuity & Sustainability", "/services/business-intelligence.html#risk-sustainability"],
-    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"],
-    ["B2B Growth Intelligence", "/services/b2b-growth-intelligence.html"],
-    ["Account & Persona Mapping", "/services/account-persona-mapping.html"],
-    ["Market & Competitor Intelligence", "/services/market-competitor-intelligence.html"],
     ["Partner & Channel Discovery", "/services/partner-channel-discovery.html"],
-    ["Weekly Growth Signal Watch", "/services/weekly-growth-signal-watch.html"]
+    ["Risk, Continuity & Sustainability", "/services/business-intelligence.html#risk-sustainability"],
+    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"]
   ];
   function makeLink(label, href, extraClass) {
     var link = document.createElement("a");
