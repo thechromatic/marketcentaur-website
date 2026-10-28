@@ -1,29 +1,27 @@
 (function () {
   "use strict";
 
+  // Broad, inclusive entry points first; none is promoted as a preferred service.
   var divisions = [
-    ["Strategy & Growth", "/services/strategy-growth.html"],
+    ["Business Strategy & Growth", "/services/strategy-growth.html"],
+    ["Marketing & Customer Engagement", "/services/demand-revenue.html"],
+    ["Digital Experience & Technology", "/services/digital-presence.html"],
+    ["Operations & Automation", "/services/business-operations.html"],
+    ["Intelligence & Decision Support", "/services/business-intelligence.html#business-intelligence"],
     ["Content & Creative", "/services/content-creative.html"],
-    ["Digital Presence", "/services/digital-presence.html"],
-    ["Demand & Revenue Generation", "/services/demand-revenue.html"],
     ["AI & Marketing Automation", "/services/ai-automation.html"],
     ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
-    ["Business Operations & Automation", "/services/business-operations.html"],
     ["Business & Financial Performance", "/services/business-operations.html#performance"],
     ["Customer & People Experience", "/services/business-operations.html#experience"],
-    ["Business Intelligence & Data Reporting", "/services/business-intelligence.html#business-intelligence"],
     ["Supplier & Partner Intelligence", "/services/business-intelligence.html#supplier-intelligence"],
     ["Risk, Continuity & Sustainability", "/services/business-intelligence.html#risk-sustainability"],
-    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"]
-  ];
-  var specialists = [
+    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"],
     ["B2B Growth Intelligence", "/services/b2b-growth-intelligence.html"],
     ["Account & Persona Mapping", "/services/account-persona-mapping.html"],
     ["Market & Competitor Intelligence", "/services/market-competitor-intelligence.html"],
     ["Partner & Channel Discovery", "/services/partner-channel-discovery.html"],
     ["Weekly Growth Signal Watch", "/services/weekly-growth-signal-watch.html"]
   ];
-
   function makeLink(label, href, extraClass) {
     var link = document.createElement("a");
     link.href = href;
@@ -50,15 +48,6 @@
     menu.hidden = true;
 
     divisions.forEach(function (item) {
-      menu.appendChild(makeLink(item[0], item[1]));
-    });
-
-    var label = document.createElement("div");
-    label.className = "nav-services-group-label";
-    label.textContent = "Specialist services";
-    menu.appendChild(label);
-
-    specialists.forEach(function (item) {
       menu.appendChild(makeLink(item[0], item[1]));
     });
 
