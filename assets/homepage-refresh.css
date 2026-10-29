@@ -284,3 +284,18 @@
   .homepage .ways-to-work-grid { grid-template-columns: 1fr; gap: 12px; }
   .homepage .ways-to-work-card { padding: 19px; }
 }
+
+
+/* Emerging product and service directions */
+.homepage .emerging-offers { padding: 14px 0 44px; border-top: 1px solid var(--line); }
+.homepage .emerging-offers-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:24px; }
+.homepage .emerging-offer-card { padding:20px; border:1px solid rgba(127,176,255,.18); border-radius:14px; background:linear-gradient(145deg,rgba(31,41,55,.82),rgba(24,35,52,.78)); }
+.homepage .emerging-offer-card h3 { font-size:19px; line-height:1.3; margin:8px 0; }
+.homepage .emerging-offer-card p { color:var(--muted); font-size:14px; line-height:1.7; margin:0 0 14px; }
+.offer-status { display:inline-block; border:1px solid rgba(127,176,255,.25); border-radius:7px; padding:6px 8px; color:var(--accent); font-size:11px; line-height:1.5; font-weight:700; }
+.homepage .emerging-offers-link { margin-top:18px; font-size:14px; font-weight:750; color:var(--accent); }
+.homepage .emerging-offers-link a span { margin-left:4px; }
+.emerging-offers-catalog .offer-status { margin-top:auto; }
+.emerging-offers-catalog .card p strong { color:var(--text); }
+@media(max-width:850px){ .homepage .emerging-offers-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:560px){ .homepage .emerging-offers-grid { grid-template-columns:1fr; } }
