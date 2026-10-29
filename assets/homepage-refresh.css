@@ -245,3 +245,42 @@
     padding-top: 10px !important;
   }
 }
+
+/* Diversification pathways: consulting, tools, partners and knowledge assets. */
+.homepage .ways-to-work {
+  padding: 14px 0 42px;
+  border-top: 1px solid rgba(127,176,255,.17);
+}
+.homepage .ways-to-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 28px;
+  margin-top: 26px;
+}
+.homepage .ways-to-work-card {
+  border: 1px solid rgba(127,176,255,.17);
+  border-radius: 14px;
+  padding: 22px;
+  background: linear-gradient(145deg, rgba(31,41,55,.82), rgba(24,35,52,.78));
+}
+.homepage .ways-to-work-card h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+  letter-spacing: -.025em;
+}
+.homepage .ways-to-work-card p {
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.homepage .ways-to-work-card a {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 750;
+}
+.homepage .ways-to-work-card a span { margin-left: 4px; }
+@media (max-width: 600px) {
+  .homepage .ways-to-work-grid { grid-template-columns: 1fr; gap: 12px; }
+  .homepage .ways-to-work-card { padding: 19px; }
+}
