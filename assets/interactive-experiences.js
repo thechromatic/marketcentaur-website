@@ -134,7 +134,7 @@ var explorerData = {
 };
 function initFinder(){
  var root=document.querySelector("[data-service-finder]"); if(!root)return;
- var goal="customers", type="both";
+ var goal="unsure", type="both";
  function render(){
   var item=serviceFinder.goals[goal];
   if(type==="B2C" && goal==="customers") item={
