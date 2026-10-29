@@ -229,3 +229,19 @@
     padding-top: 20px;
   }
 }
+
+
+/* Apply the same tighter top spacing consistently across homepage sections. */
+.homepage main > section {
+  padding-top: 14px !important;
+}
+@media (max-width: 850px) {
+  .homepage main > section {
+    padding-top: 12px !important;
+  }
+}
+@media (max-width: 600px) {
+  .homepage main > section {
+    padding-top: 10px !important;
+  }
+}
