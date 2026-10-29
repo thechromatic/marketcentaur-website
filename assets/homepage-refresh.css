@@ -1,0 +1,215 @@
+/* MarketCentaur homepage refresh — premium, editorial, opportunity-led.
+   Additive styles only: preserve existing content, navigation and interactions. */
+.homepage {
+  --mc-glow: rgba(77, 139, 255, .13);
+  --mc-accent-bright: #9bc2ff;
+}
+.homepage .home-wrap { max-width: 1200px; }
+.homepage .nav {
+  position: relative;
+  border-bottom-color: rgba(127,176,255,.18) !important;
+}
+.homepage .navlinks a,
+.homepage .navlinks .nav-services-toggle {
+  transition: color .18s ease;
+}
+.homepage .home-hero {
+  position: relative;
+  isolation: isolate;
+  max-width: none;
+  padding: clamp(78px, 10vw, 126px) 0 clamp(64px, 8vw, 94px);
+}
+.homepage .home-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  inset: 0 -7vw;
+  background:
+    radial-gradient(ellipse at 13% 8%, rgba(55,115,218,.17), transparent 48%),
+    radial-gradient(ellipse at 88% 45%, rgba(65,108,183,.10), transparent 38%);
+}
+.homepage .home-hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 8px 12px;
+  border: 1px solid rgba(127,176,255,.24);
+  border-radius: 999px;
+  background: rgba(31,41,55,.66);
+  letter-spacing: .105em;
+}
+.homepage .home-hero .eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 15px rgba(127,176,255,.6);
+}
+.homepage .home-hero h1 {
+  max-width: 920px;
+  font-size: clamp(50px, 7.5vw, 88px);
+  line-height: .99;
+  letter-spacing: -.072em;
+  text-wrap: balance;
+}
+.homepage .home-hero p {
+  max-width: 690px;
+  font-size: clamp(17px, 1.65vw, 19px);
+  line-height: 1.8;
+}
+.homepage .home-actions { gap: 20px; margin-top: 32px; }
+.homepage .home-actions .btn,
+.homepage .home-final-cta .btn {
+  min-height: 48px;
+  padding: 13px 19px !important;
+  border-radius: 10px;
+}
+.homepage .home-actions .btn.primary,
+.homepage .home-final-cta .btn.primary {
+  background: linear-gradient(135deg, #9bc2ff, #6f9fe9) !important;
+  border-color: #9bc2ff !important;
+  color: #101827 !important;
+  box-shadow: 0 8px 28px rgba(87,143,231,.18) !important;
+}
+.homepage .home-actions .btn.primary:hover,
+.homepage .home-final-cta .btn.primary:hover {
+  box-shadow: 0 12px 34px rgba(87,143,231,.26) !important;
+  transform: translateY(-2px);
+}
+.homepage .home-text-link { padding: 10px 0; }
+.homepage .interactive-section,
+.homepage .ai-systems,
+.homepage .home-services,
+.homepage .home-final-cta {
+  border-top-color: rgba(127,176,255,.17);
+}
+.homepage .interactive-intro h2,
+.homepage .ai-systems-intro h2,
+.homepage .home-section-head h2 {
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+.homepage .experience-panel {
+  border-color: rgba(127,176,255,.2);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(31,41,55,.96), rgba(24,35,52,.96));
+  box-shadow: 0 20px 70px rgba(0,0,0,.12);
+}
+.homepage .choice-button {
+  transition: border-color .16s ease, background .16s ease, color .16s ease, transform .16s ease;
+}
+.homepage .choice-button:hover {
+  border-color: rgba(127,176,255,.65);
+  color: var(--text);
+}
+.homepage .choice-button[aria-pressed="true"] {
+  background: rgba(67,112,183,.2);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px rgba(127,176,255,.1);
+}
+.homepage .recommendation-item {
+  border-radius: 12px;
+  transition: border-color .18s ease, transform .18s ease, background .18s ease;
+}
+.homepage .recommendation-item:hover {
+  border-color: rgba(127,176,255,.48);
+  transform: translateY(-2px);
+}
+.homepage .growth-path-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px !important;
+  border-color: rgba(127,176,255,.17) !important;
+  background: linear-gradient(150deg, rgba(31,41,55,.96), rgba(25,36,53,.94)) !important;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.homepage .growth-path-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(127,176,255,.58), transparent);
+}
+.homepage .growth-path-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(127,176,255,.42) !important;
+}
+.homepage .growth-path-card .experience-btn {
+  border-radius: 9px;
+}
+.homepage .ai-system-card {
+  transition: border-color .18s ease;
+}
+.homepage .ai-system-card:hover { border-top-color: rgba(127,176,255,.62); }
+.homepage .growth-intelligence-feature {
+  border-color: rgba(127,176,255,.28);
+  border-radius: 17px;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(75,123,197,.13), transparent 48%),
+    var(--surface);
+}
+.homepage .growth-workflow span {
+  border: 1px solid rgba(127,176,255,.11);
+  background: rgba(12,20,33,.34);
+  border-radius: 10px;
+}
+.homepage .home-service-tile {
+  transition: border-color .18s ease;
+}
+.homepage .home-service-tile:hover { border-top-color: rgba(127,176,255,.62); }
+.homepage .home-service-tile a,
+.homepage .home-text-link,
+.homepage .recommendation-item a { transition: color .18s ease; }
+.homepage .home-service-tile a:hover,
+.homepage .home-text-link:hover,
+.homepage .recommendation-item a:hover { color: var(--mc-accent-bright); }
+.homepage .home-final-cta {
+  padding-top: 46px;
+  padding-bottom: 50px;
+}
+.homepage .home-final-cta .eyebrow { letter-spacing: .11em; }
+.homepage .footer { border-top: 1px solid rgba(127,176,255,.13); }
+.homepage a:focus-visible,
+.homepage button:focus-visible {
+  outline: 2px solid var(--mc-accent-bright);
+  outline-offset: 4px;
+}
+@media (max-width: 850px) {
+  .homepage .home-hero { padding: 68px 0 60px; }
+  .homepage .home-hero h1 { font-size: clamp(46px, 8.5vw, 68px); }
+  .homepage .home-actions { gap: 16px; }
+}
+@media (max-width: 600px) {
+  .homepage .home-hero { padding: 50px 0 44px; }
+  .homepage .home-hero h1 {
+    font-size: clamp(41px, 11vw, 54px);
+    letter-spacing: -.065em;
+    line-height: 1.02;
+  }
+  .homepage .home-hero .eyebrow { font-size: 10px; letter-spacing: .08em; }
+  .homepage .home-hero p { font-size: 16px; line-height: 1.75; }
+  .homepage .home-actions { align-items: stretch; gap: 14px; }
+  .homepage .home-actions .btn { width: 100%; }
+  .homepage .home-text-link { align-self: flex-start; }
+  .homepage .experience-panel { border-radius: 14px; }
+  .homepage .growth-intelligence-feature { padding: 19px !important; }
+  .homepage .growth-workflow { gap: 8px; }
+  .homepage .growth-workflow span { padding: 11px; }
+  .homepage .home-final-cta { padding-top: 32px; padding-bottom: 34px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .homepage *,
+  .homepage *::before,
+  .homepage *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
