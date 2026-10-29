@@ -213,3 +213,19 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* Tighten the homepage's navigation-to-hero transition. */
+.homepage .home-hero {
+  padding-top: 42px;
+}
+@media (max-width: 850px) {
+  .homepage .home-hero {
+    padding-top: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .homepage .home-hero {
+    padding-top: 20px;
+  }
+}
