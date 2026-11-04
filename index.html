@@ -1,505 +1,302 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MarketCentaur | Discover What Your Business Could Be Missing</title>
-<meta name="description" content="Discover connected consulting across AI, strategy, market intelligence, operations, governance and digital innovation. Find the opportunities your business could be missing with MarketCentaur.">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="theme-color" content="#111827">
-<link rel="canonical" href="https://marketcentaur.com/">
-<link rel="icon" type="image/png" sizes="295x295" href="/assets/marketcentaur-mc-option-4-favicon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MarketCentaur">
-<meta property="og:title" content="MarketCentaur | Discover What Your Business Could Be Missing">
-<meta property="og:description" content="Expert-led consulting across AI, strategy, intelligence, operations and digital innovation—connected around the business challenges that matter.">
-<meta property="og:url" content="https://marketcentaur.com/">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MarketCentaur | Expert-Led AI Consulting">
-<meta name="twitter:description" content="Expert-led consulting combining business insight, AI-enabled execution and human judgement.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://marketcentaur.com/#organization",
-      "name": "MarketCentaur",
-      "url": "https://marketcentaur.com/",
-      "logo": "https://marketcentaur.com/assets/marketcentaur-logo-header.png",
-      "email": "hello@marketcentaur.com",
-      "description": "Expert-led consulting combining business strategy, applied AI, intelligent operations, market intelligence and digital transformation."
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://marketcentaur.com/#website",
-      "url": "https://marketcentaur.com/",
-      "name": "MarketCentaur",
-      "publisher": { "@id": "https://marketcentaur.com/#organization" },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://marketcentaur.com/#b2b-intelligence",
-      "name": "B2B Account & Growth Intelligence",
-      "url": "https://marketcentaur.com/services/b2b-growth-intelligence.html",
-      "provider": { "@id": "https://marketcentaur.com/#organization" },
-      "areaServed": "Worldwide",
-      "serviceType": [
-        "ABM account and persona mapping",
-        "Market and competitor intelligence",
-        "Partner and channel discovery",
-        "Weekly growth-signal monitoring"
-      ],
-      "description": "Research-led intelligence that helps B2B teams prioritize accounts, interpret relevant market signals and plan next actions."
-    }
-  ]
-}
-</script>
+<!-- MARKETCENTAUR CONVERSION & 3-TRACK STOREFRONT UPGRADE -->
 <style>
-:root{color-scheme:dark;--bg:#111827;--surface:#1f2937;--surface2:#263244;--text:#f5f7fa;--muted:#b7c0cc;--line:#374151;--accent:#7fb0ff;--accent2:#142640;--success:light-dark(#237453,#82d0ab)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:24px}
-body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1120px;margin:auto;padding:0 24px}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}
-.logo{display:flex;align-items:center;height:58px;min-width:126px}
-.logo img{display:block;width:178px;height:auto;max-height:68px;object-fit:contain;border-radius:6px}
-.navlinks{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px}
-.navlinks a:hover,.footer a:hover{color:var(--accent)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:9px;font-weight:750;font-size:14px;border:1px solid var(--line);background:var(--surface);transition:transform .15s ease,border-color .15s ease}
-.btn:hover{transform:translateY(-1px);border-color:var(--accent)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 8px 24px rgba(23,92,211,.16)}
-.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
-.hero{padding:82px 0 76px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:52px;align-items:center;border-top:0}
-.hero h1{font-size:clamp(42px,5.8vw,68px);line-height:1.01;letter-spacing:-.065em;margin:0 0 22px;max-width:760px}
-.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:660px;margin:0 0 28px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.trustline{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}
-.trustline span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:7px 10px;background:var(--surface)}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.06)}
-.panelhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
-.panelhead strong{font-size:15px}
-.pill{font-size:10px;letter-spacing:.08em;font-weight:850;padding:6px 8px;border-radius:99px;background:var(--accent2);color:var(--accent);white-space:nowrap}
-.signal{padding:15px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:27px 1fr;gap:10px}
-.signal:first-of-type{border-top:0}
-.signal-icon{width:26px;height:26px;border-radius:7px;background:var(--accent2);color:var(--accent);display:grid;place-items:center;font-size:13px;font-weight:850}
-.signal b{display:block;font-size:13px;margin-bottom:4px}
-.signal p{margin:0;font-size:12px;line-height:1.55;color:var(--muted)}
-.panelnote{border-top:1px solid var(--line);padding-top:13px;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.5}
-section{padding:72px 0;border-top:1px solid var(--line)}
-.sectionhead{max-width:740px;margin-bottom:32px}
-.sectionhead h2{font-size:clamp(29px,4vw,41px);line-height:1.1;letter-spacing:-.05em;margin:0 0 14px}
-.sectionhead p{color:var(--muted);line-height:1.7;margin:0;font-size:16px}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:25px;display:flex;flex-direction:column;align-items:flex-start}
-.card.featured{border-color:var(--accent)}
-.cardtop{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;margin-bottom:12px}
-.num{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--accent)}
-.card h3{font-size:21px;line-height:1.2;letter-spacing:-.025em;margin:0 0 10px}
-.card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0 0 15px}
-.deliverables{list-style:none;padding:0;margin:0 0 22px;width:100%}
-.deliverables li{border-top:1px solid var(--line);padding:9px 0;font-size:13px;line-height:1.5}
-.card .btn{margin-top:auto}
-.textlink{color:var(--accent);font-size:13px;font-weight:750}
-.sample-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;align-items:start}
-.sample-copy p{color:var(--muted);line-height:1.7;font-size:15px}
-.sample-list{list-style:none;padding:0;margin:20px 0 0}
-.sample-list li{padding:10px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.55}
-.report{background:var(--surface);border:1px solid var(--line);border-radius:15px;overflow:hidden}
-.reporthead{background:var(--surface2);padding:19px 21px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
-.reporthead strong{font-size:14px}
-.reporthead small{color:var(--muted);font-size:11px}
-.reportrow{display:grid;grid-template-columns:.85fr 1.15fr;gap:14px;padding:17px 21px;border-bottom:1px solid var(--line)}
-.reportrow:last-child{border-bottom:0}
-.reportrow b{display:block;font-size:12px;margin-bottom:5px}
-.reportrow p{font-size:12px;line-height:1.55;color:var(--muted);margin:0}
-.reportrow .tag{display:inline-block;color:var(--accent);font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:850;margin-bottom:5px}
-.process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
-.step{padding:20px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-.step .stepnum{color:var(--accent);font-size:11px;font-weight:850;letter-spacing:.1em;margin-bottom:18px}
-.step h3{font-size:17px;margin:0 0 8px}
-.step p{color:var(--muted);font-size:13px;line-height:1.65;margin:0}
-.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fit-item{border:1px solid var(--line);border-radius:12px;padding:20px;background:var(--surface)}
-.fit-item h3{font-size:16px;margin:0 0 7px}
-.fit-item p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
-.method{padding:19px 21px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:13px;line-height:1.7;background:var(--surface)}
-.cta{background:var(--surface2);border:1px solid var(--line);border-radius:18px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.cta h2{font-size:clamp(27px,3.7vw,36px);line-height:1.12;letter-spacing:-.045em;margin:0 0 10px;max-width:680px}
-.cta p{margin:0;color:var(--muted);line-height:1.65;max-width:620px;font-size:15px}
-.footer{padding:30px 0 46px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:18px;line-height:1.8}
-.footer a{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:850px){
-  .wrap{padding:0 18px}
-  .nav{min-height:68px;flex-wrap:wrap;padding:10px 0}
-  .logo{height:50px}.logo img{width:150px}
-  .navlinks{order:3;width:100%;overflow:auto;gap:18px;padding:4px 0 7px}
-  .nav>.btn{padding:10px 12px;font-size:12px}
-  .hero{grid-template-columns:1fr;padding:55px 0 58px;gap:34px}
-  .hero h1{font-size:clamp(40px,10vw,57px)}
-  .hero p{font-size:16px}
-  section{padding:55px 0}
-  .sample-layout{grid-template-columns:1fr}
-  .process{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .footer{display:block}.footer span{display:block;margin-top:8px}
-}
-@media(max-width:560px){
-  .cards,.fit-grid,.process{grid-template-columns:1fr}
-  .sectionhead h2{font-size:31px}
-  .card{padding:21px}
-  .reporthead{align-items:flex-start;flex-direction:column}
-  .reportrow{grid-template-columns:1fr;gap:8px;padding:15px}
-  .cta{display:block;padding:26px 22px}
-  .cta .btn{margin-top:20px;width:100%}
-  .actions .btn{width:100%}
-}
-</style>
-  <link rel="stylesheet" href="/assets/compact-spacing.css">
+  :root {
+    --mc-bg-dark: #050d1a;
+    --mc-bg-card: #0b192c;
+    --mc-cyan: #00d2ff;
+    --mc-blue: #0072ff;
+    --mc-text-light: #f0f6fc;
+    --mc-text-muted: #94a3b8;
+    --mc-border: rgba(0, 210, 255, 0.18);
+  }
 
-<style>
-/* Homepage is intentionally quieter than detail pages. */
-.homepage .home-wrap{max-width:1160px}
-.homepage .nav{min-height:76px}
-.homepage .navlinks{gap:22px}
-.homepage .home-hero{display:block;max-width:900px;padding:94px 0 88px}
-.homepage .home-hero .eyebrow{margin-bottom:22px}
-.homepage .home-hero h1{font-size:clamp(48px,6.5vw,76px);max-width:850px;line-height:1.04;letter-spacing:-.06em;margin:0 0 22px}
-.homepage .home-hero p{font-size:19px;line-height:1.75;color:var(--muted);max-width:600px;margin:0}
-.homepage .home-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px}
-.homepage .home-text-link,.homepage .home-service-tile a{font-size:14px;font-weight:750;color:var(--accent)}
-.homepage .home-services{padding:50px 0 42px;border-top:1px solid var(--line)}
-.homepage .home-section-head{max-width:620px;margin-bottom:25px}
-.homepage .home-section-head .eyebrow{margin-bottom:12px}
-.homepage .home-section-head h2{font-size:clamp(28px,3.5vw,38px);max-width:550px;line-height:1.15;margin:0}
-.homepage .home-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:38px;row-gap:0}
-.homepage .home-service-tile{padding:24px 0 26px;border-top:1px solid var(--line)}
-.homepage .home-service-index{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--accent);margin-bottom:12px}
-.homepage .home-service-tile h3{font-size:21px;line-height:1.3;margin:0 0 8px;letter-spacing:-.02em}
-.homepage .home-service-tile p{font-size:15px;color:var(--muted);line-height:1.7;margin:0 0 13px;max-width:400px}
-.homepage .home-service-tile a span{margin-left:4px}
-.homepage .home-secondary-links{font-size:13px;color:var(--muted);margin:24px 0 0}
-.homepage .home-secondary-links a{text-decoration:underline;text-underline-offset:3px;margin:0 8px}
-.homepage .home-secondary-links a:first-child{margin-left:0}
-.homepage .home-final-cta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:34px 0 42px;border-top:1px solid var(--line)}
-.homepage .home-final-cta .eyebrow{margin-bottom:12px}
-.homepage .home-final-cta h2{font-size:clamp(27px,3.3vw,36px);margin:0 0 10px}
-.homepage .home-final-cta p{font-size:15px;line-height:1.7;color:var(--muted);margin:0;max-width:600px}
-.homepage .footer{padding-top:22px;padding-bottom:26px}
-@media(max-width:850px){
- .homepage .home-hero{padding:66px 0 58px}
- .homepage .home-hero h1{font-size:clamp(44px,8vw,62px)}
- .homepage .home-service-grid{column-gap:24px}
- .homepage .home-final-cta{padding:28px 0 32px}
-}
-@media(max-width:560px){
- .homepage .home-hero{padding:48px 0 44px}
- .homepage .home-hero h1{font-size:clamp(40px,10.5vw,52px);line-height:1.05}
- .homepage .home-hero p{font-size:17px}
- .homepage .home-actions{align-items:flex-start;gap:16px;margin-top:22px;flex-direction:column}
- .homepage .home-service-grid{grid-template-columns:1fr}
- .homepage .home-service-tile{padding:19px 0 21px}
- .homepage .home-service-tile h3{font-size:20px}
- .homepage .home-final-cta{display:block;padding:26px 0 30px}
- .homepage .home-final-cta .btn{margin-top:18px;width:100%}
-}
+  .mc-upgrade-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    background-color: var(--mc-bg-dark);
+    color: var(--mc-text-light);
+    line-height: 1.6;
+  }
 
-/* Next-generation AI systems portfolio */
-.homepage .ai-systems{padding:58px 0;border-top:1px solid var(--line)}
-.homepage .ai-systems-intro{max-width:760px;margin-bottom:28px}
-.homepage .ai-systems-intro h2{font-size:clamp(30px,4vw,42px);line-height:1.1;letter-spacing:-.05em;margin:0 0 14px}
-.homepage .ai-systems-intro p{color:var(--muted);font-size:16px;line-height:1.75;margin:0}
-.homepage .ai-systems-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px}
-.homepage .ai-system-card{padding:23px 0;border-top:1px solid var(--line)}
-.homepage .ai-system-card .system-kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:850;margin-bottom:10px}
-.homepage .ai-system-card h3{font-size:20px;line-height:1.3;margin:0 0 8px}
-.homepage .ai-system-card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
-.homepage .growth-intelligence-feature{margin-top:26px;padding:27px;border:1px solid var(--accent);border-radius:15px;background:var(--surface)}
-.homepage .growth-intelligence-feature h3{font-size:24px;letter-spacing:-.03em;margin:0 0 10px}
-.homepage .growth-intelligence-feature p{color:var(--muted);font-size:15px;line-height:1.75;margin:0 0 18px;max-width:850px}
-.homepage .growth-workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 22px}
-.homepage .growth-workflow span{padding:12px;background:var(--surface2);border-radius:9px;font-size:12px;line-height:1.5}
-.homepage .growth-workflow b{display:block;color:var(--accent);font-size:10px;letter-spacing:.08em;margin-bottom:5px}
-@media(max-width:700px){.homepage .ai-systems-grid{grid-template-columns:1fr}.homepage .growth-workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.homepage .growth-intelligence-feature{padding:21px}}
+  /* Clean Header & Compact Language Switcher */
+  .mc-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--mc-border);
+  }
+  .mc-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .mc-brand span {
+    color: var(--mc-cyan);
+  }
+  .mc-nav-links {
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+  }
+  .mc-nav-links a {
+    color: var(--mc-text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .mc-nav-links a:hover {
+    color: var(--mc-cyan);
+  }
+  .mc-btn-primary {
+    background: linear-gradient(135deg, var(--mc-cyan), var(--mc-blue));
+    color: #050d1a !important;
+    font-weight: 700 !important;
+    padding: 0.65rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .mc-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.35);
+  }
+  .mc-btn-outline {
+    border: 1px solid var(--mc-cyan);
+    color: var(--mc-cyan) !important;
+    padding: 0.65rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+  }
 
+  /* Hero Section */
+  .mc-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 3.5rem;
+    text-align: center;
+  }
+  .mc-eyebrow {
+    display: inline-block;
+    background: rgba(0, 210, 255, 0.1);
+    border: 1px solid var(--mc-border);
+    color: var(--mc-cyan);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 0.35rem 0.9rem;
+    border-radius: 99px;
+    margin-bottom: 1.25rem;
+  }
+  .mc-hero h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    line-height: 1.15;
+    margin: 0 auto 1.25rem;
+    max-width: 900px;
+    font-weight: 800;
+  }
+  .mc-hero p {
+    color: var(--mc-text-muted);
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin: 0 auto 2rem;
+  }
+  .mc-hero-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* 3-Track Storefront Grid */
+  .mc-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  .mc-section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .mc-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .mc-card {
+    background: var(--mc-bg-card);
+    border: 1px solid var(--mc-border);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mc-card-tag {
+    color: var(--mc-cyan);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  .mc-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.35rem;
+  }
+  .mc-card ul {
+    padding-left: 1.1rem;
+    color: var(--mc-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .mc-card ul li {
+    margin-bottom: 0.5rem;
+  }
+  .mc-card ul li a {
+    color: var(--mc-text-light);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(0, 210, 255, 0.4);
+  }
+
+  /* Instant Lead Magnet Bar */
+  .mc-lead-box {
+    background: linear-gradient(135deg, #0b192c 0%, #07223b 100%);
+    border: 1px solid var(--mc-cyan);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .mc-lead-form {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 300px;
+  }
+  .mc-lead-form input {
+    flex: 1;
+    min-width: 180px;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--mc-border);
+    background: #050d1a;
+    color: #fff;
+  }
 </style>
-<style>
-.resource-links{font-size:14px;color:var(--muted);margin:20px 0 0;line-height:1.7}
-.resource-links a{font-weight:750}
-</style>
-  <link rel="stylesheet" href="/assets/services-dropdown.css">
-  <link rel="stylesheet" href="/assets/interactive-experiences.css">
-  <link rel="stylesheet" href="/assets/homepage-refresh.css">
-</head>
-<body class="homepage">
-<div class="wrap home-wrap">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-header.png" alt="MarketCentaur"></a>
-    <div class="navlinks">
-      <a href="/services.html">Services</a>
-      <a href="/industries.html">Industries</a>
-      <a href="/recurring-services.html">Ongoing support</a>
-      <a href="/sample-intelligence-brief.html">Sample report</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
+
+<div class="mc-upgrade-wrapper">
+  <!-- Navigation -->
+  <header class="mc-nav">
+    <a href="/" class="mc-brand">Market<span>Centaur</span></a>
+    <nav class="mc-nav-links">
+      <a href="#tracks">Solutions by Track</a>
+      <a href="#sprints">48-Hour Sprints</a>
+      <a href="/sample-intelligence-brief.html">Sample Report</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/contact.html" class="mc-btn-primary">Get Custom Action Brief →</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="mc-hero">
+    <span class="mc-eyebrow">Expert-Led Consulting · AI-Enabled Execution</span>
+    <h1>Turn Market Signals, Website Traffic, and Operational Gaps into Measurable Growth.</h1>
+    <p>
+      One unified AI + human intelligence engine applied across your value chain. Whether you need target account mapping, higher website enquiry rates, or automated operations, get verifiable deliverables in 3–5 business days.
+    </p>
+    <div class="mc-hero-ctas">
+      <a href="#sprints" class="mc-btn-primary">Explore 48-Hour Growth Sprints →</a>
+      <a href="/sample-intelligence-brief.html" class="mc-btn-outline">View Sample Intelligence Brief</a>
     </div>
-  </nav>
-  <main id="top">
-    <header class="home-hero">
-      <div class="eyebrow">Expert-led consulting · AI-enabled execution</div>
-      <h1>What could your business be missing?</h1>
-      <p>Some of the biggest opportunities sit between the things a business already does: the insight it hasn’t connected, the process it hasn’t improved, the risk it hasn’t considered, or the technology it hasn’t put to work. MarketCentaur brings expert guidance, AI and practical execution together across strategy, intelligence, operations, governance and digital innovation—starting with what matters to your business.</p>
-      <div class="home-actions">
-        <a class="btn primary" href="/contact.html">Discuss your business challenge</a>
-        <a class="home-text-link" href="/services.html">Explore services <span aria-hidden="true">→</span></a>
-      </div>
-    </header>
+  </section>
 
-
-    <section id="goal-finder" class="interactive-section" aria-labelledby="finder-heading" data-service-finder>
-      <div class="interactive-intro">
-        <div class="eyebrow">Find your starting point</div>
-        <h2 id="finder-heading">What are you trying to achieve?</h2>
-        <p>Choose an area you want to explore—or start with an open question. We’ll suggest possible starting points across different functions, challenges and opportunities.</p>
-      </div>
-      <div class="experience-panel">
-        <div class="experience-fields">
-          <div>
-            <div class="experience-field"><span class="question-label">What would you like to explore?</span></div>
-            <div class="choice-row" aria-label="Choose an area to explore">
-              <button class="choice-button" type="button" data-goal="customers" aria-pressed="false">Understand people, needs or audiences</button>
-              <button class="choice-button" type="button" data-goal="conversion" aria-pressed="false">Improve an experience or outcome</button>
-              <button class="choice-button" type="button" data-goal="market" aria-pressed="false">Understand a situation or environment</button>
-              <button class="choice-button" type="button" data-goal="partners" aria-pressed="false">Explore connections or collaboration</button>
-              <button class="choice-button" type="button" data-goal="strategy" aria-pressed="false">Set direction or clarify priorities</button>
-              <button class="choice-button" type="button" data-goal="operations" aria-pressed="false">Improve how things work</button>
-              <button class="choice-button" type="button" data-goal="ai" aria-pressed="false">Explore AI, technology or automation</button>
-              <button class="choice-button" type="button" data-goal="digital" aria-pressed="false">Improve digital tools or experiences</button>
-              <button class="choice-button" type="button" data-goal="data" aria-pressed="false">Use information more effectively</button>
-              <button class="choice-button" type="button" data-goal="risk" aria-pressed="false">Address risk, trust or responsibility</button>
-              <button class="choice-button" type="button" data-goal="innovation" aria-pressed="false">Explore ideas or possibilities</button>
-              <button class="choice-button" type="button" data-goal="unsure" aria-pressed="true">I'm not sure yet — help me work out where to start</button>
-            </div>
-          </div>
-          <div>
-            <div class="experience-field"><span class="question-label">What kind of context are you working in?</span></div>
-            <div class="choice-row" aria-label="Choose your context">
-              <button class="choice-button" type="button" data-business-type="B2B" aria-pressed="false">B2B</button>
-              <button class="choice-button" type="button" data-business-type="B2C" aria-pressed="false">B2C</button>
-              <button class="choice-button" type="button" data-business-type="both" aria-pressed="true">Mixed or varied context</button>
-              <button class="choice-button" type="button" data-business-type="small-local" aria-pressed="false">Small / local business</button>
-              <button class="choice-button" type="button" data-business-type="retail-ecommerce" aria-pressed="false">Retail / ecommerce</button>
-              <button class="choice-button" type="button" data-business-type="traditional" aria-pressed="false">Traditional industry</button>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="recommendation-output" aria-live="polite" aria-atomic="true">
-          <h3 data-finder-title>Find a useful starting point</h3>
-          <p data-finder-intro>Explore your goals, questions, constraints and possibilities to identify an area worth looking at first.</p>
-          <div class="recommendation-list" data-finder-results>
-            <article class="recommendation-item"><span>Explore</span><h4>Strategy &amp; Growth</h4><p>Clarify the situation, priorities and possible directions worth considering.</p><a href="/services/strategy-growth.html">Explore service →</a></article>
-            <article class="recommendation-item"><span>Understand</span><h4>Market &amp; Competitor Intelligence</h4><p>Build context around relevant developments, alternatives and external factors.</p><a href="/services/market-competitor-intelligence.html">Explore service →</a></article>
-            <article class="recommendation-item"><span>Improve</span><h4>AI, Data &amp; Digital Improvement</h4><p>Explore practical ways to improve workflows, use information or apply technology.</p><a href="/services/ai-automation.html">Explore service →</a></article>
-          </div>
-          <p class="experience-note" data-finder-context>Explore the options below to find a practical next step for your business.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="interactive-section growth-paths" aria-labelledby="growth-paths-heading">
-      <div class="wrap growth-paths-content">
-      <div class="interactive-intro">
-        <div class="eyebrow">Free interactive starting points</div>
-        <h2 id="growth-paths-heading">Explore a practical place to begin.</h2>
-        <p>Explore a few practical starting points. These free self-assessments help you reflect on a situation and identify areas worth a closer look—no account required.</p>
-      </div>
-      <div class="growth-path-grid">
-        <article class="growth-path-card">
-          <span class="growth-path-kicker">LOCAL & SMALL BUSINESS</span>
-          <h3>Local Business Growth Check</h3>
-          <p>Review local visibility, website clarity, trust signals and the path to enquiries, bookings or store visits.</p>
-          <a class="experience-btn" href="/growth-check.html?journey=local">Check my local growth basics</a>
-        </article>
-        <article class="growth-path-card">
-          <span class="growth-path-kicker">RETAIL & ECOMMERCE</span>
-          <h3>Ecommerce Growth Check</h3>
-          <p>Explore product discovery, store messaging, purchase friction and opportunities to encourage repeat orders.</p>
-          <a class="experience-btn" href="/growth-check.html?journey=ecommerce">Review my store journey</a>
-        </article>
-        <article class="growth-path-card">
-          <span class="growth-path-kicker">OPERATIONS & MODERNISATION</span>
-          <h3>Business Modernisation Roadmap</h3>
-          <p>Explore practical improvements across workflows, systems, information, customer experience and day-to-day operations.</p>
-          <a class="experience-btn" href="/growth-check.html?journey=modernisation">Build my starting roadmap</a>
-        </article>
-      </div>
-      <p class="experience-note">These are guided self-assessments based on your answers, not automated audits or guarantees. You can explore results before deciding whether to enquire.</p>
-      </div>
-    </section>
-
-
-    <section class="ways-to-work" aria-labelledby="ways-to-work-heading">
-      <div class="wrap">
-        <div class="ai-systems-intro">
-          <div class="eyebrow">More ways to work with MarketCentaur</div>
-          <h2 id="ways-to-work-heading">Useful insight can become a tool, a decision or a better way of working.</h2>
-          <p>Consulting is one part of the picture. We’re also shaping more repeatable ways to access expertise, use intelligence and put improvements into practice—matched to the need, not a fixed package.</p>
-        </div>
-        <div class="ways-to-work-grid">
-          <article class="ways-to-work-card">
-            <div class="system-kicker">01 / TOOLS & DIAGNOSTICS</div>
-            <h3>Self-serve starting points</h3>
-            <p>Use guided checks and structured tools to explore a challenge, surface questions and decide what may need attention. Further automated diagnostics and software products are opportunities to develop, not all currently available products.</p>
-            <a href="/#goal-finder">Explore starting points <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="ways-to-work-card">
-            <div class="system-kicker">02 / ADVISORY</div>
-            <h3>Focused expert support</h3>
-            <p>Bring a complex decision, unfamiliar market, operational issue or emerging opportunity. We help frame the question, examine available evidence and define practical next steps.</p>
-            <a href="/services.html#consulting-practices">Explore our practices <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="ways-to-work-card">
-            <div class="system-kicker">03 / IMPLEMENTATION ECOSYSTEM</div>
-            <h3>Delivery with the right specialists</h3>
-            <p>Where a need extends beyond our direct scope, we can explore appropriate technical or specialist support. Partner availability, responsibilities and delivery arrangements are agreed case by case.</p>
-            <a href="/contact.html">Discuss a project <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="ways-to-work-card">
-            <div class="system-kicker">04 / KNOWLEDGE & LEARNING</div>
-            <h3>Research, guides and reusable assets</h3>
-            <p>Explore sample intelligence, practical frameworks and learning resources. More structured briefs, workshops and downloadable tools are potential extensions as they are validated.</p>
-            <a href="/sample-intelligence-brief.html">View a sample brief <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="emerging-offers" aria-labelledby="emerging-offers-heading">
-      <div class="interactive-intro">
-        <div class="eyebrow">Where MarketCentaur is heading</div>
-        <h2 id="emerging-offers-heading">From expert insight to repeatable systems and products.</h2>
-        <p>We’re exploring ways to make intelligence, AI-enabled improvement and practical expertise easier to access—through focused advisory, repeatable services and product concepts that can be validated before wider release.</p>
-      </div>
-      <div class="emerging-offers-grid">
-        <article class="emerging-offer-card">
-          <div class="system-kicker">01 / PRODUCT DIRECTION</div>
-          <h3>Competitive Intelligence Platform</h3>
-          <p>A potential subscription workspace for competitor activity, industry news, prospect signals, regulatory developments and AI-assisted opportunity alerts.</p>
-          <span class="offer-status">Platform concept · in development planning</span>
-        </article>
-        <article class="emerging-offer-card">
-          <div class="system-kicker">02 / ADVISORY</div>
-          <h3>Fractional AI Transformation Office</h3>
-          <p>Ongoing leadership support to shape an AI roadmap, assess tools, prioritise workflows, coordinate governance and build team capability.</p>
-          <span class="offer-status">Scoped advisory opportunity</span>
-        </article>
-        <article class="emerging-offer-card">
-          <div class="system-kicker">03 / RECURRING INTELLIGENCE</div>
-          <h3>B2B Lead Intelligence</h3>
-          <p>Research-led account and decision-maker mapping, buying-signal monitoring and outreach preparation aligned to agreed customer-fit criteria.</p>
-          <span class="offer-status">Can be scoped as a service</span>
-        </article>
-      </div>
-      <p class="emerging-offers-link"><a href="/services.html#emerging-offers">Explore the wider roadmap <span aria-hidden="true">→</span></a></p>
-    </section>
-
-    <section class="ai-systems" aria-labelledby="ai-systems-heading">
-      <div class="wrap">
-        <div class="ai-systems-intro">
-          <div class="eyebrow">Where intelligent systems are heading</div>
-          <h2 id="ai-systems-heading">From useful AI tools to connected systems that help people work better.</h2>
-          <p>Generative AI can create and interpret information. Agentic AI can plan work, use connected tools and coordinate actions. Combined with reliable data, workflow automation and human oversight, these capabilities may support research, decision-making, service delivery and operations—not just isolated chatbots.</p>
-        </div>
-        <div class="ai-systems-grid">
-          <article class="ai-system-card"><div class="system-kicker">01 / Intelligence</div><h3>AI Market Intelligence</h3><p>Monitor industry changes, competitors, regulation and customer signals; connect developments to commercial opportunities and recommended next steps.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">02 / Workflows</div><h3>Connected Workflow Systems</h3><p>Coordinate repeatable tasks, information handoffs, quality checks and performance learning across different teams, with appropriate approval and oversight.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">03 / Research & decisions</div><h3>AI-Assisted Research & Decision Support</h3><p>Bring together source-backed information, compare options and prepare clear summaries or recommendations for people to evaluate.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">04 / Integrated operations</div><h3>Vertical AI Operating Systems</h3><p>Connect the workflows, information and tools of a specific industry or business function to help manage a defined outcome from start to finish.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">05 / Software</div><h3>AI-Assisted Software &amp; Micro-SaaS</h3><p>Turn validated business needs into prototypes, internal tools and software workflows, supported by testing, security checks and human review.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">06 / Research</div><h3>AI Financial Research</h3><p>Synthesize company fundamentals, disclosures and market information into evidence-based research, scenario analysis and risk monitoring—not guaranteed predictions.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">07 / Physical systems</div><h3>Robotics &amp; Autonomous Operations</h3><p>Explore how AI can support physical workflows such as inspection, logistics, manufacturing and resource coordination, often with specialist hardware partners.</p></article>
-          <article class="ai-system-card"><div class="system-kicker">Beyond automation</div><h3>Connected, Adaptive Systems</h3><p>Combine agents, knowledge, analytics and execution tools into feedback loops that evaluate outcomes and improve future recommendations within defined controls.</p></article>
-        </div>
-        <div class="growth-intelligence-feature">
-          <div class="eyebrow">MarketCentaur direction</div>
-          <h3>Connected Intelligence: turn signals into informed next steps.</h3>
-          <p>Our developing intelligence approach connects relevant external signals, structured research and decision support into a coherent workflow. It can help teams notice important changes, explore opportunities or risks and turn evidence into considered next steps. The scope can begin with a human-reviewed intelligence service; deeper integrations are explored only where they are useful and feasible.</p>
-          <div class="growth-workflow" aria-label="Growth Intelligence workflow">
-            <span><b>01 / MONITOR</b>Track industry, competitor and customer signals.</span><span><b>02 / IDENTIFY</b>Assess which changes may create demand.</span><span><b>03 / ASSESS</b>Compare signals with the goals, criteria and context that matter.</span><span><b>04 / RESEARCH</b>Build account and decision-maker context.</span><span><b>05 / PLAN</b>Create evidence-backed campaign recommendations.</span><span><b>06 / RESPOND</b>Prepare options and next steps for review.</span><span><b>07 / MEASURE</b>Track engagement, pipeline and conversions.</span><span><b>08 / IMPROVE</b>Use results to refine priorities and actions.</span>
-          </div>
-          <a class="btn primary" href="/services.html#growth-intelligence-system">Explore the system and service opportunities</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-services" aria-labelledby="home-services-title">
-      <div class="wrap home-services-content">
-      <div class="home-section-head">
-        <div class="eyebrow">What we do</div>
-        <h2 id="home-services-title">Connected expertise for opportunities hiding in plain sight.</h2>
-        <p class="home-services-intro">From strategy and market insight to operations, AI, governance and digital experience, we connect the right capabilities to the business outcome you want to improve.</p>
-      </div>
-      <div class="home-service-grid">
-        <article class="home-service-tile">
-          <h3>Account & Persona Mapping</h3>
-          <p>Prioritize target companies, customer segments and the people who influence a decision.</p>
-          <a href="/services/account-persona-mapping.html" aria-label="Learn about Account and Persona Mapping">Explore <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="home-service-tile">
-          <h3>Market Intelligence</h3>
-          <p>Understand competitor moves and important market changes.</p>
-          <a href="/services/market-competitor-intelligence.html" aria-label="Learn about Market and Competitor Intelligence">Explore <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="home-service-tile">
-          <h3>Partner Discovery</h3>
-          <p>Identify potential partners, local collaborations and routes to new markets.</p>
-          <a href="/services/partner-channel-discovery.html" aria-label="Learn about Partner and Channel Discovery">Explore <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="home-service-tile">
-          <h3>Weekly Signal Watch</h3>
-          <p>Keep up with changes across your priority accounts.</p>
-          <a href="/services/weekly-growth-signal-watch.html" aria-label="Learn about Weekly Growth Signal Watch">Explore <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="home-service-tile">
-          <h3>Business Strategy &amp; Operations</h3>
-          <p>Clarify priorities, improve workflows and make everyday decisions easier to act on.</p>
-          <a href="/services/strategy-growth.html" aria-label="Explore business strategy and growth">Explore <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="home-service-tile">
-          <h3>AI, Data &amp; Digital Improvement</h3>
-          <p>Identify practical uses for automation, reporting and digital tools—with appropriate human oversight.</p>
-          <a href="/services/ai-automation.html" aria-label="Explore AI and automation services">Explore <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-      <p class="home-secondary-links"><a href="/services.html">Explore all capabilities</a><span aria-hidden="true">·</span><a href="/how-it-works.html">How it works</a><span aria-hidden="true">·</span><a href="/sample-intelligence-brief.html">View a sample report</a><span aria-hidden="true">·</span><a href="/website-enquiry-readiness.html">Free website enquiry check</a></p>
-      </div>
-    </section>
-
-    <section class="home-final-cta">
-      <div class="wrap home-final-cta-content">
-        <div class="home-final-cta-copy">
-          <div class="eyebrow">Start a conversation</div>
-          <h2>What are you trying to find out?</h2>
-          <p>Whether you need clearer direction, better intelligence, smoother operations, responsible AI adoption or a stronger customer experience, we’ll help identify a practical first step.</p>
-        </div>
-        <a class="btn primary" href="/contact.html">Discuss your goals</a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="wrap footer-content">
-    <strong>MarketCentaur</strong>
-    <span><a href="/website-enquiry-readiness.html">Free website enquiry check</a> · <a href="/services.html">All business improvement services</a> · <a href="/about.html">About</a> · <a href="/faq.html">FAQs</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a></span>
-  <div class="social-links" aria-label="Follow MarketCentaur" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:13px"><span style="color:var(--muted)">Follow us:</span><a href="https://www.linkedin.com/company/marketcentaur" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/marketcentaur" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://x.com/marketcentaur" target="_blank" rel="noopener noreferrer">X</a></div>
+  <!-- 3-Track Segmented Storefront -->
+  <section id="tracks" class="mc-section">
+    <div class="mc-section-header">
+      <h2>Choose Your Starting Track</h2>
+      <p style="color: var(--mc-text-muted);">Broad AI-powered capabilities, structured around your specific business objective.</p>
     </div>
-  </footer>
+
+    <div class="mc-grid-3">
+      <!-- Track 1 -->
+      <div class="mc-card">
+        <div>
+          <div class="mc-card-tag">Track 01 · Local, Retail & Digital</div>
+          <h3>Digital Conversion & Revenue Growth</h3>
+          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">For SMBs, D2C/E-commerce brands, and service firms wanting more enquiries from existing traffic.</p>
+          <ul>
+            <li><strong>Website Enquiry & CRO Audit:</strong> Fix value proposition, CTA friction, and trust signals.</li>
+            <li><strong>E-Commerce Journey Check:</strong> Reduce checkout drop-off and boost repeat orders.</li>
+            <li><strong>AI Search Visibility (GEO):</strong> Rank inside ChatGPT, Gemini, and Perplexity answers.</li>
+            <li><strong>Plain-English BI Briefs:</strong> Turn raw store/CRM exports into weekly action summaries.</li>
+          </ul>
+        </div>
+        <a href="/contact.html?service=conversion-audit" class="mc-btn-outline" style="text-align:center;">Request Conversion Sprint →</a>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="mc-card">
+        <div>
+          <div class="mc-card-tag">Track 02 · B2B Pipeline & GTM</div>
+          <h3>Account, Market & Partner Intelligence</h3>
+          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">Focused research and buying-signal monitoring for B2B revenue teams and agencies.</p>
+          <ul>
+            <li><a href="/services/account-persona-mapping.html">Account & Persona Mapping</a> — Prioritize high-fit companies and decision-makers.</li>
+            <li><a href="/services/market-competitor-intelligence.html">Market & Competitor Intelligence</a> — Source-verified competitor moves and pricing shifts.</li>
+            <li><a href="/services/partner-channel-discovery.html">Partner & Channel Discovery</a> — Vet commercial partners and routes to new markets.</li>
+            <li><a href="/services/weekly-growth-signal-watch.html">Weekly Growth Signal Watch</a> — Ongoing buying triggers across priority accounts.</li>
+          </ul>
+        </div>
+        <a href="/services/b2b-growth-intelligence.html" class="mc-btn-primary" style="text-align:center;">Explore B2B Intelligence →</a>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="mc-card">
+        <div>
+          <div class="mc-card-tag">Track 03 · Operations & Systems</div>
+          <h3>Workflow Automation & Supply Chain</h3>
+          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">For scaling companies and traditional industries modernizing vendors, workflows, and AI governance.</p>
+          <ul>
+            <li><strong>Supplier & Vendor Longlisting:</strong> Vet alternative global suppliers and single-source risks.</li>
+            <li><strong>Connected AI Workflows:</strong> Automate lead handoffs, reporting, and SOPs with human oversight.</li>
+            <li><strong>ESG & Risk Readiness:</strong> Prepare compliance and AI governance registers for enterprise buyers.</li>
+            <li><strong>White-Label Agency Desk:</strong> On-demand research & teardown capacity for agencies.</li>
+          </ul>
+        </div>
+        <a href="/contact.html?service=operations-ai" class="mc-btn-outline" style="text-align:center;">Scope an Operations Sprint →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automated Lead Magnet Capture Bar -->
+  <section id="sprints" class="mc-section">
+    <div class="mc-lead-box">
+      <div style="flex: 1; min-width: 280px;">
+        <div class="mc-card-tag">Free 24-Hour AI + Expert Diagnostic</div>
+        <h3 style="margin: 0.25rem 0 0.5rem; font-size: 1.5rem;">Your website gets visitors. Why isn't your inbox getting enquiries?</h3>
+        <p style="color: var(--mc-text-muted); margin: 0; font-size: 0.95rem;">
+          Enter your URL and email. We'll score your site across our 5 conversion pillars (Value Proposition, CTA Clarity, Trust Signals, UX Friction, and Visitor Fit) and send a custom 3-page Action Brief.
+        </p>
+      </div>
+      <form class="mc-lead-form" action="/contact.html" method="GET">
+        <input type="url" name="website" placeholder="https://yourcompany.com" required />
+        <input type="email" name="email" placeholder="you@company.com" required />
+        <button type="submit" class="mc-btn-primary" style="border:none; cursor:pointer;">Send My Free Audit →</button>
+      </form>
+    </div>
+  </section>
 </div>
-<script src="/assets/language-selector.js" defer></script>
-  <script src="/assets/services-dropdown.js" defer></script>
-<script src="/assets/interactive-experiences.js" defer></script>
-</body>
-</html>
