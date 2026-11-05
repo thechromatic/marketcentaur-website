@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/services-dropdown.css">
 <style>
-.pkg{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px;margin-bottom:18px;scroll-margin-top:20px}
+.pkg{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px;margin-bottom:18px;scroll-margin-top:84px}
 .pkg.featured{border-color:var(--accent)}
 .pkg h3{font-size:26px;margin:0 0 10px;line-height:1.2}
 .pkg p{color:var(--muted);margin:0 0 14px;font-size:15px;line-height:1.7}
@@ -46,6 +46,8 @@
 @media(max-width:900px){.pkg{grid-template-columns:1fr}.catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.catalog,.facts{grid-template-columns:1fr}.pkg{padding:22px}}
 </style>
+<link rel="stylesheet" href="/assets/page-visuals.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -58,7 +60,7 @@
 </div>
 
 <main id="main"><div class="wrap">
-  <header class="hero">
+  <header class="hero hero-split"><div class="hero-copy">
     <div class="eyebrow">Services</div>
     <h1>Start with one focused sprint. Expand when it pays off.</h1>
     <p class="lead">Most clients start with one of three fixed-scope sprints. Each has a defined deliverable list, a set timeline and a walkthrough call. From there you can add ongoing support or draw on our wider catalog of research, operations and AI services.</p>
@@ -67,7 +69,7 @@
       <a class="textlink" href="#managed-ai">Done-for-you AI services →</a>
       <a class="textlink" href="#catalog">Browse the full catalog →</a>
     </div>
-  </header>
+  </div><nav class="sprint-path" aria-label="How the packages fit together"><div class="sp-node"><span class="dot" aria-hidden="true"></span><div>Free 20-minute scoping call<small>Written scope and fixed quote</small></div></div><svg class="sp-wire" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 C150 24 50 20 50 44"/><path class="live" d="M150 0 V44"/><path d="M150 0 C150 24 250 20 250 44"/></svg><div class="sp-tracks"><a class="sp-track" href="#conversion-sprint"><span class="ticon sm t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg></span>Website Conversion<small>3–5 business days</small></a><a class="sp-track" href="#account-sprint"><span class="ticon sm t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>B2B Account Intelligence<small>5 business days</small></a><a class="sp-track" href="#automation-sprint"><span class="ticon sm t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg></span>AI Workflow Automation<small>5–7 business days</small></a></div><svg class="sp-wire" viewBox="0 0 300 44" preserveAspectRatio="none" aria-hidden="true"><path d="M50 0 C50 24 150 20 150 44"/><path class="live" d="M150 0 V44"/><path d="M250 0 C250 24 150 20 150 44"/></svg><a class="sp-node sp-end" href="#retainer"><span class="ticon sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/></svg></span><div>Growth Intelligence Retainer<small>Optional ongoing support</small></div></a></nav></header>
 
   <section id="sprints" aria-labelledby="sprints-heading">
     <div class="sectionhead">
@@ -76,9 +78,11 @@
       <p>Every package starts with a free 20-minute scoping call. After the call you get a written scope and a fixed quote before any work begins.</p>
     </div>
 
+    <nav class="pkgnav" aria-label="Jump to a package"><a href="#conversion-sprint"><span class="ticon sm t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg></span>Conversion Sprint</a><a href="#account-sprint"><span class="ticon sm t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>Account Intelligence</a><a href="#automation-sprint"><span class="ticon sm t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg></span>Workflow Automation</a><a href="#retainer"><span class="ticon sm " aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/></svg></span>Ongoing retainer</a></nav>
+
     <article class="pkg" id="conversion-sprint">
       <div>
-        <div class="tag">Track 01 · Local, retail &amp; digital</div>
+        <div class="pkg-head"><span class="ticon t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg></span><div class="tag">Track 01 · Local, retail &amp; digital</div></div>
         <h3>Website Conversion Sprint</h3>
         <p>Find out why visitors leave without calling, booking or buying, and get a ranked list of fixes you can ship this month.</p>
         <p><b>Best for:</b> small businesses, local services, D2C and ecommerce brands, and professional service firms with steady traffic but weak inquiry or sales numbers.</p>
@@ -88,6 +92,7 @@
           <div><b>Format</b>Written report and a 45-minute walkthrough call</div>
           <div><b>Pricing</b>Fixed quote after your scoping call</div>
         </div>
+        <div class="phases" aria-hidden="true"><span style="--f:1;--d:0.00s"><b>Scope</b>Scoping call</span><span style="--f:1.4;--d:0.18s"><b>Research</b>First findings in 48 hrs</span><span style="--f:1.2;--d:0.36s"><b>Report</b>Days 3–5</span><span style="--f:1;--d:0.54s"><b>Walkthrough</b>45-min call</span></div>
         <a class="btn primary" href="/contact.html?service=conversion-sprint">Book a scoping call</a>
       </div>
       <div>
@@ -107,7 +112,7 @@
 
     <article class="pkg featured" id="account-sprint">
       <div>
-        <div class="tag">Track 02 · B2B pipeline &amp; go-to-market</div>
+        <div class="pkg-head"><span class="ticon t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span><div class="tag">Track 02 · B2B pipeline &amp; go-to-market</div></div>
         <h3>B2B Account Intelligence Sprint</h3>
         <p>Stop spreading outreach thin. Get a researched, ranked list of the accounts most likely to buy from you, who to contact, and what to say.</p>
         <p><b>Best for:</b> B2B founders, sales and marketing teams, SaaS and IT services firms, manufacturers, and agencies running outbound or account-based marketing (ABM).</p>
@@ -117,6 +122,7 @@
           <div><b>Format</b>Spreadsheet, written brief and a 45-minute walkthrough</div>
           <div><b>Pricing</b>Fixed quote after your scoping call</div>
         </div>
+        <div class="phases" aria-hidden="true"><span style="--f:1;--d:0.00s"><b>Kickoff</b>ICP workshop</span><span style="--f:1.6;--d:0.18s"><b>Research</b>Accounts &amp; signals</span><span style="--f:1;--d:0.36s"><b>Deliver</b>Day 5</span><span style="--f:1;--d:0.54s"><b>Walkthrough</b>45-min call</span></div>
         <a class="btn primary" href="/contact.html?service=account-sprint">Book a scoping call</a>
       </div>
       <div>
@@ -136,7 +142,7 @@
 
     <article class="pkg" id="automation-sprint">
       <div>
-        <div class="tag">Track 03 · Operations &amp; systems</div>
+        <div class="pkg-head"><span class="ticon t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg></span><div class="tag">Track 03 · Operations &amp; systems</div></div>
         <h3>AI Workflow Automation Sprint</h3>
         <p>Find where your team loses hours to repetitive work, and get a safe, practical plan for automating it with the tools you already pay for.</p>
         <p><b>Best for:</b> growing companies, traditional and family businesses, distributors and manufacturers, and any team where lead handoffs, reporting, quoting or admin rely on copy-paste.</p>
@@ -146,6 +152,7 @@
           <div><b>Format</b>Workflow maps, pilot spec, SOPs and a walkthrough call</div>
           <div><b>Pricing</b>Fixed quote after your scoping call; pilot build quoted separately</div>
         </div>
+        <div class="phases" aria-hidden="true"><span style="--f:1;--d:0.00s"><b>Interviews</b>With your team</span><span style="--f:1.3;--d:0.18s"><b>Map &amp; rank</b>Shortlist</span><span style="--f:1.3;--d:0.36s"><b>Pilot design</b>Days 5–7</span><span style="--f:1;--d:0.54s"><b>Walkthrough</b>SOPs handover</span></div>
         <a class="btn primary" href="/contact.html?service=automation-sprint">Book a scoping call</a>
       </div>
       <div>
@@ -165,7 +172,7 @@
 
     <article class="pkg" id="retainer">
       <div>
-        <div class="tag">Ongoing · after any sprint</div>
+        <div class="pkg-head"><span class="ticon " aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/></svg></span><div class="tag">Ongoing · after any sprint</div></div>
         <h3>Growth Intelligence Retainer</h3>
         <p>Keep the insight coming after the sprint ends: regular briefings on your market, competitors and target accounts, plus on-call advice.</p>
         <p><b>Best for:</b> teams that want a research analyst and AI advisor on call without making a full-time hire.</p>
@@ -175,6 +182,7 @@
           <div><b>Format</b>Email brief, shared tracker and a monthly review call</div>
           <div><b>Pricing</b>Monthly fee based on scope</div>
         </div>
+        <div class="phases" aria-hidden="true"><span style="--f:1.4;--d:0.00s"><b>Track</b>Signals &amp; competitors</span><span style="--f:1.2;--d:0.18s"><b>Brief</b>Weekly or biweekly</span><span style="--f:1;--d:0.36s"><b>Review</b>Monthly call</span></div>
         <a class="btn primary" href="/contact.html?service=retainer">Discuss ongoing support</a>
       </div>
       <div>
@@ -198,10 +206,10 @@
       <p>Ongoing services that keep working after launch. We handle setup, quality review and monthly improvements; you approve what goes live.</p>
     </div>
     <div class="grid g2">
-      <article class="card featured"><div class="tag">Be found · GEO</div><h3>AI Search Visibility</h3><p>See how ChatGPT, Gemini, Perplexity and Google AI describe you, then fix the content, structure and citations that decide whether you're recommended.</p><ul class="list"><li><b>AI visibility audit</b> across up to 25 buyer questions</li><li><b>Managed GEO:</b> monthly optimization and re-testing</li></ul><a class="btn primary" href="/services/ai-search-visibility.html">Explore AI Search Visibility</a></article>
-      <article class="card"><div class="tag">Answer every inquiry</div><h3>AI Front Desk</h3><p>AI receptionists for phone, WhatsApp and website chat that answer questions, book appointments, capture leads and hand off to your team.</p><ul class="list"><li><b>Voice and messaging</b> on one knowledge base</li><li><b>Managed monthly</b> with transcript reviews</li></ul><a class="btn" href="/services/ai-front-desk.html">Explore AI Front Desk</a></article>
-      <article class="card"><div class="tag">Stay visible</div><h3>AI Content &amp; Video Studio</h3><p>A monthly flow of short videos, social posts, articles, newsletters and sales collateral, produced with AI and reviewed by a person.</p><ul class="list"><li><b>Agreed monthly output</b> from one brief</li><li><b>White-label option</b> for agencies</li></ul><a class="btn" href="/services/ai-content-studio.html">Explore the Content Studio</a></article>
-      <article class="card"><div class="tag">Reach new markets</div><h3>AI Localization</h3><p>Websites, collateral, courses and video subtitles in new languages, with glossaries and human review for tone and accuracy.</p><ul class="list"><li><b>Market launch packs</b> and course localization</li><li><b>Continuous localization</b> for new content</li></ul><a class="btn" href="/services/ai-localization.html">Explore Localization</a></article>
+      <article class="card featured"><div class="ai-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/><path class="pulse" d="M11 7.5l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="currentColor"/></svg></div><div class="tag">Be found · GEO</div><h3>AI Search Visibility</h3><p>See how ChatGPT, Gemini, Perplexity and Google AI describe you, then fix the content, structure and citations that decide whether you're recommended.</p><ul class="list"><li><b>AI visibility audit</b> across up to 25 buyer questions</li><li><b>Managed GEO:</b> monthly optimization and re-testing</li></ul><a class="btn primary" href="/services/ai-search-visibility.html">Explore AI Search Visibility</a></article>
+      <article class="card"><div class="ai-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><g class="typing" fill="currentColor" stroke="none"><circle cx="8" cy="10.5" r="1.3"/><circle cx="12" cy="10.5" r="1.3"/><circle cx="16" cy="10.5" r="1.3"/></g></svg></div><div class="tag">Answer every inquiry</div><h3>AI Front Desk</h3><p>AI receptionists for phone, WhatsApp and website chat that answer questions, book appointments, capture leads and hand off to your team.</p><ul class="list"><li><b>Voice and messaging</b> on one knowledge base</li><li><b>Managed monthly</b> with transcript reviews</li></ul><a class="btn" href="/services/ai-front-desk.html">Explore AI Front Desk</a></article>
+      <article class="card"><div class="ai-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M10 8v5l4-2.5z" fill="currentColor"/><path d="M3 20.5h18" stroke-opacity=".3"/><path class="playbar" d="M3 20.5h18"/></svg></div><div class="tag">Stay visible</div><h3>AI Content &amp; Video Studio</h3><p>A monthly flow of short videos, social posts, articles, newsletters and sales collateral, produced with AI and reviewed by a person.</p><ul class="list"><li><b>Agreed monthly output</b> from one brief</li><li><b>White-label option</b> for agencies</li></ul><a class="btn" href="/services/ai-content-studio.html">Explore the Content Studio</a></article>
+      <article class="card"><div class="ai-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><ellipse class="meridian" cx="12" cy="12" rx="4.5" ry="9"/></svg></div><div class="tag">Reach new markets</div><h3>AI Localization</h3><p>Websites, collateral, courses and video subtitles in new languages, with glossaries and human review for tone and accuracy.</p><ul class="list"><li><b>Market launch packs</b> and course localization</li><li><b>Continuous localization</b> for new content</li></ul><a class="btn" href="/services/ai-localization.html">Explore Localization</a></article>
     </div>
     <p class="muted small" style="margin-top:20px">Building team skills? See <a class="textlink" href="/services/ai-training.html">AI training &amp; workshops →</a> &nbsp;·&nbsp; Agencies and consultants: <a class="textlink" href="/partners.html">partner and white-label program →</a></p>
   </section>
@@ -215,6 +223,7 @@
     </div>
     <div class="catalog">
       <article class="card">
+        <span class="ticon t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12l6-4"/><circle cx="12" cy="12" r="4.5"/><circle cx="16.5" cy="9" r="1.2" fill="currentColor"/></svg></span>
         <div class="tag">01 · Market &amp; business intelligence</div>
         <h3>Know your market</h3>
         <ul>
@@ -225,6 +234,7 @@
                   </ul>
       </article>
       <article class="card">
+        <span class="ticon t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span>
         <div class="tag">02 · Strategy &amp; growth</div>
         <h3>Set direction</h3>
         <ul>
@@ -236,6 +246,7 @@
         </ul>
       </article>
       <article class="card">
+        <span class="ticon t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9 6.5h.01"/><path d="M8 14h5M8 17h8"/></svg></span>
         <div class="tag">03 · Digital &amp; conversion</div>
         <h3>Win more customers online</h3>
         <ul>
@@ -248,6 +259,7 @@
         </ul>
       </article>
       <article class="card">
+        <span class="ticon t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="5" rx="1.5"/><rect x="14" y="15" width="7" height="5" rx="1.5"/><path d="M6.5 9v4a2 2 0 0 0 2 2H14"/></svg></span>
         <div class="tag">04 · Operations &amp; revenue ops</div>
         <h3>Run smoother</h3>
         <ul>
@@ -259,6 +271,7 @@
         </ul>
       </article>
       <article class="card">
+        <span class="ticon t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg></span>
         <div class="tag">05 · AI &amp; automation</div>
         <h3>Put AI to work</h3>
         <ul>
@@ -270,6 +283,7 @@
         </ul>
       </article>
       <article class="card">
+        <span class="ticon t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.5 7.8-8 9-4.5-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
         <div class="tag">06 · Governance &amp; training</div>
         <h3>Adopt AI responsibly</h3>
         <ul>
@@ -326,5 +340,6 @@
 </div>
 <script src="/assets/language-selector.js" defer></script>
 <script src="/assets/services-dropdown.js" defer></script>
+<script src="/assets/page-visuals.js" defer></script>
 </body>
 </html>
