@@ -11,6 +11,30 @@
     "slides": 1,
     "type": "card"
   },
+  "card-2026-11-10-signal": {
+    "hash": "971568429f1c5684",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-11-11-quote": {
+    "hash": "0e1f8437f6194e04",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-11-13-practical": {
+    "hash": "a95b9a70e66fb5f1",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-11-14-quote": {
+    "hash": "b546962f035ced46",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
   "competitive-intelligence-tools-vs-managed-service": {
     "hash": "4ba41628fc9fb4ee",
     "template": "67c75233ab6f32cb",
