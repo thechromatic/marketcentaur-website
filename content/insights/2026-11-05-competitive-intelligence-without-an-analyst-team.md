@@ -3,6 +3,8 @@ title: How to Run Competitive Intelligence Without an Analyst Team
 description: A lightweight, weekly competitor-tracking system a one-person marketing team can set up in an afternoon, and how to turn what you collect into decisions.
 date: 2026-11-05
 category: Competitive intelligence
+summary: "You can run competitive intelligence without analysts by tracking three to five competitors, automating collection with alerts and page monitors, and reviewing what changed for 30 minutes each week. The key is writing a short 'so what?' for every signal, so the tracking leads to decisions rather than a pile of links."
+seo_title: "Competitive Intelligence Without an Analyst Team"
 ---
 
 Large companies pay analysts to watch competitors. Most growing B2B companies don't have that luxury, so competitor tracking happens in bursts: before a board meeting, after a lost deal, or when someone happens to spot a competitor's ad. By then the move has already landed.
@@ -49,6 +51,22 @@ A short weekly note covering the top three moves, why they matter and suggested 
 
 AI tools are now good at the tedious parts: summarising articles, spotting duplicates, sorting signals into categories and drafting the first version of your note. They're less reliable at judging what matters to your business, and they can confidently state things that aren't in the source. Keep a person on the "so what", and check every claim against its link.
 
-## Where to start this week
+## How do you start this week?
 
 Pick three competitors and set up alerts and page monitors for them today. Book 30 minutes next Friday to review. After a month, you'll have a record of their moves and a much clearer picture of where they're heading.
+
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+
+## FAQ
+
+### How many competitors should a small team track?
+
+Three to five direct competitors is enough for most small teams. Add others to a lighter watchlist that you check monthly.
+
+### How much time does lightweight competitive intelligence take?
+
+About an afternoon to set up alerts and page monitors, then roughly 30 minutes a week to review changes and write the summary.
+
+### Can AI run competitive intelligence for you?
+
+AI is good at reading and summarising pages, news and job ads quickly. A person should still decide what a change means and how to respond.

@@ -9,8 +9,14 @@
 //   date: 2026-11-05
 //   category: Competitive intelligence
 //   author: The MarketCentaur Team   (optional)
+//   summary: 40-60 word direct answer (optional but recommended; shown as a "Short answer" box)
+//   seo_title: Shorter <title> under 60 chars (optional; defaults to "Title | MarketCentaur")
+//   updated: 2026-11-20             (optional; dateModified)
 //   draft: true                      (optional; drafts are skipped)
 //   ---
+//
+// A "## FAQ" (or "## Frequently asked questions") section whose questions are "### " headings
+// is also published as FAQPage structured data. Missing AEO elements are reported as warnings.
 //
 // Posts dated in the future are skipped until that date, so a daily run publishes them on time.
 // The script writes insights/<slug>.html and insights/index.html, and refreshes the
@@ -71,6 +77,9 @@ function loadPosts() {
       url: `${SITE}/insights/${slug}.html`,
       path: `/insights/${slug}.html`,
       html: marked.parse(body),
+      faqs: extractFaqs(body),
+      wordCount: words,
+      body,
       readTime: Math.max(1, Math.round(words / 220)),
     });
   }
@@ -87,6 +96,36 @@ const dateLabel = (d) => new Date(`${d}T00:00:00Z`).toLocaleDateString('en-GB', 
 const fill = (tpl, vars) => tpl.replace(/\{\{(\w+)\}\}/g, (_, k) => (k in vars ? vars[k] : ''));
 
 const addGenerator = (html) => html.replace('<meta charset="utf-8">', `<meta charset="utf-8">\n${GENERATOR}`);
+
+// Pulls Q&As out of a "## FAQ" section: each "### Question" heading and the text under it.
+function extractFaqs(body) {
+  const m = body.match(/^##\s+(?:FAQs?|Frequently asked questions)\s*$([\s\S]*?)(?=^##\s|(?![\s\S]))/im);
+  if (!m) return [];
+  const faqs = [];
+  const re = /^###\s+(.+?)\s*$([\s\S]*?)(?=^###\s|(?![\s\S]))/gm;
+  let q;
+  while ((q = re.exec(m[1]))) {
+    const answer = marked.parse(q[2].trim()).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    if (answer) faqs.push({ question: q[1].replace(/[*_`]/g, ''), answer });
+  }
+  return faqs;
+}
+
+// Answer-engine checks: warnings only, so a post still publishes.
+function aeoWarnings(p, body) {
+  const w = [];
+  if (!p.summary) w.push('no "summary:" (short answer box)');
+  else {
+    const n = p.summary.split(/\s+/).length;
+    if (n < 25 || n > 70) w.push(`summary is ${n} words (aim for 40-60)`);
+  }
+  if (!/^##\s+.*\?\s*$/m.test(body)) w.push('no question-style "## ...?" heading');
+  if (!p.faqs.length) w.push('no "## FAQ" section with "### Question" entries');
+  if ((p.seo_title || `${p.title} | MarketCentaur`).length > 65) w.push('title over 65 chars: add a shorter "seo_title:"');
+  if (p.description.length > 160) w.push(`description is ${p.description.length} chars (max 160)`);
+  if (!/\]\(\/(?:services|ai-visibility-check|website-enquiry|growth-check|sample-intelligence)/.test(body)) w.push('no internal link to a service page or free tool');
+  return w;
+}
 
 const jsonLd = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
 
@@ -106,22 +145,48 @@ function build() {
     const more = others.length
       ? `  <section aria-labelledby="more-heading">\n    <div class="sectionhead"><h2 id="more-heading">More insights</h2></div>\n    <div class="grid g3">\n${others.map(card).join('\n')}\n    </div>\n  </section>`
       : '';
-    const ld = {
-      '@context': 'https://schema.org',
+    const ogImage = `${SITE}/assets/og/insights-${p.slug}.png`;
+    for (const w of aeoWarnings(p, p.body)) console.warn(`AEO warning (${p.slug}): ${w}`);
+    const graph = [{
       '@type': 'BlogPosting',
+      '@id': `${p.url}#article`,
       headline: p.title,
       description: p.description,
+      ...(p.summary ? { abstract: p.summary } : {}),
+      image: ogImage,
       datePublished: p.date,
       dateModified: p.updated || p.date,
       articleSection: p.category,
+      wordCount: p.wordCount,
       url: p.url,
       mainEntityOfPage: p.url,
-      author: { '@type': 'Organization', name: 'MarketCentaur', url: `${SITE}/` },
+      author: { '@type': 'Organization', name: p.author, url: `${SITE}/editorial-standards.html`, parentOrganization: { '@id': `${SITE}/#organization` } },
       publisher: { '@id': `${SITE}/#organization` },
       inLanguage: 'en-US',
-    };
+    }, {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: 'Insights', item: `${SITE}/insights/` },
+        { '@type': 'ListItem', position: 3, name: p.title, item: p.url },
+      ],
+    }];
+    if (p.faqs.length) {
+      graph.push({
+        '@type': 'FAQPage',
+        mainEntity: p.faqs.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } })),
+      });
+    }
+    const ld = { '@context': 'https://schema.org', '@graph': graph };
+    const summaryBox = p.summary
+      ? `    <aside class="short-answer" aria-label="Short answer"><div class="tag">Short answer</div><p>${esc(p.summary)}</p></aside>\n`
+      : '';
     const html = addGenerator(fill(postTpl, {
       title: esc(p.title),
+      seoTitle: esc(p.seo_title || `${p.title} | MarketCentaur`),
+      ogImage,
+      updated: p.updated || p.date,
+      summaryBox,
       description: esc(p.description),
       url: p.url,
       date: p.date,
