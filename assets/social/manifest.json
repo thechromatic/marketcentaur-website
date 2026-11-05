@@ -1,4 +1,16 @@
 {
+  "card-2026-11-07-quote": {
+    "hash": "cc35f840ce035e64",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-11-08-signal": {
+    "hash": "0759a625f4199d15",
+    "template": "67c75233ab6f32cb",
+    "slides": 1,
+    "type": "card"
+  },
   "competitive-intelligence-tools-vs-managed-service": {
     "hash": "4ba41628fc9fb4ee",
     "template": "67c75233ab6f32cb",
