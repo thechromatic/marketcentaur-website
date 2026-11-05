@@ -1,8 +1,10 @@
 ---
 title: How to Read a Competitor's Pricing Page
-description: A competitor's pricing page shows who they want as customers, what they think is valuable and where they're under pressure. Here's a step-by-step way to read one.
+description: A competitor's pricing page shows who they want as customers, what they value and where they're under pressure. Here's a step-by-step way to read one.
 date: 2026-11-19
 category: Competitive intelligence
+summary: "To read a competitor's pricing page, identify who it is written for, find the value metric they charge on, note which features are held back for higher tiers, check where they say 'contact us' instead of showing a price, and read the small print and FAQs. Then track changes over time, because each change reflects a real decision."
+seo_title: "How to Read a Competitor's Pricing Page"
 ---
 
 A pricing page is one of the few places where a company has to make clear choices in public. It has to decide who each plan is for, what's included, what's held back and how much to charge. Read carefully, it tells you a lot about a competitor's strategy.
@@ -59,8 +61,24 @@ One snapshot tells you their current strategy. Changes tell you where it's going
 - Features moving down tiers as competition increases
 - Prices rising where they feel confident, or falling where they're under pressure
 
-## Turn it into a decision
+## How do you turn it into a decision?
 
 For each change you notice, write one line on what it might mean for you and one possible response. For example: "Competitor moved reporting into their entry plan. Our reporting add-on may face objections. Consider including a basic version in our starter tier."
 
 Pricing pages are public, change rarely and reflect real decisions. That makes them one of the best-value pages to watch.
+
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+
+## FAQ
+
+### What is a value metric in pricing?
+
+The value metric is the unit a company charges on, such as per user, per location or per transaction. It shows what the company believes customers value most.
+
+### Why do some competitors hide their prices?
+
+"Contact us" pricing usually means deals vary widely, the company sells to larger buyers, or it wants a sales conversation before quoting.
+
+### How often do pricing pages change?
+
+Rarely, which is what makes each change meaningful. Monitoring the page monthly, or with an automatic change alert, is usually enough.

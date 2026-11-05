@@ -12,6 +12,7 @@ on:
       - "content/insights/**"
       - "content/social/**"
       - "assets/marketcentaur-logo-transparent.png"
+      - "**.html"
       - "scripts/**"
       - ".github/workflows/build-insights.yml"
   schedule:
@@ -47,6 +48,11 @@ jobs:
           export BUILD_DATE="$(date +%F)"
           node scripts/build-insights.mjs
 
+      - name: Render Open Graph images for new pages
+        run: |
+          pip install --quiet pillow
+          python3 scripts/seo/og-images.py
+
       - name: Check whether carousels need rendering
         id: social
         run: node scripts/build-social.mjs --check >> "$GITHUB_OUTPUT"
@@ -61,7 +67,7 @@ jobs:
 
       - name: Commit generated pages
         run: |
-          git add insights sitemap.xml llms.txt assets/social
+          git add insights sitemap.xml llms.txt assets/social assets/og
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

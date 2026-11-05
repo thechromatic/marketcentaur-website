@@ -1,0 +1,68 @@
+name: SEO
+
+# 1. On pull requests: lint every page (title, description, canonical, H1, JSON-LD, og:image,
+#    sitemap entry). Errors fail the check; length and thin-content issues are warnings.
+# 2. After changes reach main (a merge, or a Build Insights publish): ping IndexNow so Bing,
+#    which also powers ChatGPT search and Copilot, recrawls the changed pages right away.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Build Insights"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      submit_all:
+        description: "Submit every sitemap URL to IndexNow"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: SEO / AEO / GEO lint
+        run: node scripts/seo/audit.mjs
+
+  indexnow:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'push' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: indexnow
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wait for Cloudflare Pages to deploy
+        run: sleep 150
+      - name: Submit changed pages to IndexNow
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.submit_all }}" = "true" ]; then
+            node scripts/seo/indexnow.mjs --all
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            node scripts/seo/indexnow.mjs "${{ github.event.before }}" "${{ github.sha }}" || node scripts/seo/indexnow.mjs HEAD~1 HEAD
+          elif git log -1 --format=%an | grep -q "github-actions"; then
+            # Build Insights committed newly published pages
+            node scripts/seo/indexnow.mjs HEAD~1 HEAD
+          else
+            echo "Build Insights published nothing new; skipping."
+          fi

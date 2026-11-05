@@ -1,8 +1,10 @@
 ---
 title: "Competitive Intelligence Tools vs. a Managed Service: Which Fits You?"
-description: Software, a managed service or a do-it-yourself process? A practical way to choose how your business keeps track of competitors, based on time, budget and the decisions you need to make.
+description: Software, a managed service or a do-it-yourself process? How to choose the right way to track competitors, based on time, budget and the decisions you face.
 date: 2026-11-26
 category: Competitive intelligence
+summary: "Choose a do-it-yourself process if you track a few competitors and have an hour a week. Choose competitive intelligence software if you have an analyst or a large team to act on alerts. Choose a managed service if you want sourced, analysed findings without adding headcount. Judge any option by whether it changes a decision each quarter."
+seo_title: "Competitive Intelligence Tools vs. a Managed Service"
 ---
 
 Once a business decides to track competitors properly, the next question is how. There are three broad options: do it yourself with free tools, buy competitive intelligence software, or use a managed service where someone else does the monitoring and analysis.
@@ -55,7 +57,7 @@ Each one works for a different kind of company. Here's how to choose.
 
 **4. Which decisions will it inform?** List the pricing, product, market and sales decisions coming up in the next six months. Choose the option that will actually feed into those, not the one with the most features.
 
-## A sensible path for most growing businesses
+## What is a sensible path for most growing businesses?
 
 1. **Start with do-it-yourself** for a month to learn which signals matter in your market.
 2. **If it keeps getting dropped,** hand it to a managed service or assign a clear owner.
@@ -64,3 +66,19 @@ Each one works for a different kind of company. Here's how to choose.
 Whatever you choose, judge it by one test: did it change a decision this quarter? If not, change the approach.
 
 *MarketCentaur offers a managed weekly Competitor Signal Brief, with sources for every claim and recommended responses. [See a sample brief](/sample-intelligence-brief.html).*
+
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+
+## FAQ
+
+### How much does competitive intelligence software cost?
+
+Prices vary widely, from low-cost monitoring tools to enterprise platforms with annual contracts. Total cost should include the time someone spends reviewing alerts.
+
+### What does a managed competitive intelligence service include?
+
+Typically, ongoing monitoring of agreed competitors, a regular brief with sources for each finding, and recommended responses reviewed by a person.
+
+### Can a small business do competitive intelligence itself?
+
+Yes. A short list of competitors, free alerts and page monitors, and a weekly 30-minute review cover most small businesses' needs.

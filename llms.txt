@@ -33,6 +33,7 @@ AI agents, a competitive intelligence platform, vertical AI systems and industry
 - [Sample intelligence brief](https://marketcentaur.com/sample-intelligence-brief.html): A real, fully sourced brief on how AI search is changing the way buyers find businesses.
 - [How it works](https://marketcentaur.com/how-it-works.html)
 - [About](https://marketcentaur.com/about.html)
+- [Editorial standards](https://marketcentaur.com/editorial-standards.html): How content is researched, sourced, reviewed by a person and corrected, and how AI is used.
 - [FAQs](https://marketcentaur.com/faq.html)
 - [Contact](https://marketcentaur.com/contact.html): Replies within one business day.
 
