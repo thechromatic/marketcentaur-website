@@ -1,34 +1,34 @@
 # MarketCentaur
 
-> MarketCentaur is an expert-led consulting partner helping businesses identify overlooked opportunities and connect strategy, intelligence, operations, responsible technology and practical execution.
+> MarketCentaur is an AI-powered growth consultancy for small and mid-sized businesses worldwide. It combines AI-speed research with human review to fix three common growth problems: websites that don't convert, B2B sales teams targeting the wrong accounts, and repetitive work that should be automated.
 
-## Core practice areas
-- AI Strategy & Intelligent Automation
-- Business Strategy & Advisory
-- Market Intelligence & Decision Support
-- Business & Revenue Operations
-- AI Governance & Business Assurance
-- Digital Innovation, Training & Products
+## Core packages
+- [Website Conversion Sprint](https://marketcentaur.com/services.html#conversion-sprint): Five-pillar conversion audit, top-10 fix list, rewritten headline and CTA copy, and an AI search visibility check (ChatGPT, Gemini, Perplexity). First findings in 48 hours; full report in 3–5 business days.
+- [B2B Account Intelligence Sprint](https://marketcentaur.com/services.html#account-sprint): ICP definition, ranked target-account list with sources, buying-role map, buying signals, competitor snapshot and outreach angles. Delivered in 5 business days.
+- [AI Workflow Automation Sprint](https://marketcentaur.com/services.html#automation-sprint): Workflow mapping, ranked automation shortlist, pilot design with human approval steps, SOPs and an AI-use register. Delivered in 5–7 business days.
+- [Growth Intelligence Retainer](https://marketcentaur.com/services.html#retainer): Ongoing signal watch, competitor tracking, performance briefs and fractional AI advice, billed monthly.
 
-## Main pages
-- [Home](https://marketcentaur.com/): Discover opportunities across the business and find a starting point.
-- [About](https://marketcentaur.com/about.html): MarketCentaur's connected, opportunity-led consulting approach.
-- [Services](https://marketcentaur.com/services.html): Explore the six connected practice areas.
-- [Industries](https://marketcentaur.com/industries.html): Consider relevant opportunities across business contexts.
-- [Free opportunity assessment](https://marketcentaur.com/growth-check.html): Guided self-assessment that suggests potential priorities based on visitor answers.
-- [Sample intelligence brief](https://marketcentaur.com/sample-intelligence-brief.html): Illustrative example of signals turned into practical next steps.
-- [Recurring support](https://marketcentaur.com/recurring-services.html): Ongoing support to keep improving decisions and ways of working.
-- [FAQs](https://marketcentaur.com/faq.html): Answers about MarketCentaur's approach and services.
-- [Contact](https://marketcentaur.com/contact.html): Start a conversation about a business challenge or opportunity.
-- [Privacy Policy](https://marketcentaur.com/privacy-policy.html): Website information handling.
+## Wider catalog
+Market and competitor intelligence, account and persona mapping, supplier and partner research, BI dashboards, growth strategy, customer acquisition planning, website and ecommerce optimization, analytics and attribution, process mapping and SOPs, CRM and revenue operations, AI strategy, AI customer support assistants, AI agent prototypes, custom AI tools, AI governance, and AI training. See https://marketcentaur.com/services.html#catalog
+
+## Labs
+AI agents, a competitive intelligence platform, vertical AI systems and industry intelligence reports, built with pilot clients. See https://marketcentaur.com/labs.html
+
+## Free tools
+- [Free website audit](https://marketcentaur.com/#free-audit): Short action brief with the three biggest conversion fixes, emailed within one business day.
+- [Growth checks](https://marketcentaur.com/growth-check.html): 2-minute self-assessments for local businesses, ecommerce stores and traditional businesses.
+- [Website inquiry readiness check](https://marketcentaur.com/website-enquiry-readiness.html)
+
+## Key pages
+- [Sample intelligence brief](https://marketcentaur.com/sample-intelligence-brief.html): A real, fully sourced brief on how AI search is changing the way buyers find businesses.
+- [How it works](https://marketcentaur.com/how-it-works.html)
+- [Industries](https://marketcentaur.com/industries.html)
+- [About](https://marketcentaur.com/about.html)
+- [FAQs](https://marketcentaur.com/faq.html)
+- [Contact](https://marketcentaur.com/contact.html): Replies within one business day.
 
 ## Contact
 - Email: hello@marketcentaur.com
 
-## Positioning
-MarketCentaur helps businesses see what they may be missing: disconnected information, inefficient processes, underused technology, customer needs, market signals and operational or governance risks. It connects insight to practical next steps across the business rather than prescribing a single service for every challenge.
-
-## Delivery principles
-Describe recommendations as potential opportunities to investigate, not guaranteed results. Do not imply that a sample brief contains live verified intelligence or that assessments inspect external systems unless the page explicitly says so. Specialist-led or partner-led delivery may be appropriate for complex technical implementation, regulated matters and advanced governance needs.
-
-This file is a navigational summary. Linked pages and their current service descriptions remain authoritative.
+## How we work
+Scope, deliverables, timeline and price are agreed in writing before work starts. A person reviews all AI-assisted work, and every important finding links to its source. Pricing is a fixed quote after a free 20-minute scoping call. Outcomes such as leads or rankings are not guaranteed; deliverables and timelines are.

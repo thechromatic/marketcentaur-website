@@ -1,29 +1,18 @@
 (function () {
   "use strict";
 
-  // Lead with AI-enabled and forward-looking systems, then list the broader service areas.
+  // Lead with the three core sprints and ongoing support, then the wider catalog areas.
   var divisions = [
-    ["AI & Intelligent Automation", "/services/ai-automation.html"],
-    ["Growth Intelligence System", "/services.html#growth-intelligence-system"],
-    ["Emerging AI Systems & Innovation", "/services.html#next-generation-systems"],
-    ["AI-Enabled Growth Intelligence", "/services/b2b-growth-intelligence.html"],
-    ["Intelligent Signal Monitoring", "/services/weekly-growth-signal-watch.html"],
+    ["Website Conversion Sprint", "/services.html#conversion-sprint"],
+    ["B2B Account Intelligence Sprint", "/services.html#account-sprint"],
+    ["AI Workflow Automation Sprint", "/services.html#automation-sprint"],
+    ["Growth Intelligence Retainer", "/services.html#retainer"],
     ["Market & Competitor Intelligence", "/services/market-competitor-intelligence.html"],
-    ["Business Intelligence & Decision Support", "/services/business-intelligence.html#business-intelligence"],
-    ["Analytics & Optimisation", "/services/analytics-optimisation.html"],
-    ["Account & Persona Mapping", "/services/account-persona-mapping.html"],
-    ["Marketing & Customer Engagement", "/services/demand-revenue.html"],
-    ["Business Strategy & Growth", "/services/strategy-growth.html"],
-    ["Operations & Automation", "/services/business-operations.html"],
-    ["Digital Experience & Technology", "/services/digital-presence.html"],
-    ["Content & Creative", "/services/content-creative.html"],
-    ["AI & Marketing Automation", "/services/ai-automation.html"],
-    ["Business & Financial Performance", "/services/business-operations.html#performance"],
-    ["Customer & People Experience", "/services/business-operations.html#experience"],
-    ["Supplier & Partner Intelligence", "/services/business-intelligence.html#supplier-intelligence"],
-    ["Partner & Channel Discovery", "/services/partner-channel-discovery.html"],
-    ["Risk, Continuity & Sustainability", "/services/business-intelligence.html#risk-sustainability"],
-    ["People & Knowledge Operations", "/services/business-intelligence.html#people-operations"]
+    ["Strategy & Growth", "/services/strategy-growth.html"],
+    ["Digital & Conversion", "/services/digital-presence.html"],
+    ["Operations & Revenue Ops", "/services/business-operations.html"],
+    ["AI & Automation", "/services/ai-automation.html"],
+    ["Labs: AI agents & new products", "/labs.html"]
   ];
   function makeLink(label, href, extraClass) {
     var link = document.createElement("a");
@@ -54,7 +43,7 @@
       menu.appendChild(makeLink(item[0], item[1]));
     });
 
-    menu.appendChild(makeLink("Explore all services", "/services.html", "nav-services-all"));
+    menu.appendChild(makeLink("See the full catalog", "/services.html#catalog", "nav-services-all"));
     wrapper.appendChild(toggle);
     wrapper.appendChild(menu);
 
