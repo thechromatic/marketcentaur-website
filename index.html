@@ -54,6 +54,8 @@
 </script>
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/services-dropdown.css">
+<link rel="stylesheet" href="/assets/home-visuals.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -69,7 +71,8 @@
 <div class="wrap">
 
   <!-- 1. HERO -->
-  <header class="hero">
+  <header class="hero hero-split">
+    <div class="hero-copy">
     <div class="eyebrow">AI-powered research · Human-reviewed recommendations</div>
     <h1>Find the growth your business is missing.</h1>
     <p class="lead">Most businesses don't need more tools. They need to know where revenue is leaking. MarketCentaur runs short, fixed-scope sprints that find and fix three common leaks: websites that don't turn visitors into inquiries, sales teams chasing the wrong accounts, and manual work that should already be automated.</p>
@@ -78,24 +81,50 @@
       <a class="btn" href="/sample-intelligence-brief.html">Read a sample brief</a>
     </div>
     <div class="chips"><span>First findings in 48 hours</span><span>Full deliverable in 3–5 business days</span><span>Fixed scope, agreed up front</span><span>Works with the tools you already use</span></div>
+    </div>
+    <div class="hero-visual" role="img" aria-label="Illustration of a MarketCentaur intelligence brief: ranked priority accounts with fit scores, market signals and next actions">
+      <div class="brief-card" aria-hidden="true">
+        <div class="brief-top"><span class="dots"><i></i><i></i><i></i></span><b>Growth intelligence brief</b><span class="pill">Illustrative</span></div>
+        <div class="brief-label">Priority accounts</div>
+        <div class="acct"><span class="rank">01</span><span class="name"><span>Account A · Logistics</span><span class="bar"><i style="--w:92%;--d:.2s"></i></span></span><span class="score">92</span></div>
+        <div class="acct"><span class="rank">02</span><span class="name"><span>Account B · SaaS</span><span class="bar"><i style="--w:84%;--d:.35s"></i></span></span><span class="score">84</span></div>
+        <div class="acct"><span class="rank">03</span><span class="name"><span>Account C · Manufacturing</span><span class="bar"><i style="--w:77%;--d:.5s"></i></span></span><span class="score">77</span></div>
+        <div class="acct"><span class="rank">04</span><span class="name"><span>Account D · Healthcare</span><span class="bar"><i style="--w:63%;--d:.65s"></i></span></span><span class="score">63</span></div>
+        <div class="brief-label" style="margin-top:12px">Market signals</div>
+        <div class="signals"><span style="--d:.9s">Hiring a RevOps lead</span><span style="--d:1.05s">New regional office</span><span style="--d:1.2s">Pricing page changed</span></div>
+        <div class="next"><div>Prioritize accounts 01–03 this quarter</div><div>Lead outreach with the expansion angle</div><div>Review competitor pricing move</div></div>
+      </div>
+      <div class="float-badge b1" aria-hidden="true"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>First findings in 48 hrs</div>
+      <div class="float-badge b2" aria-hidden="true"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Every finding human-reviewed</div>
+    </div>
   </header>
 
   <!-- 2. PROBLEM -->
   <section aria-labelledby="problem-heading">
-    <div class="problem">
+    <div class="leak-intro reveal">
       <div>
         <div class="eyebrow">The problem</div>
-        <h2 id="problem-heading" style="font-size:clamp(28px,3.8vw,40px);line-height:1.12;letter-spacing:-.045em;margin:0 0 16px">Growth rarely stalls for one big reason. It leaks through small, fixable gaps.</h2>
-        <p>Buyers now research on their own, increasingly through AI assistants like ChatGPT, Gemini and Perplexity, before they ever contact you. If your website, your target list or your follow-up process has a gap, you lose them quietly and never find out why.</p>
-        <p>We use AI to do the heavy research quickly, then review every finding by hand so you get recommendations you can act on, not a pile of raw data.</p>
+        <h2 id="problem-heading" style="font-size:clamp(28px,3.8vw,40px);line-height:1.12;letter-spacing:-.045em;margin:0">Growth rarely stalls for one big reason. It leaks through small, fixable gaps.</h2>
       </div>
-      <ul class="checklist" aria-label="Common growth gaps">
-        <li>Website traffic that doesn't turn into calls, bookings or inquiries</li>
-        <li>A business that's invisible when buyers ask AI assistants for recommendations</li>
-        <li>Sales outreach spread across too many poor-fit accounts</li>
-        <li>Competitor moves you hear about months too late</li>
-        <li>Hours lost each week to copy-paste reporting, lead handoffs and admin</li>
-      </ul>
+      <div>
+        <p>Buyers now research on their own, increasingly through AI assistants like ChatGPT, Gemini and Perplexity, before they ever contact you. If your website, your target list or your follow-up process has a gap, you lose them quietly and never find out why.</p>
+        <p style="margin:0">We use AI to do the heavy research quickly, then review every finding by hand so you get recommendations you can act on, not a pile of raw data.</p>
+      </div>
+    </div>
+    <div class="leakviz reveal">
+      <svg viewBox="0 0 1000 160" aria-hidden="true">
+        <defs><linearGradient id="pipeg" x1="0" x2="1"><stop offset="0" stop-color="#7fb0ff" stop-opacity=".55"/><stop offset="1" stop-color="#82d0ab" stop-opacity=".35"/></linearGradient></defs>
+        <text class="lbl strong" x="0" y="64">Visitors</text><text class="lbl" x="0" y="84">&amp; buyers</text>
+        <path d="M150,48 L850,60 L850,80 L150,92 Z" fill="url(#pipeg)" stroke="#3b4a61"/>
+        <line class="flow" x1="160" y1="70" x2="845" y2="70" stroke="#f5f7fa" stroke-opacity=".5" stroke-width="2"/>
+        <text class="lbl strong" x="866" y="64">Inquiries</text><text class="lbl" x="866" y="84">&amp; revenue</text>
+        <circle class="drip" cx="250" cy="96" r="4" style="--d:0s"/><circle class="drip" cx="250" cy="96" r="3" style="--d:1.3s"/><circle class="drip" cx="375" cy="96" r="4" style="--d:0.5s"/><circle class="drip" cx="375" cy="96" r="3" style="--d:1.8s"/><circle class="drip" cx="500" cy="96" r="4" style="--d:1s"/><circle class="drip" cx="500" cy="96" r="3" style="--d:2.3s"/><circle class="drip" cx="625" cy="96" r="4" style="--d:0.3s"/><circle class="drip" cx="625" cy="96" r="3" style="--d:1.6s"/><circle class="drip" cx="750" cy="96" r="4" style="--d:0.8s"/><circle class="drip" cx="750" cy="96" r="3" style="--d:2.1s"/>
+        <line x1="190" y1="148" x2="810" y2="148" stroke="#374151" stroke-dasharray="4 6"/>
+        <text class="lbl" x="500" y="138" text-anchor="middle" style="font-size:11px;letter-spacing:.12em">DEMAND LOST QUIETLY</text>
+        <g class="marker" data-i="0"><circle class="ring" cx="250" cy="70" r="13"/><text x="250" y="70">1</text></g><g class="marker" data-i="1"><circle class="ring" cx="375" cy="70" r="13"/><text x="375" y="70">2</text></g><g class="marker" data-i="2"><circle class="ring" cx="500" cy="70" r="13"/><text x="500" y="70">3</text></g><g class="marker" data-i="3"><circle class="ring" cx="625" cy="70" r="13"/><text x="625" y="70">4</text></g><g class="marker" data-i="4"><circle class="ring" cx="750" cy="70" r="13"/><text x="750" y="70">5</text></g>
+      </svg>
+      <div class="leaktabs" role="tablist" aria-label="Common growth gaps"><button type="button" role="tab" id="leak-tab-0" aria-controls="leak-panel" aria-selected="true"><span class="n">1</span><span>Website traffic that doesn't turn into calls, bookings or inquiries</span></button><button type="button" role="tab" id="leak-tab-1" aria-controls="leak-panel" aria-selected="false"><span class="n">2</span><span>A business that's invisible when buyers ask AI assistants for recommendations</span></button><button type="button" role="tab" id="leak-tab-2" aria-controls="leak-panel" aria-selected="false"><span class="n">3</span><span>Sales outreach spread across too many poor-fit accounts</span></button><button type="button" role="tab" id="leak-tab-3" aria-controls="leak-panel" aria-selected="false"><span class="n">4</span><span>Competitor moves you hear about months too late</span></button><button type="button" role="tab" id="leak-tab-4" aria-controls="leak-panel" aria-selected="false"><span class="n">5</span><span>Hours lost each week to copy-paste reporting, lead handoffs and admin</span></button></div>
+      <div class="leakpanel" id="leak-panel" role="tabpanel" aria-live="polite"></div>
     </div>
   </section>
 
@@ -106,8 +135,9 @@
       <h2 id="tracks-heading">Three focused sprints. Clear deliverables. No open-ended retainers to start.</h2>
       <p>Each sprint has a defined scope, a fixed deliverable list and a walkthrough call at the end. Start with one, then add others or move to ongoing support when it's useful.</p>
     </div>
-    <div class="grid g3">
+    <div class="grid g3 reveal">
       <article class="card">
+        <div class="ticon t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg></div>
         <div class="tag">Track 01 · Local, retail &amp; digital</div>
         <h3>Website Conversion Sprint</h3>
         <p>For small businesses, D2C and ecommerce brands, and service firms that get traffic but not enough inquiries or sales.</p>
@@ -120,6 +150,7 @@
         <a class="btn primary" href="/services.html#conversion-sprint">See what's included</a>
       </article>
       <article class="card featured">
+        <div class="ticon t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></div>
         <div class="tag">Track 02 · B2B pipeline &amp; go-to-market</div>
         <h3>B2B Account Intelligence Sprint</h3>
         <p>For B2B sales and marketing teams, founders and agencies who need to know exactly who to target and what to say.</p>
@@ -132,6 +163,7 @@
         <a class="btn primary" href="/services.html#account-sprint">See what's included</a>
       </article>
       <article class="card">
+        <div class="ticon t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg></div>
         <div class="tag">Track 03 · Operations &amp; systems</div>
         <h3>AI Workflow Automation Sprint</h3>
         <p>For growing companies and traditional businesses that want to automate repetitive work safely, with people still in control.</p>
@@ -144,6 +176,15 @@
         <a class="btn primary" href="/services.html#automation-sprint">See what's included</a>
       </article>
     </div>
+    <div class="timeline" aria-label="How every sprint runs">
+      <p class="tl-title">How every sprint runs</p>
+      <ol class="tl">
+        <li><div class="dot" style="--d:.2s"></div><p class="when">Day 0</p><b>Scope</b><span>Agree the question and deliverables</span></li>
+        <li><div class="dot" style="--d:.6s"></div><p class="when">Within 48 hrs</p><b>First findings</b><span>Early observations you can react to</span></li>
+        <li><div class="dot" style="--d:1s"></div><p class="when">3–5 business days</p><b>Full deliverable</b><span>Human-reviewed, sourced and ranked</span></li>
+        <li><div class="dot" style="--d:1.4s"></div><p class="when">Wrap-up</p><b>Walkthrough call</b><span>Agree next actions together</span></li>
+      </ol>
+    </div>
     <p class="muted small" style="margin-top:22px">Need something broader, such as supplier research, BI dashboards, AI governance or training? <a class="textlink" href="/services.html#catalog">Browse the full service catalog →</a></p>
   </section>
 
@@ -154,7 +195,7 @@
       <h2 id="ai-services-heading">AI that works for your business every day, set up and managed for you.</h2>
       <p>Beyond the sprints, we run AI services on an ongoing basis: we set them up, review the output and keep improving them, so you get the benefit without managing the tools.</p>
     </div>
-    <div class="grid g4">
+    <div class="grid g4 reveal">
       <a class="card featured" href="/services/ai-search-visibility.html"><div class="tag">Be found</div><h3>AI Search Visibility</h3><p>Get recommended when buyers ask ChatGPT, Gemini, Perplexity and Google AI who to choose.</p><span class="textlink bottom">Explore →</span></a>
       <a class="card" href="/services/ai-front-desk.html"><div class="tag">Answer every inquiry</div><h3>AI Front Desk</h3><p>AI receptionists for calls, WhatsApp and website chat that book, qualify and hand off to your team.</p><span class="textlink bottom">Explore →</span></a>
       <a class="card" href="/services/ai-content-studio.html"><div class="tag">Stay visible</div><h3>AI Content &amp; Video Studio</h3><p>Short videos, posts, articles and newsletters every month, in your voice and reviewed by a person.</p><span class="textlink bottom">Explore →</span></a>
@@ -170,8 +211,9 @@
       <h2 id="proof-heading">Judge us by the work, not the promises.</h2>
       <p>Every deliverable separates what we observed from what we recommend, links to its sources and ends with a short list of next actions. Read a full sample before you talk to us.</p>
     </div>
-    <div class="grid g3">
+    <div class="grid g3 reveal">
       <article class="card">
+        <div class="pagestack" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="tag">Sample deliverable</div>
         <h3>Market intelligence brief</h3>
         <p>A real, fully sourced brief on how AI search is changing the way buyers find suppliers, and what to do about it.</p>
@@ -205,7 +247,7 @@
 
   <!-- 5. FREE TOOLS -->
   <section id="free-audit" aria-labelledby="audit-heading">
-    <div class="leadbox">
+    <div class="leadbox reveal">
       <div>
         <div class="eyebrow">Free website audit</div>
         <h2 id="audit-heading">Your website gets visitors. Why isn't your inbox getting inquiries?</h2>
@@ -233,15 +275,20 @@
     </div>
   </section>
 
-  <!-- 6. CTA -->
+  <!-- 6. SPRINT FINDER -->
   <section aria-labelledby="cta-heading" style="border-top:0;padding-top:20px">
-    <div class="cta">
+    <form class="finder reveal" id="sprint-finder" onsubmit="return false">
       <div>
+        <div class="eyebrow">30-second sprint finder</div>
         <h2 id="cta-heading">Not sure which sprint fits?</h2>
-        <p>Tell us what you're trying to improve. We reply within one business day with a recommended starting point. There's no cost and no lengthy brief required.</p>
+        <p>Answer three quick questions for a suggested starting point. Prefer to explain it yourself? <a class="textlink" href="/contact.html">Talk to us</a> and we reply within one business day, at no cost.</p>
+        <fieldset class="fq"><legend><span>01</span>What kind of business are you?</legend><div class="opts"><label><input type="radio" name="f1" value="t1:2">Local or service business</label><label><input type="radio" name="f1" value="t1:2">Online store or D2C brand</label><label><input type="radio" name="f1" value="t2:2">B2B company</label><label><input type="radio" name="f1" value="t2:1,t3:1">Agency or consultancy</label><label><input type="radio" name="f1" value="t3:2">Traditional business going digital</label></div></fieldset><fieldset class="fq"><legend><span>02</span>What's the biggest frustration right now?</legend><div class="opts"><label><input type="radio" name="f2" value="t1:3">Visitors don't become inquiries</label><label><input type="radio" name="f2" value="t1:2">We don't show up in AI answers</label><label><input type="radio" name="f2" value="t2:3">Sales chases the wrong accounts</label><label><input type="radio" name="f2" value="t3:3">Too much manual admin and reporting</label></div></fieldset><fieldset class="fq"><legend><span>03</span>What would a good first month look like?</legend><div class="opts"><label><input type="radio" name="f3" value="t1:2">More calls, bookings or orders from existing traffic</label><label><input type="radio" name="f3" value="t2:2">A ranked list of who to target and what to say</label><label><input type="radio" name="f3" value="t3:2">Hours freed up every week</label></div></fieldset>
       </div>
-      <a class="btn primary" href="/contact.html">Talk to us</a>
-    </div>
+      <div class="fresult" id="finder-result" aria-live="polite">
+        <div class="progress" aria-hidden="true"><i></i></div>
+        <div class="fbody"><div class="tag">0 of 3 answered</div><h3>Your suggested starting point will appear here</h3><p>Pick one answer for each question. Nothing is sent anywhere.</p><div class="actions"><a class="btn" href="/contact.html">Or talk to us</a></div></div>
+      </div>
+    </form>
   </section>
 </div>
 </main>
@@ -255,5 +302,6 @@
 <script src="/assets/language-selector.js" defer></script>
 <script src="/assets/services-dropdown.js" defer></script>
 <script src="/assets/forms.js" defer></script>
+<script src="/assets/home-visuals.js" defer></script>
 </body>
 </html>
