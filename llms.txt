@@ -41,3 +41,10 @@ AI agents, a competitive intelligence platform, vertical AI systems and industry
 
 ## How we work
 Scope, deliverables, timeline and price are agreed in writing before work starts. A person reviews all AI-assisted work, and every important finding links to its source. Pricing is a fixed quote after a free 20-minute scoping call. Outcomes such as leads or rankings are not guaranteed; deliverables and timelines are.
+
+<!-- insights:start -->
+## Insights
+- [Insights hub](https://marketcentaur.com/insights/): Practical guides on competitive intelligence, B2B growth, AI and automation.
+- [12 Competitor Signals Worth Tracking (and 5 to Ignore)](https://marketcentaur.com/insights/competitor-signals-worth-tracking.html): Which public competitor signals actually predict a change in strategy, which ones are mostly noise, and how to tell the difference.
+- [How to Run Competitive Intelligence Without an Analyst Team](https://marketcentaur.com/insights/competitive-intelligence-without-an-analyst-team.html): A lightweight, weekly competitor-tracking system a one-person marketing team can set up in an afternoon, and how to turn what you collect into decisions.
+<!-- insights:end -->
