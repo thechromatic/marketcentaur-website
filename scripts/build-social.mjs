@@ -6,6 +6,19 @@
 //   1.png … N.png   1080×1350 slides for Instagram carousels (cover, content slides, closing slide)
 //   carousel.pdf    the same slides as one PDF, for LinkedIn document posts
 //
+// A slide file can also be a single "card" (one 1080×1350 image, no PDF) for news, opinion and
+// practical posts:
+// {
+//   "type": "card",
+//   "style": "signal" | "quote" | "practical",     // sets the label and look
+//   "eyebrow": "Signals · this week",              // optional; defaults by style
+//   "headline": "Short, strong statement (max ~110 characters)",
+//   "body": "One supporting sentence (optional, max ~180 characters)",
+//   "items": ["Up to 4 short points (optional, practical style)"],
+//   "source": "Source: Google Ads blog"            // optional small print
+// }
+// Card files are named card-YYYY-MM-DD-<style>.json so they sort by date.
+//
 // Rendering only happens when a slide file, the template, the fonts or the logo changed,
 // so daily runs don't create needless commits. `--check` prints whether any rendering is needed.
 //
@@ -53,6 +66,13 @@ function loadDecks() {
     const raw = fs.readFileSync(path.join(SRC, f));
     let deck;
     try { deck = JSON.parse(raw); } catch (e) { throw new Error(`${f}: not valid JSON (${e.message})`); }
+    if (deck.type === 'card') {
+      if (!deck.headline) throw new Error(`${f}: a card needs "headline"`);
+      if (deck.headline.length > 140) throw new Error(`${f}: headline is too long (max 140 characters)`);
+      if (deck.body && deck.body.length > 220) throw new Error(`${f}: body is too long (max 220 characters)`);
+      if (deck.items && (!Array.isArray(deck.items) || deck.items.length > 4)) throw new Error(`${f}: "items" can have at most 4 entries`);
+      return { slug: f.replace(/\.json$/, ''), deck, hash: sha(raw) };
+    }
     for (const k of ['title', 'slides', 'cta']) if (!deck[k]) throw new Error(`${f}: needs "${k}"`);
     if (!Array.isArray(deck.slides) || deck.slides.length < 1 || deck.slides.length > 8) throw new Error(`${f}: "slides" must have 1–8 entries`);
     deck.slides.forEach((s, i) => {
@@ -103,9 +123,35 @@ ul.dense li:before{top:22px}
 .swipe{font-size:34px;font-weight:700;color:#7fb0ff}
 .cta-box{margin-top:48px;background:#7fb0ff;color:#0b1220;border-radius:24px;padding:36px 40px;font-size:46px;font-weight:800;letter-spacing:-.02em;align-self:flex-start}
 .note{font-size:34px;color:#b7c0cc;margin-top:28px;font-weight:600}
+.card-h{font-size:84px;line-height:1.06;letter-spacing:-.045em;font-weight:800}
+.card-h.long{font-size:70px}
+.card-h.xlong{font-size:60px}
+.qmark{font-size:220px;line-height:.6;height:110px;color:#7fb0ff;font-weight:800;margin-bottom:24px;font-family:Georgia,serif}
+.card-body{font-size:42px;line-height:1.4;color:#b7c0cc;font-weight:500;margin-top:40px;letter-spacing:-.01em}
+.card ul{margin-top:48px}
+.rule{width:120px;height:8px;border-radius:4px;background:#7fb0ff;margin-top:56px}
+.src{font-size:26px;color:#8b95a3;font-weight:600;letter-spacing:.02em;margin-top:28px}
+.site{font-size:30px;font-weight:700;color:#b7c0cc;letter-spacing:.02em}
+.card .foot{justify-content:space-between}
 `;
 
+const CARD_LABEL = { signal: 'Signals · this week', quote: 'Point of view', practical: 'Practical' };
+
+function cardHtml(deck, logoUri) {
+  const style = CARD_LABEL[deck.style] ? deck.style : 'signal';
+  const h = deck.headline;
+  const size = h.length > 100 ? ' xlong' : h.length > 70 ? ' long' : '';
+  const head = `<div class="head"><img src="${logoUri}" alt="MarketCentaur"></div>`;
+  const items = Array.isArray(deck.items) && deck.items.length
+    ? `<ul class="${style === 'practical' ? 'numbered' : ''}">${deck.items.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : '';
+  const body = deck.body ? `<div class="card-body">${esc(deck.body)}</div>` : '';
+  const accent = style === 'quote' ? '<div class="qmark">“</div>' : '';
+  const rule = !items && !body ? '<div class="rule"></div>' : '';
+  return [`<section class="s card">${head}<div class="mid">${accent}<div class="eyebrow">${esc(deck.eyebrow || CARD_LABEL[style])}</div><h1 class="card-h${size}">${esc(h)}</h1>${body}${items}${rule}${deck.source ? `<div class="src">${esc(deck.source)}</div>` : ''}</div><div class="foot"><span class="site">marketcentaur.com</span></div></section>`];
+}
+
 function slidesHtml(deck, logoUri) {
+  if (deck.type === 'card') return cardHtml(deck, logoUri);
   const all = [{ kind: 'cover' }, ...deck.slides.map((s) => ({ kind: 'list', ...s })), { kind: 'cta' }];
   const n = all.length;
   return all.map((s, idx) => {
@@ -135,7 +181,7 @@ async function main() {
   const manifest = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : {};
   const needed = decks.filter(({ slug, hash }) => {
     const m = manifest[slug];
-    return !m || m.hash !== hash || m.template !== tHash || !fs.existsSync(path.join(OUT, slug, 'carousel.pdf'));
+    return !m || m.hash !== hash || m.template !== tHash || !fs.existsSync(path.join(OUT, slug, 'carousel.pdf')) && !fs.existsSync(path.join(OUT, slug, '1.png'));
   });
   const stale = Object.keys(manifest).filter((slug) => !decks.some((d) => d.slug === slug));
 
@@ -167,10 +213,12 @@ async function main() {
         await page.evaluate(() => document.fonts.ready);
         await page.screenshot({ path: path.join(dir, `${i + 1}.png`), clip: { x: 0, y: 0, width: W, height: H } });
       }
+      if (deck.type !== 'card') {
       await page.setContent(`${head}${slides.join('')}</body></html>`);
       await page.evaluate(() => document.fonts.ready);
       await page.pdf({ path: path.join(dir, 'carousel.pdf'), width: `${W}px`, height: `${H}px`, printBackground: true, preferCSSPageSize: true });
-      manifest[slug] = { hash, template: tHash, slides: slides.length };
+      }
+      manifest[slug] = { hash, template: tHash, slides: slides.length, ...(deck.type === 'card' ? { type: 'card' } : {}) };
       console.log(`Rendered ${slides.length} slides for ${slug}`);
     }
     await browser.close();
