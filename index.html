@@ -1,302 +1,236 @@
-<!-- MARKETCENTAUR CONVERSION & 3-TRACK STOREFRONT UPGRADE -->
-<style>
-  :root {
-    --mc-bg-dark: #050d1a;
-    --mc-bg-card: #0b192c;
-    --mc-cyan: #00d2ff;
-    --mc-blue: #0072ff;
-    --mc-text-light: #f0f6fc;
-    --mc-text-muted: #94a3b8;
-    --mc-border: rgba(0, 210, 255, 0.18);
-  }
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MarketCentaur | AI Growth Consulting: Conversion, B2B Intelligence &amp; Automation</title>
+<meta name="description" content="Find the growth your business is missing. AI-powered consulting sprints for website conversion, B2B account and competitor intelligence, and workflow automation. First findings in 48 hours.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#111827">
+<link rel="canonical" href="https://marketcentaur.com/">
+<link rel="icon" type="image/png" href="/assets/marketcentaur-mc-option-4-favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MarketCentaur">
+<meta property="og:title" content="MarketCentaur | Find the Growth Your Business Is Missing">
+<meta property="og:description" content="AI-powered consulting sprints for website conversion, B2B account intelligence and workflow automation. First findings in 48 hours.">
+<meta property="og:url" content="https://marketcentaur.com/">
+<meta property="og:image" content="https://marketcentaur.com/assets/marketcentaur-logo-header.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarketCentaur | Find the Growth Your Business Is Missing">
+<meta name="twitter:description" content="AI-powered consulting sprints for website conversion, B2B account intelligence and workflow automation.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://marketcentaur.com/#organization",
+      "name": "MarketCentaur",
+      "url": "https://marketcentaur.com/",
+      "logo": "https://marketcentaur.com/assets/marketcentaur-logo-header.png",
+      "email": "hello@marketcentaur.com",
+      "areaServed": "Worldwide",
+      "description": "AI-powered growth consulting: website conversion sprints, B2B account and competitor intelligence, and AI workflow automation.",
+      "sameAs": ["https://www.linkedin.com/company/marketcentaur","https://www.instagram.com/marketcentaur","https://x.com/marketcentaur"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Growth sprints",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Website Conversion Sprint","url":"https://marketcentaur.com/services.html#conversion-sprint"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"B2B Account Intelligence Sprint","url":"https://marketcentaur.com/services.html#account-sprint"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Workflow Automation Sprint","url":"https://marketcentaur.com/services.html#automation-sprint"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Growth Intelligence Retainer","url":"https://marketcentaur.com/services.html#retainer"}}
+        ]
+      }
+    },
+    {"@type":"WebSite","@id":"https://marketcentaur.com/#website","url":"https://marketcentaur.com/","name":"MarketCentaur","publisher":{"@id":"https://marketcentaur.com/#organization"},"inLanguage":"en-US"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/services-dropdown.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-header.png" alt="MarketCentaur"></a>
+    <div class="navlinks"><a href="/services.html">Services</a><a href="/industries.html">Industries</a><a href="/sample-intelligence-brief.html">Sample brief</a><a href="/labs.html">Labs</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
+    <a class="btn primary" href="#free-audit">Free website audit</a>
+  </nav>
+</div>
 
-  .mc-upgrade-wrapper {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-    background-color: var(--mc-bg-dark);
-    color: var(--mc-text-light);
-    line-height: 1.6;
-  }
+<main id="main">
+<div class="wrap">
 
-  /* Clean Header & Compact Language Switcher */
-  .mc-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 1px solid var(--mc-border);
-  }
-  .mc-brand {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    text-decoration: none;
-    color: #fff;
-  }
-  .mc-brand span {
-    color: var(--mc-cyan);
-  }
-  .mc-nav-links {
-    display: flex;
-    gap: 1.75rem;
-    align-items: center;
-  }
-  .mc-nav-links a {
-    color: var(--mc-text-muted);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .mc-nav-links a:hover {
-    color: var(--mc-cyan);
-  }
-  .mc-btn-primary {
-    background: linear-gradient(135deg, var(--mc-cyan), var(--mc-blue));
-    color: #050d1a !important;
-    font-weight: 700 !important;
-    padding: 0.65rem 1.25rem;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .mc-btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.35);
-  }
-  .mc-btn-outline {
-    border: 1px solid var(--mc-cyan);
-    color: var(--mc-cyan) !important;
-    padding: 0.65rem 1.25rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-  }
-
-  /* Hero Section */
-  .mc-hero {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 4.5rem 1.5rem 3.5rem;
-    text-align: center;
-  }
-  .mc-eyebrow {
-    display: inline-block;
-    background: rgba(0, 210, 255, 0.1);
-    border: 1px solid var(--mc-border);
-    color: var(--mc-cyan);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    padding: 0.35rem 0.9rem;
-    border-radius: 99px;
-    margin-bottom: 1.25rem;
-  }
-  .mc-hero h1 {
-    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
-    line-height: 1.15;
-    margin: 0 auto 1.25rem;
-    max-width: 900px;
-    font-weight: 800;
-  }
-  .mc-hero p {
-    color: var(--mc-text-muted);
-    font-size: 1.15rem;
-    max-width: 760px;
-    margin: 0 auto 2rem;
-  }
-  .mc-hero-ctas {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* 3-Track Storefront Grid */
-  .mc-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-  }
-  .mc-section-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
-  }
-  .mc-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-  }
-  .mc-card {
-    background: var(--mc-bg-card);
-    border: 1px solid var(--mc-border);
-    border-radius: 12px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .mc-card-tag {
-    color: var(--mc-cyan);
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-  }
-  .mc-card h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.35rem;
-  }
-  .mc-card ul {
-    padding-left: 1.1rem;
-    color: var(--mc-text-muted);
-    margin-bottom: 1.5rem;
-  }
-  .mc-card ul li {
-    margin-bottom: 0.5rem;
-  }
-  .mc-card ul li a {
-    color: var(--mc-text-light);
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(0, 210, 255, 0.4);
-  }
-
-  /* Instant Lead Magnet Bar */
-  .mc-lead-box {
-    background: linear-gradient(135deg, #0b192c 0%, #07223b 100%);
-    border: 1px solid var(--mc-cyan);
-    border-radius: 12px;
-    padding: 2.5rem;
-    margin: 2rem auto;
-    max-width: 1140px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-  .mc-lead-form {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    flex: 1;
-    min-width: 300px;
-  }
-  .mc-lead-form input {
-    flex: 1;
-    min-width: 180px;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    border: 1px solid var(--mc-border);
-    background: #050d1a;
-    color: #fff;
-  }
-</style>
-
-<div class="mc-upgrade-wrapper">
-  <!-- Navigation -->
-  <header class="mc-nav">
-    <a href="/" class="mc-brand">Market<span>Centaur</span></a>
-    <nav class="mc-nav-links">
-      <a href="#tracks">Solutions by Track</a>
-      <a href="#sprints">48-Hour Sprints</a>
-      <a href="/sample-intelligence-brief.html">Sample Report</a>
-      <a href="/how-it-works.html">How It Works</a>
-      <a href="/contact.html" class="mc-btn-primary">Get Custom Action Brief →</a>
-    </nav>
+  <!-- 1. HERO -->
+  <header class="hero">
+    <div class="eyebrow">AI-powered research · Human-reviewed recommendations</div>
+    <h1>Find the growth your business is missing.</h1>
+    <p class="lead">Most businesses don't need more tools. They need to know where revenue is leaking. MarketCentaur runs short, fixed-scope sprints that find and fix three common leaks: websites that don't turn visitors into inquiries, sales teams chasing the wrong accounts, and manual work that should already be automated.</p>
+    <div class="actions">
+      <a class="btn primary" href="#tracks">See the three sprints</a>
+      <a class="btn" href="/sample-intelligence-brief.html">Read a sample brief</a>
+    </div>
+    <div class="chips"><span>First findings in 48 hours</span><span>Full deliverable in 3–5 business days</span><span>Fixed scope, agreed up front</span><span>Works with the tools you already use</span></div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="mc-hero">
-    <span class="mc-eyebrow">Expert-Led Consulting · AI-Enabled Execution</span>
-    <h1>Turn Market Signals, Website Traffic, and Operational Gaps into Measurable Growth.</h1>
-    <p>
-      One unified AI + human intelligence engine applied across your value chain. Whether you need target account mapping, higher website enquiry rates, or automated operations, get verifiable deliverables in 3–5 business days.
-    </p>
-    <div class="mc-hero-ctas">
-      <a href="#sprints" class="mc-btn-primary">Explore 48-Hour Growth Sprints →</a>
-      <a href="/sample-intelligence-brief.html" class="mc-btn-outline">View Sample Intelligence Brief</a>
+  <!-- 2. PROBLEM -->
+  <section aria-labelledby="problem-heading">
+    <div class="problem">
+      <div>
+        <div class="eyebrow">The problem</div>
+        <h2 id="problem-heading" style="font-size:clamp(28px,3.8vw,40px);line-height:1.12;letter-spacing:-.045em;margin:0 0 16px">Growth rarely stalls for one big reason. It leaks through small, fixable gaps.</h2>
+        <p>Buyers now research on their own, increasingly through AI assistants like ChatGPT, Gemini and Perplexity, before they ever contact you. If your website, your target list or your follow-up process has a gap, you lose them quietly and never find out why.</p>
+        <p>We use AI to do the heavy research quickly, then review every finding by hand so you get recommendations you can act on, not a pile of raw data.</p>
+      </div>
+      <ul class="checklist" aria-label="Common growth gaps">
+        <li>Website traffic that doesn't turn into calls, bookings or inquiries</li>
+        <li>A business that's invisible when buyers ask AI assistants for recommendations</li>
+        <li>Sales outreach spread across too many poor-fit accounts</li>
+        <li>Competitor moves you hear about months too late</li>
+        <li>Hours lost each week to copy-paste reporting, lead handoffs and admin</li>
+      </ul>
     </div>
   </section>
 
-  <!-- 3-Track Segmented Storefront -->
-  <section id="tracks" class="mc-section">
-    <div class="mc-section-header">
-      <h2>Choose Your Starting Track</h2>
-      <p style="color: var(--mc-text-muted);">Broad AI-powered capabilities, structured around your specific business objective.</p>
+  <!-- 3. THREE TRACKS -->
+  <section id="tracks" aria-labelledby="tracks-heading">
+    <div class="sectionhead">
+      <div class="eyebrow">Choose your starting track</div>
+      <h2 id="tracks-heading">Three focused sprints. Clear deliverables. No open-ended retainers to start.</h2>
+      <p>Each sprint has a defined scope, a fixed deliverable list and a walkthrough call at the end. Start with one, then add others or move to ongoing support when it's useful.</p>
     </div>
-
-    <div class="mc-grid-3">
-      <!-- Track 1 -->
-      <div class="mc-card">
-        <div>
-          <div class="mc-card-tag">Track 01 · Local, Retail & Digital</div>
-          <h3>Digital Conversion & Revenue Growth</h3>
-          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">For SMBs, D2C/E-commerce brands, and service firms wanting more enquiries from existing traffic.</p>
-          <ul>
-            <li><strong>Website Enquiry & CRO Audit:</strong> Fix value proposition, CTA friction, and trust signals.</li>
-            <li><strong>E-Commerce Journey Check:</strong> Reduce checkout drop-off and boost repeat orders.</li>
-            <li><strong>AI Search Visibility (GEO):</strong> Rank inside ChatGPT, Gemini, and Perplexity answers.</li>
-            <li><strong>Plain-English BI Briefs:</strong> Turn raw store/CRM exports into weekly action summaries.</li>
-          </ul>
-        </div>
-        <a href="/contact.html?service=conversion-audit" class="mc-btn-outline" style="text-align:center;">Request Conversion Sprint →</a>
-      </div>
-
-      <!-- Track 2 -->
-      <div class="mc-card">
-        <div>
-          <div class="mc-card-tag">Track 02 · B2B Pipeline & GTM</div>
-          <h3>Account, Market & Partner Intelligence</h3>
-          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">Focused research and buying-signal monitoring for B2B revenue teams and agencies.</p>
-          <ul>
-            <li><a href="/services/account-persona-mapping.html">Account & Persona Mapping</a> — Prioritize high-fit companies and decision-makers.</li>
-            <li><a href="/services/market-competitor-intelligence.html">Market & Competitor Intelligence</a> — Source-verified competitor moves and pricing shifts.</li>
-            <li><a href="/services/partner-channel-discovery.html">Partner & Channel Discovery</a> — Vet commercial partners and routes to new markets.</li>
-            <li><a href="/services/weekly-growth-signal-watch.html">Weekly Growth Signal Watch</a> — Ongoing buying triggers across priority accounts.</li>
-          </ul>
-        </div>
-        <a href="/services/b2b-growth-intelligence.html" class="mc-btn-primary" style="text-align:center;">Explore B2B Intelligence →</a>
-      </div>
-
-      <!-- Track 3 -->
-      <div class="mc-card">
-        <div>
-          <div class="mc-card-tag">Track 03 · Operations & Systems</div>
-          <h3>Workflow Automation & Supply Chain</h3>
-          <p style="color: var(--mc-text-muted); font-size: 0.92rem;">For scaling companies and traditional industries modernizing vendors, workflows, and AI governance.</p>
-          <ul>
-            <li><strong>Supplier & Vendor Longlisting:</strong> Vet alternative global suppliers and single-source risks.</li>
-            <li><strong>Connected AI Workflows:</strong> Automate lead handoffs, reporting, and SOPs with human oversight.</li>
-            <li><strong>ESG & Risk Readiness:</strong> Prepare compliance and AI governance registers for enterprise buyers.</li>
-            <li><strong>White-Label Agency Desk:</strong> On-demand research & teardown capacity for agencies.</li>
-          </ul>
-        </div>
-        <a href="/contact.html?service=operations-ai" class="mc-btn-outline" style="text-align:center;">Scope an Operations Sprint →</a>
-      </div>
+    <div class="grid g3">
+      <article class="card">
+        <div class="tag">Track 01 · Local, retail &amp; digital</div>
+        <h3>Website Conversion Sprint</h3>
+        <p>For small businesses, D2C and ecommerce brands, and service firms that get traffic but not enough inquiries or sales.</p>
+        <ul class="list">
+          <li><b>Conversion audit</b> across value proposition, calls to action, trust signals, UX friction and visitor fit</li>
+          <li><b>Top-10 fix list</b>, ranked by impact, with rewritten headline and CTA copy</li>
+          <li><b>AI search visibility check:</b> how you appear in ChatGPT, Gemini and Perplexity answers</li>
+          <li><b>Checkout and journey review</b> for online stores</li>
+        </ul>
+        <a class="btn primary" href="/services.html#conversion-sprint">See what's included</a>
+      </article>
+      <article class="card featured">
+        <div class="tag">Track 02 · B2B pipeline &amp; go-to-market</div>
+        <h3>B2B Account Intelligence Sprint</h3>
+        <p>For B2B sales and marketing teams, founders and agencies who need to know exactly who to target and what to say.</p>
+        <ul class="list">
+          <li><b>Ideal-customer profile</b> agreed with you in a kickoff call</li>
+          <li><b>Ranked target-account list</b> with fit rationale and source links</li>
+          <li><b>Buying-role map</b> for your priority accounts</li>
+          <li><b>Competitor snapshot</b> and recommended outreach angles</li>
+        </ul>
+        <a class="btn primary" href="/services.html#account-sprint">See what's included</a>
+      </article>
+      <article class="card">
+        <div class="tag">Track 03 · Operations &amp; systems</div>
+        <h3>AI Workflow Automation Sprint</h3>
+        <p>For growing companies and traditional businesses that want to automate repetitive work safely, with people still in control.</p>
+        <ul class="list">
+          <li><b>Workflow map</b> of one or two processes, such as lead handoff, reporting or quoting</li>
+          <li><b>Automation shortlist</b> ranked by effort, savings and risk</li>
+          <li><b>Pilot design</b> using tools you already own, with human approval steps</li>
+          <li><b>SOPs and an AI-use register</b> your team and customers can trust</li>
+        </ul>
+        <a class="btn primary" href="/services.html#automation-sprint">See what's included</a>
+      </article>
     </div>
+    <p class="muted small" style="margin-top:22px">Need something broader, such as supplier research, BI dashboards, AI governance or training? <a class="textlink" href="/services.html#catalog">Browse the full service catalog →</a></p>
   </section>
 
-  <!-- Automated Lead Magnet Capture Bar -->
-  <section id="sprints" class="mc-section">
-    <div class="mc-lead-box">
-      <div style="flex: 1; min-width: 280px;">
-        <div class="mc-card-tag">Free 24-Hour AI + Expert Diagnostic</div>
-        <h3 style="margin: 0.25rem 0 0.5rem; font-size: 1.5rem;">Your website gets visitors. Why isn't your inbox getting enquiries?</h3>
-        <p style="color: var(--mc-text-muted); margin: 0; font-size: 0.95rem;">
-          Enter your URL and email. We'll score your site across our 5 conversion pillars (Value Proposition, CTA Clarity, Trust Signals, UX Friction, and Visitor Fit) and send a custom 3-page Action Brief.
-        </p>
+  <!-- 4. PROOF -->
+  <section aria-labelledby="proof-heading">
+    <div class="sectionhead">
+      <div class="eyebrow">What you actually get</div>
+      <h2 id="proof-heading">Judge us by the work, not the promises.</h2>
+      <p>Every deliverable separates what we observed from what we recommend, links to its sources and ends with a short list of next actions. Read a full sample before you talk to us.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card">
+        <div class="tag">Sample deliverable</div>
+        <h3>Market intelligence brief</h3>
+        <p>A real, fully sourced brief on how AI search is changing the way buyers find suppliers, and what to do about it.</p>
+        <a class="textlink bottom" href="/sample-intelligence-brief.html">Read the sample brief →</a>
+      </article>
+      <article class="card">
+        <div class="tag">How we work</div>
+        <h3>Scope → research → review → walkthrough</h3>
+        <p>We agree the question and deliverables before starting. AI speeds up the research, and a person checks every claim and recommendation before you see it.</p>
+        <a class="textlink bottom" href="/how-it-works.html">See the process →</a>
+      </article>
+      <article class="card featured">
+        <div class="tag">Pilot client program</div>
+        <h3>Founding-client terms</h3>
+        <p>We're taking on a limited number of founding clients at preferred terms in exchange for permission to publish an anonymized case study of the results.</p>
+        <a class="textlink bottom" href="/contact.html?service=founding-client">Ask about founding-client terms →</a>
+      </article>
+    </div>
+    <!--
+      TESTIMONIALS / CASE STUDIES: add real client quotes and results here once you have written permission.
+      Copy this block for each one and remove the comment markers.
+      <div class="grid g3" style="margin-top:18px">
+        <figure class="card">
+          <blockquote style="margin:0 0 14px;font-size:16px;line-height:1.7">"Quote from a real client."</blockquote>
+          <figcaption class="muted small">Role, company type, location (anonymized if needed)</figcaption>
+          <p class="small" style="margin-top:12px"><b>Result:</b> e.g. inquiry rate up from X% to Y% in Z weeks</p>
+        </figure>
       </div>
-      <form class="mc-lead-form" action="/contact.html" method="GET">
-        <input type="url" name="website" placeholder="https://yourcompany.com" required />
-        <input type="email" name="email" placeholder="you@company.com" required />
-        <button type="submit" class="mc-btn-primary" style="border:none; cursor:pointer;">Send My Free Audit →</button>
+    -->
+  </section>
+
+  <!-- 5. FREE TOOLS -->
+  <section id="free-audit" aria-labelledby="audit-heading">
+    <div class="leadbox">
+      <div>
+        <div class="eyebrow">Free website audit</div>
+        <h2 id="audit-heading">Your website gets visitors. Why isn't your inbox getting inquiries?</h2>
+        <p>Send us your URL. We'll review it against our five conversion pillars (value proposition, CTA clarity, trust signals, UX friction and visitor fit) and email you a short action brief with your three biggest fixes within one business day.</p>
+      </div>
+      <form class="leadform" action="https://formsubmit.co/hello@marketcentaur.com" method="POST">
+        <input type="hidden" name="_subject" value="Free website audit request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://marketcentaur.com/contact-success.html?type=audit">
+        <input type="hidden" name="request_type" value="Free website audit (homepage)">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <label class="small" for="audit-site">Website</label>
+        <input id="audit-site" type="text" inputmode="url" name="website" placeholder="yourcompany.com" required>
+        <label class="small" for="audit-email">Email</label>
+        <input id="audit-email" type="email" name="email" placeholder="you@company.com" required>
+        <button class="btn primary" type="submit">Send my free audit</button>
+        <p class="fine">We'll only use your email to send the audit and one follow-up. See our <a href="/privacy-policy.html" style="text-decoration:underline">Privacy Policy</a>.</p>
       </form>
+    </div>
+    <div class="grid g3" style="margin-top:22px">
+      <a class="card" href="/growth-check.html?journey=local"><div class="tag">2-minute self-check</div><h3>Local Business Growth Check</h3><p>Visibility, trust signals and the path to calls, bookings and visits.</p><span class="textlink bottom">Start the check →</span></a>
+      <a class="card" href="/growth-check.html?journey=ecommerce"><div class="tag">2-minute self-check</div><h3>Ecommerce Growth Check</h3><p>Product discovery, purchase friction and repeat orders.</p><span class="textlink bottom">Start the check →</span></a>
+      <a class="card" href="/growth-check.html?journey=modernization"><div class="tag">2-minute self-check</div><h3>Business Modernization Roadmap</h3><p>Where to start with automation, reporting and digital sales.</p><span class="textlink bottom">Start the check →</span></a>
+    </div>
+  </section>
+
+  <!-- 6. CTA -->
+  <section aria-labelledby="cta-heading" style="border-top:0;padding-top:20px">
+    <div class="cta">
+      <div>
+        <h2 id="cta-heading">Not sure which sprint fits?</h2>
+        <p>Tell us what you're trying to improve. We reply within one business day with a recommended starting point. There's no cost and no lengthy brief required.</p>
+      </div>
+      <a class="btn primary" href="/contact.html">Talk to us</a>
     </div>
   </section>
 </div>
+</main>
+
+<div class="wrap">
+  <footer class="footer">
+    <div><strong>MarketCentaur</strong><br>AI-powered growth consulting · Serving businesses worldwide<br><a href="mailto:hello@marketcentaur.com">hello@marketcentaur.com</a></div>
+    <div><a href="/services.html">Services</a> · <a href="/industries.html">Industries</a> · <a href="/recurring-services.html">Ongoing support</a> · <a href="/labs.html">Labs</a> · <a href="/website-enquiry-readiness.html">Free website check</a><br><a href="/about.html">About</a> · <a href="/faq.html">FAQs</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a><br><a href="https://www.linkedin.com/company/marketcentaur" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://www.instagram.com/marketcentaur" rel="noopener" target="_blank">Instagram</a> · <a href="https://x.com/marketcentaur" rel="noopener" target="_blank">X</a></div>
+  </footer>
+</div>
+<script src="/assets/language-selector.js" defer></script>
+<script src="/assets/services-dropdown.js" defer></script>
+</body>
+</html>
