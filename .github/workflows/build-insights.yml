@@ -1,7 +1,8 @@
 name: Build Insights
 
-# Turns Markdown posts in content/insights/ into pages under /insights/,
-# then commits the generated pages back to the same branch so Cloudflare Pages deploys them.
+# Turns Markdown posts in content/insights/ into pages under /insights/, renders social
+# carousels from content/social/ into assets/social/, then commits the generated files back
+# to the same branch so Cloudflare Pages deploys them.
 # Runs on every push that touches posts or the build files, and once a day so posts
 # dated in the future go live on their date.
 
@@ -9,6 +10,8 @@ on:
   push:
     paths:
       - "content/insights/**"
+      - "content/social/**"
+      - "assets/marketcentaur-logo-transparent.png"
       - "scripts/**"
       - ".github/workflows/build-insights.yml"
   schedule:
@@ -44,9 +47,21 @@ jobs:
           export BUILD_DATE="$(date +%F)"
           node scripts/build-insights.mjs
 
+      - name: Check whether carousels need rendering
+        id: social
+        run: node scripts/build-social.mjs --check >> "$GITHUB_OUTPUT"
+
+      - name: Install browser for carousel rendering
+        if: steps.social.outputs.needed == 'true'
+        run: npx --prefix scripts playwright install --with-deps chromium
+
+      - name: Render social carousels
+        if: steps.social.outputs.needed == 'true'
+        run: node scripts/build-social.mjs
+
       - name: Commit generated pages
         run: |
-          git add insights sitemap.xml llms.txt
+          git add insights sitemap.xml llms.txt assets/social
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

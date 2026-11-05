@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Competitive intelligence",
+  "title": "DIY, software or a managed service?",
+  "subtitle": "How to choose your setup",
+  "slides": [
+    { "eyebrow": "Three options", "title": "What each one is best at",
+      "items": ["DIY: cheap, but relies on one person's habits", "Software: many competitors, if someone owns it", "Managed service: analysis and recommendations"] },
+    { "eyebrow": "Four questions", "title": "How to decide", "style": "numbered",
+      "items": ["Who will own it?", "How many competitors and markets?", "Do you need data, or decisions?", "Which decisions will it inform?"] },
+    { "eyebrow": "A sensible path", "title": "For most growing teams", "style": "numbered",
+      "items": ["Start DIY for a month", "If it keeps getting dropped, hand it off", "Add software when collection becomes the bottleneck"] },
+    { "eyebrow": "One test", "title": "Did it change a decision this quarter?",
+      "items": ["If not, change the approach"] }
+  ],
+  "cta": { "eyebrow": "Read the full comparison", "title": "Choose the right setup" }
+}

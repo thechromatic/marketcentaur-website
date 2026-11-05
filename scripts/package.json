@@ -7,6 +7,7 @@
     "build:insights": "node build-insights.mjs"
   },
   "dependencies": {
-    "marked": "^15.0.0"
+    "marked": "^15.0.0",
+    "playwright": "^1.64.1"
   }
 }

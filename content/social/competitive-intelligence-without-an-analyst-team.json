@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Competitive intelligence",
+  "title": "Competitor tracking without an analyst team",
+  "subtitle": "A system one marketer can run",
+  "slides": [
+    { "eyebrow": "Start here", "title": "Watch for what matters",
+      "items": ["List the decisions you'll make in the next 6 months", "Work back to the signals that would affect them", "Track 3–5 competitors closely, ~10 loosely"] },
+    { "eyebrow": "One afternoon", "title": "Set up collection",
+      "items": ["Alerts for each competitor's name", "Their blogs, newsrooms and newsletters", "Page monitors on pricing, product and careers", "A simple log: date, who, what, source"] },
+    { "eyebrow": "Every week", "title": "Review in 30 minutes", "style": "numbered",
+      "items": ["Scan what came in and delete the noise", "Write a \"so what\" for each item you keep", "Send the top 3 moves to sales, product and leadership"] },
+    { "eyebrow": "Using AI", "title": "AI reads. People judge.",
+      "items": ["Let AI summarise, de-duplicate and sort", "Keep a person on the \"so what\"", "Check every claim against its source"] }
+  ],
+  "cta": { "eyebrow": "Read the full guide", "title": "The 7-step system" }
+}

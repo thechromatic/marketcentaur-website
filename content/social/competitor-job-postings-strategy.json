@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Competitive intelligence",
+  "title": "What competitors' job ads reveal",
+  "subtitle": "Written to hire, not to impress",
+  "slides": [
+    { "eyebrow": "Five things to read", "title": "Where and who",
+      "items": ["Where they're hiring: new countries or cities", "Which teams are growing", "The customers each role will serve"] },
+    { "eyebrow": "Five things to read", "title": "What and how senior",
+      "items": ["Skills and tools they ask for", "Senior hires, which often come before a strategy shift"] },
+    { "eyebrow": "Read patterns, not posts", "title": "What counts as a signal",
+      "items": ["Several roles in one new location", "A team that keeps growing", "New skills repeated across postings"] },
+    { "eyebrow": "Be careful", "title": "Before you conclude", "style": "cross",
+      "items": ["Ads can stay up after roles are filled", "Some roles just build a candidate pipeline", "Job titles vary between companies"] }
+  ],
+  "cta": { "eyebrow": "Read the full guide", "title": "How to read job postings" }
+}
