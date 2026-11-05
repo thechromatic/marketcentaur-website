@@ -1,0 +1,57 @@
+name: Build Insights
+
+# Turns Markdown posts in content/insights/ into pages under /insights/,
+# then commits the generated pages back to the same branch so Cloudflare Pages deploys them.
+# Runs on every push that touches posts or the build files, and once a day so posts
+# dated in the future go live on their date.
+
+on:
+  push:
+    paths:
+      - "content/insights/**"
+      - "scripts/**"
+      - ".github/workflows/build-insights.yml"
+  schedule:
+    - cron: "30 0 * * *" # 06:00 IST daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-insights-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install build dependencies
+        run: npm ci --prefix scripts
+
+      - name: Build Insights pages
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          export BUILD_DATE="$(date +%F)"
+          node scripts/build-insights.mjs
+
+      - name: Commit generated pages
+        run: |
+          git add insights sitemap.xml llms.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898183+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build Insights pages"
+          git push

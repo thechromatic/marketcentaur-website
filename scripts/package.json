@@ -1,0 +1,12 @@
+{
+  "name": "marketcentaur-site-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Build scripts for marketcentaur.com (not part of the deployed site).",
+  "scripts": {
+    "build:insights": "node build-insights.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
