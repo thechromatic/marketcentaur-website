@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  var WEB3FORMS_KEY = "";
+  var WEB3FORMS_KEY = "3d800508-6435-40ae-9b70-ceffafbda97f";
   var INBOX = "hello@marketcentaur.com";
   var TIMEOUT_MS = 15000;
 
