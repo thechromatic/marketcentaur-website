@@ -24,3 +24,7 @@ Posts with a future `date` stay hidden until that day; the Action runs daily at 
 Don't edit files in `/insights/` by hand: they are regenerated from this folder. To change the page layout, edit `scripts/templates/`.
 
 To build locally: `npm ci --prefix scripts && node scripts/build-insights.mjs`
+
+## Social carousels
+
+Add `content/social/<slug>.json` (same slug as the post's page) to get a 1080×1350 carousel and a LinkedIn PDF at `/assets/social/<slug>/` (`1.png`, `2.png` … and `carousel.pdf`). The format is described at the top of `scripts/build-social.mjs`. The weekly social task uses these for Instagram and LinkedIn drafts in Buffer.

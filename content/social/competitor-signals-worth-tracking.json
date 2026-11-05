@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Competitive intelligence",
+  "title": "12 competitor signals worth tracking",
+  "subtitle": "(and 5 to ignore)",
+  "slides": [
+    { "eyebrow": "Worth tracking", "title": "Pricing & go-to-market",
+      "items": ["Pricing page changes", "A new free plan or longer trial", "Job postings in new locations", "Local-language pages or local currency"] },
+    { "eyebrow": "Worth tracking", "title": "Product, money & people",
+      "items": ["Homepage headline changes", "New case studies and integrations", "Funding rounds and acquisitions", "Senior hires"] },
+    { "eyebrow": "Mostly noise", "title": "Log it, then move on", "style": "cross",
+      "items": ["Follower counts", "Routine blog posts", "Pay-to-enter awards", "Small design tweaks", "One-off reviews"] },
+    { "eyebrow": "The 3-question test", "title": "Is it a real signal?", "style": "numbered",
+      "items": ["Did it cost them real effort or money?", "Is it a change, not more of the same?", "Does it affect a decision we're making?"] }
+  ],
+  "cta": { "eyebrow": "Read the full guide", "title": "All 12 signals, explained" }
+}
