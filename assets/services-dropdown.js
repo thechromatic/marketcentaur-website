@@ -1,17 +1,26 @@
 (function () {
   "use strict";
 
-  // Lead with the three core sprints and ongoing support, then the wider catalog areas.
+  // Grouped menu: fixed-scope sprints, done-for-you AI services, then the wider catalog.
+  // Entries with a null href render as group labels.
   var divisions = [
+    ["Growth sprints", null],
     ["Website Conversion Sprint", "/services.html#conversion-sprint"],
     ["B2B Account Intelligence Sprint", "/services.html#account-sprint"],
     ["AI Workflow Automation Sprint", "/services.html#automation-sprint"],
     ["Growth Intelligence Retainer", "/services.html#retainer"],
+    ["Done-for-you AI services", null],
+    ["AI Search Visibility (GEO)", "/services/ai-search-visibility.html"],
+    ["AI Front Desk: phone, WhatsApp & chat", "/services/ai-front-desk.html"],
+    ["AI Content & Video Studio", "/services/ai-content-studio.html"],
+    ["AI Localization & Translation", "/services/ai-localization.html"],
+    ["AI Training & Workshops", "/services/ai-training.html"],
+    ["More ways to work with us", null],
     ["Market & Competitor Intelligence", "/services/market-competitor-intelligence.html"],
     ["Strategy & Growth", "/services/strategy-growth.html"],
-    ["Digital & Conversion", "/services/digital-presence.html"],
     ["Operations & Revenue Ops", "/services/business-operations.html"],
-    ["AI & Automation", "/services/ai-automation.html"],
+    ["Free AI visibility check", "/ai-visibility-check.html"],
+    ["Partner & white-label program", "/partners.html"],
     ["Labs: AI agents & new products", "/labs.html"]
   ];
   function makeLink(label, href, extraClass) {
@@ -40,7 +49,14 @@
     menu.hidden = true;
 
     divisions.forEach(function (item) {
-      menu.appendChild(makeLink(item[0], item[1]));
+      if (!item[1]) {
+        var label = document.createElement("div");
+        label.className = "nav-services-group-label";
+        label.textContent = item[0];
+        menu.appendChild(label);
+      } else {
+        menu.appendChild(makeLink(item[0], item[1]));
+      }
     });
 
     menu.appendChild(makeLink("See the full catalog", "/services.html#catalog", "nav-services-all"));

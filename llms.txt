@@ -1,12 +1,19 @@
 # MarketCentaur
 
-> MarketCentaur is an AI-powered growth consultancy for small and mid-sized businesses worldwide. It combines AI-speed research with human review to fix three common growth problems: websites that don't convert, B2B sales teams targeting the wrong accounts, and repetitive work that should be automated.
+> MarketCentaur is an AI-powered growth consultancy for small and mid-sized businesses worldwide. It combines AI-speed research with human review to fix common growth problems (websites that don't convert, B2B sales teams targeting the wrong accounts, repetitive work that should be automated) and runs done-for-you AI services: AI search visibility (GEO), AI front desks, AI content and video production, localization and AI training.
 
 ## Core packages
 - [Website Conversion Sprint](https://marketcentaur.com/services.html#conversion-sprint): Five-pillar conversion audit, top-10 fix list, rewritten headline and CTA copy, and an AI search visibility check (ChatGPT, Gemini, Perplexity). First findings in 48 hours; full report in 3–5 business days.
 - [B2B Account Intelligence Sprint](https://marketcentaur.com/services.html#account-sprint): ICP definition, ranked target-account list with sources, buying-role map, buying signals, competitor snapshot and outreach angles. Delivered in 5 business days.
 - [AI Workflow Automation Sprint](https://marketcentaur.com/services.html#automation-sprint): Workflow mapping, ranked automation shortlist, pilot design with human approval steps, SOPs and an AI-use register. Delivered in 5–7 business days.
 - [Growth Intelligence Retainer](https://marketcentaur.com/services.html#retainer): Ongoing signal watch, competitor tracking, performance briefs and fractional AI advice, billed monthly.
+
+## Done-for-you AI services
+- [AI Search Visibility (GEO)](https://marketcentaur.com/services/ai-search-visibility.html): Audits and ongoing optimization of how ChatGPT, Gemini, Perplexity, Claude, Copilot and Google AI Overviews describe and recommend a business. Up to 25 buyer questions, competitor share-of-voice, gap analysis and a prioritized fix list; monthly re-testing for managed GEO.
+- [AI Front Desk](https://marketcentaur.com/services/ai-front-desk.html): AI receptionist for phone calls plus WhatsApp and website chat assistants that answer FAQs, book appointments, capture leads and hand off to staff. Set up, tested and managed monthly.
+- [AI Content & Video Studio](https://marketcentaur.com/services/ai-content-studio.html): Monthly AI-assisted production of short-form and explainer videos, social posts, blogs, newsletters and sales collateral, human-reviewed; white-label option for agencies.
+- [AI Localization & Translation](https://marketcentaur.com/services/ai-localization.html): Websites, sales collateral, courses, product documents, subtitles and AI voiceover in new languages, with glossaries and human review.
+- [AI Training & Workshops](https://marketcentaur.com/services/ai-training.html): Practical generative AI workshops for leaders, marketing, sales, operations and support teams, with prompt libraries and AI-use policies.
 
 ## Wider catalog
 Market and competitor intelligence, account and persona mapping, supplier and partner research, BI dashboards, growth strategy, customer acquisition planning, website and ecommerce optimization, analytics and attribution, process mapping and SOPs, CRM and revenue operations, AI strategy, AI customer support assistants, AI agent prototypes, custom AI tools, AI governance, and AI training. See https://marketcentaur.com/services.html#catalog
@@ -15,14 +22,16 @@ Market and competitor intelligence, account and persona mapping, supplier and pa
 AI agents, a competitive intelligence platform, vertical AI systems and industry intelligence reports, built with pilot clients. See https://marketcentaur.com/labs.html
 
 ## Free tools
+- [AI Visibility Check](https://marketcentaur.com/ai-visibility-check.html): Free 5-minute self-assessment of whether ChatGPT, Perplexity and Google AI mention and accurately describe a business, with a score and next steps.
 - [Free website audit](https://marketcentaur.com/#free-audit): Short action brief with the three biggest conversion fixes, emailed within one business day.
 - [Growth checks](https://marketcentaur.com/growth-check.html): 2-minute self-assessments for local businesses, ecommerce stores and traditional businesses.
 - [Website inquiry readiness check](https://marketcentaur.com/website-enquiry-readiness.html)
 
 ## Key pages
+- [Industries](https://marketcentaur.com/industries.html): Sector pages for professional services, manufacturing and distribution, ecommerce, SaaS and technology, real estate, hospitality and tourism, education, healthcare and wellness (non-clinical), trades and field services, energy and environment, logistics, financial and accounting firms, multi-location businesses and consumer brands.
+- [Partner program](https://marketcentaur.com/partners.html): Referral, white-label and implementation partnerships for agencies, consultants and specialists.
 - [Sample intelligence brief](https://marketcentaur.com/sample-intelligence-brief.html): A real, fully sourced brief on how AI search is changing the way buyers find businesses.
 - [How it works](https://marketcentaur.com/how-it-works.html)
-- [Industries](https://marketcentaur.com/industries.html)
 - [About](https://marketcentaur.com/about.html)
 - [FAQs](https://marketcentaur.com/faq.html)
 - [Contact](https://marketcentaur.com/contact.html): Replies within one business day.
