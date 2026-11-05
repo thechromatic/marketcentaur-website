@@ -131,3 +131,49 @@ sup a{color:var(--accent);font-weight:700}
   .leadbox{padding:24px}
   .footer{display:block}
 }
+
+/* ---- Additions: service pages, FAQs, tools, footer note ---- */
+.h2{font-size:clamp(28px,3.8vw,40px);line-height:1.12;letter-spacing:-.045em;margin:0 0 16px}
+.footnote{max-width:460px;font-size:12px;line-height:1.6;color:var(--muted);margin:10px 0 0;opacity:.85}
+.faqlist{display:grid;gap:10px;max-width:880px}
+.faqlist details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 20px}
+.faqlist summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;font-weight:750;font-size:15.5px;position:relative}
+.faqlist summary::-webkit-details-marker{display:none}
+.faqlist summary:after{content:"+";position:absolute;right:0;top:13px;font-size:20px;color:var(--accent)}
+.faqlist details[open] summary:after{content:"−"}
+.faqlist details p{color:var(--muted);font-size:14.5px;line-height:1.75;margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.pills a,.pills span{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:7px 12px;background:var(--surface);color:var(--muted)}
+.pills a:hover{border-color:var(--accent);color:var(--text)}
+.card a.textlink:not(.bottom){display:inline-block;margin-top:4px}
+/* Tool forms (AI visibility check) */
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+.tool h2{font-size:clamp(22px,3vw,28px);margin:0 0 8px;letter-spacing:-.03em}
+.tool .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+.tool label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.tool .hint{font-weight:400;color:var(--muted)}
+.tool input,.tool select,.tool textarea{width:100%;padding:12px 14px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;font-size:14px}
+.tool input:focus,.tool select:focus,.tool textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.prompt{border-top:1px solid var(--line);padding:18px 0}
+.prompt:first-child{border-top:0}
+.prompt .q{font-size:15.5px;font-weight:700;margin:0 0 10px;color:var(--text)}
+.prompt .askrow{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.prompt .askrow a,.prompt .askrow button{font-size:12.5px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--text);cursor:pointer;font-family:inherit;font-weight:700}
+.prompt .askrow a:hover,.prompt .askrow button:hover{border-color:var(--accent)}
+.prompt fieldset{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.prompt legend{font-size:12px;color:var(--muted);margin-bottom:8px;padding:0}
+.prompt fieldset label{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;border:1px solid var(--line);border-radius:99px;padding:7px 12px;cursor:pointer;margin:0}
+.prompt fieldset input{width:auto;margin:0;accent-color:var(--accent)}
+.prompt fieldset label:has(input:checked){border-color:var(--accent);background:var(--accent2)}
+.scorebox{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;background:linear-gradient(135deg,var(--surface) 0%,var(--accent2) 100%);border:1px solid var(--accent);border-radius:16px;padding:28px;margin-top:20px}
+.scorebox .score{font-size:56px;font-weight:850;letter-spacing:-.05em;line-height:1;color:var(--accent)}
+.scorebox .score small{font-size:18px;color:var(--muted)}
+.scorebox h3{margin:0 0 6px;font-size:22px}
+.scorebox p{margin:0;color:var(--muted)}
+.recs{margin:18px 0 0;padding:0;list-style:none}
+.recs li{border-top:1px solid var(--line);padding:12px 0 12px 28px;position:relative;font-size:14.5px;color:var(--muted);line-height:1.65}
+.recs li:before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:800}
+.recs li b{color:var(--text)}
+.tool .error{color:#f6c77a;font-size:13px;margin:8px 0 0}
+@media(max-width:700px){.tool .fields{grid-template-columns:1fr}.scorebox{grid-template-columns:1fr}.tool{padding:20px}}
+.nav>.btn{white-space:nowrap}

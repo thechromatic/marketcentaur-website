@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="/assets/services-dropdown.css">
 </head>
 <body>
-<div class="wrap"><nav class="nav"><a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-header.png" alt="MarketCentaur"></a><div class="navlinks"><a href="/services.html">Services</a><a href="/industries.html">Industries</a><a href="/sample-intelligence-brief.html">Sample brief</a><a href="/labs.html">Labs</a><a href="/about.html">About</a><a href="/contact.html" aria-current="page">Contact</a></div><a class="btn primary" href="#contact-form">Start a conversation</a></nav></div>
+<div class="wrap"><nav class="nav" aria-label="Main navigation"><a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-header.png" alt="MarketCentaur" style="display:block;width:178px;height:auto;max-height:68px;object-fit:contain"></a><div class="navlinks"><a href="/services.html">Services</a><a href="/industries.html">Industries</a><a href="/sample-intelligence-brief.html">Sample brief</a><a href="/labs.html">Labs</a><a href="/about.html">About</a><a href="/contact.html" aria-current="page">Contact</a></div><a class="btn primary" href="#contact-form">Start a conversation</a></nav></div>
 <main><div class="wrap">
 <section class="hero"><div class="eyebrow">Contact MarketCentaur</div><h1>Tell us what you want to improve.</h1><p>Send a short note about your goal or challenge. We reply within one business day with a recommended starting point. There's no cost and no lengthy brief required. Prefer email? Write to <a href="mailto:hello@marketcentaur.com" style="color:var(--accent);text-decoration:underline">hello@marketcentaur.com</a>.</p></section>
 <div class="contact-grid">
@@ -44,6 +44,8 @@
       <button type="button" class="service-goal" data-category="operations" aria-pressed="false"><span class="goal-icon" aria-hidden="true">↗</span><span><strong>Sales & business operations</strong><small>Improve CRM, inquiries, sales or customer journeys</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
       <button type="button" class="service-goal" data-category="assurance" aria-pressed="false"><span class="goal-icon" aria-hidden="true">◇</span><span><strong>AI governance & assurance</strong><small>Document AI use, reviews and control processes</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
       <button type="button" class="service-goal" data-category="innovation" aria-pressed="false"><span class="goal-icon" aria-hidden="true">⌘</span><span><strong>Training, tools & new ideas</strong><small>Build skills, explore products or software concepts</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
+      <button type="button" class="service-goal" data-category="managed" aria-pressed="false"><span class="goal-icon" aria-hidden="true">◉</span><span><strong>Done-for-you AI services</strong><small>AI search visibility, AI front desk, content, localization</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
+      <button type="button" class="service-goal" data-category="partners" aria-pressed="false"><span class="goal-icon" aria-hidden="true">⇄</span><span><strong>Partner with us</strong><small>Referrals, white-label delivery or implementation work</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
       <button type="button" class="service-goal service-goal-unsure" data-category="unsure" aria-pressed="false"><span class="goal-icon" aria-hidden="true">?</span><span><strong>Help me decide</strong><small>I have a challenge, but I’m not sure which service fits</small></span><span class="goal-check" aria-hidden="true">✓</span></button>
     </div>
   </fieldset>
@@ -64,7 +66,7 @@
 </form></section>
 </div>
 </div></main>
-<div class="wrap"><footer class="footer"><strong>MarketCentaur</strong><span>AI-powered growth consulting • Serving businesses worldwide<br><a href="faq.html">FAQs</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></span><div class="social-links" aria-label="Follow MarketCentaur" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:13px"><span style="color:var(--muted)">Follow us:</span><a href="https://www.linkedin.com/company/marketcentaur" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/marketcentaur" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://x.com/marketcentaur" target="_blank" rel="noopener noreferrer">X</a></div></footer></div>
+<div class="wrap"><footer class="footer"><div><strong>MarketCentaur</strong><br>AI-powered growth consulting · Serving businesses worldwide<br><a href="mailto:hello@marketcentaur.com">hello@marketcentaur.com</a><p style="max-width:460px;font-size:12px;line-height:1.6;color:var(--muted);margin:10px 0 0;opacity:.85">AI-assisted work is reviewed by a person before it reaches you. Scope, deliverables and timelines are agreed in writing; business outcomes such as leads, rankings or AI mentions depend on many factors and are not guaranteed.</p></div><div style="line-height:1.9"><a href="/services.html">Services</a> · <a href="/industries.html">Industries</a> · <a href="/recurring-services.html">Ongoing support</a> · <a href="/labs.html">Labs</a> · <a href="/partners.html">Partners</a><br><a href="/ai-visibility-check.html">Free AI visibility check</a> · <a href="/website-enquiry-readiness.html">Free website check</a> · <a href="/growth-check.html">Growth checks</a><br><a href="/about.html">About</a> · <a href="/faq.html">FAQs</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms-of-service.html">Terms</a><br><a href="https://www.linkedin.com/company/marketcentaur" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://www.instagram.com/marketcentaur" rel="noopener" target="_blank">Instagram</a> · <a href="https://x.com/marketcentaur" rel="noopener" target="_blank">X</a></div></footer></div>
 
 <script>
 (function(){
@@ -82,6 +84,19 @@
   var serviceProgress = document.getElementById("serviceProgress");
   var goalButtons = Array.prototype.slice.call(document.querySelectorAll(".service-goal"));
   var serviceGroups = {
+    managed: {label:"Done-for-you AI services", options:[
+      ["ai-search-visibility","AI Search Visibility (GEO) audit or managed GEO"],
+      ["ai-front-desk","AI Front Desk: phone, WhatsApp & website chat"],
+      ["ai-content-studio","AI Content & Video Studio"],
+      ["ai-localization","AI Localization & Translation"],
+      ["ai-training","AI Training & Workshops"],
+      ["ai-visibility-snapshot","Free AI visibility snapshot"]
+    ], placeholder:"Which service interests you, and what would a great result look like in three months?"},
+    partners: {label:"Partner with us", options:[
+      ["partner-referral","Referral partner"],
+      ["partner-white-label","White-label partner (agency or consultant)"],
+      ["partner-implementation","Implementation or specialist partner"]
+    ], placeholder:"Tell us about your business, the clients you serve and how you'd like to work together."},
     sprints: {label:"Growth sprints", options:[
       ["conversion-sprint","Website Conversion Sprint"],
       ["account-sprint","B2B Account Intelligence Sprint"],
@@ -95,8 +110,8 @@
       ["ai-workflow-support","AI Workflow Improvement Support"],
       ["marketing-automation","Workflow & Automation"],
       ["business-modernisation","Business Modernization Roadmap"],
-      ["custom-ai-software","Custom AI Application / Software Discovery"],
-      ["industrial-ai-digital-twins","Digital Twins & Industrial AI"]
+      ["ai-front-desk","AI Front Desk: phone, WhatsApp & website chat"],
+      ["custom-ai-software","Custom AI Application / Software Discovery"]
     ], placeholder:"What would you like to improve with AI or automation?"},
     strategy: {label:"Strategy & business advice", options:[
       ["business-modernisation","Business Modernization Roadmap"],
@@ -138,6 +153,7 @@
     ], placeholder:"What AI use, documentation or review process needs attention?"},
     innovation: {label:"Training, tools & new ideas", options:[
       ["training-education","Training & Education"],
+      ["ai-training","AI Training & Workshops"],
       ["ai-knowledge-products","AI Knowledge Products & Business Training"],
       ["custom-ai-software","Custom AI Application / Software Discovery"],
       ["industrial-ai-digital-twins","Digital Twins & Industrial AI"],
