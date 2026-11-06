@@ -1,0 +1,193 @@
+[
+  {
+    "slug": "data-analytics",
+    "name": "Data, Analytics & BI",
+    "group": "Operations & Data",
+    "short": "Build trustworthy data foundations, dashboards and forecasts people can use.",
+    "headline": "Replace scattered reporting with a clearer view of performance.",
+    "problem": "When information is inconsistent, duplicated or hard to reach, decisions rely on manual work and conflicting reports. A dashboard alone cannot fix unclear definitions or unreliable inputs. We help establish sound data foundations, useful measures and repeatable analysis.",
+    "whoFor": ["Teams reconciling conflicting reports from several systems", "Leaders who need a dependable view of key measures", "Organisations preparing to migrate or clean up data", "Analysts wanting a repeatable forecasting or reporting workflow"],
+    "offers": [
+      {"id": "data-readiness-check", "name": "Data Readiness Check", "type": "diagnose", "timeline": "1 week", "summary": "A practical assessment of your data landscape and the steps needed for reliable analysis.", "includes": ["Data goals and use-case session", "Source and ownership inventory", "Quality and access review", "Prioritised improvement plan"]},
+      {"id": "data-cleanup-migration", "name": "Data Cleanup & Migration", "type": "build", "timeline": "2–4 weeks", "summary": "A controlled process for preparing and moving agreed data to its new home.", "includes": ["Source and destination mapping", "Data quality rules and exceptions", "Transformation and migration workflow", "Validation and reconciliation checks"]},
+      {"id": "kpi-dashboard-build", "name": "KPI Dashboard Build", "type": "build", "timeline": "2–3 weeks", "summary": "A decision-focused dashboard with agreed measures, definitions and sources.", "includes": ["Reporting requirements", "Metric definitions and source mapping", "Dashboard design and build", "Validation, usage guide and handover"]},
+      {"id": "forecasting-models", "name": "Forecasting Models", "type": "build", "timeline": "2–4 weeks", "summary": "A documented forecasting approach shaped around your data and planning decisions.", "includes": ["Objective and assumptions", "Data suitability review", "Model development and validation", "Scenario views and walkthrough"]},
+      {"id": "analytics-as-a-service", "name": "Analytics as a Service", "type": "run", "timeline": "Ongoing, monthly", "summary": "Ongoing analytical support to keep reporting clear and decisions grounded in evidence.", "includes": ["Recurring reporting and analysis", "Data quality and metric checks", "Insight summaries for stakeholders", "Ad hoc analysis by agreement"]}
+    ],
+    "faqs": [
+      {"q": "Do we need a data warehouse?", "a": "Not necessarily. We recommend an approach suited to the decisions you need to support and the systems you already have."},
+      {"q": "Can you work with our existing BI tools?", "a": "Yes. We work with suitable tools already in use where practical, such as Looker Studio or Power BI."},
+      {"q": "Can you work with incomplete data?", "a": "Often, yes. We identify limitations, handle exceptions transparently and recommend improvements."}
+    ],
+    "related": ["knowledge-document-ai", "operations-finance", "market-intelligence"],
+    "specialist": ["/services/business-intelligence.html", "/services/analytics-optimisation.html"]
+  },
+  {
+    "slug": "knowledge-document-ai",
+    "name": "Knowledge, Document AI & Localization",
+    "group": "Operations & Data",
+    "short": "Make organisational knowledge, document-heavy work and multilingual content easier to manage.",
+    "headline": "Help people find trusted answers and move documents through work.",
+    "problem": "Useful knowledge is often buried across files, systems and individual expertise. Manual document handling creates delays, inconsistent outputs and difficult hand-offs. We design practical workflows that make information easier to find, process, translate and maintain.",
+    "whoFor": ["Teams searching many repositories for reliable answers", "Operations groups handling recurring document workflows", "Process owners who need clear, usable procedures", "Organisations preparing content for new languages and audiences"],
+    "offers": [
+      {"id": "document-workflow-review", "name": "Document Workflow Review", "type": "diagnose", "timeline": "1–2 weeks", "summary": "A review of document handling that identifies friction, risks and improvements.", "includes": ["Workflow discovery session", "Document types and hand-off mapping", "Tools, controls and exceptions review", "Prioritised improvement opportunities"]},
+      {"id": "company-knowledge-assistant", "name": "Company Knowledge Assistant", "type": "build", "timeline": "3–5 weeks", "summary": "A grounded assistant that helps people find answers in approved organisational material.", "includes": ["Use case and source selection", "Content preparation and access design", "Assistant configuration with source references", "Question testing, guidance and handover"]},
+      {"id": "document-processing-pipeline", "name": "Document Processing Pipeline (invoices, contracts, forms)", "type": "build", "timeline": "3–5 weeks", "summary": "A documented workflow to extract and route information from agreed document types.", "includes": ["Document and field requirements", "Extraction and validation workflow", "Exception and human review steps", "Integration, testing and handover"]},
+      {"id": "process-sop-sprint", "name": "Process & SOP Sprint", "type": "build", "timeline": "2–3 weeks", "summary": "Clear, practical process documentation that makes recurring work easier to follow.", "includes": ["Process discovery and input", "Current-state workflow mapping", "SOP drafting and review", "Roles, decision points and exceptions"]},
+      {"id": "localization", "name": "Localization (documents, websites, courses)", "type": "build", "timeline": "2–4 weeks", "summary": "Adapted content that keeps its meaning and works for its local audience.", "includes": ["Content and audience scope", "Terminology and style guidance", "Localization of agreed materials", "Human review and quality checks"]},
+      {"id": "knowledge-upkeep", "name": "Knowledge Upkeep", "type": "run", "timeline": "Ongoing, monthly", "summary": "A recurring service that keeps selected knowledge resources accurate and useful.", "includes": ["Upkeep priorities", "Scheduled review of materials", "Updates and version management", "Quality and coverage report"]}
+    ],
+    "faqs": [
+      {"q": "Can an assistant answer only from approved material?", "a": "Yes. We configure it to use selected sources, provide references and test it on representative questions."},
+      {"q": "Can document processing include human review?", "a": "Yes. Review and exception steps are built in wherever judgement or verification is needed."},
+      {"q": "Do you provide certified translations?", "a": "Localization is not a substitute for certified translation. We help identify where formal certification is required."}
+    ],
+    "related": ["data-analytics", "operations-finance", "ai-training-change"],
+    "specialist": ["/services/ai-localization.html", "/services/business-operations.html"]
+  },
+  {
+    "slug": "web-apps-no-code",
+    "name": "Web, Apps & No-code Products",
+    "group": "Tech, Risk & People",
+    "short": "Design and launch websites, portals, internal tools and MVPs without unnecessary complexity.",
+    "headline": "Create digital products that solve a real user need.",
+    "problem": "A weak web experience makes it hard for visitors to understand what you offer or take the next step. Internal teams also lose time when everyday work relies on disconnected tools and spreadsheets. We shape, build and maintain digital solutions around clear user needs.",
+    "whoFor": ["Teams whose website no longer supports their goals", "Organisations launching a new service or digital experience", "Operators replacing spreadsheet-based workflows", "Businesses needing a secure portal for customers"],
+    "offers": [
+      {"id": "website-teardown", "name": "Website Teardown", "type": "diagnose", "timeline": "5 business days", "summary": "An expert review of your website with a prioritised set of practical improvements.", "includes": ["Goals and audience review", "Navigation and page-structure assessment", "Content, usability and conversion observations", "Prioritised findings walkthrough"]},
+      {"id": "ai-built-website", "name": "AI-built Website", "type": "build", "timeline": "3–5 weeks", "summary": "A human-directed website build that uses AI-assisted workflows where they add value.", "includes": ["Requirements and sitemap", "Page content and visual direction", "Responsive build with accessibility checks", "Launch support and handover"]},
+      {"id": "landing-page-sprint", "name": "Landing Page Sprint", "type": "build", "timeline": "1–2 weeks", "summary": "A focused landing page that explains an offer and guides visitors to act.", "includes": ["Audience and conversion brief", "Page structure and copy", "Responsive design and build", "Form setup, testing and publishing"]},
+      {"id": "internal-tool-mvp", "name": "Internal Tool or MVP", "type": "build", "timeline": "3–6 weeks", "summary": "A working first version of a digital tool built around a validated workflow or need.", "includes": ["User and workflow discovery", "Feature scope and prototype", "No-code or suitable technical build", "Testing, documentation and next steps"]},
+      {"id": "customer-portal", "name": "Customer Portal", "type": "build", "timeline": "4–8 weeks", "summary": "A customer-facing portal that brings selected information and tasks into one place.", "includes": ["User journeys and requirements", "Portal structure and interface design", "Authentication and access approach", "Integrations, testing and handover"]},
+      {"id": "site-care", "name": "Site Care", "type": "run", "timeline": "Ongoing, monthly", "summary": "Ongoing website maintenance and improvement to keep your site dependable.", "includes": ["Routine updates and checks", "Backup and availability review", "Small agreed content or usability changes", "Site health summary"]}
+    ],
+    "faqs": [
+      {"q": "Do you work with our existing website platform?", "a": "We assess the platform first, then recommend whether to improve, extend or replace it."},
+      {"q": "Can we edit the site after handover?", "a": "Yes. We document the editing workflow and hand over in a way that suits your chosen platform."},
+      {"q": "Does an internal tool need to be fully specified first?", "a": "No. Discovery and prototyping clarify the need and shape a sensible first version."}
+    ],
+    "related": ["search-web-ecommerce", "data-analytics", "cloud-workplace-it"],
+    "specialist": ["/services/digital-presence.html", "/website-enquiry-readiness.html"]
+  },
+  {
+    "slug": "cloud-workplace-it",
+    "name": "Cloud, Workplace & IT Modernization",
+    "group": "Tech, Risk & People",
+    "short": "Make everyday tools, cloud services and IT support work together reliably.",
+    "headline": "A dependable digital workplace starts with the right foundations.",
+    "problem": "Disconnected tools, unclear access and ageing systems make routine work harder and create avoidable risk. We help you choose, configure and maintain practical workplace and cloud services, with a clear plan for adoption and support.",
+    "whoFor": ["Teams reviewing workplace tools and subscriptions", "Organisations moving files or services to the cloud", "Leaders planning a Microsoft 365 or Google Workspace rollout", "Operations leads seeking dependable IT support"],
+    "note": "Delivered with certified partners.",
+    "offers": [
+      {"id": "workplace-tools-review", "name": "Workplace Tools Review", "type": "diagnose", "timeline": "5 business days", "summary": "A focused review of workplace tools, workflows and support needs with a prioritised plan.", "includes": ["Current tools and workflow map", "Access and configuration observations", "Duplication and integration opportunities", "Ranked recommendations and readout"]},
+      {"id": "m365-workspace-setup", "name": "Microsoft 365 or Google Workspace Setup", "type": "build", "timeline": "2–3 weeks", "summary": "A collaborative workspace configured around your organisation's needs.", "includes": ["Requirements and configuration plan", "Accounts, drives and team spaces", "Access and security settings", "Admin handover and user guidance"]},
+      {"id": "copilot-gemini-rollout", "name": "Copilot & Gemini Rollout", "type": "build", "timeline": "2–4 weeks", "summary": "Prepare your environment and people to adopt Copilot or Gemini with sensible controls.", "includes": ["Readiness and data-access review", "Rollout and configuration plan", "Use cases and prompt examples", "Adoption checkpoints and handover"]},
+      {"id": "cloud-migration-planning", "name": "Cloud Migration Planning", "type": "build", "timeline": "2–3 weeks", "summary": "Turn cloud migration goals into a sequenced plan with dependencies and safeguards.", "includes": ["Current environment and dependency map", "Target-state options", "Migration sequence and milestones", "Risk, access and continuity checklist"]},
+      {"id": "it-care", "name": "IT Care", "type": "run", "timeline": "Ongoing, monthly", "summary": "Consistent help maintaining workplace systems and resolving day-to-day issues.", "includes": ["Agreed support channel and process", "Routine account and access administration", "Configuration and service health checks", "Monthly service review"]}
+    ],
+    "faqs": [
+      {"q": "Which workplace platforms do you support?", "a": "Microsoft 365, Google Workspace and connected cloud services, based on your environment and requirements."},
+      {"q": "Can you work with our current IT provider?", "a": "Yes. We coordinate with your provider, clarify responsibilities and document decisions."},
+      {"q": "Will a setup interrupt normal work?", "a": "We plan changes around your operations, agree communications and schedule any transition steps with you."}
+    ],
+    "related": ["web-apps-no-code", "cyber-privacy", "ai-training-change"],
+    "specialist": ["/services/ai-training.html", "/services/business-operations.html"]
+  },
+  {
+    "slug": "cyber-privacy",
+    "name": "Cybersecurity & Data Privacy Readiness",
+    "group": "Tech, Risk & People",
+    "short": "Improve security and privacy practices with clear, actionable readiness work.",
+    "headline": "Build confidence in how your organisation protects information.",
+    "problem": "Security expectations evolve while systems, suppliers and data practices change. Gaps in ownership or documentation make it hard to respond with confidence. We map practical priorities, strengthen everyday controls and prepare clear evidence, without presenting readiness work as a certified audit.",
+    "whoFor": ["Leaders seeking a practical view of security fundamentals", "Teams preparing privacy processes for review", "Organisations assessing safeguards for AI use", "Operations owners updating policies and awareness materials"],
+    "note": "Readiness work delivered with certified partners, not a certified audit.",
+    "offers": [
+      {"id": "security-basics-check", "name": "Security Basics Check", "type": "diagnose", "timeline": "5 business days", "summary": "A practical review of core security practices with a prioritised action list.", "includes": ["Key systems and working practices", "Access, backup and device review", "Current incident process", "Prioritised improvement register"]},
+      {"id": "data-privacy-readiness", "name": "Data Privacy Readiness (GDPR, India DPDP)", "type": "build", "timeline": "2–4 weeks", "summary": "Organise privacy processes and documentation around the personal data you handle.", "includes": ["Personal-data flow map", "Documentation and notice gap review", "Request and incident workflows", "Records, templates and ownership checklist"]},
+      {"id": "ai-security-review", "name": "AI Security Review", "type": "build", "timeline": "2–3 weeks", "summary": "Review safeguards around selected AI tools, data flows and use cases.", "includes": ["AI use-case and data-flow inventory", "Access and configuration review", "Risk and control observations", "Recommended guardrails and escalation"]},
+      {"id": "security-policy-training-pack", "name": "Policy & Training Pack", "type": "build", "timeline": "2–3 weeks", "summary": "Usable security policies and practical awareness materials for your team.", "includes": ["Policy and acceptable-use documents", "Incident reporting guide", "Role-based awareness materials", "Implementation checklist"]},
+      {"id": "quarterly-security-review", "name": "Quarterly Security Review", "type": "run", "timeline": "Quarterly", "summary": "Recurring reviews that keep security priorities, actions and incidents visible.", "includes": ["Review of agreed actions", "System and supplier changes", "Incident and exception discussion", "Refreshed risk register and next steps"]}
+    ],
+    "faqs": [
+      {"q": "Is this a certified security audit?", "a": "No. This is readiness and operational support, not a certified audit or formal assurance opinion."},
+      {"q": "Do you provide legal advice?", "a": "No. We organise practical privacy readiness and recommend qualified counsel for legal interpretation."},
+      {"q": "Can you work with our existing security team?", "a": "Yes. We coordinate with internal owners and external providers so recommendations fit your environment."}
+    ],
+    "related": ["cloud-workplace-it", "ai-governance", "knowledge-document-ai"],
+    "specialist": ["/editorial-standards.html", "/privacy-policy.html"]
+  },
+  {
+    "slug": "ai-training-change",
+    "name": "People, HR & Change",
+    "group": "Tech, Risk & People",
+    "short": "Help people build confidence, capability and good habits around AI and change.",
+    "headline": "Tools don't transform organisations. People do.",
+    "problem": "New tools and processes deliver little when people are unsure how to use them or what good practice looks like. Leaders need practical ways to guide adoption, build capability and respond to concerns. We provide role-relevant learning and change support grounded in real work.",
+    "whoFor": ["Teams adopting AI in everyday work", "Leaders shaping an organisation-wide change", "People teams improving recruiting or onboarding", "Managers wanting consistent guidance and learning paths"],
+    "offers": [
+      {"id": "team-ai-bootcamp", "name": "Team AI Bootcamp", "type": "diagnose", "timeline": "90 minutes", "summary": "A hands-on session that helps people use AI thoughtfully on their real tasks.", "includes": ["Live facilitated session", "Exercises on agreed work scenarios", "Safe-use and data-handling guidance", "Prompt examples and follow-up resources"]},
+      {"id": "leadership-ai-workshop", "name": "Leadership AI Workshop", "type": "build", "timeline": "Half day", "summary": "Help leaders align on AI opportunities, risks and practical next steps.", "includes": ["Pre-session discovery", "AI landscape briefing", "Opportunity and risk prioritisation", "Written action summary"]},
+      {"id": "competitive-intelligence-workshop", "name": "Competitive Intelligence Workshop", "type": "build", "timeline": "Half day", "summary": "Equip a team to gather, interpret and apply competitive signals responsibly.", "includes": ["Research questions and source criteria", "Structured intelligence workflow", "Hands-on analysis exercises", "Reusable templates"]},
+      {"id": "hr-workflow-automation", "name": "HR Workflow Automation (recruiting, onboarding)", "type": "build", "timeline": "3–5 weeks", "summary": "Design and implement a focused automation for a recruiting or onboarding workflow.", "includes": ["Current workflow map", "Automation design and approval points", "Configured workflow and notifications", "Testing, documentation and handover"]},
+      {"id": "change-management-support", "name": "Change Management Support", "type": "run", "timeline": "Ongoing, monthly", "summary": "Keep momentum through clear communications, feedback and adoption support.", "includes": ["Change plan and stakeholder map", "Communication materials", "Feedback collection and themes", "Regular progress review"]},
+      {"id": "ai-academy", "name": "AI Academy (self-paced)", "type": "run", "timeline": "Ongoing access", "summary": "A structured self-paced learning path for practical and responsible AI use.", "includes": ["Sequenced learning modules", "Demonstrations and exercises", "Responsible-use guidance", "Knowledge checks and completion tracking"]},
+      {"id": "monthly-ai-clinic", "name": "Monthly AI Clinic", "type": "run", "timeline": "Ongoing, monthly", "summary": "A recurring forum to solve questions and practise useful AI approaches.", "includes": ["Facilitated monthly clinic", "Use-case demonstrations", "Questions and answers", "Shared examples and notes"]}
+    ],
+    "faqs": [
+      {"q": "Can sessions be tailored to our work?", "a": "Yes. We shape examples around the roles, workflows and tools you identify."},
+      {"q": "Are sessions live or self-paced?", "a": "The Bootcamp and workshops are live; the AI Academy is self-paced."},
+      {"q": "Can you support change after a workshop?", "a": "Yes. Change Management Support and monthly clinics turn first learning into lasting practice."}
+    ],
+    "related": ["ai-governance", "ai-strategy", "knowledge-document-ai"],
+    "specialist": ["/services/ai-training.html"]
+  },
+  {
+    "slug": "ai-governance",
+    "name": "Governance, Risk, ESG & Compliance",
+    "group": "Tech, Risk & People",
+    "short": "Create practical oversight for AI, continuity and responsible business commitments.",
+    "headline": "Make responsible governance a foundation for progress.",
+    "problem": "AI use and business commitments can grow faster than policies, ownership and review processes. Without a clear register and workable controls, teams struggle to explain decisions or respond to new expectations such as the EU AI Act. We establish practical readiness and reporting routines, not legal advice.",
+    "whoFor": ["Leaders establishing oversight for AI use", "Teams preparing for new governance expectations", "Organisations documenting ESG and continuity practices", "Owners wanting a repeatable review cadence"],
+    "note": "Readiness work, not legal advice.",
+    "offers": [
+      {"id": "ai-policy-use-register", "name": "AI Policy & Use Register", "type": "diagnose", "timeline": "1–2 weeks", "summary": "A practical baseline of AI use and the policies needed to guide it.", "includes": ["AI use discovery and register", "Current policy and practice review", "Draft acceptable-use principles", "Prioritised governance actions"]},
+      {"id": "esg-continuity-readiness", "name": "ESG & Continuity Readiness Check", "type": "diagnose", "timeline": "2 weeks", "summary": "Review ESG and continuity practices and identify useful next steps.", "includes": ["Practice and documentation review", "Stakeholder and ownership map", "Evidence and reporting gaps", "Readiness summary and action plan"]},
+      {"id": "ai-governance-eu-ai-act", "name": "AI Governance & EU AI Act Readiness", "type": "build", "timeline": "3–4 weeks", "summary": "An AI governance baseline and readiness plan aligned to relevant obligations.", "includes": ["AI systems and use inventory", "Preliminary risk and role assessment", "Responsibilities and review cadence", "Prioritised readiness roadmap"]},
+      {"id": "esg-narrative-reporting", "name": "ESG Narrative Reporting", "type": "run", "timeline": "Ongoing, quarterly", "summary": "Turn verified information into clear, consistent ESG narrative updates.", "includes": ["Reporting brief and structure", "Evidence and source log", "Draft narrative updates", "Claims review and approvals"]},
+      {"id": "quarterly-governance-review", "name": "Quarterly Governance Review", "type": "run", "timeline": "Quarterly", "summary": "Keep governance records, actions and reviews current as practices evolve.", "includes": ["Register and policy updates", "Progress on agreed actions", "New use and exception discussion", "Decisions and next steps"]}
+    ],
+    "faqs": [
+      {"q": "Is this legal advice?", "a": "No. This is readiness and governance support, not legal advice. Consult qualified counsel for legal interpretation."},
+      {"q": "Do you certify compliance?", "a": "No. We document practices, identify readiness gaps and plan actions; we do not certify compliance."},
+      {"q": "Which EU AI Act dates matter now?", "a": "AI-literacy duties already apply, Article 50 transparency rules took effect on 2 August 2026, and stand-alone high-risk obligations start on 2 December 2027."}
+    ],
+    "related": ["ai-training-change", "cyber-privacy", "ai-strategy"],
+    "specialist": ["/editorial-standards.html", "/services/ai-automation.html"]
+  },
+  {
+    "slug": "operations-finance",
+    "name": "Operations, Finance & Supply Chain",
+    "group": "Operations & Data",
+    "short": "Make back-office, finance and supply-chain workflows clearer, connected and easier to manage.",
+    "headline": "Reliable operations turn everyday information into better decisions.",
+    "problem": "Manual hand-offs, scattered records and delayed reporting make it hard to see what needs attention. Finance and supply-chain work often depends on repetitive coordination that can be streamlined without losing oversight. We map the work, improve the flow and build useful visibility around it.",
+    "whoFor": ["Finance teams handling recurring documents and approvals", "Operations leads seeking clear process ownership", "Procurement teams coordinating suppliers and requests", "Decision-makers who need timely inventory or logistics visibility"],
+    "offers": [
+      {"id": "back-office-automation-audit", "name": "Back-office Automation Audit", "type": "diagnose", "timeline": "1–2 weeks", "summary": "Identify automation opportunities across selected back-office processes.", "includes": ["Process and hand-off discovery", "Repetitive task and exception map", "Tool and data dependency review", "Prioritised opportunities and sequence"]},
+      {"id": "finance-ops-automation", "name": "Finance Ops Automation (invoices, payables, reporting)", "type": "build", "timeline": "3–5 weeks", "summary": "Automate a defined finance workflow with clear checks and human approvals.", "includes": ["Workflow and control mapping", "Automation design and approval rules", "Configured document or data workflow", "Exception handling and handover"]},
+      {"id": "procurement-supplier-automation", "name": "Procurement & Supplier Automation", "type": "build", "timeline": "3–5 weeks", "summary": "Streamline procurement or supplier processes with traceable steps and ownership.", "includes": ["Request and supplier workflow map", "Requirements and decision rules", "Configured workflow and notifications", "Testing and documentation"]},
+      {"id": "inventory-logistics-dashboards", "name": "Inventory & Logistics Dashboards", "type": "build", "timeline": "3–5 weeks", "summary": "Bring inventory and logistics information into a practical operational dashboard.", "includes": ["Data sources and metric definitions", "Data quality and refresh review", "Dashboard design and build", "Walkthrough and documentation"]},
+      {"id": "ops-care", "name": "Ops Care", "type": "run", "timeline": "Ongoing, monthly", "summary": "Maintain and improve selected workflows, reporting and automation over time.", "includes": ["Workflow monitoring", "Issue triage and fixes", "Small process improvements", "Monthly review and actions"]}
+    ],
+    "faqs": [
+      {"q": "Will automation remove human checks?", "a": "No. Approval points and exception handling keep appropriate human oversight."},
+      {"q": "What if our data is inconsistent?", "a": "We identify data issues during discovery and include validation or cleanup steps in the scope."},
+      {"q": "Can you start with one workflow?", "a": "Yes. One focused process is often the best way to set requirements, controls and a pattern to reuse."}
+    ],
+    "related": ["data-analytics", "automation-ai-agents", "cloud-workplace-it"],
+    "specialist": ["/services/business-operations.html", "/services/business-intelligence.html"]
+  }
+]

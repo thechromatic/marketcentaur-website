@@ -1,0 +1,338 @@
+{
+ "bundles": [
+  {
+   "id": "ai-quick-start",
+   "name": "AI Quick Start",
+   "tagline": "See where you stand, find quick wins and get your team using AI with confidence.",
+   "timeline": "2–3 weeks",
+   "offerIds": [
+    "ai-readiness-scan",
+    "automation-opportunity-audit",
+    "team-ai-bootcamp"
+   ]
+  },
+  {
+   "id": "growth-stack",
+   "name": "Growth Stack",
+   "tagline": "Get found on Google and in AI answers, look credible and publish consistently.",
+   "timeline": "6–8 weeks, then monthly",
+   "offerIds": [
+    "ai-search-visibility-audit",
+    "ai-built-website",
+    "content-engine"
+   ]
+  },
+  {
+   "id": "pipeline-pack",
+   "name": "Pipeline Pack",
+   "tagline": "A clean CRM, a sharp LinkedIn presence and an outbound engine that books meetings.",
+   "timeline": "4–6 weeks, then monthly",
+   "offerIds": [
+    "crm-health-check",
+    "crm-setup-migration",
+    "linkedin-makeover",
+    "outbound-engine"
+   ]
+  },
+  {
+   "id": "launch-pack",
+   "name": "Launch Pack",
+   "tagline": "Everything needed to take a new product, service or market live.",
+   "timeline": "4–6 weeks",
+   "offerIds": [
+    "market-entry-brief",
+    "landing-page-sprint",
+    "brand-video-pack",
+    "analytics-tracking-setup"
+   ]
+  },
+  {
+   "id": "90-day-transformation",
+   "name": "90-Day Transformation Program",
+   "tagline": "A roadmap, first automations, aligned leaders and senior AI leadership for a quarter.",
+   "timeline": "90 days",
+   "offerIds": [
+    "ai-transformation-roadmap",
+    "workflow-automation-sprint",
+    "leadership-ai-workshop",
+    "fractional-ai-officer"
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "slug": "construction-engineering-architecture",
+   "name": "Construction, Engineering & Architecture",
+   "headline": "Spend less time chasing documents and more time delivering projects.",
+   "lead": "For contractors, engineering consultancies and architecture practices. We organise technical knowledge, streamline document-heavy workflows and support project reporting, with your specialists in charge of every technical decision.",
+   "pains": [
+    "Plans, specifications and correspondence change often and need careful version control",
+    "Project decisions and technical details are spread across documents and tools",
+    "Routine reporting and coordination pull time away from delivery",
+    "Tender and proposal preparation repeats the same research every time",
+    "Knowledge leaves with people when projects end"
+   ],
+   "offerIds": [
+    "document-workflow-review",
+    "company-knowledge-assistant",
+    "process-sop-sprint",
+    "workflow-automation-sprint",
+    "industry-landscape-report"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI interpret project documents?",
+     "a": "Document workflows can classify and extract information, with human verification for anything important."
+    },
+    {
+     "q": "Does this replace technical review?",
+     "a": "No. Engineers, architects and project leads stay responsible for technical judgement and approvals."
+    },
+    {
+     "q": "Can teams search past project knowledge?",
+     "a": "Yes. A knowledge assistant retrieves approved material while respecting source permissions."
+    }
+   ],
+   "titleName": "Construction & Engineering"
+  },
+  {
+   "slug": "telecom-infrastructure",
+   "name": "Telecom & Infrastructure",
+   "headline": "Keep service operations, technical knowledge and customer support in step.",
+   "lead": "For telecom operators, tower and fibre companies, and infrastructure service providers. We streamline support, documentation and reporting across the systems you already run.",
+   "pains": [
+    "Routine service requests compete with complex cases for support time",
+    "Technical procedures are hard to find across teams and sites",
+    "Data from different platforms makes service performance hard to read",
+    "Site, permit and contractor documents need consistent processing",
+    "Competitor and market moves are tracked by hand"
+   ],
+   "offerIds": [
+    "customer-support-automation",
+    "company-knowledge-assistant",
+    "document-processing-pipeline",
+    "kpi-dashboard-build",
+    "signal-watch"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI resolve service requests?",
+     "a": "It can handle approved routine requests and route technical or sensitive cases to your staff."
+    },
+    {
+     "q": "Can field teams search technical guidance?",
+     "a": "Yes. A knowledge assistant can surface approved procedures with suitable access controls."
+    },
+    {
+     "q": "How do you approach security?",
+     "a": "We review each proposed AI workflow and its data handling, then agree safeguards with your security team."
+    }
+   ]
+  },
+  {
+   "slug": "media-entertainment",
+   "name": "Media & Entertainment",
+   "headline": "Get more from every piece of content you make.",
+   "lead": "For publishers, studios, creators, podcasters and event producers. We support production workflows, repurposing, discoverability and audience growth while your editors keep control.",
+   "pains": [
+    "Good material needs adapting for many formats and platforms",
+    "Audiences struggle to find relevant content in search and AI answers",
+    "Production notes, assets and rights information are scattered",
+    "Newsletters and social channels run on inconsistent schedules",
+    "Sponsorship and partner research takes too long"
+   ],
+   "offerIds": [
+    "podcast-webinar-repurposing",
+    "content-strategy-calendar",
+    "ai-search-visibility-audit",
+    "video-studio",
+    "document-processing-pipeline"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI repurpose existing content?",
+     "a": "Yes. It drafts adaptations from approved source material, with editorial review before release."
+    },
+    {
+     "q": "Can you improve content discovery?",
+     "a": "Yes. We review search and AI visibility and improve structure, metadata and answers."
+    },
+    {
+     "q": "How do you protect editorial standards?",
+     "a": "Your team approves scripts, edits and publishing; every workflow includes explicit review steps."
+    }
+   ]
+  },
+  {
+   "slug": "legal-services",
+   "name": "Legal Services",
+   "headline": "Handle documents and knowledge faster, with confidentiality built in.",
+   "lead": "For law firms, in-house legal teams and legal service providers. We support controlled document handling, knowledge retrieval and safe AI adoption without replacing legal judgement.",
+   "pains": [
+    "Large sets of contracts and correspondence need structured review",
+    "Precedents and practice guidance are hard to find consistently",
+    "Confidentiality and professional duties require clear AI boundaries",
+    "Client intake and matter updates involve repetitive admin",
+    "Business development relies on ad hoc research"
+   ],
+   "offerIds": [
+    "document-workflow-review",
+    "company-knowledge-assistant",
+    "ai-policy-use-register",
+    "data-privacy-readiness",
+    "process-sop-sprint"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI provide legal advice?",
+     "a": "No. AI can support internal workflows; qualified lawyers remain responsible for advice and review."
+    },
+    {
+     "q": "Can confidential documents be used?",
+     "a": "We assess tools, permissions and data flows and recommend safeguards for your internal review first."
+    },
+    {
+     "q": "Can you draft an AI policy for a firm?",
+     "a": "Yes. We prepare an AI policy and use register for review against your professional obligations."
+    }
+   ]
+  },
+  {
+   "slug": "nonprofits",
+   "name": "Nonprofits & Social Enterprises",
+   "headline": "Spend more time on your mission and less on admin.",
+   "lead": "For charities, foundations, NGOs and social enterprises. We reduce repetitive administration, make organisational knowledge easier to use and help you communicate clearly with supporters and communities.",
+   "pains": [
+    "Routine coordination and reporting compete with programme delivery",
+    "Policies, programme materials and past learning sit in separate places",
+    "Supporter and donor communications are inconsistent",
+    "Grant applications repeat the same research and writing",
+    "Volunteers and staff need simple, safe guidance on AI"
+   ],
+   "offerIds": [
+    "workflow-automation-sprint",
+    "company-knowledge-assistant",
+    "content-strategy-calendar",
+    "email-newsletter-programs",
+    "team-ai-bootcamp"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI support programme administration?",
+     "a": "Yes. It can help with repeatable tasks such as document organisation and routine communications, with staff oversight."
+    },
+    {
+     "q": "How do we protect community information?",
+     "a": "We map data use, minimise sensitive inputs and set access and review practices."
+    },
+    {
+     "q": "Can our team learn to use AI responsibly?",
+     "a": "Yes. Practical training covers suitable uses, limits and review responsibilities."
+    }
+   ],
+   "titleName": "Nonprofits"
+  },
+  {
+   "slug": "government-public-sector",
+   "name": "Government & Public Sector",
+   "headline": "Modernise public services with transparency and human oversight.",
+   "lead": "For public bodies, agencies and organisations that deliver public services. We support internal knowledge, records processing and responsible AI adoption designed for accountability.",
+   "pains": [
+    "Policies and service guidance are spread across departments and systems",
+    "Forms and correspondence need repeated classification and data entry",
+    "AI use needs clear governance, accountability and safeguards",
+    "Citizen enquiries arrive through many channels",
+    "Reporting to leadership takes days of manual work"
+   ],
+   "offerIds": [
+    "ai-policy-use-register",
+    "data-privacy-readiness",
+    "document-workflow-review",
+    "company-knowledge-assistant",
+    "ai-governance-eu-ai-act"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI make public service decisions?",
+     "a": "Our focus is decision support and administrative assistance; accountable staff keep authority."
+    },
+    {
+     "q": "How is public information kept accurate?",
+     "a": "Solutions use approved sources, named owners and escalation when information is unclear."
+    },
+    {
+     "q": "Is your readiness work a formal audit?",
+     "a": "No. It supports preparation and governance but does not replace a formal audit or legal advice."
+    }
+   ]
+  },
+  {
+   "slug": "agriculture-food",
+   "name": "Agriculture & Food",
+   "headline": "Connect farm, factory and market information.",
+   "lead": "For growers, food producers, processors, exporters and distributors. We organise supplier and product records, improve operational visibility and support new-market growth.",
+   "pains": [
+    "Specifications and supplier documents need accurate handling",
+    "Production, inventory and distribution data are hard to read together",
+    "Routine updates and hand-offs take time across the supply chain",
+    "Export buyers and distributors are hard to find and qualify",
+    "Product content is missing in buyers' languages"
+   ],
+   "offerIds": [
+    "document-processing-pipeline",
+    "procurement-supplier-automation",
+    "inventory-logistics-dashboards",
+    "market-entry-brief",
+    "localization"
+   ],
+   "faqs": [
+    {
+     "q": "Can AI process product and supplier documents?",
+     "a": "It can extract and organise common information, with review steps for records that need confirmation."
+    },
+    {
+     "q": "Can dashboards connect operational information?",
+     "a": "Where data is accessible and consistent, dashboards give one shared view of selected measures."
+    },
+    {
+     "q": "Will AI replace quality checks?",
+     "a": "No. Human quality and food-safety processes stay essential; AI helps with the supporting information work."
+    }
+   ]
+  },
+  {
+   "slug": "automotive-mobility",
+   "name": "Automotive & Mobility",
+   "headline": "Answer customers faster and run service operations smoothly.",
+   "lead": "For dealers, service centres, fleet operators, parts suppliers and mobility businesses. We support customer enquiries, technical knowledge retrieval and process automation across your existing systems.",
+   "pains": [
+    "Customers ask the same questions about vehicles, servicing and availability",
+    "Service guidance and product documents are spread across repositories",
+    "Customer, service and inventory systems don't give one view",
+    "Leads from portals and ads are followed up inconsistently",
+    "Reviews and reputation are managed by hand"
+   ],
+   "offerIds": [
+    "ai-voice-front-desk",
+    "customer-support-automation",
+    "company-knowledge-assistant",
+    "inventory-logistics-dashboards",
+    "crm-health-check"
+   ],
+   "faqs": [
+    {
+     "q": "Can an assistant handle service bookings?",
+     "a": "It can answer approved routine questions and route booking requests or complex issues to staff."
+    },
+    {
+     "q": "Can technicians search technical documents?",
+     "a": "Yes. A knowledge assistant retrieves approved service information with suitable permissions."
+    },
+    {
+     "q": "Can you integrate with our dealer or fleet tools?",
+     "a": "We assess available integrations and data access during scoping before recommending an approach."
+    }
+   ]
+  }
+ ]
+}
