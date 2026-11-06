@@ -14,7 +14,7 @@
   var TIMEOUT_MS = 15000;
   // Optional: paste a Make.com (or Zapier) webhook URL to copy every lead into your CRM,
   // Google Sheets or Slack. Leave empty to send email only.
-  var MAKE_WEBHOOK_URL = "";
+  var MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/g43pd65bjhdrts3x44buemetjmjuzss7";
 
   function copyToWebhook(payload, form) {
     if (!MAKE_WEBHOOK_URL) return;
