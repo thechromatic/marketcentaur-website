@@ -19,14 +19,16 @@
   function copyToWebhook(payload, form) {
     if (!MAKE_WEBHOOK_URL) return;
     try {
-      var body = JSON.stringify(Object.assign({
+      // Sent as a normal form post so Make.com splits it into fields automatically.
+      var body = new URLSearchParams(Object.assign({
         form: form.getAttribute("data-mc-form") || form.id || "form",
         page: location.pathname,
         subject: payload.meta._subject || "",
         submitted_at: new Date().toISOString()
       }, payload.data));
-      if (navigator.sendBeacon) navigator.sendBeacon(MAKE_WEBHOOK_URL, new Blob([body], { type: "text/plain" }));
-      else fetch(MAKE_WEBHOOK_URL, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+      if (!(navigator.sendBeacon && navigator.sendBeacon(MAKE_WEBHOOK_URL, body))) {
+        fetch(MAKE_WEBHOOK_URL, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+      }
     } catch (e) { /* the email copy still goes out */ }
   }
 
