@@ -223,6 +223,29 @@ function build() {
     : '      <p class="muted">New guides are on the way.</p>';
   fs.writeFileSync(path.join(OUT, 'index.html'), addGenerator(fill(indexTpl, { cards, jsonld: jsonLd(indexLd) })));
 
+  // RSS feed, so Buffer, newsletter tools and readers can pick up new posts automatically.
+  const rssDate = (d) => new Date(`${d}T06:00:00+05:30`).toUTCString();
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>MarketCentaur Insights</title>
+  <link>${SITE}/insights/</link>
+  <atom:link href="${SITE}/insights/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Practical guides on AI, automation, growth and competitive intelligence from MarketCentaur.</description>
+  <language>en</language>
+  <lastBuildDate>${rssDate(posts[0]?.date || today)}</lastBuildDate>
+${posts.slice(0, 30).map((p) => `  <item>
+    <title>${esc(p.title)}</title>
+    <link>${p.url}</link>
+    <guid isPermaLink="true">${p.url}</guid>
+    <pubDate>${rssDate(p.date)}</pubDate>
+    <description>${esc(p.description)}</description>
+  </item>`).join('\n')}
+</channel>
+</rss>
+`;
+  fs.writeFileSync(path.join(OUT, 'feed.xml'), feed);
+
   updateBetweenMarkers(path.join(ROOT, 'sitemap.xml'), '<!-- insights:start -->', '<!-- insights:end -->',
     [`  <url><loc>${SITE}/insights/</loc><lastmod>${posts[0]?.date || today}</lastmod></url>`,
       ...posts.map((p) => `  <url><loc>${p.url}</loc><lastmod>${p.updated || p.date}</lastmod></url>`)].join('\n'),

@@ -1,6 +1,7 @@
 name: Build Insights
 
-# Turns Markdown posts in content/insights/ into pages under /insights/, renders social
+# Turns Markdown posts in content/insights/ into pages under /insights/ (plus the RSS feed),
+# builds practice and industry pages from content/catalog/, renders social
 # carousels from content/social/ into assets/social/, then commits the generated files back
 # to the same branch so Cloudflare Pages deploys them.
 # Runs on every push that touches posts or the build files, and once a day so posts
@@ -11,6 +12,7 @@ on:
     paths:
       - "content/insights/**"
       - "content/social/**"
+      - "content/catalog/**"
       - "assets/marketcentaur-logo-transparent.png"
       - "**.html"
       - "scripts/**"
@@ -48,6 +50,13 @@ jobs:
           export BUILD_DATE="$(date +%F)"
           node scripts/build-insights.mjs
 
+      - name: Build practice and industry pages from the catalog
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          export BUILD_DATE="$(date +%F)"
+          node scripts/build-catalog.mjs
+
       - name: Render Open Graph images for new pages
         run: |
           pip install --quiet pillow
@@ -67,12 +76,12 @@ jobs:
 
       - name: Commit generated pages
         run: |
-          git add insights sitemap.xml llms.txt assets/social assets/og
+          git add insights sitemap.xml llms.txt assets/social assets/og assets/catalog.json practices industries index.html services.html how-it-works.html industries.html
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898183+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Build Insights pages"
+          git commit -m "Build Insights and catalog pages"
           git push

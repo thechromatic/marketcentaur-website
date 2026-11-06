@@ -12,6 +12,23 @@
   var WEB3FORMS_KEY = "3d800508-6435-40ae-9b70-ceffafbda97f";
   var INBOX = "hello@marketcentaur.com";
   var TIMEOUT_MS = 15000;
+  // Optional: paste a Make.com (or Zapier) webhook URL to copy every lead into your CRM,
+  // Google Sheets or Slack. Leave empty to send email only.
+  var MAKE_WEBHOOK_URL = "";
+
+  function copyToWebhook(payload, form) {
+    if (!MAKE_WEBHOOK_URL) return;
+    try {
+      var body = JSON.stringify(Object.assign({
+        form: form.getAttribute("data-mc-form") || form.id || "form",
+        page: location.pathname,
+        subject: payload.meta._subject || "",
+        submitted_at: new Date().toISOString()
+      }, payload.data));
+      if (navigator.sendBeacon) navigator.sendBeacon(MAKE_WEBHOOK_URL, new Blob([body], { type: "text/plain" }));
+      else fetch(MAKE_WEBHOOK_URL, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+    } catch (e) { /* the email copy still goes out */ }
+  }
 
   function isSiteForm(form) {
     return form && form.tagName === "FORM" &&
@@ -105,7 +122,14 @@
     var label = button ? button.textContent : "";
     if (button) { button.disabled = true; button.textContent = "Sending…"; }
 
+    copyToWebhook(payload, form);
     send(payload).then(function () {
+      // Forms marked data-mc-inline stay on the page (assistant, readiness score).
+      if (form.hasAttribute("data-mc-inline")) {
+        if (button) { button.disabled = false; button.textContent = label; }
+        form.dispatchEvent(new CustomEvent("mc:sent", { bubbles: true }));
+        return;
+      }
       window.location.href = next;
     }).catch(function () {
       if (button) { button.disabled = false; button.textContent = label; }

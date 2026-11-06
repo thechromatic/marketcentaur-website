@@ -4,6 +4,12 @@
   // Grouped menu: fixed-scope sprints, done-for-you AI services, then the wider catalog.
   // Entries with a null href render as group labels.
   var divisions = [
+    ["17 practices · 108 services", null],
+    ["Browse all practices", "/practices/"],
+    ["AI Strategy & Readiness", "/practices/ai-strategy.html"],
+    ["Automation & AI Agents", "/practices/automation-ai-agents.html"],
+    ["Data, IT, Security & Governance", "/practices/#tech-risk-people"],
+    ["Free AI Readiness Score", "/ai-readiness-score.html"],
     ["Growth sprints", null],
     ["Website Conversion Sprint", "/services.html#conversion-sprint"],
     ["B2B Account Intelligence Sprint", "/services.html#account-sprint"],

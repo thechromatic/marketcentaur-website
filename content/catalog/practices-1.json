@@ -1,0 +1,228 @@
+[
+  {
+    "slug": "ai-strategy",
+    "name": "AI Strategy & Readiness",
+    "group": "Strategy & AI",
+    "short": "Find where AI can strengthen your work and turn the best opportunities into a practical plan.",
+    "headline": "Make your next AI move with clarity and confidence.",
+    "problem": "AI opportunities can be hard to separate from passing trends, especially when teams are already testing disconnected tools. Without a shared view of readiness, priorities and risk, promising ideas stall or create extra complexity. We help you make informed choices and set a direction your organisation can act on.",
+    "whoFor": ["Leaders seeking a grounded view of AI opportunities and risks", "Teams whose AI experiments have not yet become repeatable practice", "Organisations aligning stakeholders around a common AI direction", "Businesses seeking experienced AI leadership for a defined initiative"],
+    "offers": [
+      {"id": "ai-readiness-scan", "name": "AI Readiness Scan", "type": "diagnose", "timeline": "5 business days", "summary": "A focused assessment of your current capabilities and the most relevant next steps for AI.", "includes": ["Discovery conversation with key stakeholders", "Review of strategy, data, processes, people and governance", "Prioritised opportunities with rationale", "Written report and findings walkthrough"]},
+      {"id": "ai-opportunity-workshop", "name": "AI Opportunity Workshop", "type": "diagnose", "timeline": "1 week", "summary": "A facilitated session that turns business challenges into considered AI opportunities.", "includes": ["Workshop planning and participant prompts", "Facilitated opportunity-mapping session", "Use-case assessment against value, feasibility and risk", "Shortlist of candidate initiatives and next actions"]},
+      {"id": "ai-transformation-roadmap", "name": "AI Transformation Roadmap", "type": "build", "timeline": "3–4 weeks", "summary": "A sequenced roadmap that connects AI initiatives to business priorities and accountable owners.", "includes": ["Stakeholder interviews and context review", "Prioritised initiative backlog", "Phased roadmap with dependencies and owners", "Risk, governance and adoption considerations"]},
+      {"id": "ai-business-case-roi-model", "name": "AI Business Case & ROI Model", "type": "build", "timeline": "2–3 weeks", "summary": "A transparent business case to help you evaluate an AI initiative before committing to delivery.", "includes": ["Initiative scope and assumptions", "Baseline and benefit measures to validate", "Scenario model with adjustable assumptions", "Risks, sensitivities and decision criteria"]},
+      {"id": "fractional-ai-officer", "name": "Fractional AI Officer", "type": "run", "timeline": "Ongoing, monthly", "summary": "Ongoing senior guidance to govern priorities and move your AI agenda forward.", "includes": ["Regular leadership and steering support", "Review of initiatives, milestones and blockers", "Guidance on tools and delivery partners", "Progress summary and next-step planning"]}
+    ],
+    "faqs": [
+      {"q": "Do we need mature data systems to begin?", "a": "No. We assess your current data practices and identify what needs attention, while also considering opportunities that do not depend on extensive data."},
+      {"q": "Will recommendations lock us into a particular provider?", "a": "No. Recommendations are based on your needs and existing environment, with trade-offs made clear."},
+      {"q": "Can you help us move from a roadmap into delivery?", "a": "Yes. We can scope a build or ongoing support engagement, or hand over a clear plan for your team to deliver."}
+    ],
+    "related": ["automation-ai-agents", "data-analytics", "ai-governance"],
+    "specialist": ["/services/strategy-growth.html", "/services/ai-training.html", "/services/business-intelligence.html"]
+  },
+  {
+    "slug": "automation-ai-agents",
+    "name": "Automation & AI Agents",
+    "group": "Strategy & AI",
+    "short": "Reduce repetitive work with dependable automations and carefully governed AI agents.",
+    "headline": "Make everyday workflows work harder for your team.",
+    "problem": "Repeated data entry, hand-offs and routine queries take attention away from valuable work. Automation can help, but poorly designed flows break down, while an agent without clear boundaries can create avoidable risk. We map the right workflows, build with appropriate checks and support reliable operation.",
+    "whoFor": ["Teams dealing with recurring manual hand-offs and updates", "Operations leaders improving the flow of routine work", "Organisations evaluating agents for bounded, well-defined tasks", "Teams whose existing automations need better reliability or oversight"],
+    "offers": [
+      {"id": "automation-opportunity-audit", "name": "Automation Opportunity Audit", "type": "diagnose", "timeline": "5 business days", "summary": "Identify which workflows are suitable for automation and what a sensible first step looks like.", "includes": ["Workflow discovery session", "Complexity and dependency assessment", "Tool-fit recommendations for your environment", "Prioritised opportunity brief"]},
+      {"id": "workflow-automation-sprint", "name": "Workflow Automation Sprint", "type": "build", "timeline": "2–3 weeks", "summary": "Design and deploy a clearly scoped workflow with testing, safeguards and handover.", "includes": ["Workflow design and acceptance criteria", "Configuration across connected tools", "Error handling and human review points", "Testing, documentation and handover"]},
+      {"id": "ai-agent-prototype", "name": "AI Agent Prototype", "type": "build", "timeline": "2–3 weeks", "summary": "Test a defined agent use case in a controlled prototype before deciding whether to deploy it.", "includes": ["Use-case and boundary definition", "Prototype flow and tool selection", "Human approval and escalation design", "Evaluation notes and next-step recommendation"]},
+      {"id": "custom-ai-agent-build", "name": "Custom AI Agent Build", "type": "build", "timeline": "3–6 weeks", "summary": "Build a purpose-designed agent connected to approved tools, with permissions and oversight defined.", "includes": ["Agent scope, permissions and operating rules", "Integration with agreed systems and information sources", "Test set and documented evaluation", "Monitoring guidance and operational runbook"]},
+      {"id": "multi-agent-workflows", "name": "Multi-agent Workflows", "type": "build", "timeline": "4–8 weeks", "summary": "Coordinate specialised agents through a governed workflow for a complex, bounded process.", "includes": ["Process and agent-role architecture", "Coordination and hand-off logic", "Failure handling and human escalation", "End-to-end testing and documentation"]},
+      {"id": "automation-care", "name": "Automation Care", "type": "run", "timeline": "Ongoing, monthly", "summary": "Keep your workflows monitored, maintained and improved as your tools and processes change.", "includes": ["Scheduled workflow health checks", "Triage of reported issues", "Small, scoped workflow refinements", "Regular status and improvement summary"]},
+      {"id": "agent-hosting-tuning", "name": "Agent Hosting & Tuning", "type": "run", "timeline": "Ongoing, monthly", "summary": "Maintain an agreed agent environment and refine its behaviour through structured reviews.", "includes": ["Operational monitoring for agreed deployments", "Review of quality and exception patterns", "Prompt and tool configuration refinements", "Change and release notes"]}
+    ],
+    "faqs": [
+      {"q": "What is the difference between automation and an AI agent?", "a": "An automation follows defined steps. An agent can choose between permitted actions to complete a task, so its scope and safeguards need careful design."},
+      {"q": "Which platforms can you work with?", "a": "We assess your existing systems and recommend an approach that fits your environment rather than requiring a particular platform."},
+      {"q": "Can an agent act without a person reviewing it?", "a": "The level of autonomy is agreed for each use case. We design approval or escalation points for actions that need human judgement."}
+    ],
+    "related": ["operations-finance", "knowledge-document-ai", "conversational-ai"],
+    "specialist": ["/services/ai-automation.html", "/services/business-operations.html", "/labs.html"]
+  },
+  {
+    "slug": "conversational-ai",
+    "name": "Customer Experience & Conversational AI",
+    "group": "Growth & Sales",
+    "short": "Make customer conversations more helpful across calls, chat, WhatsApp and service journeys.",
+    "headline": "Give every customer conversation a clearer next step.",
+    "problem": "Customers expect useful answers and smooth hand-offs, yet teams often face repeated questions across disconnected channels. A conversational assistant helps when it is grounded in accurate information and knows when to involve a person. We design customer experiences around clarity, trust and practical service needs.",
+    "whoFor": ["Customer teams handling many recurring enquiries", "Organisations improving how visitors find answers on their website", "Service leaders exploring voice or messaging support", "Businesses wanting a consistent way to gather and respond to feedback"],
+    "offers": [
+      {"id": "customer-experience-review", "name": "Customer Experience Review", "type": "diagnose", "timeline": "1–2 weeks", "summary": "Review key customer journeys to identify friction, unanswered needs and opportunities to improve service.", "includes": ["Journey and channel discovery", "Review of selected customer touchpoints", "Friction and information gaps", "Prioritised improvement brief"]},
+      {"id": "website-chat-assistant", "name": "Website Chat Assistant", "type": "build", "timeline": "2–4 weeks", "summary": "Deploy a website assistant that answers approved questions and routes visitors to the right next step.", "includes": ["Use-case and conversation design", "Approved knowledge sources", "Assistant configuration and website integration", "Fallback and human hand-off pathways"]},
+      {"id": "ai-voice-front-desk", "name": "AI Voice Front Desk (calls, booking, WhatsApp)", "type": "build", "timeline": "3–5 weeks", "summary": "Configure a voice and messaging front desk for agreed enquiries, routing and booking tasks.", "includes": ["Call and message journey mapping", "Voice and response configuration", "Booking or enquiry-routing integration", "Scenario testing and team handover"]},
+      {"id": "customer-support-automation", "name": "Customer Support Automation", "type": "build", "timeline": "3–6 weeks", "summary": "Streamline selected support tasks while keeping clear routes for human judgement and resolution.", "includes": ["Support workflow and ticket review", "Classification and routing configuration", "Approved response-assistance setup", "Escalation rules and exception handling"]},
+      {"id": "review-reputation-monitoring", "name": "Review & Reputation Monitoring", "type": "run", "timeline": "Ongoing, monthly", "summary": "Monitor agreed feedback channels and help your team respond consistently and learn from sentiment.", "includes": ["Monitoring of agreed review channels", "Alerts for emerging feedback themes", "Response guidance and drafts", "Recurring sentiment summary"]},
+      {"id": "managed-assistant", "name": "Managed Assistant", "type": "run", "timeline": "Ongoing, monthly", "summary": "Keep a deployed customer assistant accurate, useful and aligned with changing service information.", "includes": ["Knowledge-source maintenance", "Conversation quality checks", "Content and configuration updates", "Regular improvement report"]}
+    ],
+    "faqs": [
+      {"q": "Will the assistant replace our customer service team?", "a": "It handles agreed routine interactions and supports your team, with clear routes to a person when a question needs judgement."},
+      {"q": "How do you keep answers accurate?", "a": "We use approved information sources, test representative questions and define what the assistant does when it cannot answer confidently."},
+      {"q": "Can it connect to our booking or support tools?", "a": "We assess your systems during scoping and confirm what is practical for the chosen use case."}
+    ],
+    "related": ["knowledge-document-ai", "automation-ai-agents", "sales-revops"],
+    "specialist": ["/services/ai-front-desk.html", "/services/ai-automation.html"]
+  },
+  {
+    "slug": "marketing-content-video",
+    "name": "Marketing, Content & Video",
+    "group": "Growth & Sales",
+    "short": "Build a consistent content programme that gives your expertise a clear, useful voice.",
+    "headline": "Turn your expertise into content people want to follow.",
+    "problem": "Marketing teams often have useful ideas but lack the structure or production rhythm to publish consistently. Disconnected assets and unclear messaging make it harder for audiences to understand what you offer. We shape a coherent content approach and turn it into well-crafted, reusable work.",
+    "whoFor": ["Teams seeking a clearer editorial direction", "Leaders with expertise to share but little time to shape it", "Organisations preparing a product, service or campaign launch", "Marketing functions looking for a dependable production partner"],
+    "offers": [
+      {"id": "content-strategy-calendar", "name": "Content Strategy & 30-day Calendar", "type": "diagnose", "timeline": "1–2 weeks", "summary": "Set a focused content direction and a practical calendar for the next month.", "includes": ["Audience and message discovery", "Channel and content review", "Editorial themes and formats", "30-day publishing calendar"]},
+      {"id": "brand-video-pack", "name": "Brand Video Pack", "type": "build", "timeline": "3–5 weeks", "summary": "Create a coordinated set of brand videos that explain your organisation and its point of view.", "includes": ["Creative direction and message outline", "Script and storyboard", "Branded cut-downs for agreed channels", "Captions, exports and asset handover"]},
+      {"id": "explainer-ad-set", "name": "Explainer & Ad Set", "type": "build", "timeline": "2–4 weeks", "summary": "Develop a clear explainer and a set of campaign-ready creative variations.", "includes": ["Offer and audience message clarification", "Explainer concept and script", "Production-ready ad copy and assets", "Channel format and handover notes"]},
+      {"id": "podcast-webinar-repurposing", "name": "Podcast & Webinar Repurposing", "type": "build", "timeline": "1–3 weeks", "summary": "Turn a recorded conversation or event into a suite of channel-ready content.", "includes": ["Key-theme extraction", "Edited highlights and short clips", "Article or episode summary", "Social and email adaptations"]},
+      {"id": "content-engine", "name": "Content Engine", "type": "run", "timeline": "Ongoing, monthly", "summary": "Plan and produce a steady stream of content around your expertise and priorities.", "includes": ["Monthly editorial planning", "Briefs and subject-matter interviews", "Writing and creative production", "Review, approval and publishing coordination"]},
+      {"id": "video-studio", "name": "Video Studio", "type": "run", "timeline": "Ongoing, monthly", "summary": "Continuing video planning and production for your marketing programme.", "includes": ["Recurring video ideas and planning", "Script and production preparation", "Editing and branded versions", "Captions and channel-ready exports"]},
+      {"id": "email-newsletter-programs", "name": "Email & Newsletter Programs", "type": "run", "timeline": "Ongoing, monthly", "summary": "A consistent email programme with useful editorial, thoughtful design and clear review steps.", "includes": ["Programme and editorial planning", "Newsletter drafting and editing", "Review, approval and scheduling", "Engagement summary and recommendations"]}
+    ],
+    "faqs": [
+      {"q": "Can you work with our existing brand guidelines?", "a": "Yes. We use your approved voice, visual identity and review process, and flag any gaps that affect production."},
+      {"q": "Can content be adapted for several channels?", "a": "Yes. We plan adaptations around the requirements of each channel rather than duplicating one asset everywhere."},
+      {"q": "Who approves content before it is published?", "a": "Your designated reviewers approve everything before publication. We agree roles and review steps at the start."}
+    ],
+    "related": ["search-web-ecommerce", "sales-revops", "events-field-marketing"],
+    "specialist": ["/services/ai-content-studio.html", "/services/content-creative.html", "/services/ai-localization.html"]
+  },
+  {
+    "slug": "search-web-ecommerce",
+    "name": "Search, Web & Ecommerce Growth",
+    "group": "Growth & Sales",
+    "short": "Improve discoverability, conversion and retention across search, AI answers, your website and online stores.",
+    "headline": "Help the right people find you, and make the next step easier.",
+    "problem": "A strong digital presence depends on more than traffic: people need to find relevant information, trust what they see and move smoothly towards action. Search changes, unclear analytics and leaky journeys hide what is working. We connect discovery, measurement and conversion into one practical growth programme.",
+    "whoFor": ["Organisations reviewing how they appear in search and AI answers", "Website teams seeking clearer journeys and stronger conversion", "Digital leaders who need trustworthy analytics and tracking", "Online sellers improving discovery, purchase and retention"],
+    "offers": [
+      {"id": "ai-search-visibility-audit", "name": "AI Search Visibility Audit (SEO + GEO)", "type": "diagnose", "timeline": "1–2 weeks", "summary": "Assess how clearly your organisation appears across search engines and AI assistants.", "includes": ["Search presence and discoverability review", "Technical and on-page assessment", "Entity, authority and answer-readiness review", "Prioritised fixes and implementation sequence"]},
+      {"id": "paid-media-plan", "name": "Paid Media Plan", "type": "diagnose", "timeline": "1–2 weeks", "summary": "A channel and measurement plan for paid media aligned to your goals.", "includes": ["Objective and audience review", "Channel suitability assessment", "Campaign structure and messages", "Testing plan and launch checklist"]},
+      {"id": "website-conversion-sprint", "name": "Website Conversion Sprint", "type": "build", "timeline": "2–4 weeks", "summary": "Improve a defined website journey through focused research, design changes and validation.", "includes": ["Journey and page review", "Conversion barriers and hypotheses", "Prioritised design and copy improvements", "Implementation and measurement recommendations"]},
+      {"id": "analytics-tracking-setup", "name": "Analytics & Tracking Setup", "type": "build", "timeline": "1–3 weeks", "summary": "A clear measurement foundation for the digital actions that matter.", "includes": ["Measurement goals and event plan", "Analytics and tag configuration", "Consent and data-quality checks", "Tracking documentation and handover"]},
+      {"id": "growth-engine-launch", "name": "Growth Engine Launch", "type": "build", "timeline": "4–8 weeks", "summary": "Bring search, landing pages, measurement and follow-up into one coordinated launch.", "includes": ["Audience and positioning alignment", "Search and content opportunity plan", "Landing page and conversion journey setup", "Launch checklist and optimisation priorities"]},
+      {"id": "ecommerce-growth-sprint", "name": "Ecommerce Growth Sprint", "type": "build", "timeline": "3–6 weeks", "summary": "Improve a selected store journey from product discovery to checkout and post-purchase.", "includes": ["Store and customer journey review", "Product page and navigation recommendations", "Checkout friction assessment", "Measurement and follow-up plan"]},
+      {"id": "marketplace-listings-setup", "name": "Marketplace Listings Setup (Amazon, Etsy and others)", "type": "build", "timeline": "2–4 weeks", "summary": "Consistent, discoverable marketplace listings aligned with your product information and brand.", "includes": ["Marketplace requirements review", "Product information and keyword research", "Listing copy and structured content", "Quality review and publishing handover"]},
+      {"id": "ai-search-starter", "name": "AI Search Starter", "type": "run", "timeline": "Ongoing, monthly", "summary": "A steady improvement programme for visibility in search and AI answers.", "includes": ["Recurring visibility checks", "Priority technical and content recommendations", "Implementation of agreed tasks", "Monthly progress review"]},
+      {"id": "conversion-optimisation", "name": "Conversion Optimisation", "type": "run", "timeline": "Ongoing, monthly", "summary": "Continuously identify and improve the website journeys that matter most.", "includes": ["Journey and analytics review", "Prioritised improvement backlog", "Copy, design or experience experiments", "Learning log and regular review"]},
+      {"id": "email-retention-flows", "name": "Email & Retention Flows", "type": "run", "timeline": "Ongoing, monthly", "summary": "Lifecycle messages that support customer relationships and repeat engagement.", "includes": ["Lifecycle and trigger mapping", "Flow planning and copy", "Testing and deliverability checks", "Performance review and refinements"]},
+      {"id": "paid-media-management", "name": "Paid Media Management", "type": "run", "timeline": "Ongoing, monthly", "summary": "Managed paid campaigns with structured testing, clear tracking and regular optimisation.", "includes": ["Campaign setup and account hygiene", "Creative and audience tests", "Tracking and conversion review", "Regular performance report"]}
+    ],
+    "faqs": [
+      {"q": "What does GEO mean?", "a": "Generative engine optimisation: making your information clear, credible and useful in AI-powered answers such as ChatGPT, Gemini, Perplexity and Google AI, as well as traditional search."},
+      {"q": "Do you guarantee rankings or sales?", "a": "No. Search and customer behaviour depend on many changing factors. We provide considered recommendations and measurable work, not guaranteed outcomes."},
+      {"q": "Will tracking respect consent choices?", "a": "Yes. Consent and data quality are part of every measurement plan."}
+    ],
+    "related": ["marketing-content-video", "web-apps-no-code", "data-analytics"],
+    "specialist": ["/services/ai-search-visibility.html", "/services/digital-presence.html", "/services/small-business-local-growth.html", "/services/analytics-optimisation.html"]
+  },
+  {
+    "slug": "sales-revops",
+    "name": "Sales, Lead Generation & RevOps",
+    "group": "Growth & Sales",
+    "short": "Build a dependable sales operation with clean CRM data, stronger outreach and useful enablement.",
+    "headline": "Give your sales process the structure to move forward.",
+    "problem": "Sales activity becomes hard to manage when customer data, follow-up and team materials live in separate places. Unclear stages and inconsistent processes make forecasting and hand-offs harder than they need to be. We set up a practical operating foundation that supports better conversations and reliable execution.",
+    "whoFor": ["Sales leaders wanting a clear view of pipeline health", "Teams implementing or changing a CRM", "Organisations building a repeatable outbound approach", "Marketing and sales teams improving coordination"],
+    "offers": [
+      {"id": "crm-health-check", "name": "CRM Health Check", "type": "diagnose", "timeline": "1–2 weeks", "summary": "Review your CRM setup and usage to identify data, process and reporting improvements.", "includes": ["Configuration and workflow review", "Data quality and lifecycle-stage assessment", "Pipeline and reporting review", "Prioritised remediation plan"]},
+      {"id": "crm-setup-migration", "name": "CRM Setup or Migration (HubSpot, Zoho, Salesforce, Dynamics 365)", "type": "build", "timeline": "3–8 weeks", "summary": "Configure or migrate a CRM around your sales process, data structure and reporting needs.", "includes": ["Requirements and process mapping", "Data model and field configuration", "Migration mapping and validation", "Pipeline, automation and reporting setup"]},
+      {"id": "outbound-engine-setup", "name": "Outbound Engine Setup", "type": "build", "timeline": "2–4 weeks", "summary": "The workflows, messaging and tracking needed to run a focused outbound programme.", "includes": ["Target and qualification criteria", "Prospecting and research workflow", "Message framework and sequences", "CRM tracking and follow-up configuration"]},
+      {"id": "linkedin-makeover", "name": "LinkedIn Profile & Page Makeover", "type": "build", "timeline": "1–2 weeks", "summary": "Key professional and company profiles that communicate a clear, credible proposition.", "includes": ["Profile and company page review", "Positioning recommendations", "Headline, summary and page copy", "Content and visual guidance"]},
+      {"id": "sales-enablement-kit", "name": "Sales Enablement Kit (decks, battlecards, proposals)", "type": "build", "timeline": "2–4 weeks", "summary": "Consistent materials for explaining value and handling buyer questions.", "includes": ["Buyer-question discovery", "Core messaging and proof points", "Deck, battlecard or proposal templates", "Objection-handling guidance"]},
+      {"id": "outbound-engine", "name": "Outbound Engine", "type": "run", "timeline": "Ongoing, monthly", "summary": "Operate and refine an outbound programme with thoughtful research, messaging and follow-up.", "includes": ["Campaign and audience planning", "Account research and contact preparation", "Message and sequence refinement", "Regular learning and pipeline review"]},
+      {"id": "lead-intelligence", "name": "Lead Intelligence", "type": "run", "timeline": "Ongoing, monthly", "summary": "Relevant account and contact insights to focus your team's sales conversations.", "includes": ["Agreed account and role criteria", "Research and signal monitoring", "Prioritised insight summaries", "Regular refresh and feedback review"]},
+      {"id": "linkedin-content-outreach", "name": "LinkedIn Content & Outreach Management", "type": "run", "timeline": "Ongoing, monthly", "summary": "A consistent LinkedIn presence and considered outreach aligned with your expertise.", "includes": ["Content themes and publishing plan", "Drafting and editing of posts", "Outreach message and follow-up support", "Engagement review"]},
+      {"id": "fractional-marketing-ops", "name": "Fractional Marketing Ops & CRM Admin", "type": "run", "timeline": "Ongoing, monthly", "summary": "Continuing support for marketing systems, data and cross-team processes.", "includes": ["CRM and marketing-system administration", "Workflow and data-quality maintenance", "Campaign operations support", "Reporting and measurement assistance"]}
+    ],
+    "faqs": [
+      {"q": "Which CRM platforms do you support?", "a": "HubSpot, Zoho, Salesforce and Dynamics 365, subject to your requirements and access."},
+      {"q": "Can you migrate existing CRM data?", "a": "Yes. We map fields and relationships, validate the approach and test records before handover."},
+      {"q": "How do you keep outreach relevant?", "a": "We agree audience criteria and messaging principles, add research context and refine based on responses."}
+    ],
+    "related": ["market-intelligence", "marketing-content-video", "events-field-marketing"],
+    "specialist": ["/services/demand-revenue.html", "/services/account-persona-mapping.html", "/services/b2b-growth-intelligence.html"]
+  },
+  {
+    "slug": "events-field-marketing",
+    "name": "Events & Field Marketing",
+    "group": "Growth & Sales",
+    "short": "Turn events, webinars and trade shows into coordinated experiences with fast, useful follow-up.",
+    "headline": "Make every event easier to plan, deliver and learn from.",
+    "problem": "Events consume significant time while leaving teams unsure which activities moved conversations forward. Disconnected planning, inconsistent attendee experiences and slow follow-up weaken the value of the work. We bring strategy, production and practical automation together.",
+    "whoFor": ["Teams planning a programme of in-person and online events", "Marketers who need a repeatable event process", "Event hosts seeking smoother registration and communications", "Commercial teams needing timely event lead follow-up"],
+    "offers": [
+      {"id": "event-strategy-calendar", "name": "Event Strategy & Calendar", "type": "diagnose", "timeline": "5 business days", "summary": "A focused plan that aligns event choices with audience needs and business priorities.", "includes": ["Goals and current events review", "Audience journey and channel recommendations", "Prioritised event calendar", "Measurement and follow-up framework"]},
+      {"id": "webinar-virtual-event-production", "name": "Webinar & Virtual Event Production", "type": "build", "timeline": "2–3 weeks", "summary": "A prepared, tested virtual event from registration through replay.", "includes": ["Run of show and production plan", "Registration page and attendee emails", "Platform setup and rehearsal", "Replay and follow-up assets"]},
+      {"id": "trade-show-field-event-kit", "name": "Trade Show & Field Event Kit", "type": "build", "timeline": "2–3 weeks", "summary": "A toolkit that helps your team present consistently and capture useful conversations.", "includes": ["Objectives and messaging brief", "Booth or activation checklist", "Conversation and qualification guide", "Lead capture workflow and review template"]},
+      {"id": "event-lead-follow-up", "name": "Event Lead Follow-up Automation", "type": "build", "timeline": "2–3 weeks", "summary": "A dependable workflow that routes event contacts into relevant follow-up.", "includes": ["Lead capture and CRM mapping", "Consent-aware routing rules", "Segmented follow-up sequences", "Testing, documentation and handover"]},
+      {"id": "partner-channel-program", "name": "Partner & Channel Program Management", "type": "run", "timeline": "Ongoing, monthly", "summary": "Structured coordination that keeps partner activity active and aligned.", "includes": ["Partner communications calendar", "Joint activity planning", "Enablement and campaign coordination", "Pipeline and activity review"]}
+    ],
+    "faqs": [
+      {"q": "Can you support both in-person and virtual events?", "a": "Yes. We can plan and support either format, or coordinate a programme that uses both."},
+      {"q": "Can you work with our existing event team?", "a": "Yes. We can take on a defined workstream or collaborate with your internal and external contributors."},
+      {"q": "What happens after an event?", "a": "We prepare replay and follow-up assets, organise lead hand-offs and capture lessons for the next event."}
+    ],
+    "related": ["marketing-content-video", "sales-revops", "conversational-ai"],
+    "specialist": ["/services/partner-channel-discovery.html", "/services/demand-revenue.html"]
+  },
+  {
+    "slug": "strategy-growth-advisory",
+    "name": "Strategy & Growth Advisory",
+    "group": "Strategy & AI",
+    "short": "Make clearer growth decisions with evidence, focus and an actionable plan.",
+    "headline": "Choose the next growth move with confidence.",
+    "problem": "Growth decisions get harder when market signals, sales activity and internal priorities point in different directions. Teams can spend effort on plans that lack clear ownership or a route to execution. We bring structured analysis and experienced guidance to the decisions that matter.",
+    "whoFor": ["Leaders reassessing their go-to-market approach", "Teams preparing to enter a new market", "Founders shaping a business plan or investor story", "Organisations wanting ongoing senior growth guidance"],
+    "offers": [
+      {"id": "sales-gtm-audit", "name": "Sales & Go-to-Market Audit", "type": "diagnose", "timeline": "2 weeks", "summary": "A clear assessment of how your sales motion and market approach work together.", "includes": ["Leadership and team interviews", "Positioning and sales materials review", "Pipeline and process assessment", "Prioritised recommendations and readout"]},
+      {"id": "pricing-packaging-review", "name": "Pricing & Packaging Review", "type": "diagnose", "timeline": "2 weeks", "summary": "An evidence-led review of your offer structure and how customers understand its value.", "includes": ["Offer and packaging inventory", "Customer and stakeholder input", "Competitive positioning analysis", "Packaging options and decision workshop"]},
+      {"id": "market-entry-brief", "name": "Market Entry Brief", "type": "build", "timeline": "2–3 weeks", "summary": "A decision-ready brief for evaluating a new market opportunity.", "includes": ["Market context and demand signals", "Customer and channel hypotheses", "Entry options and key risks", "Recommended validation steps"]},
+      {"id": "business-plan-pitch-deck", "name": "Business Plan & Pitch Deck", "type": "build", "timeline": "3–4 weeks", "summary": "A coherent business story and supporting plan for your next major conversation.", "includes": ["Business model working session", "Plan structure and narrative", "Pitch deck content and design direction", "Assumptions and evidence review"]},
+      {"id": "fractional-growth-advisor", "name": "Fractional Growth Advisor", "type": "run", "timeline": "Ongoing, monthly", "summary": "Regular senior guidance to help your team make and execute growth decisions.", "includes": ["Recurring leadership sessions", "Priority and initiative review", "Decision support between sessions", "Progress notes and next actions"]}
+    ],
+    "faqs": [
+      {"q": "Do you bring a fixed playbook?", "a": "No. We use structured methods but tailor the work to your context, evidence and decision."},
+      {"q": "Will a market brief guarantee success?", "a": "No. It clarifies evidence, assumptions and risks so you can make a better-informed decision."},
+      {"q": "Can you work alongside our existing advisors?", "a": "Yes, where responsibilities are clear."}
+    ],
+    "related": ["market-intelligence", "sales-revops", "ai-strategy"],
+    "specialist": ["/services/strategy-growth.html", "/services/market-competitor-intelligence.html"]
+  },
+  {
+    "slug": "market-intelligence",
+    "name": "Market, Competitive & Deal Intelligence",
+    "group": "Strategy & AI",
+    "short": "Turn changing market, competitor and deal signals into timely, useful decisions.",
+    "headline": "See the landscape clearly before you make your move.",
+    "problem": "Important market changes are easy to miss when research is scattered across sources and teams. Outdated competitor assumptions and untested partner or deal ideas lead to avoidable surprises. We organise relevant evidence into concise, sourced intelligence that supports action.",
+    "whoFor": ["Leaders evaluating a strategic opportunity", "Commercial teams preparing for important accounts", "Organisations assessing suppliers or partners", "Teams needing ongoing visibility of sector developments"],
+    "offers": [
+      {"id": "competitor-snapshot", "name": "Competitor Snapshot", "type": "diagnose", "timeline": "5 business days", "summary": "A concise view of selected competitors, their positioning and visible activity.", "includes": ["Agreed competitor set and questions", "Public-source research with source log", "Positioning and offer comparison", "Key implications and discussion"]},
+      {"id": "account-persona-map", "name": "Account & Persona Map", "type": "diagnose", "timeline": "1–2 weeks", "summary": "A practical map of target accounts, relevant roles and likely decision needs.", "includes": ["Account selection criteria", "Account and organisation research", "Role and influence mapping", "Outreach angles and handover"]},
+      {"id": "supplier-partner-scan", "name": "Supplier & Partner Scan", "type": "build", "timeline": "2 weeks", "summary": "A structured scan to compare potential suppliers or partners against your needs.", "includes": ["Requirements and evaluation criteria", "Candidate discovery and review", "Capability comparison matrix", "Shortlist and diligence questions"]},
+      {"id": "industry-landscape-report", "name": "Industry Landscape Report", "type": "build", "timeline": "3–4 weeks", "summary": "A sourced overview of an industry, its key forces and strategic questions.", "includes": ["Scope and research questions", "Market structure and participants", "Trend and signal analysis", "Executive summary and briefing"]},
+      {"id": "ma-partner-target-screening", "name": "M&A and Partner Target Screening", "type": "build", "timeline": "2–3 weeks", "summary": "An initial screen of potential targets or partners against agreed strategic criteria.", "includes": ["Strategic screening criteria", "Candidate longlist research", "Fit and risk assessment", "Priority shortlist and diligence questions"]},
+      {"id": "signal-watch", "name": "Signal Watch", "type": "run", "timeline": "Ongoing, weekly", "summary": "A curated watch for developments that could affect your priorities.", "includes": ["Agreed topics and sources", "Recurring signal monitoring", "Change summaries with source links", "Periodic scope review"]},
+      {"id": "price-offer-monitor", "name": "Competitor Offer Monitor", "type": "run", "timeline": "Ongoing, monthly", "summary": "A public-source view of how selected competitors describe and change their offers.", "includes": ["Competitor and offer scope", "Public offer observations", "Change log with sources", "Alerts for agreed notable changes"]},
+      {"id": "deal-flow-watch", "name": "Deal-flow Watch", "type": "run", "timeline": "Ongoing, monthly", "summary": "A tailored watch for opportunities matching your partnership or transaction interests.", "includes": ["Opportunity thesis and criteria", "Relevant source monitoring", "Candidate summaries and fit notes", "Regular review and refinement"]},
+      {"id": "sector-tracker", "name": "Sector Tracker", "type": "run", "timeline": "Ongoing, monthly", "summary": "A recurring, sourced digest of developments across a defined sector.", "includes": ["Sector scope and indicators", "Recurring source review", "Trend summaries and implications", "Review session"]}
+    ],
+    "faqs": [
+      {"q": "Are findings based on private databases?", "a": "The work uses agreed sources, typically public information and material you provide. Source limitations are made clear."},
+      {"q": "Do you verify every signal?", "a": "We check sources and separate observed facts from interpretation, noting uncertainty where it remains."},
+      {"q": "Is this legal, investment or transaction advice?", "a": "No. Intelligence supports your assessment and should be considered alongside appropriate professional advice."}
+    ],
+    "related": ["strategy-growth-advisory", "sales-revops", "ai-strategy"],
+    "specialist": ["/services/market-competitor-intelligence.html", "/services/weekly-growth-signal-watch.html", "/services/b2b-growth-intelligence.html", "/sample-intelligence-brief.html"]
+  }
+]
