@@ -32,6 +32,10 @@ AI agents, a competitive intelligence platform, vertical AI systems and industry
 ## Key pages
 - [Industries](https://marketcentaur.com/industries.html): Sector pages for professional services, manufacturing and distribution, ecommerce, SaaS and technology, real estate, hospitality and tourism, education, healthcare and wellness (non-clinical), trades and field services, energy and environment, logistics, financial and accounting firms, multi-location businesses and consumer brands.
 - [Partner program](https://marketcentaur.com/partners.html): Referral, white-label and implementation partnerships for agencies, consultants and specialists.
+- [Sample reports](https://marketcentaur.com/samples.html): One full sample report for each sprint (fictional companies, real format), plus a sourced market intelligence brief.
+- [Sample: Website Conversion Sprint](https://marketcentaur.com/samples/website-conversion-sprint.html): Five-pillar scorecard, top-10 fixes, rewritten copy and an AI search check.
+- [Sample: B2B Account Intelligence Sprint](https://marketcentaur.com/samples/b2b-account-intelligence-sprint.html): Ideal-customer profile, ranked accounts with buying signals, role map and outreach angles.
+- [Sample: AI Workflow Automation Sprint](https://marketcentaur.com/samples/ai-workflow-automation-sprint.html): Workflow map, automation shortlist, pilot design with human approval and an AI-use register.
 - [Sample intelligence brief](https://marketcentaur.com/sample-intelligence-brief.html): A real, fully sourced brief on how AI search is changing the way buyers find businesses.
 - [How it works](https://marketcentaur.com/how-it-works.html)
 - [About](https://marketcentaur.com/about.html)

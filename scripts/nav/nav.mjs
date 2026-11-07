@@ -68,10 +68,11 @@ export const MENU = [
     ],
   },
   {
-    id: 'resources', label: 'Resources', href: '/sample-intelligence-brief.html',
+    id: 'resources', label: 'Resources', href: '/samples.html',
     panel: [
       { title: 'See the work', links: [
-        ['Sample intelligence brief', '/sample-intelligence-brief.html', 'A full sample deliverable'],
+        ['Sample reports', '/samples.html', 'One full sample for each sprint'],
+        ['Sample intelligence brief', '/sample-intelligence-brief.html', 'A sourced market brief'],
         ['How we work', '/how-it-works.html', 'Scope, method and review'],
         ['Editorial standards', '/editorial-standards.html', 'How we source and check facts'],
         ['Sector Briefings', '/briefings.html', 'Signals for your sector by email'],
@@ -95,7 +96,7 @@ export function sectionFor(urlPath) {
   const p = urlPath.replace(/index\.html$/, '');
   if (/^\/(services(\.html|\/)|practices\/|recurring-services|labs|partners)/.test(p)) return 'services';
   if (/^\/industries/.test(p)) return 'industries';
-  if (/^\/(sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit)/.test(p)) return 'resources';
+  if (/^\/(samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit)/.test(p)) return 'resources';
   if (/^\/insights\//.test(p)) return 'insights';
   if (/^\/(about|contact)/.test(p)) return 'about';
   return '';
