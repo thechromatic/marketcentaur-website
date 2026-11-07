@@ -194,3 +194,11 @@ main .faqlist details[open] p{animation:fadeDown .3s ease}
 .svc-mock .sm-agenda:first-of-type{border-top:0}
 .svc-mock .sm-agenda b{color:var(--accent);font-variant-numeric:tabular-nums}
 @media(max-width:900px){.svc-mock{margin-top:8px}.svc-mock>div{max-width:none}}
+
+/* Added sections on the shorter service pages */
+.cards.cards-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.cards.cards-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.cards.cards-4{grid-template-columns:1fr}}
+.faq-list{max-width:820px}
+.faq-list details.more:first-child{margin-top:4px}
+.faq-list details.more p{margin:0 0 16px;color:var(--muted);font-size:15px;line-height:1.7}
