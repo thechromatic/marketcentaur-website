@@ -4,12 +4,13 @@
 //   node scripts/seo/audit.mjs
 //
 // Errors (exit 1): missing <title>, meta description, canonical, exactly one <h1>, valid JSON-LD,
-// og:image file, or a page missing from sitemap.xml.
+// og:image file, a page missing from sitemap.xml, or a page without the GA4 tag (scripts/seo/ga4.mjs).
 // Warnings: title over 65 chars, description over 160, thin pages (<300 words).
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { GA4_BLOCK } from './ga4.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const SITE = 'https://marketcentaur.com';
@@ -33,8 +34,14 @@ for (const file of [...walk(ROOT)].sort()) {
   const rel = path.relative(ROOT, file).split(path.sep).join('/');
   const s = fs.readFileSync(file, 'utf8');
   const err = []; const warn = [];
+  if (!s.includes(GA4_BLOCK)) { err.push('missing or outdated GA4 tag (run node scripts/seo/ga4.mjs)'); }
   const noindex = /<meta name="robots" content="[^"]*noindex/.test(s);
-  if (noindex) { if (!NOINDEX_OK.has(rel)) warn.push('page is noindex'); continue; }
+  if (noindex) {
+    if (!NOINDEX_OK.has(rel)) warn.push('page is noindex');
+    errors += err.length; warnings += warn.length;
+    if (err.length || warn.length) report.push(`${rel}\n${err.map((e) => `  ERROR  ${e}`).concat(warn.map((w) => `  warn   ${w}`)).join('\n')}`);
+    continue;
+  }
 
   const title = decode((s.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '').trim();
   const desc = decode((s.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '');

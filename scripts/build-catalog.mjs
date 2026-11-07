@@ -11,6 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { GA4_BLOCK } from './seo/ga4.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://marketcentaur.com';
@@ -83,6 +84,7 @@ function page({ url, title, description, ogName, ogAlt, ld, nav, body }) {
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+${GA4_BLOCK}
 ${GENERATOR}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
