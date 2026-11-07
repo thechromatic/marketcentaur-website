@@ -1,6 +1,6 @@
 # MarketCentaur
 
-> MarketCentaur is an AI-powered growth consultancy for small and mid-sized businesses worldwide. It combines AI-speed research with human review to fix common growth problems (websites that don't convert, B2B sales teams targeting the wrong accounts, repetitive work that should be automated) and runs done-for-you AI services: AI search visibility (GEO), AI front desks, AI content and video production, localization and AI training.
+> MarketCentaur delivers AI-led transformation for every business, serving small and mid-sized businesses worldwide. It pairs human strategy with machine speed, combining AI-speed research with human review to fix common growth problems (websites that don't convert, B2B sales teams targeting the wrong accounts, repetitive work that should be automated) and runs done-for-you AI services: AI search visibility (GEO), AI front desks, AI content and video production, localization and AI training.
 
 ## Core packages
 - [Website Conversion Sprint](https://marketcentaur.com/services.html#conversion-sprint): Five-pillar conversion audit, top-10 fix list, rewritten headline and CTA copy, and an AI search visibility check (ChatGPT, Gemini, Perplexity). First findings in 48 hours; full report in 3–5 business days.
