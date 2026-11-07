@@ -1,13 +1,13 @@
 /* MarketCentaur homepage refresh — premium, editorial, opportunity-led.
    Additive styles only: preserve existing content, navigation and interactions. */
 .homepage {
-  --mc-glow: rgba(77, 139, 255, .13);
-  --mc-accent-bright: #9bc2ff;
+  --mc-glow: rgba(47, 123, 255, .13);
+  --mc-accent-bright: #6BE3FF;
 }
 .homepage .home-wrap { max-width: 1200px; }
 .homepage .nav {
   position: relative;
-  border-bottom-color: rgba(127,176,255,.18) !important;
+  border-bottom-color: rgba(25,211,255,.18) !important;
 }
 .homepage .navlinks a,
 .homepage .navlinks .nav-services-toggle {
@@ -35,7 +35,7 @@
   gap: 10px;
   margin-bottom: 25px;
   padding: 8px 12px;
-  border: 1px solid rgba(127,176,255,.24);
+  border: 1px solid rgba(25,211,255,.24);
   border-radius: 999px;
   background: rgba(31,41,55,.66);
   letter-spacing: .105em;
@@ -47,7 +47,7 @@
   flex: 0 0 7px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 15px rgba(127,176,255,.6);
+  box-shadow: 0 0 15px rgba(25,211,255,.6);
 }
 .homepage .home-hero h1 {
   max-width: 920px;
@@ -70,8 +70,8 @@
 }
 .homepage .home-actions .btn.primary,
 .homepage .home-final-cta .btn.primary {
-  background: linear-gradient(135deg, #9bc2ff, #6f9fe9) !important;
-  border-color: #9bc2ff !important;
+  background: linear-gradient(135deg, #19D3FF, #2F7BFF) !important;
+  border-color: #6BE3FF !important;
   color: #101827 !important;
   box-shadow: 0 8px 28px rgba(87,143,231,.18) !important;
 }
@@ -85,7 +85,7 @@
 .homepage .ai-systems,
 .homepage .home-services,
 .homepage .home-final-cta {
-  border-top-color: rgba(127,176,255,.17);
+  border-top-color: rgba(25,211,255,.17);
 }
 .homepage .interactive-intro h2,
 .homepage .ai-systems-intro h2,
@@ -94,7 +94,7 @@
   text-wrap: balance;
 }
 .homepage .experience-panel {
-  border-color: rgba(127,176,255,.2);
+  border-color: rgba(25,211,255,.2);
   border-radius: 18px;
   background: linear-gradient(145deg, rgba(31,41,55,.96), rgba(24,35,52,.96));
   box-shadow: 0 20px 70px rgba(0,0,0,.12);
@@ -103,27 +103,27 @@
   transition: border-color .16s ease, background .16s ease, color .16s ease, transform .16s ease;
 }
 .homepage .choice-button:hover {
-  border-color: rgba(127,176,255,.65);
+  border-color: rgba(25,211,255,.65);
   color: var(--text);
 }
 .homepage .choice-button[aria-pressed="true"] {
   background: rgba(67,112,183,.2);
   border-color: var(--accent);
-  box-shadow: inset 0 0 0 1px rgba(127,176,255,.1);
+  box-shadow: inset 0 0 0 1px rgba(25,211,255,.1);
 }
 .homepage .recommendation-item {
   border-radius: 12px;
   transition: border-color .18s ease, transform .18s ease, background .18s ease;
 }
 .homepage .recommendation-item:hover {
-  border-color: rgba(127,176,255,.48);
+  border-color: rgba(25,211,255,.48);
   transform: translateY(-2px);
 }
 .homepage .growth-path-card {
   position: relative;
   overflow: hidden;
   border-radius: 15px !important;
-  border-color: rgba(127,176,255,.17) !important;
+  border-color: rgba(25,211,255,.17) !important;
   background: linear-gradient(150deg, rgba(31,41,55,.96), rgba(25,36,53,.94)) !important;
   transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
@@ -134,11 +134,11 @@
   left: 24px;
   right: 24px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(127,176,255,.58), transparent);
+  background: linear-gradient(90deg, transparent, rgba(25,211,255,.58), transparent);
 }
 .homepage .growth-path-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(127,176,255,.42) !important;
+  border-color: rgba(25,211,255,.42) !important;
 }
 .homepage .growth-path-card .experience-btn {
   border-radius: 9px;
@@ -146,23 +146,23 @@
 .homepage .ai-system-card {
   transition: border-color .18s ease;
 }
-.homepage .ai-system-card:hover { border-top-color: rgba(127,176,255,.62); }
+.homepage .ai-system-card:hover { border-top-color: rgba(25,211,255,.62); }
 .homepage .growth-intelligence-feature {
-  border-color: rgba(127,176,255,.28);
+  border-color: rgba(25,211,255,.28);
   border-radius: 17px;
   background:
     radial-gradient(ellipse at 100% 0%, rgba(75,123,197,.13), transparent 48%),
     var(--surface);
 }
 .homepage .growth-workflow span {
-  border: 1px solid rgba(127,176,255,.11);
+  border: 1px solid rgba(25,211,255,.11);
   background: rgba(12,20,33,.34);
   border-radius: 10px;
 }
 .homepage .home-service-tile {
   transition: border-color .18s ease;
 }
-.homepage .home-service-tile:hover { border-top-color: rgba(127,176,255,.62); }
+.homepage .home-service-tile:hover { border-top-color: rgba(25,211,255,.62); }
 .homepage .home-service-tile a,
 .homepage .home-text-link,
 .homepage .recommendation-item a { transition: color .18s ease; }
@@ -174,7 +174,7 @@
   padding-bottom: 50px;
 }
 .homepage .home-final-cta .eyebrow { letter-spacing: .11em; }
-.homepage .footer { border-top: 1px solid rgba(127,176,255,.13); }
+.homepage .footer { border-top: 1px solid rgba(25,211,255,.13); }
 .homepage a:focus-visible,
 .homepage button:focus-visible {
   outline: 2px solid var(--mc-accent-bright);
@@ -249,7 +249,7 @@
 /* Diversification pathways: consulting, tools, partners and knowledge assets. */
 .homepage .ways-to-work {
   padding: 14px 0 42px;
-  border-top: 1px solid rgba(127,176,255,.17);
+  border-top: 1px solid rgba(25,211,255,.17);
 }
 .homepage .ways-to-work-grid {
   display: grid;
@@ -258,7 +258,7 @@
   margin-top: 26px;
 }
 .homepage .ways-to-work-card {
-  border: 1px solid rgba(127,176,255,.17);
+  border: 1px solid rgba(25,211,255,.17);
   border-radius: 14px;
   padding: 22px;
   background: linear-gradient(145deg, rgba(31,41,55,.82), rgba(24,35,52,.78));
@@ -289,10 +289,10 @@
 /* Emerging product and service directions */
 .homepage .emerging-offers { padding: 14px 0 44px; border-top: 1px solid var(--line); }
 .homepage .emerging-offers-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:24px; }
-.homepage .emerging-offer-card { padding:20px; border:1px solid rgba(127,176,255,.18); border-radius:14px; background:linear-gradient(145deg,rgba(31,41,55,.82),rgba(24,35,52,.78)); }
+.homepage .emerging-offer-card { padding:20px; border:1px solid rgba(25,211,255,.18); border-radius:14px; background:linear-gradient(145deg,rgba(31,41,55,.82),rgba(24,35,52,.78)); }
 .homepage .emerging-offer-card h3 { font-size:19px; line-height:1.3; margin:8px 0; }
 .homepage .emerging-offer-card p { color:var(--muted); font-size:14px; line-height:1.7; margin:0 0 14px; }
-.offer-status { display:inline-block; border:1px solid rgba(127,176,255,.25); border-radius:7px; padding:6px 8px; color:var(--accent); font-size:11px; line-height:1.5; font-weight:700; }
+.offer-status { display:inline-block; border:1px solid rgba(25,211,255,.25); border-radius:7px; padding:6px 8px; color:var(--accent); font-size:11px; line-height:1.5; font-weight:700; }
 .homepage .emerging-offers-link { margin-top:18px; font-size:14px; font-weight:750; color:var(--accent); }
 .homepage .emerging-offers-link a span { margin-left:4px; }
 .emerging-offers-catalog .offer-status { margin-top:auto; }

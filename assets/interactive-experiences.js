@@ -251,7 +251,7 @@ function initExplorer(){
 }
 function buildEmailCapture(assessment,score,items){
  var wrap=document.createElement("form");wrap.className="email-capture";wrap.method="POST";wrap.action="https://formsubmit.co/hello@marketcentaur.com";
- wrap.style.cssText="margin:22px 0;padding:18px;border:1px solid var(--accent,#7fb0ff);border-radius:12px;background:var(--surface,#1f2937)";
+ wrap.style.cssText="margin:22px 0;padding:18px;border:1px solid var(--accent,#19D3FF);border-radius:12px;background:var(--surface,#071A45)";
  function hidden(n,v){var i=document.createElement("input");i.type="hidden";i.name=n;i.value=v;wrap.appendChild(i);}
  hidden("_subject","Free check results request: "+assessment);hidden("_template","table");
  hidden("_next","https://marketcentaur.com/contact-success.html?type=report");
@@ -262,7 +262,7 @@ function buildEmailCapture(assessment,score,items){
  var row=document.createElement("div");row.style.cssText="display:flex;gap:10px;flex-wrap:wrap";
  var site=document.createElement("input");site.type="text";site.name="website";site.placeholder="yourcompany.com (optional)";site.setAttribute("aria-label","Website (optional)");
  var email=document.createElement("input");email.type="email";email.name="email";email.required=true;email.placeholder="you@company.com";email.setAttribute("aria-label","Email");
- [site,email].forEach(function(i){i.style.cssText="flex:1;min-width:180px;padding:11px 13px;border-radius:9px;border:1px solid var(--line,#374151);background:var(--bg,#111827);color:inherit;font:inherit";});
+ [site,email].forEach(function(i){i.style.cssText="flex:1;min-width:180px;padding:11px 13px;border-radius:9px;border:1px solid var(--line,#1B3368);background:var(--bg,#020C24);color:inherit;font:inherit";});
  var btn=document.createElement("button");btn.type="submit";btn.className="experience-btn";btn.textContent="Email me my results";
  row.append(site,email,btn);wrap.append(h,p,row);return wrap;
 }

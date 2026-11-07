@@ -1,12 +1,12 @@
 /* MarketCentaur shared styles (homepage, services, labs, about, sample brief) */
-:root{color-scheme:dark;--bg:#111827;--surface:#1f2937;--surface2:#263244;--text:#f5f7fa;--muted:#b7c0cc;--line:#374151;--accent:#7fb0ff;--accent2:#142640;--good:#82d0ab}
+:root{color-scheme:dark;--bg:#020C24;--surface:#071A45;--surface2:#0C2558;--text:#f5f7fa;--muted:#A9B6D3;--line:#1B3368;--accent:#19D3FF;--accent2:#0E2A66;--good:#82d0ab}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
 body{margin:0;font-family:Manrope,Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
 .wrap{max-width:1140px;margin:auto;padding:0 24px}
-.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--accent);color:#0b1220;padding:8px 12px;border-radius:6px;z-index:9}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--accent);color:#020C24;padding:8px 12px;border-radius:6px;z-index:9}
 
 /* Nav */
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px}
@@ -18,7 +18,7 @@ img{max-width:100%}
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:9px;font-weight:750;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;font-family:inherit;transition:transform .15s ease,border-color .15s ease}
 .btn:hover{transform:translateY(-1px);border-color:var(--accent)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#0b1220}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#020C24}
 .textlink{color:var(--accent);font-weight:750;font-size:14px}
 
 /* Type */

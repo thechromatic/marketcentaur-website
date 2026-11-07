@@ -104,7 +104,7 @@
     var a = document.createElement("a");
     a.href = mailtoLink(payload);
     a.textContent = "Send by email";
-    a.style.cssText = "display:inline-block;padding:10px 16px;border-radius:9px;background:#7fb0ff;color:#0b1220;font-weight:750;text-decoration:none";
+    a.style.cssText = "display:inline-block;padding:10px 16px;border-radius:9px;background:#19D3FF;color:#020C24;font-weight:750;text-decoration:none";
     var alt = document.createElement("p");
     alt.style.margin = "10px 0 0";
     alt.appendChild(document.createTextNode("Or write to us directly at "));
