@@ -41,7 +41,9 @@
     var data = {}, meta = {};
     new FormData(form).forEach(function (value, key) {
       if (typeof value !== "string") return;
-      if (key.charAt(0) === "_") meta[key] = value; else data[key] = value;
+      if (key.charAt(0) === "_") meta[key] = value;
+      // Repeated names (checkbox groups) are joined, so every ticked option is kept.
+      else data[key] = data[key] ? data[key] + ", " + value : value;
     });
     return { data: data, meta: meta };
   }

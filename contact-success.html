@@ -25,6 +25,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
 (function(){var t=new URLSearchParams(location.search).get("type");
 var m={audit:["Your free audit request is in.","We'll review your website and email your short action brief within one business day."],
 report:["Your results are on their way.","We'll email your full results with three recommended next steps within one business day."],
+briefings:["You're subscribed to Briefings.","We'll email you to confirm before your first issue arrives. Nothing else is sent unless you ask."],
 "ai-snapshot":["Your AI visibility snapshot is requested.","We'll re-run your questions across the main AI assistants and email your snapshot with three recommended fixes within two business days."]};
 if(m[t]){document.getElementById("ok-title").textContent=m[t][0];document.getElementById("ok-text").textContent=m[t][1];}})();
 </script>

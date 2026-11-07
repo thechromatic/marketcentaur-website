@@ -19,13 +19,15 @@
 Market and competitor intelligence, account and persona mapping, supplier and partner research, BI dashboards, growth strategy, customer acquisition planning, website and ecommerce optimization, analytics and attribution, process mapping and SOPs, CRM and revenue operations, AI strategy, AI customer support assistants, AI agent prototypes, custom AI tools, AI governance, and AI training. See https://marketcentaur.com/services.html#catalog
 
 ## Labs
-AI agents, a competitive intelligence platform, vertical AI systems and industry intelligence reports, built with pilot clients. See https://marketcentaur.com/labs.html
+AI agents, a competitive intelligence platform, vertical AI systems and industry intelligence reports, built with pilot clients. Waitlist open for three small products: Competitor Price Monitor, Plain-English Data Insights and AI Proposal & Sales Toolkit. See https://marketcentaur.com/labs.html
 
 ## Free tools
 - [AI Visibility Check](https://marketcentaur.com/ai-visibility-check.html): Free 5-minute self-assessment of whether ChatGPT, Perplexity and Google AI mention and accurately describe a business, with a score and next steps.
 - [Free website audit](https://marketcentaur.com/#free-audit): Short action brief with the three biggest conversion fixes, emailed within one business day.
 - [Growth checks](https://marketcentaur.com/growth-check.html): 2-minute self-assessments for local businesses, ecommerce stores and traditional businesses.
 - [Website inquiry readiness check](https://marketcentaur.com/website-enquiry-readiness.html)
+- [Free growth toolkit](https://marketcentaur.com/toolkit.html): Six templates from client work: competitor signal tracker, account fit scorecard, automation candidate scorecard, website conversion checklist, AI visibility question set and scoping call question list.
+- [Briefings](https://marketcentaur.com/briefings.html): Free monthly sector email with five sourced market signals, what they mean and one action. Sectors include B2B SaaS, construction, renewable energy, manufacturing and healthcare.
 
 ## Key pages
 - [Industries](https://marketcentaur.com/industries.html): Sector pages for professional services, manufacturing and distribution, ecommerce, SaaS and technology, real estate, hospitality and tourism, education, healthcare and wellness (non-clinical), trades and field services, energy and environment, logistics, financial and accounting firms, multi-location businesses and consumer brands.
