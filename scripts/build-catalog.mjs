@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { GA4_BLOCK } from './seo/ga4.mjs';
 import { renderNav, MENU } from './nav/nav.mjs';
+import { GROUP_ICON, iconHtml } from './icons.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://marketcentaur.com';
@@ -351,7 +352,7 @@ const homeBlock = `<section id="practices" aria-labelledby="practices-heading" c
 ${GROUPS.map((g) => {
   const list = practices.filter((p) => p.group === g);
   const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
-  return `<a class="mc-cat" href="/practices/#${id}"><span class="mc-cat-count">${list.length} practices</span><strong>${esc(g)}</strong><span class="mc-cat-eg">${list.slice(0, 3).map((p) => esc(p.name)).join(' · ')}</span></a>`;
+  return `<a class="mc-cat" href="/practices/#${id}">${iconHtml(GROUP_ICON[g])}<span class="mc-cat-count">${list.length} practices</span><strong>${esc(g)}</strong><span class="mc-cat-eg">${list.slice(0, 3).map((p) => esc(p.name)).join(' · ')}</span></a>`;
 }).join('\n')}
 </div>
 <p class="mc-links"><a href="/practices/">Browse all practices →</a> <a href="/ai-readiness-score.html">Free AI Readiness Score →</a></p>
@@ -366,7 +367,7 @@ const servicesBlock = `<section id="practices" aria-labelledby="practices-headin
 ${GROUPS.map((g) => {
   const list = practices.filter((p) => p.group === g);
   const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
-  return `<div class="mc-group"><a class="mc-group-title" href="/practices/#${id}">${esc(g)} <span>${list.length}</span></a><ul>${list.map((p) => `<li><a href="${practiceUrl(p)}">${esc(p.name)}</a></li>`).join('')}</ul></div>`;
+  return `<div class="mc-group">${iconHtml(GROUP_ICON[g])}<a class="mc-group-title" href="/practices/#${id}">${esc(g)} <span>${list.length}</span></a><ul>${list.map((p) => `<li><a href="${practiceUrl(p)}">${esc(p.name)}</a></li>`).join('')}</ul></div>`;
 }).join('\n')}
 </div>
 <p class="mc-links"><a href="/practices/#bundles">See the bundles →</a> <a href="/how-it-works.html#engage">How we engage →</a></p>
