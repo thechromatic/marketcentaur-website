@@ -21,13 +21,13 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 FONTS = os.path.join(os.path.dirname(__file__), 'fonts')
 OUT = os.path.join(ROOT, 'assets', 'og')
 W, H = 1200, 630
-BG, SURFACE, TEXT, MUTED, ACCENT = '#111827', '#1f2937', '#f5f7fa', '#b7c0cc', '#7fb0ff'
+BG, SURFACE, TEXT, MUTED, ACCENT = '#020C24', '#071A45', '#f5f7fa', '#A9B6D3', '#19D3FF'
 SKIP_DIRS = {'.git', 'node_modules', 'scripts', 'content', 'assets', '.github'}
 
 SECTIONS = [
     ('insights/', 'Insights'), ('services/', 'Services'), ('industries/', 'Industries'),
     ('ai-visibility-check', 'Free tool'), ('growth-check', 'Free tool'), ('website-enquiry', 'Free tool'),
-    ('partners', 'Partner program'), ('labs', 'Labs'), ('sample-intelligence', 'Sample brief'),
+    ('partners', 'Partner program'), ('labs', 'Labs'), ('sample-intelligence', 'Sample brief'), ('samples', 'Sample report'),
 ]
 
 

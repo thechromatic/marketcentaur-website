@@ -146,3 +146,4 @@ section.band+section{border-top-color:transparent!important}
 ul.covers{margin:10px 0 22px;padding-left:20px}
 ul.covers li{margin:8px 0;color:var(--muted);line-height:1.65}
 ul.covers b{color:var(--text)}
+.sample-link{display:inline-block;margin:10px 0 0 14px;font-size:14px;font-weight:700;color:var(--accent,#19D3FF)}
