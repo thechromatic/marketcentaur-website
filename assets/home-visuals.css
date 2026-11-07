@@ -47,11 +47,11 @@
 .leak-intro p{color:var(--muted);font-size:16px;line-height:1.75;margin:0 0 14px}
 .leakviz{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;overflow:hidden}
 .leakviz svg{display:block;width:100%;height:auto}
-.leakviz .lbl{font:700 13px Inter,system-ui,sans-serif;fill:var(--muted)}
+.leakviz .lbl{font:700 13px Manrope,Inter,system-ui,sans-serif;fill:var(--muted)}
 .leakviz .lbl.strong{fill:var(--text)}
 .leakviz .marker{cursor:pointer}
 .leakviz .marker circle.ring{fill:#111827;stroke:var(--warm);stroke-width:2;transition:fill .2s,stroke .2s}
-.leakviz .marker text{font:800 12px Inter,system-ui,sans-serif;fill:var(--warm);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.leakviz .marker text{font:800 12px Manrope,Inter,system-ui,sans-serif;fill:var(--warm);text-anchor:middle;dominant-baseline:central;pointer-events:none}
 .leakviz .marker.active circle.ring{fill:var(--warm)}
 .leakviz .marker.active text{fill:#111827}
 .leakviz .drip{fill:var(--warm);opacity:0;animation:drip 2.6s ease-in infinite;animation-delay:var(--d,0s)}

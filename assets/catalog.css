@@ -20,9 +20,9 @@ a.mc-tile:hover,a.mc-tile:focus-visible{border-color:var(--accent,#7fb0ff);trans
 @media(max-width:620px){.mc-grid{grid-template-columns:1fr}}
 
 /* Ask MarketCentaur */
-.mca-btn{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;border:1px solid #7fb0ff;background:#142640;color:#f5f7fa;font:700 14px/1 Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.mca-btn{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;border:1px solid #7fb0ff;background:#142640;color:#f5f7fa;font:700 14px/1 Manrope,Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .mca-btn:hover{background:#1b3354}
-.mca-panel{position:fixed;right:18px;bottom:76px;z-index:61;width:min(380px,calc(100vw - 36px));max-height:min(620px,calc(100vh - 110px));display:flex;flex-direction:column;border:1px solid #374151;border-radius:16px;background:#111827;color:#f5f7fa;font:14px/1.55 Inter,ui-sans-serif,system-ui,sans-serif;box-shadow:0 16px 48px rgba(0,0,0,.5)}
+.mca-panel{position:fixed;right:18px;bottom:76px;z-index:61;width:min(380px,calc(100vw - 36px));max-height:min(620px,calc(100vh - 110px));display:flex;flex-direction:column;border:1px solid #374151;border-radius:16px;background:#111827;color:#f5f7fa;font:14px/1.55 Manrope,Inter,ui-sans-serif,system-ui,sans-serif;box-shadow:0 16px 48px rgba(0,0,0,.5)}
 .mca-panel[hidden]{display:none}
 .mca-head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #374151}
 .mca-head strong{font-size:15px}
@@ -38,7 +38,7 @@ a.mc-tile:hover,a.mc-tile:focus-visible{border-color:var(--accent,#7fb0ff);trans
 .mca-chips button:hover{border-color:#7fb0ff}
 .mca-form{display:flex;gap:8px;padding:12px;border-top:1px solid #374151}
 .mca-form input{flex:1;min-width:0;padding:10px 12px;border-radius:10px;border:1px solid #374151;background:#0b1220;color:#f5f7fa;font:inherit}
-.mca-form button{padding:10px 14px;border-radius:10px;border:0;background:#7fb0ff;color:#0b1220;font:700 14px/1 Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer}
+.mca-form button{padding:10px 14px;border-radius:10px;border:0;background:#7fb0ff;color:#0b1220;font:700 14px/1 Manrope,Inter,ui-sans-serif,system-ui,sans-serif;cursor:pointer}
 .mca-lead{display:grid;gap:8px;margin-top:8px}
 .mca-lead input{padding:9px 11px;border-radius:9px;border:1px solid #374151;background:#0b1220;color:#f5f7fa;font:inherit}
 .mca-lead button{justify-self:start;padding:9px 13px;border-radius:9px;border:0;background:#7fb0ff;color:#0b1220;font-weight:700;cursor:pointer}
