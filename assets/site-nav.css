@@ -141,3 +141,8 @@ section.band+section{border-top-color:transparent!important}
 /* Shared card icon (scripts/icons.mjs) */
 .mc-ic{display:inline-grid;place-items:center;width:42px;height:42px;margin-bottom:14px;border-radius:12px;background:var(--accent2,#0E2A66);border:1px solid rgba(25,211,255,.25);color:var(--accent,#19D3FF);flex:0 0 auto}
 .mc-ic svg{width:22px;height:22px}
+
+/* Explanatory lists on tool pages */
+ul.covers{margin:10px 0 22px;padding-left:20px}
+ul.covers li{margin:8px 0;color:var(--muted);line-height:1.65}
+ul.covers b{color:var(--text)}
