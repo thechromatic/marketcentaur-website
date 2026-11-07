@@ -1,7 +1,7 @@
 ---
 title: "Competitive Intelligence Tools vs. a Managed Service: Which Fits You?"
 description: Software, a managed service or a do-it-yourself process? How to choose the right way to track competitors, based on time, budget and the decisions you face.
-date: 2026-11-26
+date: 2027-01-21
 category: Competitive intelligence
 summary: "Choose a do-it-yourself process if you track a few competitors and have an hour a week. Choose competitive intelligence software if you have an analyst or a large team to act on alerts. Choose a managed service if you want sourced, analysed findings without adding headcount. Judge any option by whether it changes a decision each quarter."
 seo_title: "Competitive Intelligence Tools vs. a Managed Service"

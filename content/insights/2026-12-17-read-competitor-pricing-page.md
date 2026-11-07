@@ -1,7 +1,7 @@
 ---
 title: How to Read a Competitor's Pricing Page
 description: A competitor's pricing page shows who they want as customers, what they value and where they're under pressure. Here's a step-by-step way to read one.
-date: 2026-11-19
+date: 2026-12-17
 category: Competitive intelligence
 summary: "To read a competitor's pricing page, identify who it is written for, find the value metric they charge on, note which features are held back for higher tiers, check where they say 'contact us' instead of showing a price, and read the small print and FAQs. Then track changes over time, because each change reflects a real decision."
 seo_title: "How to Read a Competitor's Pricing Page"

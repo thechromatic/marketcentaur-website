@@ -1,0 +1,43 @@
+{
+  "eyebrow": "Customer experience",
+  "title": "AI chat and voice assistants",
+  "subtitle": "What they should and shouldn't handle",
+  "slides": [
+    {
+      "eyebrow": "Give to AI",
+      "title": "Frequent, factual, low-risk",
+      "items": [
+        "Hours, services, how things work",
+        "Bookings from real availability",
+        "Order and request status",
+        "Routing with a summary"
+      ]
+    },
+    {
+      "eyebrow": "Keep with people",
+      "title": "Judgement and commitments",
+      "style": "cross",
+      "items": [
+        "Refunds and exceptions",
+        "Complaints",
+        "Sensitive situations",
+        "Anything legally binding"
+      ]
+    },
+    {
+      "eyebrow": "Guardrails",
+      "title": "Make it safe",
+      "style": "numbered",
+      "items": [
+        "Answer only from approved content",
+        "Say it's AI, offer a person",
+        "Easy handover with a summary",
+        "Review conversations weekly"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "What to give your AI assistant"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "card",
+  "style": "practical",
+  "eyebrow": "Practical",
+  "headline": "Rolling out Copilot or Gemini? Set these up first",
+  "items": [
+    "Tidy file sharing and permissions",
+    "Agree what data the assistant may use",
+    "Pick three tasks per team to try",
+    "Train people, then measure the time saved"
+  ]
+}

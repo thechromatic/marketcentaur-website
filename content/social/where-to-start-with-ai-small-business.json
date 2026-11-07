@@ -1,0 +1,62 @@
+{
+  "eyebrow": "AI strategy",
+  "title": "Where to start with AI",
+  "subtitle": "A 30-day plan for small businesses",
+  "slides": [
+    {
+      "eyebrow": "Week 1",
+      "title": "Find where the time goes",
+      "style": "numbered",
+      "items": [
+        "List each team's five biggest time sinks",
+        "Mark the repetitive, text-heavy ones",
+        "Estimate hours per week",
+        "Flag anything touching customers or money"
+      ]
+    },
+    {
+      "eyebrow": "Week 2",
+      "title": "Pick one problem",
+      "items": [
+        "Happens daily or weekly",
+        "Takes real hours today",
+        "A person reviews the output",
+        "Has an owner who wants it fixed"
+      ]
+    },
+    {
+      "eyebrow": "Week 2",
+      "title": "Agree the ground rules",
+      "items": [
+        "Approved tools and business accounts",
+        "What data never goes into AI tools",
+        "Who reviews output, and how",
+        "Who owns the rules"
+      ]
+    },
+    {
+      "eyebrow": "Week 3",
+      "title": "Run a small pilot",
+      "items": [
+        "2–5 people for two weeks",
+        "Write down the baseline first",
+        "Use tools you already pay for",
+        "Shared prompts and a simple log"
+      ]
+    },
+    {
+      "eyebrow": "Week 4",
+      "title": "Measure, then decide",
+      "items": [
+        "Time saved, including review",
+        "Quality and rework",
+        "Anything that went wrong",
+        "Scale it, change it or stop it"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full plan",
+    "title": "Your first 30 days with AI"
+  }
+}
