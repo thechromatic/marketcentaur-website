@@ -6,12 +6,19 @@
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']});
-gtag('consent', 'default', {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
 gtag('js', new Date());
 gtag('config', 'G-W0SYHJZZX9');
+window.mcLoadGa = function () {
+  if (window.mcGaLoaded) return; window.mcGaLoaded = true;
+  gtag('consent', 'update', {analytics_storage: 'granted'});
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W0SYHJZZX9';
+  document.head.appendChild(s);
+};
+try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c && c.v === 1 && c.analytics === 'granted' && Date.now() - c.t < 15724800000) window.mcLoadGa(); } catch (e) {}
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SYHJZZX9"></script>
+<script src="/assets/consent.js" defer></script>
 <!-- GA4:end -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Free AI Readiness Score: 10 Questions, 2 Minutes | MarketCentaur</title>
