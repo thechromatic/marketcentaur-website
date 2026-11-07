@@ -88,7 +88,7 @@ ${GENERATOR}
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<meta name="theme-color" content="#111827">
+<meta name="theme-color" content="#020C24">
 <link rel="canonical" href="${SITE}${url}">
 <link rel="icon" type="image/png" href="/assets/marketcentaur-mc-option-4-favicon.png">
 <link rel="alternate" type="application/rss+xml" title="MarketCentaur Insights" href="/insights/feed.xml">

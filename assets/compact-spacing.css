@@ -445,14 +445,14 @@ h3 {
 /* Consistent dark editorial theme: restrained contrast, readable type. */
 :root {
   color-scheme: dark !important;
-  --bg: #111827 !important;
-  --surface: #1f2937 !important;
-  --surface2: #263244 !important;
+  --bg: #020C24 !important;
+  --surface: #071A45 !important;
+  --surface2: #0C2558 !important;
   --text: #f5f7fa !important;
-  --muted: #b7c0cc !important;
-  --line: #374151 !important;
-  --accent: #7fb0ff !important;
-  --accent2: #142640 !important;
+  --muted: #A9B6D3 !important;
+  --line: #1B3368 !important;
+  --accent: #19D3FF !important;
+  --accent2: #0E2A66 !important;
   --success: #82d0ab !important;
 }
 body {

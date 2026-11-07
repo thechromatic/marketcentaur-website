@@ -48,14 +48,14 @@
 
   var CSS =
     '.mcc{position:fixed;left:18px;bottom:18px;z-index:80;width:min(440px,calc(100vw - 36px));box-sizing:border-box;' +
-    'padding:18px 18px 16px;border:1px solid #374151;border-radius:14px;background:#111827;color:#f5f7fa;' +
+    'padding:18px 18px 16px;border:1px solid #1B3368;border-radius:14px;background:#020C24;color:#f5f7fa;' +
     'font:14px/1.55 Manrope,Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 16px 48px rgba(0,0,0,.5)}' +
     '.mcc h2{margin:0 0 6px;font-size:15px;line-height:1.3;font-weight:750;color:#f5f7fa}' +
     '.mcc p{margin:0 0 14px;color:#cbd5e1}' +
     '.mcc a{color:#19d3ff;text-decoration:underline}' +
     '.mcc-actions{display:flex;gap:10px;flex-wrap:wrap}' +
-    '.mcc-actions button{flex:1 1 140px;min-height:44px;padding:10px 14px;border-radius:9px;border:1px solid #7fb0ff;' +
-    'background:#142640;color:#f5f7fa;font:700 14px/1.2 inherit;font-family:inherit;cursor:pointer}' +
+    '.mcc-actions button{flex:1 1 140px;min-height:44px;padding:10px 14px;border-radius:9px;border:1px solid #19D3FF;' +
+    'background:#0E2A66;color:#f5f7fa;font:700 14px/1.2 inherit;font-family:inherit;cursor:pointer}' +
     '.mcc-actions button:hover{border-color:#19d3ff}' +
     '.mcc-actions button:focus-visible{outline:2px solid #19d3ff;outline-offset:2px}' +
     '@media (max-width:560px){.mcc{left:0;right:0;bottom:0;width:100%;border-radius:14px 14px 0 0;border-bottom:0}}';

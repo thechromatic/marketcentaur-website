@@ -64,6 +64,10 @@
     setH(); window.addEventListener("resize", setH);
   }
 
+  // Scrollbar width, so full-width bands don't overflow on desktop.
+  var setSbw = function () { document.documentElement.style.setProperty("--mc-sbw", (window.innerWidth - document.documentElement.clientWidth) + "px"); };
+  setSbw(); window.addEventListener("resize", setSbw);
+
   // Linking to something inside a collapsed <details> opens it first.
   function revealHash() {
     if (!location.hash) return;

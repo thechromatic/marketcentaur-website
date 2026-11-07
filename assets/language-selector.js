@@ -9,7 +9,7 @@
   style.textContent = `
     .mc-language { display:flex; align-items:center; gap:8px; font:600 12px/1.35 Manrope,Inter,ui-sans-serif,system-ui,sans-serif; color:var(--muted,#5b6472); }
     .mc-language label { white-space:nowrap; }
-    .mc-language select { max-width:155px; min-width:110px; padding:8px 9px; border:1px solid var(--line,#dce1e8); border-radius:8px; background:var(--surface,#fff); color:var(--text,#111827); font:inherit; }
+    .mc-language select { max-width:155px; min-width:110px; padding:8px 9px; border:1px solid var(--line,#dce1e8); border-radius:8px; background:var(--surface,#fff); color:var(--text,#020C24); font:inherit; }
     .mc-language-help { display:none; position:absolute; z-index:20; bottom:calc(100% + 6px); left:0; width:245px; padding:10px 12px; border:1px solid var(--line,#dce1e8); border-radius:9px; background:var(--surface,#fff); color:var(--muted,#5b6472); box-shadow:0 8px 24px rgba(0,0,0,.08); font:400 12px/1.5 Manrope,Inter,ui-sans-serif,system-ui,sans-serif; }
     .mc-language-wrap { position:relative; }
     .mc-language-wrap:focus-within .mc-language-help, .mc-language-wrap:hover .mc-language-help { display:block; }
