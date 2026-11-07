@@ -346,12 +346,18 @@ const practiceGrid = `<div class="mc-grid">
 ${practices.map((p) => `<a class="mc-tile" href="${practiceUrl(p)}"><span class="mc-tile-group">${esc(p.group)}</span><strong>${esc(p.name)}</strong><span>${esc(p.short)}</span></a>`).join('\n')}
 </div>`;
 
-const homeBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section">
-<div class="eyebrow">17 practices · ${offers.size} services</div>
-<h2 id="practices-heading">Whatever you want to change, there's a practice for it.</h2>
-<p class="mc-intro">The sprints above are the quickest way in. Behind them sit 17 practices covering strategy, automation, agents, customer experience, growth, sales, events, data, documents, web, IT, security, people, governance and operations, for any business, of any size, anywhere.</p>
-${practiceGrid}
-<p class="mc-links"><a href="/practices/">See all ${offers.size} services →</a> <a href="/ai-readiness-score.html">Get your free AI Readiness Score →</a></p>
+// Homepage: a compact strip of the 4 practice groups (the full grid lives on /practices/ and /services.html).
+const homeBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section mc-strip">
+<div class="eyebrow">Beyond the sprints</div>
+<h2 id="practices-heading">Need something broader? 17 practices, ${offers.size} services.</h2>
+<div class="mc-cats">
+${GROUPS.map((g) => {
+  const list = practices.filter((p) => p.group === g);
+  const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
+  return `<a class="mc-cat" href="/practices/#${id}"><span class="mc-cat-count">${list.length} practices</span><strong>${esc(g)}</strong><span class="mc-cat-eg">${list.slice(0, 3).map((p) => esc(p.name)).join(' · ')}</span></a>`;
+}).join('\n')}
+</div>
+<p class="mc-links"><a href="/practices/">Browse all practices →</a> <a href="/ai-readiness-score.html">Free AI Readiness Score →</a></p>
 </section>`;
 
 const servicesBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section">
