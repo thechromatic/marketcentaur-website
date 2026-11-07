@@ -15,7 +15,7 @@ import { GA4_BLOCK } from './ga4.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const SITE = 'https://marketcentaur.com';
 const SKIP = new Set(['.git', 'node_modules', 'scripts', 'content', 'assets', '.github']);
-const NOINDEX_OK = new Set(['contact-success.html']);
+const NOINDEX_OK = new Set(['contact-success.html', 'toolkit/download.html']);
 
 function* walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
