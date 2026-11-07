@@ -7,11 +7,12 @@
 // replaces it in place. build-catalog.mjs imports GA4_BLOCK for the pages it generates, and the
 // Insights templates in scripts/templates/ carry the same block. audit.mjs fails a page without it.
 //
-// Consent defaults:
-// - Visitors in the EEA, UK and Switzerland: analytics storage denied, so GA sets no cookies there
-//   (Google receives cookieless pings only). We show no consent banner, so this stays denied.
-// - Everyone else: analytics storage granted.
-// - Advertising storage, ad user data and ad personalisation: denied everywhere (we run no ads).
+// Consent (opt-in for every visitor):
+// - All consent types default to denied, and gtag.js is NOT loaded, so nothing goes to Google
+//   until the visitor accepts in the cookie banner (assets/consent.js).
+// - window.mcLoadGa() grants analytics_storage and loads gtag.js. It runs on accept, or straight
+//   away on later visits when a stored "granted" choice is under 6 months old.
+// - Advertising storage, ad user data and ad personalisation stay denied (we run no ads).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -21,24 +22,25 @@ export const GA4_ID = 'G-W0SYHJZZX9';
 export const GA4_START = '<!-- GA4:start -->';
 export const GA4_END = '<!-- GA4:end -->';
 
-const CONSENT_REGIONS = [
-  // EU member states
-  'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV',
-  'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE',
-  // Rest of the EEA, the UK and Switzerland
-  'IS', 'LI', 'NO', 'GB', 'CH',
-];
+const CONSENT_MAX_AGE = 15724800000; // 182 days in ms; keep in sync with assets/consent.js
 
 export const GA4_BLOCK = `${GA4_START}
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', region: ${JSON.stringify(CONSENT_REGIONS).replace(/"/g, "'")}});
-gtag('consent', 'default', {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
 gtag('js', new Date());
 gtag('config', '${GA4_ID}');
+window.mcLoadGa = function () {
+  if (window.mcGaLoaded) return; window.mcGaLoaded = true;
+  gtag('consent', 'update', {analytics_storage: 'granted'});
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=${GA4_ID}';
+  document.head.appendChild(s);
+};
+try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c && c.v === 1 && c.analytics === 'granted' && Date.now() - c.t < ${CONSENT_MAX_AGE}) window.mcLoadGa(); } catch (e) {}
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
+<script src="/assets/consent.js" defer></script>
 ${GA4_END}`;
 
 export function applyGa4(html) {
