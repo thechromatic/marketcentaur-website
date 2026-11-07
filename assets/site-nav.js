@@ -1,0 +1,103 @@
+/* MarketCentaur header behaviour: mega-menu toggles, mobile menu, sticky-header state,
+   and visible breadcrumbs built from the page's BreadcrumbList JSON-LD. */
+(function () {
+  "use strict";
+  var nav = document.querySelector(".mc-nav");
+  if (!nav) return;
+  var header = nav.closest(".mc-header");
+  var burger = nav.querySelector(".mc-burger");
+  var items = Array.prototype.slice.call(nav.querySelectorAll(".mc-has-panel"));
+  var mobile = window.matchMedia("(max-width: 999px)");
+
+  function setItem(item, open) {
+    item.classList.toggle("mc-open", open);
+    var caret = item.querySelector(".mc-caret");
+    if (caret) caret.setAttribute("aria-expanded", String(open));
+  }
+  function closeAll(except) { items.forEach(function (i) { if (i !== except) setItem(i, false); }); }
+  function setMenu(open) {
+    nav.classList.toggle("mc-menu-open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    document.body.classList.toggle("mc-lock", open && mobile.matches);
+    if (!open) closeAll();
+  }
+
+  items.forEach(function (item) {
+    var caret = item.querySelector(".mc-caret");
+    caret.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = !item.classList.contains("mc-open");
+      if (!mobile.matches) closeAll(item);
+      setItem(item, open);
+      if (open && !mobile.matches) {
+        var first = item.querySelector(".mc-panel a");
+        if (first && e.detail === 0) first.focus(); // keyboard activation: move into the panel
+      }
+    });
+    // Desktop: a hover-opened panel closes when the pointer leaves.
+    item.addEventListener("mouseleave", function () { if (!mobile.matches) setItem(item, false); });
+  });
+
+  burger.addEventListener("click", function () { setMenu(!nav.classList.contains("mc-menu-open")); });
+
+  document.addEventListener("click", function (e) { if (!nav.contains(e.target)) { closeAll(); if (mobile.matches) setMenu(false); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    var openItem = items.filter(function (i) { return i.classList.contains("mc-open"); })[0];
+    if (openItem) { setItem(openItem, false); openItem.querySelector(".mc-caret").focus(); }
+    else if (nav.classList.contains("mc-menu-open")) { setMenu(false); burger.focus(); }
+  });
+  // Tabbing out of an open panel closes it.
+  nav.addEventListener("focusout", function (e) {
+    items.forEach(function (i) { if (i.classList.contains("mc-open") && !i.contains(e.relatedTarget) && !mobile.matches) setItem(i, false); });
+  });
+  var onMq = function () { setMenu(false); };
+  if (mobile.addEventListener) mobile.addEventListener("change", onMq); else mobile.addListener(onMq);
+
+  if (header) {
+    var onScroll = function () { header.classList.toggle("mc-scrolled", window.scrollY > 8); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Visible breadcrumbs for pages two or more levels deep.
+  try {
+    if (document.querySelector(".mc-crumbs")) return;
+    var crumbs = null;
+    Array.prototype.forEach.call(document.querySelectorAll('script[type="application/ld+json"]'), function (s) {
+      if (crumbs) return;
+      var data; try { data = JSON.parse(s.textContent); } catch (err) { return; }
+      var stack = [data];
+      while (stack.length && !crumbs) {
+        var node = stack.pop();
+        if (Array.isArray(node)) { stack.push.apply(stack, node); continue; }
+        if (!node || typeof node !== "object") continue;
+        if (node["@type"] === "BreadcrumbList" && Array.isArray(node.itemListElement)) { crumbs = node.itemListElement; break; }
+        if (node["@graph"]) stack.push(node["@graph"]);
+      }
+    });
+    if (!crumbs || crumbs.length < 3) return;
+    crumbs = crumbs.slice().sort(function (a, b) { return (a.position || 0) - (b.position || 0); });
+    var host = document.querySelector("main .wrap") || document.querySelector("main");
+    if (!host) return;
+    var el = document.createElement("nav");
+    el.className = "mc-crumbs"; el.setAttribute("aria-label", "Breadcrumb");
+    var ol = document.createElement("ol");
+    crumbs.forEach(function (c, idx) {
+      var li = document.createElement("li");
+      var name = c.name || (c.item && c.item.name) || "";
+      var href = typeof c.item === "string" ? c.item : (c.item && (c.item["@id"] || c.item.url));
+      if (idx < crumbs.length - 1 && href) {
+        var a = document.createElement("a");
+        try { var u = new URL(href, location.href); a.href = u.origin === location.origin || /marketcentaur\.com$/.test(u.hostname) ? u.pathname + u.hash : u.href; } catch (err) { a.href = href; }
+        a.textContent = name; li.appendChild(a);
+      } else {
+        var span = document.createElement("span"); span.setAttribute("aria-current", "page"); span.textContent = name; li.appendChild(span);
+      }
+      ol.appendChild(li);
+    });
+    el.appendChild(ol);
+    host.insertBefore(el, host.firstChild);
+  } catch (err) { /* breadcrumbs are an enhancement only */ }
+})();

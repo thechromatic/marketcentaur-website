@@ -165,7 +165,11 @@
       var s = document.createElement("script"); s.src = "/assets/forms.js"; s.defer = true; document.body.appendChild(s);
     }
     var btn = el("button", "mca-btn"); btn.type = "button"; btn.setAttribute("aria-expanded", "false"); btn.setAttribute("aria-controls", "mca-panel");
-    btn.innerHTML = '<span aria-hidden="true">✦</span> Ask MarketCentaur';
+    btn.innerHTML = '<span aria-hidden="true">✦</span><span class="mca-label"> Ask MarketCentaur</span>';
+    btn.setAttribute("aria-label", "Ask MarketCentaur");
+    // Collapse to an icon once the visitor scrolls past the first screen, so it covers less content.
+    var compact = function () { btn.classList.toggle("mca-compact", window.scrollY > window.innerHeight * 0.6 && panel.hidden); };
+    window.addEventListener("scroll", compact, { passive: true });
     panel = el("div", "mca-panel"); panel.id = "mca-panel"; panel.hidden = true; panel.setAttribute("role", "dialog"); panel.setAttribute("aria-label", "Ask MarketCentaur");
     var head = el("div", "mca-head"); head.appendChild(el("strong", null, "Ask MarketCentaur"));
     var close = el("button", "mca-close", "×"); close.type = "button"; close.setAttribute("aria-label", "Close"); head.appendChild(close);
@@ -179,7 +183,7 @@
     document.body.appendChild(panel); document.body.appendChild(btn);
 
     function open(v) {
-      panel.hidden = !v; btn.setAttribute("aria-expanded", String(v));
+      panel.hidden = !v; btn.setAttribute("aria-expanded", String(v)); compact();
       if (v) { ensureCatalog(); setTimeout(function () { input.focus(); }, 30); }
     }
     btn.addEventListener("click", function () { open(panel.hidden); });

@@ -49,7 +49,7 @@
   var CSS =
     '.mcc{position:fixed;left:18px;bottom:18px;z-index:80;width:min(440px,calc(100vw - 36px));box-sizing:border-box;' +
     'padding:18px 18px 16px;border:1px solid #374151;border-radius:14px;background:#111827;color:#f5f7fa;' +
-    'font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 16px 48px rgba(0,0,0,.5)}' +
+    'font:14px/1.55 Manrope,Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 16px 48px rgba(0,0,0,.5)}' +
     '.mcc h2{margin:0 0 6px;font-size:15px;line-height:1.3;font-weight:750;color:#f5f7fa}' +
     '.mcc p{margin:0 0 14px;color:#cbd5e1}' +
     '.mcc a{color:#19d3ff;text-decoration:underline}' +
