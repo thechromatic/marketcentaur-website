@@ -1,63 +1,63 @@
 {
   "card-2026-11-07-quote": {
     "hash": "cc35f840ce035e64",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-08-signal": {
     "hash": "0759a625f4199d15",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-10-signal": {
     "hash": "971568429f1c5684",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-11-quote": {
     "hash": "0e1f8437f6194e04",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-13-practical": {
     "hash": "a95b9a70e66fb5f1",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-14-quote": {
     "hash": "b546962f035ced46",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "competitive-intelligence-tools-vs-managed-service": {
     "hash": "4ba41628fc9fb4ee",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   },
   "competitive-intelligence-without-an-analyst-team": {
     "hash": "484d6dd2eb0349b3",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   },
   "competitor-job-postings-strategy": {
     "hash": "e9acf8c9c3fcd758",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   },
   "competitor-signals-worth-tracking": {
     "hash": "56297d3bea7aa43e",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   },
   "read-competitor-pricing-page": {
     "hash": "54dc91ae37f04eaf",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   }
 }

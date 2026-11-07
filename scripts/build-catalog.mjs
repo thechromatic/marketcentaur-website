@@ -62,7 +62,7 @@ const pageTitle = (href) => {
 
 const NAV = (current) => `<div class="wrap">
   <nav class="nav" aria-label="Main navigation">
-    <a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-header.png" alt="MarketCentaur"></a>
+    <a class="logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-transparent.png" alt="MarketCentaur"></a>
     <div class="navlinks"><a href="/services.html"${current === 'services' ? ' aria-current="page"' : ''}>Services</a><a href="/industries.html"${current === 'industries' ? ' aria-current="page"' : ''}>Industries</a><a href="/sample-intelligence-brief.html">Sample brief</a><a href="/labs.html">Labs</a><a href="/insights/">Insights</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div>
     <a class="btn primary" href="/ai-readiness-score.html">Free AI Readiness Score</a>
   </nav>
