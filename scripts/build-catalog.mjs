@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { GA4_BLOCK } from './seo/ga4.mjs';
-import { renderNav } from './nav/nav.mjs';
+import { renderNav, MENU } from './nav/nav.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://marketcentaur.com';
@@ -231,6 +231,7 @@ ${bundles.map((b) => `      <article class="card" id="${b.id}"><div class="tag">
     <p class="lead">Strategy, automation, agents, customer experience, marketing, sales, events, data, documents, web, IT, security, people, governance and operations. Every engagement follows the same Centaur Method: a certified strategist scopes and reviews, and AI researches, builds and tests. For any business, team or organisation, of any size, anywhere.</p>
     <div class="actions"><a class="btn primary" href="/ai-readiness-score.html">Find your starting point</a><a class="textlink" href="/how-it-works.html#engage">How we engage →</a></div>
   </header>`];
+  body.push(`  <nav class="mc-subnav" aria-label="On this page">${GROUPS.map((g) => `<a href="#${g.toLowerCase().replace(/[^a-z]+/g, '-')}">${esc(g)}</a>`).join('')}<a href="#bundles">Bundles</a></nav>`);
   for (const g of GROUPS) {
     const list = practices.filter((p) => p.group === g);
     const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
@@ -342,10 +343,6 @@ function ensureHead(rel, tag) {
   if (!text.includes(tag)) { text = text.replace('</head>', `${tag}\n</head>`); fs.writeFileSync(file, text); }
 }
 
-const practiceGrid = `<div class="mc-grid">
-${practices.map((p) => `<a class="mc-tile" href="${practiceUrl(p)}"><span class="mc-tile-group">${esc(p.group)}</span><strong>${esc(p.name)}</strong><span>${esc(p.short)}</span></a>`).join('\n')}
-</div>`;
-
 // Homepage: a compact strip of the 4 practice groups (the full grid lives on /practices/ and /services.html).
 const homeBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section mc-strip">
 <div class="eyebrow">Beyond the sprints</div>
@@ -360,11 +357,18 @@ ${GROUPS.map((g) => {
 <p class="mc-links"><a href="/practices/">Browse all practices →</a> <a href="/ai-readiness-score.html">Free AI Readiness Score →</a></p>
 </section>`;
 
-const servicesBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section">
+// Services page: all 17 practices as grouped links (descriptions live on each practice page).
+const servicesBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section mc-strip">
 <div class="eyebrow">All practices</div>
 <h2 id="practices-heading">17 practices, ${offers.size} services, one way of working.</h2>
-<p class="mc-intro">Every practice offers three kinds of engagement: Diagnose (find where AI fits), Build (ship a working change) and Run (we keep it running). Every engagement is scoped and quoted in writing.</p>
-${practiceGrid}
+<p class="mc-intro">Every practice offers Diagnose, Build and Run engagements, each scoped and quoted in writing.</p>
+<div class="mc-groups">
+${GROUPS.map((g) => {
+  const list = practices.filter((p) => p.group === g);
+  const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
+  return `<div class="mc-group"><a class="mc-group-title" href="/practices/#${id}">${esc(g)} <span>${list.length}</span></a><ul>${list.map((p) => `<li><a href="${practiceUrl(p)}">${esc(p.name)}</a></li>`).join('')}</ul></div>`;
+}).join('\n')}
+</div>
 <p class="mc-links"><a href="/practices/#bundles">See the bundles →</a> <a href="/how-it-works.html#engage">How we engage →</a></p>
 </section>`;
 
@@ -382,7 +386,16 @@ ${bundles.map((b) => `<a class="mc-tile" href="/practices/#${b.id}"><span class=
 <p class="mc-intro">Our first clients get founding client terms in exchange for honest feedback and, only with written approval, a published case study. <a href="/contact.html?service=founding-client">Ask about founding client terms →</a></p>
 </section>`;
 
-const industryCards = industries.map((i) => `      <article class="card"><div class="tag">${esc(i.name)}</div><h3>${esc(i.name)}</h3><p>${esc(i.headline)}</p><a class="textlink bottom" href="/industries/${i.slug}.html">Explore →</a></article>`).join('\n');
+// Filter group for each sector card on industries.html, taken from the Industries menu columns.
+const SECTOR_GROUP = {};
+MENU.find((m) => m.id === 'industries').panel.forEach((col, i) => col.links.forEach(([, href]) => { SECTOR_GROUP[href] = ['local', 'b2b', 'pro'][i]; }));
+const SECTOR_LABEL = { local: 'Local &amp; consumer', b2b: 'B2B &amp; industrial', pro: 'Professional &amp; public' };
+const sectorGroup = (slug) => {
+  const g = SECTOR_GROUP[`/industries/${slug}.html`];
+  if (!g) throw new Error(`industries/${slug}.html is missing from the Industries menu in scripts/nav/nav.mjs`);
+  return g;
+};
+const industryCards = industries.map((i) => `      <article class="card" data-group="${sectorGroup(i.slug)}"><div class="tag">${SECTOR_LABEL[sectorGroup(i.slug)]}</div><h3>${esc(i.name)}</h3><p>${esc(i.headline)}</p><a class="textlink bottom" href="/industries/${i.slug}.html">Explore →</a></article>`).join('\n');
 
 updateBetweenMarkers('index.html', 'home', homeBlock, '<section id="ai-services"');
 updateBetweenMarkers('services.html', 'services', servicesBlock, '<section id="sprints"');

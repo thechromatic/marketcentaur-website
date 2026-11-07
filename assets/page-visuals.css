@@ -130,3 +130,30 @@ main .faqlist details[open] p{animation:fadeDown .3s ease}
   .phases span:before{transition:none;transform:scaleX(1)}
   main .card,main a.card:hover,main article.card:hover{transition:none;transform:none}
 }
+
+/* Sprint comparison table (services.html) */
+.cmp-wrap{margin-top:8px;overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.cmp-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.cmp{width:100%;min-width:720px;border-collapse:collapse;font-size:14.5px;line-height:1.5}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp thead th{padding-top:18px;padding-bottom:16px;font-size:16px;color:var(--text)}
+.cmp thead a{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+.cmp thead a:hover{color:var(--accent)}
+.cmp thead .ticon{margin:0;flex:0 0 auto}
+.cmp tbody th{width:150px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.cmp tbody td{color:var(--text)}
+.cmp tbody tr:nth-child(odd) td,.cmp tbody tr:nth-child(odd) th{background:rgba(255,255,255,.015)}
+.cmp tr.cmp-cta td,.cmp tr.cmp-cta th{border-bottom:0;padding-top:18px;padding-bottom:20px}
+.cmp th:first-child,.cmp td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.cmp-note{margin:14px 0 0;color:var(--muted);font-size:14px}
+.facts-line{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.facts-line span{padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--muted)}
+.cmp-hint{display:none;margin:0 0 8px;color:var(--muted);font-size:13px}
+@media(max-width:760px){
+  .cmp-hint{display:block}
+  .cmp{min-width:600px;font-size:14px}
+  .cmp th,.cmp td{padding:12px 12px}
+  .cmp tbody th{width:88px;font-size:11px;white-space:normal}
+  .cmp thead th{font-size:14.5px}
+  .cmp thead .ticon{display:none}
+}

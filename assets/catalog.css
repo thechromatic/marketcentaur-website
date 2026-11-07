@@ -46,3 +46,14 @@ a.mc-tile:hover,a.mc-tile:focus-visible{border-color:var(--accent,#7fb0ff);trans
 .mca-note{padding:0 16px 10px;color:#8b95a3;font-size:11.5px}
 @media(max-width:620px){.mca-btn{bottom:14px;right:14px;padding:11px 14px}.mca-panel{right:10px;left:10px;width:auto;bottom:68px}}
 @media print{.mca-btn,.mca-panel{display:none!important}}
+/* Grouped practice links (services.html) */
+.mc-groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
+.mc-group{padding:18px;border:1px solid var(--line,#374151);border-radius:14px;background:var(--surface,#1f2937)}
+.mc-group-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px;color:var(--accent,#7fb0ff);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.mc-group-title span{padding:2px 8px;border-radius:999px;background:var(--accent2,#142640);color:var(--text,#f5f7fa);letter-spacing:0}
+.mc-group ul{margin:0;padding:0;list-style:none}
+.mc-group li a{display:block;padding:7px 0;border-top:1px solid var(--line,#374151);color:var(--text,#f5f7fa);font-size:14px;font-weight:600;line-height:1.4;text-decoration:none}
+.mc-group li:first-child a{border-top:0}
+.mc-group li a:hover{color:var(--accent,#7fb0ff)}
+@media(max-width:900px){.mc-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.mc-groups{grid-template-columns:1fr}}

@@ -59,7 +59,61 @@
     var onScroll = function () { header.classList.toggle("mc-scrolled", window.scrollY > 8); };
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+    // Expose the header height so in-page menus can stick just below it.
+    var setH = function () { document.documentElement.style.setProperty("--mc-header-h", header.offsetHeight + "px"); };
+    setH(); window.addEventListener("resize", setH);
   }
+
+  // Linking to something inside a collapsed <details> opens it first.
+  function revealHash() {
+    if (!location.hash) return;
+    var t; try { t = document.querySelector(location.hash); } catch (err) { return; }
+    if (!t) return;
+    var d = t.tagName === "DETAILS" ? t : null, n = t;
+    while (n) { if (n.tagName === "DETAILS") n.open = true; n = n.parentElement; }
+    if (t.tagName === "SECTION") Array.prototype.forEach.call(t.querySelectorAll("details.more-lg"), function (x) { x.open = true; });
+    if (d) d.open = true;
+  }
+  revealHash();
+  window.addEventListener("hashchange", revealHash);
+
+  // Filter chips: <div class="mc-filter" data-filter-target="ID"> with buttons [data-filter]; items carry data-group.
+  Array.prototype.forEach.call(document.querySelectorAll(".mc-filter[data-filter-target]"), function (bar) {
+    var grid = document.getElementById(bar.getAttribute("data-filter-target"));
+    var status = document.getElementById(bar.getAttribute("data-filter-target") + "-status");
+    if (!grid) return;
+    var btns = Array.prototype.slice.call(bar.querySelectorAll("button[data-filter]"));
+    bar.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-filter]"); if (!b) return;
+      var f = b.getAttribute("data-filter"), shown = 0;
+      btns.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      Array.prototype.forEach.call(grid.querySelectorAll("[data-group]"), function (item) {
+        var on = f === "all" || item.getAttribute("data-group") === f;
+        item.hidden = !on; if (on) shown++;
+      });
+      if (status) status.textContent = "Showing " + shown + (f === "all" ? " sectors" : " sectors in " + b.firstChild.textContent.trim());
+    });
+  });
+
+  // In-page section menu: highlight the section currently in view.
+  Array.prototype.forEach.call(document.querySelectorAll(".mc-subnav"), function (sub) {
+    var links = Array.prototype.slice.call(sub.querySelectorAll('a[href^="#"]'));
+    var targets = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); });
+    if (!("IntersectionObserver" in window)) return;
+    var visible = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+      var current = null;
+      targets.forEach(function (t) { if (t && visible[t.id] && !current) current = t.id; });
+      links.forEach(function (a) {
+        var on = current && a.getAttribute("href") === "#" + current;
+        a.classList.toggle("is-active", !!on);
+        if (on) { a.setAttribute("aria-current", "true"); if (sub.scrollWidth > sub.clientWidth) sub.scrollTo({ left: a.offsetLeft - 16, behavior: "smooth" }); }
+        else a.removeAttribute("aria-current");
+      });
+    }, { rootMargin: "-140px 0px -55% 0px" });
+    targets.forEach(function (t) { if (t) io.observe(t); });
+  });
 
   // Visible breadcrumbs for pages two or more levels deep.
   try {
