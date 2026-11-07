@@ -1,7 +1,7 @@
 {
   "ai-chat-voice-assistants-what-to-handle": {
     "hash": "88db8f6f88214bd9",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 5
   },
   "card-2026-11-07-quote": {
@@ -12,7 +12,7 @@
   },
   "card-2026-11-08-quote": {
     "hash": "3b1188ce795e5c30",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
@@ -24,7 +24,7 @@
   },
   "card-2026-11-10-practical": {
     "hash": "e29f42f8b5ce9eb6",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
@@ -48,7 +48,7 @@
   },
   "card-2026-11-14-practical": {
     "hash": "f709b13c68cdc5f2",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
@@ -60,13 +60,13 @@
   },
   "card-2026-11-16-signal": {
     "hash": "f52533266ce4d7e7",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
   "card-2026-11-18-quote": {
     "hash": "a0eb9a9962519131",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
   },
@@ -97,12 +97,12 @@
   },
   "where-to-start-with-ai-small-business": {
     "hash": "9dcf2b41bf9a69c9",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 7
   },
   "which-processes-to-automate-first": {
     "hash": "0d0bbee8c82bced5",
-    "template": "67c75233ab6f32cb",
+    "template": "a9489520571b164a",
     "slides": 6
   }
 }
