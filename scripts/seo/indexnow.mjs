@@ -41,6 +41,7 @@ if (args[0] === '--all') {
     .split('\n').filter(Boolean);
   urls = [...new Set(changed.map(toUrl).filter(Boolean))];
   if (changed.some((f) => f === 'sitemap.xml' || f === 'llms.txt')) urls.push(`${SITE}/sitemap.xml`);
+  if (changed.includes('llms.txt')) urls.push(`${SITE}/llms.txt`);
 }
 
 if (!urls.length) { console.log('No changed pages to submit.'); process.exit(0); }
