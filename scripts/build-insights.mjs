@@ -123,7 +123,7 @@ function aeoWarnings(p, body) {
   if (!p.faqs.length) w.push('no "## FAQ" section with "### Question" entries');
   if ((p.seo_title || `${p.title} | MarketCentaur`).length > 65) w.push('title over 65 chars: add a shorter "seo_title:"');
   if (p.description.length > 160) w.push(`description is ${p.description.length} chars (max 160)`);
-  if (!/\]\(\/(?:services|ai-visibility-check|website-enquiry|growth-check|sample-intelligence)/.test(body)) w.push('no internal link to a service page or free tool');
+  if (!/\]\(\/(?:services|practices|industries|ai-readiness-score|ai-visibility-check|website-enquiry|growth-check|sample-intelligence)/.test(body)) w.push('no internal link to a service page or free tool');
   return w;
 }
 

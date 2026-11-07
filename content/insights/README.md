@@ -23,7 +23,7 @@ Each file here becomes a page at `marketcentaur.com/insights/<slug>.html`.
    - `seo_title:` a `<title>` under 60 characters when the headline is longer.
    - At least one question-style `## ...?` heading.
    - A `## FAQ` section at the end with 3–5 `### Question?` headings, each followed by a short answer. It's published as FAQPage structured data.
-   - A link to a service page or free tool, e.g. `/services/market-competitor-intelligence.html` or `/ai-visibility-check.html`.
+   - A link to a service page or free tool, e.g. a practice page such as `/practices/automation-ai-agents.html`, a service page, or a free tool such as `/ai-readiness-score.html`.
 3. Commit on a branch and open a pull request. The **Build Insights** GitHub Action generates the page and commits it to the branch, and Cloudflare Pages posts a preview link on the pull request.
 4. Merge to publish.
 

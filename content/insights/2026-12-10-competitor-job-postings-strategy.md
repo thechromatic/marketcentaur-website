@@ -1,7 +1,7 @@
 ---
 title: What a Competitor's Job Postings Tell You About Their Strategy
 description: Job ads are one of the most honest public signals a company sends. Here's how to read them for clues about a competitor's next markets, products and priorities.
-date: 2026-11-12
+date: 2026-12-10
 category: Competitive intelligence
 summary: "Competitor job postings reveal strategy because companies only open roles they have already budgeted for. Look at where they are hiring, which teams are growing, the tools and skills they ask for, the customers they mention and the seniority of the roles. Compare month to month: the changes signal new markets, products and priorities before any announcement."
 seo_title: "What Competitor Job Postings Reveal About Strategy"

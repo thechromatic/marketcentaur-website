@@ -1,0 +1,52 @@
+{
+  "eyebrow": "Automation",
+  "title": "What to automate first",
+  "subtitle": "A simple scoring method",
+  "slides": [
+    {
+      "eyebrow": "Score 1–5 on",
+      "title": "Five factors",
+      "style": "numbered",
+      "items": [
+        "Volume: how often it runs",
+        "Time: effort per run",
+        "Rules: same steps every time",
+        "Digital inputs: emails, forms, files",
+        "Low risk: mistakes easy to fix"
+      ]
+    },
+    {
+      "eyebrow": "Read the total",
+      "title": "Out of 25",
+      "items": [
+        "Above 18: strong first candidate",
+        "12–18: worth a closer look",
+        "Below 12: park it for now"
+      ]
+    },
+    {
+      "eyebrow": "Before you build",
+      "title": "Fix the process first",
+      "items": [
+        "Write the steps down as they are",
+        "Remove steps that add nothing",
+        "Agree how exceptions are handled",
+        "Keep a person on high-risk steps"
+      ]
+    },
+    {
+      "eyebrow": "After go-live",
+      "title": "Measure four things",
+      "items": [
+        "Hours saved per week",
+        "Exceptions handled by people",
+        "Errors caught later",
+        "Whether the team uses it"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "Score your own processes"
+  }
+}
