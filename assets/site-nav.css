@@ -137,3 +137,7 @@ html body .btn.primary:hover,.mc-cta:hover{filter:brightness(1.08)}
 section.band{position:relative;isolation:isolate;border-top-color:transparent!important}
 section.band::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:calc(100vw - var(--mc-sbw,0px));transform:translateX(-50%);background:var(--band);border-top:1px solid var(--line,#1B3368);border-bottom:1px solid var(--line,#1B3368)}
 section.band+section{border-top-color:transparent!important}
+
+/* Shared card icon (scripts/icons.mjs) */
+.mc-ic{display:inline-grid;place-items:center;width:42px;height:42px;margin-bottom:14px;border-radius:12px;background:var(--accent2,#0E2A66);border:1px solid rgba(25,211,255,.25);color:var(--accent,#19D3FF);flex:0 0 auto}
+.mc-ic svg{width:22px;height:22px}
