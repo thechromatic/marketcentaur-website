@@ -1,0 +1,41 @@
+{
+  "eyebrow": "Future watch · ESG",
+  "title": "AI's electricity bill to 2030",
+  "subtitle": "What the IEA forecasts, and what it means for your business",
+  "slides": [
+    {
+      "eyebrow": "IEA forecast",
+      "title": "The numbers",
+      "items": [
+        "Data centres: 485 TWh in 2025",
+        "Around 950 TWh forecast for 2030",
+        "About 3% of global electricity by then",
+        "AI-focused data centres: use set to triple"
+      ]
+    },
+    {
+      "eyebrow": "IEA analysis",
+      "title": "Two forces at once",
+      "items": [
+        "Energy per AI task is falling fast",
+        "Video, reasoning and agent tasks use far more per query",
+        "So total demand still rises"
+      ]
+    },
+    {
+      "eyebrow": "Our view",
+      "title": "What it means for you",
+      "style": "numbered",
+      "items": [
+        "AI use will show up in Scope 3 questions",
+        "Ask vendors for energy and emissions data",
+        "Match the model to the task",
+        "Count AI in your ESG reporting"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Keep reading",
+    "title": "New practical AI guides every Thursday"
+  }
+}
