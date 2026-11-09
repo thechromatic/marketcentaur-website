@@ -53,6 +53,7 @@ for (const file of [...walk(ROOT)].sort()) {
   if (!title) err.push('missing <title>'); else if (title.length > 65) warn.push(`title ${title.length} chars`);
   if (!desc) err.push('missing meta description'); else if (desc.length > 160) warn.push(`description ${desc.length} chars`);
   if (!canonical) err.push('missing canonical');
+  else if (/\.html$/.test(canonical)) err.push(`canonical ends in .html; Cloudflare Pages redirects it (${canonical})`);
   else if (!sitemap.includes(`<loc>${canonical}</loc>`)) err.push(`not in sitemap.xml (${canonical})`);
   if (h1s !== 1) err.push(`${h1s} <h1> tags`);
   if (!lds.length) err.push('no JSON-LD structured data');

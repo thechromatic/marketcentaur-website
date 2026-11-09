@@ -1,5 +1,5 @@
 # Scoping call question list
-MarketCentaur free toolkit · marketcentaur.com/toolkit.html
+MarketCentaur free toolkit · marketcentaur.com/toolkit
 
 The questions we ask before quoting any project. Use them to scope your own work, or answer them before you brief any agency or freelancer.
 
@@ -32,4 +32,4 @@ The questions we ask before quoting any project. Use them to scope your own work
 18. What would make you say this project was worth it?
 
 ---
-Ready to scope a project with us? marketcentaur.com/contact.html · fixed quote after a scoping call.
+Ready to scope a project with us? marketcentaur.com/contact · fixed quote after a scoping call.

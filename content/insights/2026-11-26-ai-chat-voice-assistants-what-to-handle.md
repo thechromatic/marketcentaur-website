@@ -49,7 +49,7 @@ The lesson for any business is simple. Customers treat what your assistant says 
 
 Rules vary by country, so check what applies to you. One clear example: under [Article 50 of the EU AI Act](https://artificialintelligenceact.eu/article/50/), AI systems that interact directly with people must be designed so that people know they are dealing with AI, unless that's obvious from the context. That obligation applies from 2 August 2026, and it may also matter to businesses outside the EU whose assistants talk to people in the EU.
 
-Even where no law requires it, telling customers they're talking to an AI assistant, and offering a person, is good practice. Our [Governance, Risk & Compliance practice](/practices/ai-governance.html) can help you work out what applies.
+Even where no law requires it, telling customers they're talking to an AI assistant, and offering a person, is good practice. Our [Governance, Risk & Compliance practice](/practices/ai-governance) can help you work out what applies.
 
 ## What guardrails make an AI assistant safe to use?
 
@@ -75,7 +75,7 @@ Even where no law requires it, telling customers they're talking to an AI assist
 
 Start with one channel (usually website chat or your main phone line) and the ten questions customers ask most often. Get those right, review weekly for a month, then widen the scope.
 
-Our [Customer Experience & Conversational AI practice](/practices/conversational-ai.html) reviews customer journeys and sets up website chat assistants and AI voice front desks with these guardrails built in. You can also try our own assistant: select "Ask MarketCentaur" on [our website](/). Every engagement is scoped and quoted after a short call.
+Our [Customer Experience & Conversational AI practice](/practices/conversational-ai) reviews customer journeys and sets up website chat assistants and AI voice front desks with these guardrails built in. You can also try our own assistant: select "Ask MarketCentaur" on [our website](/). Every engagement is scoped and quoted after a short call.
 
 ## FAQ
 

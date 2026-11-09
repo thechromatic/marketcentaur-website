@@ -20,7 +20,7 @@
       {"q": "Can you work with incomplete data?", "a": "Often, yes. We identify limitations, handle exceptions transparently and recommend improvements."}
     ],
     "related": ["knowledge-document-ai", "operations-finance", "market-intelligence"],
-    "specialist": ["/services/business-intelligence.html", "/services/analytics-optimisation.html"]
+    "specialist": ["/services/business-intelligence", "/services/analytics-optimisation"]
   },
   {
     "slug": "knowledge-document-ai",
@@ -44,7 +44,7 @@
       {"q": "Do you provide certified translations?", "a": "Localization is not a substitute for certified translation. We help identify where formal certification is required."}
     ],
     "related": ["data-analytics", "operations-finance", "ai-training-change"],
-    "specialist": ["/services/ai-localization.html", "/services/business-operations.html"]
+    "specialist": ["/services/ai-localization", "/services/business-operations"]
   },
   {
     "slug": "web-apps-no-code",
@@ -68,7 +68,7 @@
       {"q": "Does an internal tool need to be fully specified first?", "a": "No. Discovery and prototyping clarify the need and shape a sensible first version."}
     ],
     "related": ["search-web-ecommerce", "data-analytics", "cloud-workplace-it"],
-    "specialist": ["/services/digital-presence.html", "/website-enquiry-readiness.html"]
+    "specialist": ["/services/digital-presence", "/website-enquiry-readiness"]
   },
   {
     "slug": "cloud-workplace-it",
@@ -92,7 +92,7 @@
       {"q": "Will a setup interrupt normal work?", "a": "We plan changes around your operations, agree communications and schedule any transition steps with you."}
     ],
     "related": ["web-apps-no-code", "cyber-privacy", "ai-training-change"],
-    "specialist": ["/services/ai-training.html", "/services/business-operations.html"]
+    "specialist": ["/services/ai-training", "/services/business-operations"]
   },
   {
     "slug": "cyber-privacy",
@@ -116,7 +116,7 @@
       {"q": "Can you work with our existing security team?", "a": "Yes. We coordinate with internal owners and external providers so recommendations fit your environment."}
     ],
     "related": ["cloud-workplace-it", "ai-governance", "knowledge-document-ai"],
-    "specialist": ["/editorial-standards.html", "/privacy-policy.html"]
+    "specialist": ["/editorial-standards", "/privacy-policy"]
   },
   {
     "slug": "ai-training-change",
@@ -141,7 +141,7 @@
       {"q": "Can you support change after a workshop?", "a": "Yes. Change Management Support and monthly clinics turn first learning into lasting practice."}
     ],
     "related": ["ai-governance", "ai-strategy", "knowledge-document-ai"],
-    "specialist": ["/services/ai-training.html"]
+    "specialist": ["/services/ai-training"]
   },
   {
     "slug": "ai-governance",
@@ -165,7 +165,7 @@
       {"q": "Which EU AI Act dates matter now?", "a": "AI-literacy duties already apply, Article 50 transparency rules took effect on 2 August 2026, and stand-alone high-risk obligations start on 2 December 2027."}
     ],
     "related": ["ai-training-change", "cyber-privacy", "ai-strategy"],
-    "specialist": ["/editorial-standards.html", "/services/ai-automation.html"]
+    "specialist": ["/editorial-standards", "/services/ai-automation"]
   },
   {
     "slug": "operations-finance",
@@ -188,6 +188,6 @@
       {"q": "Can you start with one workflow?", "a": "Yes. One focused process is often the best way to set requirements, controls and a pattern to reuse."}
     ],
     "related": ["data-analytics", "automation-ai-agents", "cloud-workplace-it"],
-    "specialist": ["/services/business-operations.html", "/services/business-intelligence.html"]
+    "specialist": ["/services/business-operations", "/services/business-intelligence"]
   }
 ]

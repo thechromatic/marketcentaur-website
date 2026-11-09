@@ -67,7 +67,7 @@ Ask three questions about anything that comes in:
 
 Signals that pass all three deserve a line in your weekly brief, with a short note on what it might mean for you and what you could do about it.
 
-*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence) or try the free [AI visibility check](/ai-visibility-check) to see how AI assistants describe your business.*
 
 ## FAQ
 

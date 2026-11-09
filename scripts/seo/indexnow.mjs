@@ -28,7 +28,7 @@ function toUrl(file) {
   if (file === 'contact-success.html') return null;
   if (file === 'index.html') return `${SITE}/`;
   if (file.endsWith('/index.html')) return `${SITE}/${file.slice(0, -'index.html'.length)}`;
-  return `${SITE}/${file}`;
+  return `${SITE}/${file.slice(0, -'.html'.length)}`; // Cloudflare Pages serves pages without .html
 }
 
 let urls;

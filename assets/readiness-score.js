@@ -2,15 +2,15 @@
   "use strict";
   var LEVELS = ["Not at all", "Early", "Partly", "Mostly", "Fully"];
   var DIMS = [
-    { id: "strategy", name: "Strategy", rec: ["AI Readiness Scan", "/practices/ai-strategy.html#ai-readiness-scan", "Get an evidence-based view of where AI fits and what to do first."],
+    { id: "strategy", name: "Strategy", rec: ["AI Readiness Scan", "/practices/ai-strategy#ai-readiness-scan", "Get an evidence-based view of where AI fits and what to do first."],
       qs: ["We have named the business problems AI should help with, and who owns them.", "Leaders agree on AI priorities and have set aside time or budget for them."] },
-    { id: "data", name: "Data", rec: ["Data Readiness Check", "/practices/data-analytics.html#data-readiness-check", "Find out which data is reliable enough to use, and what to fix first."],
+    { id: "data", name: "Data", rec: ["Data Readiness Check", "/practices/data-analytics#data-readiness-check", "Find out which data is reliable enough to use, and what to fix first."],
       qs: ["Our key business data (customers, sales, operations) is in systems, not scattered spreadsheets.", "We trust our reports: definitions are agreed and numbers match across teams."] },
-    { id: "processes", name: "Processes", rec: ["Automation Opportunity Audit", "/practices/automation-ai-agents.html#automation-opportunity-audit", "Map the repetitive work worth automating, ranked by effort and impact."],
+    { id: "processes", name: "Processes", rec: ["Automation Opportunity Audit", "/practices/automation-ai-agents#automation-opportunity-audit", "Map the repetitive work worth automating, ranked by effort and impact."],
       qs: ["Our main workflows are documented well enough that someone new could follow them.", "We already automate some repetitive work (for example lead routing, reminders or reporting)."] },
-    { id: "people", name: "People", rec: ["Team AI Bootcamp", "/practices/ai-training-change.html#team-ai-bootcamp", "A hands-on session that gets your team using AI safely on real work."],
+    { id: "people", name: "People", rec: ["Team AI Bootcamp", "/practices/ai-training-change#team-ai-bootcamp", "A hands-on session that gets your team using AI safely on real work."],
       qs: ["Most of the team uses AI tools in their work at least weekly.", "People know what good AI use looks like and have had some training."] },
-    { id: "governance", name: "Governance", rec: ["AI Policy & Use Register", "/practices/ai-governance.html#ai-policy-use-register", "Set clear rules for AI use and a register of where it's used."],
+    { id: "governance", name: "Governance", rec: ["AI Policy & Use Register", "/practices/ai-governance#ai-policy-use-register", "Set clear rules for AI use and a register of where it's used."],
       qs: ["We have a written policy on which AI tools can be used and with what data.", "Someone reviews AI outputs before they reach customers, and we know where AI is used."] }
   ];
   var TIERS = [
@@ -58,8 +58,8 @@
     var tier = TIERS.filter(function (t) { return pct >= t[0] && pct <= t[1]; })[0];
     var ranked = DIMS.slice().sort(function (a, b) { return scores[a.id] - scores[b.id]; });
     var recs = ranked.filter(function (d) { return scores[d.id] <= 5; }).slice(0, 3);
-    if (!recs.length) recs = [{ rec: ["Custom AI Agent Build", "/practices/automation-ai-agents.html#custom-ai-agent-build", "Put a governed agent to work on a well-defined process."] },
-      { rec: ["Fractional AI Officer", "/practices/ai-strategy.html#fractional-ai-officer", "Senior guidance to scale AI across the organisation."] }];
+    if (!recs.length) recs = [{ rec: ["Custom AI Agent Build", "/practices/automation-ai-agents#custom-ai-agent-build", "Put a governed agent to work on a well-defined process."] },
+      { rec: ["Fractional AI Officer", "/practices/ai-strategy#fractional-ai-officer", "Senior guidance to scale AI across the organisation."] }];
 
     var summary = "Score " + pct + "/100 (" + tier[2] + "). " + DIMS.map(function (d) { return d.name + " " + scores[d.id] + "/8"; }).join(", ");
     out.innerHTML =
@@ -69,7 +69,7 @@
       DIMS.map(function (d) { var v = Math.round(scores[d.id] / 8 * 100); return '<div style="width:100%"><strong>' + esc(d.name) + '</strong> <span class="muted small">' + scores[d.id] + '/8</span><div class="rs-bar"><i style="width:' + v + '%"></i></div></div>'; }).join("") +
       '</div><div class="card"><h3>Recommended next steps</h3><ul class="mc-includes">' +
       recs.map(function (d) { return '<li><a href="' + d.rec[1] + '">' + esc(d.rec[0]) + '</a>: ' + esc(d.rec[2]) + '</li>'; }).join("") +
-      '</ul><a class="btn primary" href="/contact.html?service=ai-readiness-scan">Book a call about your score</a></div></div>' +
+      '</ul><a class="btn primary" href="/contact?service=ai-readiness-scan">Book a call about your score</a></div></div>' +
       '<form class="leadbox" style="margin-top:22px" data-mc-form="readiness-score" data-mc-inline novalidate>' +
       '<div><h2>Get your results by email</h2><p>Leave your email and a person will send your score and recommendations within one business day, with help if you want it. No newsletter unless you ask.</p></div>' +
       '<div class="leadform"><input type="hidden" name="_subject" value="AI Readiness Score: new result">' +
@@ -79,7 +79,7 @@
       '<input name="email" type="email" placeholder="Work email" autocomplete="email" aria-label="Work email" required>' +
       '<input name="company" placeholder="Company (optional)" autocomplete="organization" aria-label="Company">' +
       '<button class="btn primary" type="submit">Email me my results</button><p class="rs-err" hidden></p>' +
-      '<p class="fine">See our <a class="textlink" href="/privacy-policy.html">Privacy Policy</a>.</p></div></form>';
+      '<p class="fine">See our <a class="textlink" href="/privacy-policy">Privacy Policy</a>.</p></div></form>';
     out.hidden = false;
     var lead = out.querySelector("form");
     lead.addEventListener("submit", function (ev) {

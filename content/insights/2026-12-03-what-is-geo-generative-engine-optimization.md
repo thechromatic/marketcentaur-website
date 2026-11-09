@@ -49,7 +49,7 @@ Each service documents its own crawlers. Answer crawlers and training crawlers a
 
 These six steps are our recommended order. The first three cost little beyond time.
 
-1. **Test real buyer questions.** Write five to ten questions a buyer would ask, such as "who are the best accountants for restaurants in my city?" Run them in the assistants your customers use. Record whether you appear, whether the facts are right, who is named instead and which sources are cited. Our free [AI Visibility Check](/ai-visibility-check.html) walks you through this in about five minutes. Answers vary between runs, so look for patterns.
+1. **Test real buyer questions.** Write five to ten questions a buyer would ask, such as "who are the best accountants for restaurants in my city?" Run them in the assistants your customers use. Record whether you appear, whether the facts are right, who is named instead and which sources are cited. Our free [AI Visibility Check](/ai-visibility-check) walks you through this in about five minutes. Answers vary between runs, so look for patterns.
 2. **Check crawler access.** Review robots.txt against the table above. Check your firewall or bot protection too, because it can block a crawler that robots.txt allows.
 3. **Make your core facts unmistakable.** State what you sell, who it's for, where you operate and how to reach you in plain text on your site, and use the same details on your listings. Local businesses can also [register with Bing Places](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) to keep address and hours current. That this should come early is our judgment, not a measured finding.
 4. **Publish what others can't.** Google says original, experience-based content will [likely influence your presence in generative AI search](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) in the long run. A first-hand comparison, a worked example or data from your own work is more useful than a rewrite of common advice. Cite your sources, and never invent a statistic.
@@ -69,9 +69,9 @@ A lot of GEO advice goes further than the evidence. Here's how common claims com
 
 ## When is it worth getting help?
 
-Most businesses can handle steps one to three themselves. Outside help tends to make sense when competitors keep appearing in answers and you can't see why, or when you need the same testing across several markets or languages. Our [AI search visibility service](/services/ai-search-visibility.html) covers that work.
+Most businesses can handle steps one to three themselves. Outside help tends to make sense when competitors keep appearing in answers and you can't see why, or when you need the same testing across several markets or languages. Our [AI search visibility service](/services/ai-search-visibility) covers that work.
 
-Being recommended is also only half of the job, because the visitor still has to contact you. The free [website inquiry readiness check](/website-enquiry-readiness.html) helps you review that side.
+Being recommended is also only half of the job, because the visitor still has to contact you. The free [website inquiry readiness check](/website-enquiry-readiness) helps you review that side.
 
 ## FAQ
 

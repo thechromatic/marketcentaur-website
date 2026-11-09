@@ -1,5 +1,5 @@
 # AI visibility question set
-MarketCentaur free toolkit · marketcentaur.com/toolkit.html
+MarketCentaur free toolkit · marketcentaur.com/toolkit
 
 Ask each question in ChatGPT, Perplexity and Google (check the AI Overview). Use a logged-out or private window. Record who gets named.
 Replace [service], [city or region], [industry] and [competitor] with your own terms before you start.
@@ -48,4 +48,4 @@ Replace [service], [city or region], [industry] and [competitor] with your own t
 - Named in 16+: protect your position. Re-test monthly and correct any inaccurate descriptions.
 
 ---
-Want this run for you across 25 tailored questions and your competitors? See marketcentaur.com/services/ai-search-visibility.html
+Want this run for you across 25 tailored questions and your competitors? See marketcentaur.com/services/ai-search-visibility

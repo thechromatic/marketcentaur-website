@@ -38,7 +38,7 @@ Choose one. A good first project is:
 | Data | Uses information you already hold | Needs data you don't have or can't share |
 | Owner | One person who wants it fixed | Nobody in particular |
 
-Typical winners are drafting replies to common enquiries, summarising meetings or long documents, first drafts of proposals or reports, and pulling data from invoices or forms. Our [AI Readiness Score](/ai-readiness-score.html) takes about three minutes and shows which areas are ready to start.
+Typical winners are drafting replies to common enquiries, summarising meetings or long documents, first drafts of proposals or reports, and pulling data from invoices or forms. Our [AI Readiness Score](/ai-readiness-score) takes about three minutes and shows which areas are ready to start.
 
 ## Week 2 (continued): What ground rules do you need?
 
@@ -50,7 +50,7 @@ Agree a one-page set of rules before the pilot starts, not after. Keep it short:
 - **Disclosure.** When customers should be told AI was involved.
 - **Owner.** Who answers questions and updates the rules.
 
-If you operate under data protection laws such as the GDPR or India's DPDP Act, check how your chosen tool stores and processes data. Our [cybersecurity and data privacy practice](/practices/cyber-privacy.html) covers this in more depth.
+If you operate under data protection laws such as the GDPR or India's DPDP Act, check how your chosen tool stores and processes data. Our [cybersecurity and data privacy practice](/practices/cyber-privacy) covers this in more depth.
 
 ## Week 3: How do you run a small pilot?
 
@@ -79,7 +79,7 @@ Then make one of three decisions: **scale** it to more people, **change** it and
 
 Once one pilot works, repeat the cycle with the next problem on your list. After two or three cycles you'll have real evidence about where AI helps your business, which makes a longer roadmap far easier to write and to trust.
 
-If you'd like help with any step, our [AI Strategy & Readiness practice](/practices/ai-strategy.html) runs short readiness scans and opportunity workshops, and our [people and change practice](/practices/ai-training-change.html) trains teams to use AI well. Every engagement is scoped and quoted after a short call.
+If you'd like help with any step, our [AI Strategy & Readiness practice](/practices/ai-strategy) runs short readiness scans and opportunity workshops, and our [people and change practice](/practices/ai-training-change) trains teams to use AI well. Every engagement is scoped and quoted after a short call.
 
 ## FAQ
 
