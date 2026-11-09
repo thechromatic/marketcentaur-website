@@ -1,5 +1,5 @@
 # Website conversion checklist
-MarketCentaur free toolkit · marketcentaur.com/toolkit.html
+MarketCentaur free toolkit · marketcentaur.com/toolkit
 
 Mark each item Yes / No / Unsure. Fix the "No" items in the Message and Offer sections first: they usually matter most.
 

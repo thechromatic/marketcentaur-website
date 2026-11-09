@@ -77,7 +77,7 @@ Track four things for the first month:
 | Errors caught after the fact | Tells you whether the review step is in the right place |
 | Team satisfaction | An automation people work around isn't saving time |
 
-If you'd like a second pair of eyes, our [Automation & AI Agents practice](/practices/automation-ai-agents.html#automation-opportunity-audit) runs short opportunity audits and builds the first workflows, and our [Operations, Finance & Supply Chain practice](/practices/operations-finance.html) focuses on back-office processes such as invoices and reporting. Our [growth check](/growth-check.html) is a free way to get started. Every engagement is scoped and quoted after a short call.
+If you'd like a second pair of eyes, our [Automation & AI Agents practice](/practices/automation-ai-agents#automation-opportunity-audit) runs short opportunity audits and builds the first workflows, and our [Operations, Finance & Supply Chain practice](/practices/operations-finance) focuses on back-office processes such as invoices and reporting. Our [growth check](/growth-check) is a free way to get started. Every engagement is scoped and quoted after a short call.
 
 ## FAQ
 

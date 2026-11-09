@@ -65,9 +65,9 @@ Each one works for a different kind of company. Here's how to choose.
 
 Whatever you choose, judge it by one test: did it change a decision this quarter? If not, change the approach.
 
-*MarketCentaur offers a managed weekly Competitor Signal Brief, with sources for every claim and recommended responses. [See a sample brief](/sample-intelligence-brief.html).*
+*MarketCentaur offers a managed weekly Competitor Signal Brief, with sources for every claim and recommended responses. [See a sample brief](/sample-intelligence-brief).*
 
-*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence) or try the free [AI visibility check](/ai-visibility-check) to see how AI assistants describe your business.*
 
 ## FAQ
 

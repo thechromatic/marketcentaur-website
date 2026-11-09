@@ -20,7 +20,7 @@
       {"q": "Can you help us move from a roadmap into delivery?", "a": "Yes. We can scope a build or ongoing support engagement, or hand over a clear plan for your team to deliver."}
     ],
     "related": ["automation-ai-agents", "data-analytics", "ai-governance"],
-    "specialist": ["/services/strategy-growth.html", "/services/ai-training.html", "/services/business-intelligence.html"]
+    "specialist": ["/services/strategy-growth", "/services/ai-training", "/services/business-intelligence"]
   },
   {
     "slug": "automation-ai-agents",
@@ -45,7 +45,7 @@
       {"q": "Can an agent act without a person reviewing it?", "a": "The level of autonomy is agreed for each use case. We design approval or escalation points for actions that need human judgement."}
     ],
     "related": ["operations-finance", "knowledge-document-ai", "conversational-ai"],
-    "specialist": ["/services/ai-automation.html", "/services/business-operations.html", "/labs.html"]
+    "specialist": ["/services/ai-automation", "/services/business-operations", "/labs"]
   },
   {
     "slug": "conversational-ai",
@@ -69,7 +69,7 @@
       {"q": "Can it connect to our booking or support tools?", "a": "We assess your systems during scoping and confirm what is practical for the chosen use case."}
     ],
     "related": ["knowledge-document-ai", "automation-ai-agents", "sales-revops"],
-    "specialist": ["/services/ai-front-desk.html", "/services/ai-automation.html"]
+    "specialist": ["/services/ai-front-desk", "/services/ai-automation"]
   },
   {
     "slug": "marketing-content-video",
@@ -94,7 +94,7 @@
       {"q": "Who approves content before it is published?", "a": "Your designated reviewers approve everything before publication. We agree roles and review steps at the start."}
     ],
     "related": ["search-web-ecommerce", "sales-revops", "events-field-marketing"],
-    "specialist": ["/services/ai-content-studio.html", "/services/content-creative.html", "/services/ai-localization.html"]
+    "specialist": ["/services/ai-content-studio", "/services/content-creative", "/services/ai-localization"]
   },
   {
     "slug": "search-web-ecommerce",
@@ -123,7 +123,7 @@
       {"q": "Will tracking respect consent choices?", "a": "Yes. Consent and data quality are part of every measurement plan."}
     ],
     "related": ["marketing-content-video", "web-apps-no-code", "data-analytics"],
-    "specialist": ["/services/ai-search-visibility.html", "/services/digital-presence.html", "/services/small-business-local-growth.html", "/services/analytics-optimisation.html"]
+    "specialist": ["/services/ai-search-visibility", "/services/digital-presence", "/services/small-business-local-growth", "/services/analytics-optimisation"]
   },
   {
     "slug": "sales-revops",
@@ -150,7 +150,7 @@
       {"q": "How do you keep outreach relevant?", "a": "We agree audience criteria and messaging principles, add research context and refine based on responses."}
     ],
     "related": ["market-intelligence", "marketing-content-video", "events-field-marketing"],
-    "specialist": ["/services/demand-revenue.html", "/services/account-persona-mapping.html", "/services/b2b-growth-intelligence.html"]
+    "specialist": ["/services/demand-revenue", "/services/account-persona-mapping", "/services/b2b-growth-intelligence"]
   },
   {
     "slug": "events-field-marketing",
@@ -173,7 +173,7 @@
       {"q": "What happens after an event?", "a": "We prepare replay and follow-up assets, organise lead hand-offs and capture lessons for the next event."}
     ],
     "related": ["marketing-content-video", "sales-revops", "conversational-ai"],
-    "specialist": ["/services/partner-channel-discovery.html", "/services/demand-revenue.html"]
+    "specialist": ["/services/partner-channel-discovery", "/services/demand-revenue"]
   },
   {
     "slug": "strategy-growth-advisory",
@@ -196,7 +196,7 @@
       {"q": "Can you work alongside our existing advisors?", "a": "Yes, where responsibilities are clear."}
     ],
     "related": ["market-intelligence", "sales-revops", "ai-strategy"],
-    "specialist": ["/services/strategy-growth.html", "/services/market-competitor-intelligence.html"]
+    "specialist": ["/services/strategy-growth", "/services/market-competitor-intelligence"]
   },
   {
     "slug": "market-intelligence",
@@ -223,6 +223,6 @@
       {"q": "Is this legal, investment or transaction advice?", "a": "No. Intelligence supports your assessment and should be considered alongside appropriate professional advice."}
     ],
     "related": ["strategy-growth-advisory", "sales-revops", "ai-strategy"],
-    "specialist": ["/services/market-competitor-intelligence.html", "/services/weekly-growth-signal-watch.html", "/services/b2b-growth-intelligence.html", "/sample-intelligence-brief.html"]
+    "specialist": ["/services/market-competitor-intelligence", "/services/weekly-growth-signal-watch", "/services/b2b-growth-intelligence", "/sample-intelligence-brief"]
   }
 ]

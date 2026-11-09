@@ -163,7 +163,7 @@
     var right = el("div", { className: "leadform" });
     function hidden(n, v) { right.appendChild(el("input", { type: "hidden", name: n, value: v })); }
     hidden("_subject", "AI visibility check: " + state.inputs.name + " (" + score + "/100)");
-    hidden("_next", "https://marketcentaur.com/contact-success.html?type=ai-snapshot");
+    hidden("_next", "https://marketcentaur.com/contact-success?type=ai-snapshot");
     hidden("request_type", "Free AI visibility snapshot");
     hidden("business", state.inputs.name);
     hidden("category", state.inputs.category);
@@ -179,13 +179,13 @@
     var ei = el("input", { id: "aic-email", type: "email", name: "email", placeholder: "you@company.com", required: "" });
     var btn = el("button", { className: "btn primary", type: "submit" }, "Email me the snapshot");
     var fine = el("p", { className: "fine" });
-    fine.innerHTML = 'We use your email only to send the snapshot and one follow-up. See our <a href="/privacy-policy.html" style="text-decoration:underline">Privacy Policy</a>.';
+    fine.innerHTML = 'We use your email only to send the snapshot and one follow-up. See our <a href="/privacy-policy" style="text-decoration:underline">Privacy Policy</a>.';
     [wl, wi, elab, ei, btn, fine].forEach(function (x) { right.appendChild(x); });
     form.appendChild(left); form.appendChild(right);
     resultArea.appendChild(form);
 
     var more = el("p", { style: "margin-top:18px" });
-    more.innerHTML = 'Prefer to go straight to a full review? <a class="textlink" href="/services/ai-search-visibility.html">See the AI Search Visibility audit →</a>';
+    more.innerHTML = 'Prefer to go straight to a full review? <a class="textlink" href="/services/ai-search-visibility">See the AI Search Visibility audit →</a>';
     resultArea.appendChild(more);
 
     resultArea.hidden = false;

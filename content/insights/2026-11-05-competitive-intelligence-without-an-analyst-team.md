@@ -55,7 +55,7 @@ AI tools are now good at the tedious parts: summarising articles, spotting dupli
 
 Pick three competitors and set up alerts and page monitors for them today. Book 30 minutes next Friday to review. After a month, you'll have a record of their moves and a much clearer picture of where they're heading.
 
-*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence) or try the free [AI visibility check](/ai-visibility-check) to see how AI assistants describe your business.*
 
 ## FAQ
 

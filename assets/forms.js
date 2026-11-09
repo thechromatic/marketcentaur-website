@@ -119,7 +119,7 @@
     if (!isSiteForm(form) || event.defaultPrevented) return;
     event.preventDefault();
     var payload = collect(form);
-    var next = payload.meta._next || "/contact-success.html";
+    var next = payload.meta._next || "/contact-success";
     if (payload.meta._honey || payload.data.botcheck) { window.location.href = next; return; }
 
     var button = form.querySelector("button[type=submit], button:not([type])");

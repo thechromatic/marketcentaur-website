@@ -67,7 +67,7 @@ For each change you notice, write one line on what it might mean for you and one
 
 Pricing pages are public, change rarely and reflect real decisions. That makes them one of the best-value pages to watch.
 
-*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence) or try the free [AI visibility check](/ai-visibility-check) to see how AI assistants describe your business.*
 
 ## FAQ
 

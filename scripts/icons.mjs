@@ -20,11 +20,11 @@ export const ICONS = {
 export const GROUP_ICON = { 'Strategy & AI': 'strategy', 'Growth & Sales': 'growth', 'Operations & Data': 'operations', 'Tech, Risk & People': 'governance' };
 // Card link -> icon, for static cards
 export const HREF_ICON = {
-  '/services/ai-search-visibility.html': 'search',
-  '/services/ai-front-desk.html': 'frontdesk',
-  '/services/ai-content-studio.html': 'content',
-  '/services/ai-localization.html': 'localization',
-  '/services/market-competitor-intelligence.html': 'intelligence',
-  '/services.html#automation-sprint': 'automation',
+  '/services/ai-search-visibility': 'search',
+  '/services/ai-front-desk': 'frontdesk',
+  '/services/ai-content-studio': 'content',
+  '/services/ai-localization': 'localization',
+  '/services/market-competitor-intelligence': 'intelligence',
+  '/services#automation-sprint': 'automation',
 };
 export const iconHtml = (name, cls = 'mc-ic') => `<span class="${cls}" aria-hidden="true">${ICONS[name]}</span>`;

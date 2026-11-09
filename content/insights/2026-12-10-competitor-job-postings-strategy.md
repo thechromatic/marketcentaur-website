@@ -72,7 +72,7 @@ Then ask the same question you'd ask of any signal: does this affect a decision 
 
 Pick your three closest competitors and read through every open role on their careers pages. Note the locations, functions and customers mentioned. Repeat next month and compare. The differences will tell you more about their plans than their last three press releases.
 
-*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence.html) or try the free [AI visibility check](/ai-visibility-check.html) to see how AI assistants describe your business.*
+*Want this handled for you? See our [market and competitor intelligence service](/services/market-competitor-intelligence) or try the free [AI visibility check](/ai-visibility-check) to see how AI assistants describe your business.*
 
 ## FAQ
 

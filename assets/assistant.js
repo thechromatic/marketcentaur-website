@@ -80,7 +80,7 @@
       box.appendChild(document.createTextNode("I couldn't match that to a specific service yet. Browse "));
       box.appendChild(link("all 17 practices", "/practices/"));
       box.appendChild(document.createTextNode(", take the "));
-      box.appendChild(link("free AI Readiness Score", "/ai-readiness-score.html"));
+      box.appendChild(link("free AI Readiness Score", "/ai-readiness-score"));
       box.appendChild(document.createTextNode(", or leave your email and a person will reply within one business day."));
       return box;
     }
@@ -99,7 +99,7 @@
     }
     var q = el("p"); q.style.margin = "8px 0 0";
     q.appendChild(document.createTextNode("Every engagement is scoped and quoted for you. "));
-    q.appendChild(link("Request a quote", "/contact.html?service=" + encodeURIComponent(res.offers[0].o.id)));
+    q.appendChild(link("Request a quote", "/contact?service=" + encodeURIComponent(res.offers[0].o.id)));
     q.appendChild(document.createTextNode(" or leave your details below."));
     box.appendChild(q);
     return box;

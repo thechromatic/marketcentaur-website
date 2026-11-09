@@ -84,7 +84,7 @@
       '<h2 id="mcc-title">Cookies on this site</h2>' +
       '<p>We’d like to use Google Analytics cookies to see which pages are useful and improve the site. ' +
       'They stay off unless you accept, and we never use them for advertising. ' +
-      '<a href="/privacy-policy.html#cookies">Privacy policy</a></p>' +
+      '<a href="/privacy-policy#cookies">Privacy policy</a></p>' +
       '<div class="mcc-actions">' +
       '<button type="button" data-mcc="denied">Reject</button>' +
       '<button type="button" data-mcc="granted">Accept analytics</button>' +
@@ -105,7 +105,7 @@
   }
 
   function addFooterLinks() {
-    var links = document.querySelectorAll('footer a[href="/privacy-policy.html"]');
+    var links = document.querySelectorAll('footer a[href="/privacy-policy"]');
     Array.prototype.forEach.call(links, function (a) {
       if (a.parentNode.querySelector('[data-cookie-settings]')) return;
       var link = document.createElement('a');

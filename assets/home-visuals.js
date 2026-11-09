@@ -18,11 +18,11 @@ if (!("IntersectionObserver" in window) || reduce) {
 
 /* ---- Leak explorer ---- */
 var leaks = [
-  {t:"Traffic that doesn't convert", d:"Visitors arrive, read and leave without calling, booking or sending an inquiry. Usually the cause is a few specific gaps in messaging, calls to action or trust signals.", l:"Website Conversion Sprint →", h:"/services.html#conversion-sprint"},
-  {t:"Invisible in AI answers", d:"Buyers ask ChatGPT, Gemini or Perplexity who to choose, and your business isn't mentioned. Competitors with clearer, better-cited information get recommended instead.", l:"Try the free AI Visibility Check →", h:"/ai-visibility-check.html"},
-  {t:"Outreach to poor-fit accounts", d:"Sales effort is spread across too many accounts that were never likely to buy, so good-fit prospects get less attention than they should.", l:"B2B Account Intelligence Sprint →", h:"/services.html#account-sprint"},
-  {t:"Competitor moves spotted late", d:"Pricing changes, new offers and market entries reach you months after they happen, when it's harder to respond.", l:"Weekly Growth Signal Watch →", h:"/services/weekly-growth-signal-watch.html"},
-  {t:"Hours lost to manual work", d:"Copy-paste reporting, slow lead handoffs and repetitive admin take time away from customers and selling.", l:"AI Workflow Automation Sprint →", h:"/services.html#automation-sprint"}
+  {t:"Traffic that doesn't convert", d:"Visitors arrive, read and leave without calling, booking or sending an inquiry. Usually the cause is a few specific gaps in messaging, calls to action or trust signals.", l:"Website Conversion Sprint →", h:"/services#conversion-sprint"},
+  {t:"Invisible in AI answers", d:"Buyers ask ChatGPT, Gemini or Perplexity who to choose, and your business isn't mentioned. Competitors with clearer, better-cited information get recommended instead.", l:"Try the free AI Visibility Check →", h:"/ai-visibility-check"},
+  {t:"Outreach to poor-fit accounts", d:"Sales effort is spread across too many accounts that were never likely to buy, so good-fit prospects get less attention than they should.", l:"B2B Account Intelligence Sprint →", h:"/services#account-sprint"},
+  {t:"Competitor moves spotted late", d:"Pricing changes, new offers and market entries reach you months after they happen, when it's harder to respond.", l:"Weekly Growth Signal Watch →", h:"/services/weekly-growth-signal-watch"},
+  {t:"Hours lost to manual work", d:"Copy-paste reporting, slow lead handoffs and repetitive admin take time away from customers and selling.", l:"AI Workflow Automation Sprint →", h:"/services#automation-sprint"}
 ];
 var tabs = document.querySelectorAll(".leaktabs button");
 var panel = document.getElementById("leak-panel");
@@ -58,9 +58,9 @@ if (tabs.length) selectLeak(0);
 var finder = document.getElementById("sprint-finder");
 if (finder) {
   var tracks = {
-    t1:{tag:"Track 01 · Website Conversion Sprint", h:"Start with your website", p:"Your answers point to visitors who aren't turning into inquiries or sales. The sprint gives you a conversion audit, a ranked top-10 fix list with rewritten copy, and an AI search visibility check.", href:"/services.html#conversion-sprint", svc:"conversion-sprint"},
-    t2:{tag:"Track 02 · B2B Account Intelligence Sprint", h:"Start with who you target", p:"Your answers point to sharper targeting. The sprint gives you an agreed ideal-customer profile, a ranked account list with sources, a buying-role map and suggested outreach angles.", href:"/services.html#account-sprint", svc:"account-sprint"},
-    t3:{tag:"Track 03 · AI Workflow Automation Sprint", h:"Start with your workflows", p:"Your answers point to time lost on manual work. The sprint maps one or two processes, ranks automation options by effort and risk, and designs a pilot with human approval steps.", href:"/services.html#automation-sprint", svc:"automation-sprint"}
+    t1:{tag:"Track 01 · Website Conversion Sprint", h:"Start with your website", p:"Your answers point to visitors who aren't turning into inquiries or sales. The sprint gives you a conversion audit, a ranked top-10 fix list with rewritten copy, and an AI search visibility check.", href:"/services#conversion-sprint", svc:"conversion-sprint"},
+    t2:{tag:"Track 02 · B2B Account Intelligence Sprint", h:"Start with who you target", p:"Your answers point to sharper targeting. The sprint gives you an agreed ideal-customer profile, a ranked account list with sources, a buying-role map and suggested outreach angles.", href:"/services#account-sprint", svc:"account-sprint"},
+    t3:{tag:"Track 03 · AI Workflow Automation Sprint", h:"Start with your workflows", p:"Your answers point to time lost on manual work. The sprint maps one or two processes, ranks automation options by effort and risk, and designs a pilot with human approval steps.", href:"/services#automation-sprint", svc:"automation-sprint"}
   };
   var qs = finder.querySelectorAll(".fq");
   var out = document.getElementById("finder-result");
@@ -88,7 +88,7 @@ if (finder) {
     })[0];
     var t = tracks[best];
     body.innerHTML = '<div class="tag">Suggested starting point</div><h3>' + t.h + '</h3><p><b style="color:var(--text)">' + t.tag + '.</b> ' + t.p + '</p>' +
-      '<div class="actions"><a class="btn primary" href="' + t.href + '">See what\'s included</a><a class="btn" href="/contact.html?service=' + t.svc + '">Talk to us</a></div>' +
+      '<div class="actions"><a class="btn primary" href="' + t.href + '">See what\'s included</a><a class="btn" href="/contact?service=' + t.svc + '">Talk to us</a></div>' +
       '<p class="fine">This is a starting suggestion. We confirm the right scope with you before any work begins.</p>';
     out.classList.remove("ready"); void out.offsetWidth; out.classList.add("ready");
   });

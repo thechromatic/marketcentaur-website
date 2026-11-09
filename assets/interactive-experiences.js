@@ -6,108 +6,108 @@ var serviceFinder = {
       title: "Explore the people, needs or audiences involved",
       intro: "Start by defining which organizations fit, which people influence a decision, and where focused demand-generation activity may be useful.",
       services: [
-        ["Core intelligence","B2B Growth Intelligence","Build a clearer view of target markets, account fit and relevant developments.","/services/b2b-growth-intelligence.html"],
-        ["Account focus","Account & Persona Mapping","Turn an ideal-customer profile into a more usable account list and relevant buying-role map.","/services/account-persona-mapping.html"],
-        ["Activation","Demand & Revenue Generation","Plan outreach and campaigns around the audience and qualification criteria you have defined.","/services/demand-revenue.html"]
+        ["Core intelligence","B2B Growth Intelligence","Build a clearer view of target markets, account fit and relevant developments.","/services/b2b-growth-intelligence"],
+        ["Account focus","Account & Persona Mapping","Turn an ideal-customer profile into a more usable account list and relevant buying-role map.","/services/account-persona-mapping"],
+        ["Activation","Demand & Revenue Generation","Plan outreach and campaigns around the audience and qualification criteria you have defined.","/services/demand-revenue"]
       ]
     },
     conversion: {
       title: "Improve an experience or outcome",
       intro: "Review the current experience, identify points of friction and prioritize changes worth exploring.",
       services: [
-        ["First step","Digital Presence","Review messaging, landing-page clarity and conversion paths.","/services/digital-presence.html"],
-        ["Activation","Demand & Revenue Generation","Align campaigns and calls to action with audience needs.","/services/demand-revenue.html"],
-        ["Measurement","Analytics & Optimization","Identify useful funnel measures and a practical testing sequence.","/services/analytics-optimisation.html"]
+        ["First step","Digital Presence","Review messaging, landing-page clarity and conversion paths.","/services/digital-presence"],
+        ["Activation","Demand & Revenue Generation","Align campaigns and calls to action with audience needs.","/services/demand-revenue"],
+        ["Measurement","Analytics & Optimization","Identify useful funnel measures and a practical testing sequence.","/services/analytics-optimisation"]
       ]
     },
     market: {
       title: "Understand the wider situation",
       intro: "Separate what is known from assumptions, then identify which questions or external factors deserve closer attention.",
       services: [
-        ["Market context","B2B Growth Intelligence","Bring account, market and growth questions into one decision-focused brief.","/services/b2b-growth-intelligence.html"],
-        ["Competitive view","Market & Competitor Intelligence","Track relevant competitor activity and assess its possible implications.","/services/market-competitor-intelligence.html"],
-        ["Ongoing context","Weekly Growth Signal Watch","Review selected developments over time against agreed priorities.","/services/weekly-growth-signal-watch.html"]
+        ["Market context","B2B Growth Intelligence","Bring account, market and growth questions into one decision-focused brief.","/services/b2b-growth-intelligence"],
+        ["Competitive view","Market & Competitor Intelligence","Track relevant competitor activity and assess its possible implications.","/services/market-competitor-intelligence"],
+        ["Ongoing context","Weekly Growth Signal Watch","Review selected developments over time against agreed priorities.","/services/weekly-growth-signal-watch"]
       ]
     },
     operations: {
       title: "Improve how work and experiences function",
       intro: "Look at how work gets done, where experiences break down and what could be made clearer, simpler or more reliable.",
       services: [
-        ["Customer lifecycle","Lifecycle, Retention & Loyalty","Map useful onboarding, repeat-purchase or win-back journeys around customer needs.","/services/ai-automation.html"],
-        ["Workflow improvement","AI & Marketing Automation","Identify suitable workflow improvements with clear boundaries and human review.","/services/ai-automation.html"],
-        ["Measurement","Analytics & Optimization","Choose practical measures to understand follow-up, conversion and retention.","/services/analytics-optimisation.html"]
+        ["Customer lifecycle","Lifecycle, Retention & Loyalty","Map useful onboarding, repeat-purchase or win-back journeys around customer needs.","/services/ai-automation"],
+        ["Workflow improvement","AI & Marketing Automation","Identify suitable workflow improvements with clear boundaries and human review.","/services/ai-automation"],
+        ["Measurement","Analytics & Optimization","Choose practical measures to understand follow-up, conversion and retention.","/services/analytics-optimisation"]
       ]
     },
     partners: {
       title: "Explore useful connections and collaboration",
       intro: "Clarify the purpose of a potential connection, then consider fit, shared interests and practical next steps.",
       services: [
-        ["Partner shortlist","Partner & Channel Discovery","Identify and assess potential partners against agreed fit criteria.","/services/partner-channel-discovery.html"],
-        ["Market context","B2B Growth Intelligence","Understand the target segment and commercial context around potential partners.","/services/b2b-growth-intelligence.html"],
-        ["Activation","Demand & Revenue Generation","Plan co-marketing, referral or channel activation around a clear audience.","/services/demand-revenue.html"]
+        ["Partner shortlist","Partner & Channel Discovery","Identify and assess potential partners against agreed fit criteria.","/services/partner-channel-discovery"],
+        ["Market context","B2B Growth Intelligence","Understand the target segment and commercial context around potential partners.","/services/b2b-growth-intelligence"],
+        ["Activation","Demand & Revenue Generation","Plan co-marketing, referral or channel activation around a clear audience.","/services/demand-revenue"]
       ]
     },
     strategy: {
       title: "Clarify direction and priorities",
       intro: "Bring objectives, constraints, available information and different perspectives together to clarify priorities.",
       services: [
-        ["Business direction","Strategy & Growth","Clarify the opportunity, audience, positioning and priorities that should guide your next steps.","/services/strategy-growth.html"],
-        ["Market context","Market & Competitor Intelligence","Bring relevant market and competitor evidence into planning decisions.","/services/market-competitor-intelligence.html"],
-        ["Practical roadmap","Business Modernization Roadmap","Turn broad ambitions into manageable improvements across customer acquisition, processes and reporting.","/growth-check.html?journey=modernisation"]
+        ["Business direction","Strategy & Growth","Clarify the opportunity, audience, positioning and priorities that should guide your next steps.","/services/strategy-growth"],
+        ["Market context","Market & Competitor Intelligence","Bring relevant market and competitor evidence into planning decisions.","/services/market-competitor-intelligence"],
+        ["Practical roadmap","Business Modernization Roadmap","Turn broad ambitions into manageable improvements across customer acquisition, processes and reporting.","/growth-check?journey=modernisation"]
       ]
     },
     ai: {
       title: "Explore technology and automation possibilities",
       intro: "Start with a real need, assess possible approaches and consider the tools, safeguards and people involved.",
       services: [
-        ["Workflow review","AI & Marketing Automation","Identify repetitive tasks and assess suitable automation opportunities with clear boundaries and human review.","/services/ai-automation.html"],
-        ["Process improvement","Strategy & Growth","Clarify the underlying process and desired outcome before choosing tools.","/services/strategy-growth.html"],
-        ["Measurement","Analytics & Optimization","Define how to assess usefulness, quality and operational impact.","/services/analytics-optimisation.html"]
+        ["Workflow review","AI & Marketing Automation","Identify repetitive tasks and assess suitable automation opportunities with clear boundaries and human review.","/services/ai-automation"],
+        ["Process improvement","Strategy & Growth","Clarify the underlying process and desired outcome before choosing tools.","/services/strategy-growth"],
+        ["Measurement","Analytics & Optimization","Define how to assess usefulness, quality and operational impact.","/services/analytics-optimisation"]
       ]
     },
     digital: {
       title: "Improve digital tools and experiences",
       intro: "Review how people use your digital touchpoints and where clarity, accessibility or usability could improve.",
       services: [
-        ["Digital foundation","Digital Presence","Improve website clarity, navigation, discoverability and the path to contact or purchase.","/services/digital-presence.html"],
-        ["Quick starting point","Website Inquiry Readiness Check","Review key foundations of your website's inquiry journey.","/website-enquiry-readiness.html"],
-        ["Evidence & iteration","Analytics & Optimization","Choose useful measures and a practical sequence for testing improvements.","/services/analytics-optimisation.html"]
+        ["Digital foundation","Digital Presence","Improve website clarity, navigation, discoverability and the path to contact or purchase.","/services/digital-presence"],
+        ["Quick starting point","Website Inquiry Readiness Check","Review key foundations of your website's inquiry journey.","/website-enquiry-readiness"],
+        ["Evidence & iteration","Analytics & Optimization","Choose useful measures and a practical sequence for testing improvements.","/services/analytics-optimisation"]
       ]
     },
     data: {
       title: "Use information and evidence more effectively",
       intro: "Identify the questions at hand, what information is available and which gaps or assumptions need checking.",
       services: [
-        ["Measurement","Analytics & Optimization","Choose practical metrics and a review process tied to business decisions.","/services/analytics-optimisation.html"],
-        ["Market evidence","Market & Competitor Intelligence","Organize relevant external signals and competitor context for clearer planning.","/services/market-competitor-intelligence.html"],
-        ["Ongoing awareness","Weekly Growth Signal Watch","Track selected developments against agreed priorities over time.","/services/weekly-growth-signal-watch.html"]
+        ["Measurement","Analytics & Optimization","Choose practical metrics and a review process tied to business decisions.","/services/analytics-optimisation"],
+        ["Market evidence","Market & Competitor Intelligence","Organize relevant external signals and competitor context for clearer planning.","/services/market-competitor-intelligence"],
+        ["Ongoing awareness","Weekly Growth Signal Watch","Track selected developments against agreed priorities over time.","/services/weekly-growth-signal-watch"]
       ]
     },
     risk: {
       title: "Address risk, trust and responsibility",
       intro: "Consider the risks, responsibilities, trust and safeguards relevant to your situation.",
       services: [
-        ["Governance & oversight","AI Governance & Responsible Adoption","Review appropriate oversight, accountability and human review for AI-enabled work.","/services/ai-automation.html"],
-        ["Process clarity","Strategy & Growth","Map decision points, responsibilities and practical implementation priorities.","/services/strategy-growth.html"],
-        ["Evidence & monitoring","Analytics & Optimization","Define useful indicators and review practices for ongoing oversight.","/services/analytics-optimisation.html"]
+        ["Governance & oversight","AI Governance & Responsible Adoption","Review appropriate oversight, accountability and human review for AI-enabled work.","/services/ai-automation"],
+        ["Process clarity","Strategy & Growth","Map decision points, responsibilities and practical implementation priorities.","/services/strategy-growth"],
+        ["Evidence & monitoring","Analytics & Optimization","Define useful indicators and review practices for ongoing oversight.","/services/analytics-optimisation"]
       ]
     },
     innovation: {
       title: "Explore ideas and possible directions",
       intro: "Turn an initial idea into questions you can explore, evidence you can gather and possibilities you can test.",
       services: [
-        ["Opportunity framing","Strategy & Growth","Clarify the customer problem, value proposition and priorities for exploration.","/services/strategy-growth.html"],
-        ["Market validation","Market & Competitor Intelligence","Research market context, alternatives and relevant competitor activity.","/services/market-competitor-intelligence.html"],
-        ["Potential collaborators","Partner & Channel Discovery","Explore complementary organizations and possible routes to market.","/services/partner-channel-discovery.html"]
+        ["Opportunity framing","Strategy & Growth","Clarify the customer problem, value proposition and priorities for exploration.","/services/strategy-growth"],
+        ["Market validation","Market & Competitor Intelligence","Research market context, alternatives and relevant competitor activity.","/services/market-competitor-intelligence"],
+        ["Potential collaborators","Partner & Channel Discovery","Explore complementary organizations and possible routes to market.","/services/partner-channel-discovery"]
       ]
     },
     unsure: {
       title: "Find a useful place to start",
       intro: "You do not need a fully formed brief. We can help you explore your goals, current challenges, available evidence and realistic next steps.",
       services: [
-        ["Clarify direction","Strategy & Growth","Bring your goals and open questions into a more focused set of priorities.","/services/strategy-growth.html"],
-        ["Explore the landscape","Market & Competitor Intelligence","Build context around customers, competitors and possible opportunities.","/services/market-competitor-intelligence.html"],
-        ["Review the foundations","Business Modernization Roadmap","Explore practical starting points across customer acquisition, processes and reporting.","/growth-check.html?journey=modernisation"]
+        ["Clarify direction","Strategy & Growth","Bring your goals and open questions into a more focused set of priorities.","/services/strategy-growth"],
+        ["Explore the landscape","Market & Competitor Intelligence","Build context around customers, competitors and possible opportunities.","/services/market-competitor-intelligence"],
+        ["Review the foundations","Business Modernization Roadmap","Explore practical starting points across customer acquisition, processes and reporting.","/growth-check?journey=modernisation"]
       ]
     }
   }
@@ -141,9 +141,9 @@ function initFinder(){
     title:"Understand relevant people and their needs",
     intro:"Start with the people involved, their needs and the experience or outcome you want to improve.",
     services:[
-      ["Audience & offer","Strategy & Growth","Clarify priority audiences, positioning and the customer problem your offer addresses.","/services/strategy-growth.html"],
-      ["Digital journey","Digital Presence","Review the website, landing pages and discovery paths that help visitors understand the offer.","/services/digital-presence.html"],
-      ["Activation","Demand & Revenue Generation","Plan campaigns and acquisition activity around the audience, message and conversion goal.","/services/demand-revenue.html"]
+      ["Audience & offer","Strategy & Growth","Clarify priority audiences, positioning and the customer problem your offer addresses.","/services/strategy-growth"],
+      ["Digital journey","Digital Presence","Review the website, landing pages and discovery paths that help visitors understand the offer.","/services/digital-presence"],
+      ["Activation","Demand & Revenue Generation","Plan campaigns and acquisition activity around the audience, message and conversion goal.","/services/demand-revenue"]
     ]
   };
   if((type==="small-local" || type==="retail-ecommerce" || type==="traditional") && goal==="customers"){
@@ -152,27 +152,27 @@ function initFinder(){
         title:"Explore local needs and context",
         intro:"Start with local discovery, a clear offer, trustworthy business information and a simple path from search or social media to inquiry or visit.",
         services:[
-          ["Local discovery","Local Visibility & Digital Presence","Improve the clarity of your website, local search presence and customer contact paths.","/services/small-business-local-growth.html"],
-          ["Customer reach","Social Media & Content","Plan useful social content and local promotions around your customers and community.","/services/content-creative.html"],
-          ["Inquiries & visits","Demand & Revenue Generation","Connect campaigns, offers and calls to action to a practical inquiry or store-visit goal.","/services/demand-revenue.html"]
+          ["Local discovery","Local Visibility & Digital Presence","Improve the clarity of your website, local search presence and customer contact paths.","/services/small-business-local-growth"],
+          ["Customer reach","Social Media & Content","Plan useful social content and local promotions around your customers and community.","/services/content-creative"],
+          ["Inquiries & visits","Demand & Revenue Generation","Connect campaigns, offers and calls to action to a practical inquiry or store-visit goal.","/services/demand-revenue"]
         ]
       },
       "retail-ecommerce":{
         title:"Explore the customer or user experience",
         intro:"Connect product presentation, social content, search visibility and the purchase journey across your retail store or ecommerce shop.",
         services:[
-          ["Product discovery","Ecommerce & Digital Presence","Improve product messaging, search visibility and the journey from product page to purchase.","/services/small-business-local-growth.html"],
-          ["Campaigns","Social Media & Content","Plan product-led content, promotions and creator collaborations that fit your audience.","/services/content-creative.html"],
-          ["Repeat purchases","Analytics & Optimization","Identify useful measures and opportunities to improve conversion and customer retention.","/services/analytics-optimisation.html"]
+          ["Product discovery","Ecommerce & Digital Presence","Improve product messaging, search visibility and the journey from product page to purchase.","/services/small-business-local-growth"],
+          ["Campaigns","Social Media & Content","Plan product-led content, promotions and creator collaborations that fit your audience.","/services/content-creative"],
+          ["Repeat purchases","Analytics & Optimization","Identify useful measures and opportunities to improve conversion and customer retention.","/services/analytics-optimisation"]
         ]
       },
       "traditional":{
         title:"Explore practical ways to improve how things work",
         intro:"For established businesses and traditional industries, begin with customer and market clarity, a practical digital foundation and manageable improvements.",
         services:[
-          ["Market understanding","Strategy & Growth","Review customer segments, competitors and the clearest opportunities for growth.","/services/strategy-growth.html"],
-          ["Digital foundation","Digital Presence","Improve website clarity, search discoverability and inquiry paths step by step.","/services/small-business-local-growth.html"],
-          ["Practical execution","AI & Marketing Automation","Identify appropriate workflow improvements with human review and a realistic implementation scope.","/services/ai-automation.html"]
+          ["Market understanding","Strategy & Growth","Review customer segments, competitors and the clearest opportunities for growth.","/services/strategy-growth"],
+          ["Digital foundation","Digital Presence","Improve website clarity, search discoverability and inquiry paths step by step.","/services/small-business-local-growth"],
+          ["Practical execution","AI & Marketing Automation","Identify appropriate workflow improvements with human review and a realistic implementation scope.","/services/ai-automation"]
         ]
       }
     };
@@ -181,28 +181,28 @@ function initFinder(){
 
   var audienceProfiles={
    "both":{
-    customers:{title:"Find the right customers across B2B and B2C",intro:"Clarify who or what is involved, then explore approaches suited to your particular context.",services:[["Audience & offer","Strategy & Growth","Clarify the customer groups you serve, the problems you solve and the strongest routes to reach them.","/services/strategy-growth.html"],["Digital journey","Digital Presence","Make your offer and next step clear across your website and key discovery channels.","/services/digital-presence.html"],["Activation","Demand & Revenue Generation","Connect campaigns and follow-up to the audience and outcome you want to improve.","/services/demand-revenue.html"]]},
-    conversion:{title:"Improve the path from discovery to inquiry or purchase",intro:"Review the journey customers take from first visit to a meaningful next step, whether B2B or B2C.",services:[["Clarity","Digital Presence","Review page messaging, trust signals and relevant calls to action.","/services/digital-presence.html"],["Activation","Demand & Revenue Generation","Align campaigns with the customer journey and desired action.","/services/demand-revenue.html"],["Measurement","Analytics & Optimization","Choose useful measures and a practical testing sequence.","/services/analytics-optimisation.html"]]},
-    market:{title:"Understand the market before choosing where to focus",intro:"Build a clearer view of customer needs, competitors and relevant changes before investing in activity.",services:[["Direction","Strategy & Growth","Clarify segments, positioning and growth priorities.","/services/strategy-growth.html"],["Competitive context","Market & Competitor Intelligence","Review relevant competitor activity and possible implications.","/services/market-competitor-intelligence.html"],["Priorities","Analytics & Optimization","Turn available evidence into a focused set of questions and measures.","/services/analytics-optimisation.html"]]},
-    partners:{title:"Explore partnerships and routes to market",intro:"Identify where partnerships, referrals, channels or collaborations may complement your existing customer acquisition.",services:[["Partner fit","Partner & Channel Discovery","Assess potential partners against practical fit criteria.","/services/partner-channel-discovery.html"],["Market context","Strategy & Growth","Clarify the audience and commercial purpose of a potential collaboration.","/services/strategy-growth.html"],["Activation","Demand & Revenue Generation","Plan a relevant co-marketing, referral or channel test.","/services/demand-revenue.html"]]}
+    customers:{title:"Find the right customers across B2B and B2C",intro:"Clarify who or what is involved, then explore approaches suited to your particular context.",services:[["Audience & offer","Strategy & Growth","Clarify the customer groups you serve, the problems you solve and the strongest routes to reach them.","/services/strategy-growth"],["Digital journey","Digital Presence","Make your offer and next step clear across your website and key discovery channels.","/services/digital-presence"],["Activation","Demand & Revenue Generation","Connect campaigns and follow-up to the audience and outcome you want to improve.","/services/demand-revenue"]]},
+    conversion:{title:"Improve the path from discovery to inquiry or purchase",intro:"Review the journey customers take from first visit to a meaningful next step, whether B2B or B2C.",services:[["Clarity","Digital Presence","Review page messaging, trust signals and relevant calls to action.","/services/digital-presence"],["Activation","Demand & Revenue Generation","Align campaigns with the customer journey and desired action.","/services/demand-revenue"],["Measurement","Analytics & Optimization","Choose useful measures and a practical testing sequence.","/services/analytics-optimisation"]]},
+    market:{title:"Understand the market before choosing where to focus",intro:"Build a clearer view of customer needs, competitors and relevant changes before investing in activity.",services:[["Direction","Strategy & Growth","Clarify segments, positioning and growth priorities.","/services/strategy-growth"],["Competitive context","Market & Competitor Intelligence","Review relevant competitor activity and possible implications.","/services/market-competitor-intelligence"],["Priorities","Analytics & Optimization","Turn available evidence into a focused set of questions and measures.","/services/analytics-optimisation"]]},
+    partners:{title:"Explore partnerships and routes to market",intro:"Identify where partnerships, referrals, channels or collaborations may complement your existing customer acquisition.",services:[["Partner fit","Partner & Channel Discovery","Assess potential partners against practical fit criteria.","/services/partner-channel-discovery"],["Market context","Strategy & Growth","Clarify the audience and commercial purpose of a potential collaboration.","/services/strategy-growth"],["Activation","Demand & Revenue Generation","Plan a relevant co-marketing, referral or channel test.","/services/demand-revenue"]]}
    },
    "small-local":{
-    customers:{title:"Explore local needs and context",intro:"Start with local discovery, a clear offer, trustworthy information and a simple path from search or social media to inquiry or visit.",services:[["Local discovery","Local Visibility & Digital Presence","Improve website clarity, local search presence and customer contact paths.","/services/small-business-local-growth.html"],["Customer reach","Social Media & Content","Plan useful social content and local promotions around your community.","/services/content-creative.html"],["Inquiries & visits","Demand & Revenue Generation","Connect campaigns and calls to action to a practical inquiry or visit goal.","/services/demand-revenue.html"]]},
-    conversion:{title:"Make it easier for local customers to take the next step",intro:"Focus on the route from finding your business to calling, booking, visiting or sending an inquiry.",services:[["Quick check","Local Business Growth Check","Review visibility, trust and the local inquiry journey.","/growth-check.html?journey=local"],["Website clarity","Digital Presence","Make services, location and contact options easy to understand.","/services/digital-presence.html"],["Follow-up","Analytics & Optimization","Track inquiries and learn which channels bring relevant conversations.","/services/analytics-optimisation.html"]]},
-    market:{title:"Understand your local market and customer needs",intro:"Use customer questions, competitor context and local demand patterns to decide where to focus.",services:[["Business direction","Strategy & Growth","Clarify priority customer groups and the offer that fits them.","/services/strategy-growth.html"],["Local foundation","Local Business Growth Check","Review the basic visibility and trust factors customers rely on.","/growth-check.html?journey=local"],["Content ideas","Content & Creative","Plan useful content around customer questions and local context.","/services/content-creative.html"]]},
-    partners:{title:"Find local partners and referral opportunities",intro:"Explore complementary businesses and community relationships that may help relevant customers discover you.",services:[["Partner shortlist","Partner & Channel Discovery","Define partner fit and assess possible collaborations.","/services/partner-channel-discovery.html"],["Local activation","Small Business & Local Growth","Connect local visibility, referrals and community campaigns.","/services/small-business-local-growth.html"],["Joint campaigns","Content & Creative","Plan useful co-created content or local promotions.","/services/content-creative.html"]]}
+    customers:{title:"Explore local needs and context",intro:"Start with local discovery, a clear offer, trustworthy information and a simple path from search or social media to inquiry or visit.",services:[["Local discovery","Local Visibility & Digital Presence","Improve website clarity, local search presence and customer contact paths.","/services/small-business-local-growth"],["Customer reach","Social Media & Content","Plan useful social content and local promotions around your community.","/services/content-creative"],["Inquiries & visits","Demand & Revenue Generation","Connect campaigns and calls to action to a practical inquiry or visit goal.","/services/demand-revenue"]]},
+    conversion:{title:"Make it easier for local customers to take the next step",intro:"Focus on the route from finding your business to calling, booking, visiting or sending an inquiry.",services:[["Quick check","Local Business Growth Check","Review visibility, trust and the local inquiry journey.","/growth-check?journey=local"],["Website clarity","Digital Presence","Make services, location and contact options easy to understand.","/services/digital-presence"],["Follow-up","Analytics & Optimization","Track inquiries and learn which channels bring relevant conversations.","/services/analytics-optimisation"]]},
+    market:{title:"Understand your local market and customer needs",intro:"Use customer questions, competitor context and local demand patterns to decide where to focus.",services:[["Business direction","Strategy & Growth","Clarify priority customer groups and the offer that fits them.","/services/strategy-growth"],["Local foundation","Local Business Growth Check","Review the basic visibility and trust factors customers rely on.","/growth-check?journey=local"],["Content ideas","Content & Creative","Plan useful content around customer questions and local context.","/services/content-creative"]]},
+    partners:{title:"Find local partners and referral opportunities",intro:"Explore complementary businesses and community relationships that may help relevant customers discover you.",services:[["Partner shortlist","Partner & Channel Discovery","Define partner fit and assess possible collaborations.","/services/partner-channel-discovery"],["Local activation","Small Business & Local Growth","Connect local visibility, referrals and community campaigns.","/services/small-business-local-growth"],["Joint campaigns","Content & Creative","Plan useful co-created content or local promotions.","/services/content-creative"]]}
    },
    "retail-ecommerce":{
-    customers:{title:"Explore the customer or user experience",intro:"Connect product presentation, social content, search visibility and the purchase journey across a retail store or ecommerce shop.",services:[["Product discovery","Ecommerce Growth Check","Review product discovery, purchase confidence and repeat-purchase opportunities.","/growth-check.html?journey=ecommerce"],["Campaigns","Content & Creative","Plan product-led content and promotions for your audience.","/services/content-creative.html"],["Repeat purchases","Analytics & Optimization","Identify useful measures for conversion and customer retention.","/services/analytics-optimisation.html"]]},
-    conversion:{title:"Reduce friction between product discovery and purchase",intro:"Review the steps that help shoppers find a product, understand the offer and complete a purchase.",services:[["Store review","Ecommerce Growth Check","Assess product pages, trust details, mobile use and checkout friction.","/growth-check.html?journey=ecommerce"],["Digital journey","Digital Presence","Improve store messaging, product discovery and conversion paths.","/services/digital-presence.html"],["Testing","Analytics & Optimization","Choose a practical way to measure and test improvements.","/services/analytics-optimisation.html"]]},
-    market:{title:"Understand customer demand and competitor positioning",intro:"Use customer questions, product categories and available market evidence to sharpen your focus.",services:[["Customer direction","Strategy & Growth","Clarify priority audiences, positioning and product-market context.","/services/strategy-growth.html"],["Store check","Ecommerce Growth Check","Review the customer journey and possible friction points.","/growth-check.html?journey=ecommerce"],["Content opportunities","Content & Creative","Plan content that answers product questions and supports discovery.","/services/content-creative.html"]]},
-    partners:{title:"Explore retail and ecommerce partnerships",intro:"Consider relevant creators, complementary brands, marketplaces and channel partners against your audience and commercial goals.",services:[["Partner fit","Partner & Channel Discovery","Define criteria for useful partner relationships.","/services/partner-channel-discovery.html"],["Campaigns","Content & Creative","Plan creator or co-marketing activity with a clear audience and purpose.","/services/content-creative.html"],["Channel performance","Analytics & Optimization","Agree how to evaluate traffic quality, sales and retention.","/services/analytics-optimisation.html"]]}
+    customers:{title:"Explore the customer or user experience",intro:"Connect product presentation, social content, search visibility and the purchase journey across a retail store or ecommerce shop.",services:[["Product discovery","Ecommerce Growth Check","Review product discovery, purchase confidence and repeat-purchase opportunities.","/growth-check?journey=ecommerce"],["Campaigns","Content & Creative","Plan product-led content and promotions for your audience.","/services/content-creative"],["Repeat purchases","Analytics & Optimization","Identify useful measures for conversion and customer retention.","/services/analytics-optimisation"]]},
+    conversion:{title:"Reduce friction between product discovery and purchase",intro:"Review the steps that help shoppers find a product, understand the offer and complete a purchase.",services:[["Store review","Ecommerce Growth Check","Assess product pages, trust details, mobile use and checkout friction.","/growth-check?journey=ecommerce"],["Digital journey","Digital Presence","Improve store messaging, product discovery and conversion paths.","/services/digital-presence"],["Testing","Analytics & Optimization","Choose a practical way to measure and test improvements.","/services/analytics-optimisation"]]},
+    market:{title:"Understand customer demand and competitor positioning",intro:"Use customer questions, product categories and available market evidence to sharpen your focus.",services:[["Customer direction","Strategy & Growth","Clarify priority audiences, positioning and product-market context.","/services/strategy-growth"],["Store check","Ecommerce Growth Check","Review the customer journey and possible friction points.","/growth-check?journey=ecommerce"],["Content opportunities","Content & Creative","Plan content that answers product questions and supports discovery.","/services/content-creative"]]},
+    partners:{title:"Explore retail and ecommerce partnerships",intro:"Consider relevant creators, complementary brands, marketplaces and channel partners against your audience and commercial goals.",services:[["Partner fit","Partner & Channel Discovery","Define criteria for useful partner relationships.","/services/partner-channel-discovery"],["Campaigns","Content & Creative","Plan creator or co-marketing activity with a clear audience and purpose.","/services/content-creative"],["Channel performance","Analytics & Optimization","Agree how to evaluate traffic quality, sales and retention.","/services/analytics-optimisation"]]}
    },
    "traditional":{
-    customers:{title:"Modernize marketing while building on existing strengths",intro:"For established businesses and traditional industries, begin with customer clarity, a practical digital foundation and manageable improvements.",services:[["Market understanding","Strategy & Growth","Review customer segments, competitors and growth opportunities.","/services/strategy-growth.html"],["Digital foundation","Local & Business Growth Support","Improve website clarity, search discoverability and inquiry paths step by step.","/services/small-business-local-growth.html"],["Practical execution","AI & Marketing Automation","Identify scoped workflow improvements with human review.","/services/ai-automation.html"]]},
-    conversion:{title:"Create a clearer, more consistent inquiry process",intro:"Review the customer-facing information and internal handoffs that affect inquiry quality and follow-up.",services:[["Roadmap","Business Modernization Roadmap","Assess marketing, lead handling and reporting foundations.","/growth-check.html?journey=modernisation"],["Digital journey","Digital Presence","Make your offer and next step clearer across digital touchpoints.","/services/digital-presence.html"],["Lead follow-up","Analytics & Optimization","Define practical measures for inquiry handling and conversion.","/services/analytics-optimisation.html"]]},
-    market:{title:"Clarify customer and market priorities",intro:"Build a usable view of customer needs and competitor context before committing to a larger transformation.",services:[["Business direction","Strategy & Growth","Set priorities based on customer segments and commercial goals.","/services/strategy-growth.html"],["Modernization review","Business Modernization Roadmap","Identify practical process and reporting improvements.","/growth-check.html?journey=modernisation"],["Competitive context","Market & Competitor Intelligence","Review relevant market changes and possible implications.","/services/market-competitor-intelligence.html"]]},
-    partners:{title:"Find practical routes to market and partnership opportunities",intro:"Explore distribution, referral and channel opportunities that fit your established business model.",services:[["Partner fit","Partner & Channel Discovery","Assess potential partners against agreed criteria.","/services/partner-channel-discovery.html"],["Market context","Strategy & Growth","Clarify the audience and purpose for a possible partnership.","/services/strategy-growth.html"],["Activation","Demand & Revenue Generation","Plan a manageable channel or co-marketing test.","/services/demand-revenue.html"]]}
+    customers:{title:"Modernize marketing while building on existing strengths",intro:"For established businesses and traditional industries, begin with customer clarity, a practical digital foundation and manageable improvements.",services:[["Market understanding","Strategy & Growth","Review customer segments, competitors and growth opportunities.","/services/strategy-growth"],["Digital foundation","Local & Business Growth Support","Improve website clarity, search discoverability and inquiry paths step by step.","/services/small-business-local-growth"],["Practical execution","AI & Marketing Automation","Identify scoped workflow improvements with human review.","/services/ai-automation"]]},
+    conversion:{title:"Create a clearer, more consistent inquiry process",intro:"Review the customer-facing information and internal handoffs that affect inquiry quality and follow-up.",services:[["Roadmap","Business Modernization Roadmap","Assess marketing, lead handling and reporting foundations.","/growth-check?journey=modernisation"],["Digital journey","Digital Presence","Make your offer and next step clearer across digital touchpoints.","/services/digital-presence"],["Lead follow-up","Analytics & Optimization","Define practical measures for inquiry handling and conversion.","/services/analytics-optimisation"]]},
+    market:{title:"Clarify customer and market priorities",intro:"Build a usable view of customer needs and competitor context before committing to a larger transformation.",services:[["Business direction","Strategy & Growth","Set priorities based on customer segments and commercial goals.","/services/strategy-growth"],["Modernization review","Business Modernization Roadmap","Identify practical process and reporting improvements.","/growth-check?journey=modernisation"],["Competitive context","Market & Competitor Intelligence","Review relevant market changes and possible implications.","/services/market-competitor-intelligence"]]},
+    partners:{title:"Find practical routes to market and partnership opportunities",intro:"Explore distribution, referral and channel opportunities that fit your established business model.",services:[["Partner fit","Partner & Channel Discovery","Assess potential partners against agreed criteria.","/services/partner-channel-discovery"],["Market context","Strategy & Growth","Clarify the audience and purpose for a possible partnership.","/services/strategy-growth"],["Activation","Demand & Revenue Generation","Plan a manageable channel or co-marketing test.","/services/demand-revenue"]]}
    }
   };
   if(audienceProfiles[type] && audienceProfiles[type][goal]) item=audienceProfiles[type][goal];
@@ -254,7 +254,7 @@ function buildEmailCapture(assessment,score,items){
  wrap.style.cssText="margin:22px 0;padding:18px;border:1px solid var(--accent,#19D3FF);border-radius:12px;background:var(--surface,#071A45)";
  function hidden(n,v){var i=document.createElement("input");i.type="hidden";i.name=n;i.value=v;wrap.appendChild(i);}
  hidden("_subject","Free check results request: "+assessment);hidden("_template","table");
- hidden("_next","https://marketcentaur.com/contact-success.html?type=report");
+ hidden("_next","https://marketcentaur.com/contact-success?type=report");
  hidden("assessment",assessment);hidden("score",score+"/12");hidden("priorities",items.join(" | "));
  var honey=document.createElement("input");honey.type="text";honey.name="_honey";honey.style.display="none";honey.tabIndex=-1;honey.autocomplete="off";wrap.appendChild(honey);
  var h=document.createElement("strong");h.textContent="Want the full version?";
@@ -300,7 +300,7 @@ function initReadiness(){
   var ul=document.createElement("ul");
   (gaps.length?gaps:["Review your main conversion path with a small set of users, then choose one measurable improvement to test."]).forEach(function(g){var li=document.createElement("li");li.textContent=g;ul.appendChild(li);});
   var note=document.createElement("p");note.textContent="This is a directional self-check based only on your answers. It does not scan your website, verify accessibility or analytics, or predict inquiry volume. Actual priorities depend on your audience and evidence.";
-  var link=document.createElement("a");link.className="experience-btn";link.href="/contact.html";link.textContent="Discuss your website goals";
+  var link=document.createElement("a");link.className="experience-btn";link.href="/contact";link.textContent="Discuss your website goals";
   var capture=buildEmailCapture("Website Inquiry Readiness Check",score,gaps.length?gaps:["No major gaps flagged"]);
   result.append(h,p,heading,ul,capture,note,link);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
  });
@@ -379,7 +379,7 @@ function initGrowthCheck(){
   priorities.forEach(function(item){var li=document.createElement("li");li.textContent=item;ul.appendChild(li);});
   var note=document.createElement("p");note.textContent="This is a directional result based on your answers, not a technical or commercial audit. Validate priorities against real customer feedback and available evidence.";
   var context="I completed the "+config.title+". My self-assessment score was "+score+"/12. Areas to review: "+(priorities.join(" "));
-  var link=document.createElement("a");link.className="experience-btn";link.href="/contact.html?service="+encodeURIComponent(config.service)+"&context="+encodeURIComponent(context);link.textContent="Discuss these priorities with MarketCentaur";
+  var link=document.createElement("a");link.className="experience-btn";link.href="/contact?service="+encodeURIComponent(config.service)+"&context="+encodeURIComponent(context);link.textContent="Discuss these priorities with MarketCentaur";
   var secondary=document.createElement("a");secondary.className="experience-btn secondary";secondary.href="/";secondary.textContent="Back to homepage";
   var capture=buildEmailCapture(config.title,score,priorities);
   result.append(h,p,strong,ul,capture,note,link,document.createTextNode(" "),secondary);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
