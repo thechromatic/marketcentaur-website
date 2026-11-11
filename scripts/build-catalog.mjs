@@ -56,8 +56,10 @@ const offerUrl = (o) => `${practiceUrl(o.practice)}#${o.id}`;
 const quoteUrl = (id) => `/contact?service=${encodeURIComponent(id)}`;
 const typeLabel = (t) => TYPES.find((x) => x[0] === t)[1];
 const pageTitle = (href) => {
-  const f = path.join(ROOT, href.replace(/^\//, '').replace(/#.*$/, ''));
-  if (!fs.existsSync(f)) throw new Error(`Specialist link points to a missing page: ${href}`);
+  // Links are extensionless (/services/x); the file on disk is x.html.
+  const base = path.join(ROOT, href.replace(/^\//, '').replace(/#.*$/, ''));
+  const f = fs.existsSync(`${base}.html`) ? `${base}.html` : base;
+  if (!fs.existsSync(f) || fs.statSync(f).isDirectory()) throw new Error(`Specialist link points to a missing page: ${href}`);
   const t = (fs.readFileSync(f, 'utf8').match(/<title>([^<]*)<\/title>/) || [])[1] || href;
   return t.replace(/\s*\|\s*MarketCentaur.*$/, '').replace(/&amp;/g, '&');
 };
