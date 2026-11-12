@@ -27,7 +27,7 @@ SKIP_DIRS = {'.git', 'node_modules', 'scripts', 'content', 'assets', '.github'}
 SECTIONS = [
     ('insights/', 'Insights'), ('services/', 'Services'), ('industries/', 'Industries'),
     ('ai-visibility-check', 'Free tool'), ('growth-check', 'Free tool'), ('website-enquiry', 'Free tool'),
-    ('partners', 'Partner program'), ('labs', 'Labs'), ('sample-intelligence', 'Sample brief'), ('samples', 'Sample report'),
+    ('partners', 'Partner program'), ('labs', 'Labs'), ('sample-intelligence', 'Sample brief'), ('samples', 'Sample report'), ('use-cases', 'Use case'),
 ]
 
 

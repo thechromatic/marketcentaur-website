@@ -72,6 +72,7 @@ export const MENU = [
     panel: [
       { title: 'See the work', links: [
         ['Sample reports', '/samples', 'One full sample for each sprint'],
+        ['Use cases', '/use-cases', '18 problems we solve, by sector'],
         ['Sample intelligence brief', '/sample-intelligence-brief', 'A sourced market brief'],
         ['How we work', '/how-it-works', 'Scope, method and review'],
         ['Editorial standards', '/editorial-standards', 'How we source and check facts'],
@@ -96,7 +97,7 @@ export function sectionFor(urlPath) {
   const p = urlPath.replace(/index\.html$/, '');
   if (/^\/(services(\.html|\/)|practices\/|recurring-services|labs|partners)/.test(p)) return 'services';
   if (/^\/industries/.test(p)) return 'industries';
-  if (/^\/(samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit)/.test(p)) return 'resources';
+  if (/^\/(use-cases|samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit)/.test(p)) return 'resources';
   if (/^\/insights\//.test(p)) return 'insights';
   if (/^\/(about|contact)/.test(p)) return 'about';
   return '';
