@@ -18,11 +18,11 @@ if (!("IntersectionObserver" in window) || reduce) {
 
 /* ---- Leak explorer ---- */
 var leaks = [
-  {t:"Traffic that doesn't convert", d:"Visitors arrive, read and leave without calling, booking or sending an inquiry. Usually the cause is a few specific gaps in messaging, calls to action or trust signals.", l:"Website Conversion Sprint →", h:"/services#conversion-sprint"},
-  {t:"Invisible in AI answers", d:"Buyers ask ChatGPT, Gemini or Perplexity who to choose, and your business isn't mentioned. Competitors with clearer, better-cited information get recommended instead.", l:"Try the free AI Visibility Check →", h:"/ai-visibility-check"},
-  {t:"Outreach to poor-fit accounts", d:"Sales effort is spread across too many accounts that were never likely to buy, so good-fit prospects get less attention than they should.", l:"B2B Account Intelligence Sprint →", h:"/services#account-sprint"},
-  {t:"Competitor moves spotted late", d:"Pricing changes, new offers and market entries reach you months after they happen, when it's harder to respond.", l:"Weekly Growth Signal Watch →", h:"/services/weekly-growth-signal-watch"},
-  {t:"Hours lost to manual work", d:"Copy-paste reporting, slow lead handoffs and repetitive admin take time away from customers and selling.", l:"AI Workflow Automation Sprint →", h:"/services#automation-sprint"}
+  {t:"Hours lost to manual work", d:"Copy-paste between systems, approvals chased by email and re-keyed invoices, orders or records take time from every team, not only sales.", l:"AI Workflow Automation Sprint →", h:"/services#automation-sprint"},
+  {t:"Data nobody fully trusts", d:"Numbers live in spreadsheets, inboxes and separate tools, so every report takes days and still gets questioned in the meeting.", l:"Data, Analytics & BI practice →", h:"/practices/data-analytics"},
+  {t:"Slow answers for the people you serve", d:"Customers, patients, students or citizens wait for replies after hours and at busy times, and simple questions use up skilled staff time.", l:"AI Front Desk →", h:"/services/ai-front-desk"},
+  {t:"AI use without guardrails", d:"Staff already use AI tools, often with no agreed policy, training or check on what data goes where. That risk grows quietly.", l:"Governance, Risk & Compliance practice →", h:"/practices/ai-governance"},
+  {t:"Hard to find, easy to pass over", d:"Buyers ask AI assistants who to choose or land on your website and leave. Clearer information and fewer points of friction change that.", l:"Website Conversion Sprint →", h:"/services#conversion-sprint"}
 ];
 var tabs = document.querySelectorAll(".leaktabs button");
 var panel = document.getElementById("leak-panel");

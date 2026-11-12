@@ -82,7 +82,8 @@ export const MENU = [
         ['FAQs', '/faq'],
       ] },
       { title: 'Free tools', links: [
-        ['Free website audit', '/#free-audit', 'Why visitors are not inquiring'],
+        ['Free AI opportunity review', '/#free-audit', 'Three places AI could help you'],
+        ['Free website check', '/website-enquiry-readiness', 'Why visitors are not inquiring'],
         ['AI visibility check', '/ai-visibility-check', 'Do AI assistants mention you?'],
         ['AI Readiness Score', '/ai-readiness-score', 'Where AI fits in your business'],
         ['Growth checks', '/growth-check', 'Local, ecommerce and modernization'],

@@ -189,3 +189,10 @@
 .closer h2{margin:0 0 10px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.03em}
 .closer p{max-width:520px;margin:0 auto 22px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.mc-cat,.finder-toggle>summary .finder-cta::after{transition:none}}
+
+/* Sector strip and broader lead form (homepage) */
+.sector-strip .sector-links{margin-top:0}
+.sector-links a.all{border-color:var(--accent);color:var(--accent)}
+.leadform select{width:100%;padding:12px 14px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;font-size:14px}
+.leadform textarea{resize:vertical;min-height:84px}
+.leadform .muted{color:var(--muted);font-weight:400}
