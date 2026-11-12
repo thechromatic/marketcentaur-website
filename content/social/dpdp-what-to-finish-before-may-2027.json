@@ -1,0 +1,42 @@
+{
+  "eyebrow": "Data privacy",
+  "title": "India's DPDP Rules: six months to go",
+  "subtitle": "Main duties start 13 May 2027",
+  "slides": [
+    {
+      "eyebrow": "What applies when",
+      "title": "Three phases",
+      "items": [
+        "13 Nov 2025: Board and procedures",
+        "13 Nov 2026: consent managers",
+        "13 May 2027: the main duties"
+      ]
+    },
+    {
+      "eyebrow": "From May 2027",
+      "title": "What businesses must do",
+      "items": [
+        "Clear notice and specific consent",
+        "Security written into vendor contracts",
+        "Breach report to the Board within 72 hours",
+        "Access, correction and erasure requests"
+      ]
+    },
+    {
+      "eyebrow": "A six-month plan",
+      "title": "One step a month",
+      "style": "numbered",
+      "items": [
+        "Map the data",
+        "Fix notices and consent",
+        "Review vendors",
+        "Set up breach handling",
+        "Requests, retention, then training"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "Your DPDP readiness plan"
+  }
+}
