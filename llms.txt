@@ -1,6 +1,6 @@
 # MarketCentaur
 
-> MarketCentaur delivers AI-led transformation for every business, serving small and mid-sized businesses worldwide. It pairs human strategy with machine speed, combining AI-speed research with human review to fix common growth problems (websites that don't convert, B2B sales teams targeting the wrong accounts, repetitive work that should be automated) and runs done-for-you AI services: AI search visibility (GEO), AI front desks, AI content and video production, localization and AI training.
+> MarketCentaur delivers AI-led transformation for every business, serving businesses of any size worldwide. It pairs human strategy with machine speed, combining AI-speed research with human review to fix common growth problems (websites that don't convert, B2B sales teams targeting the wrong accounts, repetitive work that should be automated) and runs done-for-you AI services: AI search visibility (GEO), AI front desks, AI content and video production, localization and AI training.
 
 ## Core packages
 - [Website Conversion Sprint](https://marketcentaur.com/services#conversion-sprint): Five-pillar conversion audit, top-10 fix list, rewritten headline and CTA copy, and an AI search visibility check (ChatGPT, Gemini, Perplexity). First findings in 48 hours; full report in 3–5 business days.
@@ -50,7 +50,7 @@ AI agents, a competitive intelligence platform, vertical AI systems and industry
 - [Target account lists for consultancies](https://marketcentaur.com/use-cases/target-accounts-consultancies): For consultancies and agencies whose new business depends on a few partners' networks.
 - [AI-use policy and training for law firms](https://marketcentaur.com/use-cases/ai-policy-training-law-firms): For law firms whose people already use AI tools, often without shared rules.
 - [Automated client reporting for accounting firms](https://marketcentaur.com/use-cases/client-reporting-accounting-firms): For accounting and advisory firms that rebuild similar client reports by hand every month.
-- [Steady content for small nonprofit teams](https://marketcentaur.com/use-cases/content-for-nonprofits): For nonprofits that have strong stories to tell and too little time to tell them.
+- [Steady content for nonprofit teams](https://marketcentaur.com/use-cases/content-for-nonprofits): For nonprofits that have strong stories to tell and too little time to tell them.
 - [Short video from long content for media companies](https://marketcentaur.com/use-cases/repurposing-video-media): For publishers, podcasters and media teams with an archive of long content and little capacity for short formats.
 - [Multilingual information for public bodies](https://marketcentaur.com/use-cases/multilingual-public-information): For councils, agencies and public services that need key information understood by people in several languages.
 - [Sample reports](https://marketcentaur.com/samples): One full sample report for each sprint (fictional companies, real format), plus a sourced market intelligence brief.

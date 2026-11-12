@@ -19,7 +19,7 @@ GROUPS = {'local': 'Local &amp; consumer', 'b2b': 'B2B &amp; industrial', 'pro':
 SERVICES = {
     'ai-front-desk': 'AI Front Desk', 'ai-search-visibility': 'AI Search Visibility', 'ai-content-studio': 'AI Content &amp; Video Studio',
     'ai-localization': 'AI Localization', 'ai-training': 'AI Training &amp; Workshops', 'ai-automation': 'AI &amp; Workflow Automation',
-    'small-business-local-growth': 'Small Business Local Growth', 'weekly-growth-signal-watch': 'Weekly Growth Signal Watch',
+    'small-business-local-growth': 'Local, Retail &amp; Ecommerce Growth', 'weekly-growth-signal-watch': 'Weekly Growth Signal Watch',
     'account-persona-mapping': 'Account &amp; Persona Mapping', 'market-competitor-intelligence': 'Market &amp; Competitor Intelligence',
     'partner-channel-discovery': 'Partner &amp; Channel Discovery', 'business-intelligence': 'Business Intelligence',
 }
@@ -178,10 +178,10 @@ USE_CASES = [
   gets=['A map of the reporting workflow', 'A ranked automation shortlist', 'A pilot design with accountant review built in'],
   service='ai-automation', sprint='automation-sprint', sample='automation', industry='financial-services',
   faq=[('Will clients receive AI-written reports?', 'Only after an accountant has reviewed and approved them. Draft commentary is a starting point, not the final word.'), ('Which accounting software do you work with?', 'Most ledgers that export data or offer integrations. We confirm what is possible with yours during scoping.'), ('How is client data protected?', 'Each workflow only accesses the data it needs, and data handling is agreed with you before any pilot runs.')]),
- dict(slug='content-for-nonprofits', group='pro', title='Steady content for small nonprofit teams',
-  h1='A steady flow of content for nonprofits with small teams',
+ dict(slug='content-for-nonprofits', group='pro', title='Steady content for nonprofit teams',
+  h1='A steady flow of content for busy nonprofit teams',
   lead='For nonprofits that have strong stories to tell and too little time to tell them.',
-  short='Small teams struggle to post, email and report regularly. We turn one interview or a few documents each month into short videos, posts, a newsletter and an article in your voice. A person checks every fact and you approve everything before it goes out. We also review your donation and volunteer pages, so new interest turns into action.',
+  short='Busy teams struggle to post, email and report regularly. We turn one interview or a few documents each month into short videos, posts, a newsletter and an article in your voice. A person checks every fact and you approve everything before it goes out. We also review your donation and volunteer pages, so new interest turns into action.',
   problems=['Content stops whenever the team is busy with programme work.', 'Impact stories exist but are never turned into posts or newsletters.', 'Donation and volunteer pages ask for too much, too early.'],
   steps=[('Monthly brief', 'One interview or a few documents set the month\'s stories and messages.'), ('Produce and review', 'Videos, posts, a newsletter and an article are drafted with AI and checked by a person.'), ('You approve', 'Nothing goes out without your approval.'), ('Improve sign-up pages', 'We review donation and volunteer pages and rank fixes.')],
   gets=['A monthly set of content in your voice', 'Facts checked before you see a draft', 'A ranked fix list for donation and volunteer pages'],
