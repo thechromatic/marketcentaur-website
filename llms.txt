@@ -32,6 +32,8 @@ AI agents, a competitive intelligence platform, vertical AI systems and industry
 ## Key pages
 - [Industries](https://marketcentaur.com/industries): Sector pages for professional services, manufacturing and distribution, ecommerce, SaaS and technology, real estate, hospitality and tourism, education, healthcare and wellness (non-clinical), trades and field services, energy and environment, logistics, financial and accounting firms, multi-location businesses and consumer brands.
 - [Partner program](https://marketcentaur.com/partners): Referral, white-label and implementation partnerships for agencies, consultants and specialists.
+- [Academy](https://marketcentaur.com/academy): Six hands-on AI workshops for teams (sales and marketing, leaders, operations, support, responsible use, AI search visibility), on-site across India or online, with a self-paced course waitlist.
+- [White-label desk](https://marketcentaur.com/white-label): Nine unbranded research and AI deliverables for agencies, with typical turnarounds, NDA first and no contact with agency clients.
 - [Use cases](https://marketcentaur.com/use-cases): 18 common business problems and how MarketCentaur approaches each, linked to services and sample reports.
 - [AI receptionist for clinics](https://marketcentaur.com/use-cases/ai-receptionist-for-clinics): For clinics and wellness practices that miss calls and messages when the front desk is busy or closed.
 - [Missed calls for trades businesses](https://marketcentaur.com/use-cases/missed-calls-trades): For plumbers, electricians, heating engineers and other field-service firms whose teams are on site when the phone rings.
