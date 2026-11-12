@@ -51,6 +51,12 @@
     "slides": 1,
     "type": "card"
   },
+  "card-2026-11-13-trend-signal": {
+    "hash": "ebfc290c1a983ad8",
+    "template": "a9489520571b164a",
+    "slides": 1,
+    "type": "card"
+  },
   "card-2026-11-14-practical": {
     "hash": "f709b13c68cdc5f2",
     "template": "a9489520571b164a",
@@ -59,6 +65,12 @@
   },
   "card-2026-11-14-quote": {
     "hash": "b546962f035ced46",
+    "template": "a9489520571b164a",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-11-15-trend-signal": {
+    "hash": "175d6e4018101c0b",
     "template": "a9489520571b164a",
     "slides": 1,
     "type": "card"
