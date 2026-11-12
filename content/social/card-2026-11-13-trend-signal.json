@@ -1,0 +1,13 @@
+{
+  "type": "card",
+  "style": "signal",
+  "eyebrow": "Trend watch",
+  "headline": "Australia plans mandatory AI incident reporting and a new AI safety regulator",
+  "body": "It follows a review of an AI agent's access to a government portal. The lesson for any business: know what your agents can reach.",
+  "items": [
+    "Map what each agent can access",
+    "Log every agent action",
+    "Write an AI incident playbook"
+  ],
+  "source": "Source: The Canberra Times (AAP), The Next Web"
+}

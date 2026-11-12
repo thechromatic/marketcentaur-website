@@ -1,0 +1,13 @@
+{
+  "type": "card",
+  "style": "signal",
+  "eyebrow": "Trend watch",
+  "headline": "Google Cloud previews AI agents for healthcare admin work",
+  "body": "Admin, not diagnosis, with citations a human reviewer can check.",
+  "items": [
+    "Record summaries before visits",
+    "Prior authorisation packets",
+    "Human sign-off on every output"
+  ],
+  "source": "Source: Google Cloud blog"
+}
