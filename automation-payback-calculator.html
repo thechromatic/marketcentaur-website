@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<!-- GA4:start -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+gtag('js', new Date());
+gtag('config', 'G-W0SYHJZZX9');
+window.mcLoadGa = function () {
+  if (window.mcGaLoaded) return; window.mcGaLoaded = true;
+  gtag('consent', 'update', {analytics_storage: 'granted'});
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W0SYHJZZX9';
+  document.head.appendChild(s);
+};
+try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c && c.v === 1 && c.analytics === 'granted' && Date.now() - c.t < 15724800000) window.mcLoadGa(); } catch (e) {}
+</script>
+<script src="/assets/consent.js" defer></script>
+<script src="/assets/events.js" defer></script>
+<!-- GA4:end -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Automation Payback Calculator (Free) | MarketCentaur</title>
+<meta name="description" content="Free calculator: estimate the hours and cost a workflow automation could save each year, and how soon it could pay back. Runs in your browser; nothing is stored.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#020C24">
+<link rel="canonical" href="https://marketcentaur.com/automation-payback-calculator">
+<link rel="icon" type="image/png" href="/assets/marketcentaur-mc-option-4-favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MarketCentaur">
+<meta property="og:title" content="Automation Payback Calculator">
+<meta property="og:description" content="Free calculator: estimate the hours and cost a workflow automation could save each year, and how soon it could pay back. Runs in your browser; nothing is stored.">
+<meta property="og:url" content="https://marketcentaur.com/automation-payback-calculator">
+<meta property="og:image" content="https://marketcentaur.com/assets/og/automation-payback-calculator.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Automation Payback Calculator">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketcentaur.com/assets/og/automation-payback-calculator.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "@id": "https://marketcentaur.com/automation-payback-calculator", "name": "Automation Payback Calculator", "url": "https://marketcentaur.com/automation-payback-calculator", "applicationCategory": "BusinessApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "description": "Free calculator: estimate the hours and cost a workflow automation could save each year, and how soon it could pay back. Runs in your browser; nothing is stored.", "publisher": {"@id": "https://marketcentaur.com/#organization"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate is this estimate?", "acceptedAnswer": {"@type": "Answer", "text": "It is a planning estimate based on the numbers you enter. Real savings depend on how often the work happens, how much of it follows clear rules and how much review stays with people. An Automation Opportunity Audit measures this properly."}}, {"@type": "Question", "name": "Why does the calculator keep some review time?", "acceptedAnswer": {"@type": "Answer", "text": "Automated work that affects customers, money or legal commitments should be checked by a person. Keeping review time in the estimate gives a more honest figure."}}, {"@type": "Question", "name": "What hourly cost should I use?", "acceptedAnswer": {"@type": "Answer", "text": "Use the full cost of an hour of the person's time: salary plus employer costs such as benefits and taxes, divided by working hours. A rough figure is fine for a first comparison."}}, {"@type": "Question", "name": "Is anything I enter stored or sent anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculation runs in your browser and nothing is saved or sent."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://marketcentaur.com/"}, {"@type": "ListItem", "position": 2, "name": "Automation Payback Calculator", "item": "https://marketcentaur.com/automation-payback-calculator"}]}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/page-visuals.css">
+<link rel="preload" href="/assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site-nav.css">
+<style>
+.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start;margin-top:8px}
+.calc form,.calc .out{padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.calc label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px}.calc label:first-child{margin-top:0}
+.calc .hint{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:2px}
+.calc input,.calc select{width:100%;padding:11px 13px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+.calc input[type=range]{padding:0;accent-color:var(--accent)}
+.calc .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.calc .out{position:sticky;top:90px}
+.calc .metric{padding:14px 0;border-bottom:1px solid var(--line)}.calc .metric:last-of-type{border-bottom:0}
+.calc .metric span{display:block;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.calc .metric strong{display:block;font-size:28px;line-height:1.2;margin-top:4px}
+.calc .note{color:var(--muted);font-size:13px;line-height:1.55;margin-top:10px}
+.steps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+@media(max-width:900px){.calc{grid-template-columns:1fr}.calc .out{position:static}.steps3{grid-template-columns:1fr}}
+@media(max-width:520px){.calc .row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<!-- mc-nav: generated by scripts/nav/apply-nav.mjs -->
+<div class="mc-header"><div class="wrap"><nav class="mc-nav" aria-label="Main navigation"><a class="mc-logo" href="/" aria-label="MarketCentaur home"><img src="/assets/marketcentaur-logo-transparent.png" alt="MarketCentaur" width="608" height="308"></a><button class="mc-burger" type="button" aria-expanded="false" aria-controls="mc-menu" aria-label="Open menu"><span aria-hidden="true"></span></button><div class="mc-menu" id="mc-menu"><ul class="mc-items"><li class="mc-item mc-has-panel"><a class="mc-top" href="/services">Services</a><button class="mc-caret" type="button" aria-expanded="false" aria-controls="mc-panel-services" aria-label="Show Services menu"></button><div class="mc-panel mc-cols-3" id="mc-panel-services"><div class="mc-col"><p class="mc-col-title">Start with a sprint</p><ul><li><a href="/services#conversion-sprint">Website Conversion Sprint<span>More inquiries from the traffic you have</span></a></li><li><a href="/services#account-sprint">B2B Account Intelligence Sprint<span>Ranked accounts, contacts and angles</span></a></li><li><a href="/services#automation-sprint">AI Workflow Automation Sprint<span>Remove weekly manual admin</span></a></li><li><a href="/services#retainer">Growth Intelligence Retainer<span>Ongoing signals and support</span></a></li></ul><a class="mc-more" href="/services#sprints">Compare the sprints →</a></div><div class="mc-col"><p class="mc-col-title">Done-for-you AI</p><ul><li><a href="/services/ai-search-visibility">AI Search Visibility<span>Get recommended by AI assistants</span></a></li><li><a href="/services/ai-front-desk">AI Front Desk<span>Calls, WhatsApp and chat, after hours too</span></a></li><li><a href="/services/ai-content-studio">AI Content &amp; Video Studio<span>Content produced and reviewed for you</span></a></li><li><a href="/services/ai-localization">AI Localization<span>Your site and content in more languages</span></a></li><li><a href="/services/ai-training">AI Training &amp; Workshops<span>Teach your team to use AI well</span></a></li></ul></div><div class="mc-col"><p class="mc-col-title">Explore everything</p><ul><li><a href="/practices/">All 17 practices</a></li><li><a href="/practices/#bundles">Bundles</a></li><li><a href="/services#catalog">Full service catalog</a></li><li><a href="/services/market-competitor-intelligence">Market &amp; competitor intelligence</a></li><li><a href="/recurring-services">Ongoing support</a></li><li><a href="/academy">Academy workshops</a></li><li><a href="/labs">Labs</a></li><li><a href="/white-label">White-label desk for agencies</a></li><li><a href="/partners">Partner program</a></li></ul></div></div></li><li class="mc-item mc-has-panel"><a class="mc-top" href="/industries">Industries</a><button class="mc-caret" type="button" aria-expanded="false" aria-controls="mc-panel-industries" aria-label="Show Industries menu"></button><div class="mc-panel mc-cols-3" id="mc-panel-industries"><div class="mc-col"><p class="mc-col-title">Local &amp; consumer</p><ul><li><a href="/industries/healthcare-wellness">Clinics &amp; wellness</a></li><li><a href="/industries/hospitality-tourism">Hospitality &amp; tourism</a></li><li><a href="/industries/real-estate">Real estate</a></li><li><a href="/industries/trades-field-services">Trades &amp; field services</a></li><li><a href="/industries/multi-location-businesses">Multi-location businesses</a></li><li><a href="/industries/education-training">Education &amp; training</a></li><li><a href="/industries/ecommerce">Ecommerce</a></li><li><a href="/industries/consumer-brands">Consumer brands</a></li></ul></div><div class="mc-col"><p class="mc-col-title">B2B &amp; industrial</p><ul><li><a href="/industries/manufacturing-distribution">Manufacturing &amp; export</a></li><li><a href="/industries/logistics-supply-chain">Logistics &amp; supply chain</a></li><li><a href="/industries/construction-engineering-architecture">Construction &amp; engineering</a></li><li><a href="/industries/energy-environment">Energy &amp; sustainability</a></li><li><a href="/industries/telecom-infrastructure">Telecom &amp; infrastructure</a></li><li><a href="/industries/automotive-mobility">Automotive &amp; mobility</a></li><li><a href="/industries/agriculture-food">Agriculture &amp; food</a></li></ul></div><div class="mc-col"><p class="mc-col-title">Professional &amp; public</p><ul><li><a href="/industries/professional-services">Professional services</a></li><li><a href="/industries/saas-technology">SaaS &amp; IT</a></li><li><a href="/industries/financial-services">Accounting &amp; financial</a></li><li><a href="/industries/legal-services">Legal services</a></li><li><a href="/industries/media-entertainment">Media &amp; entertainment</a></li><li><a href="/industries/government-public-sector">Government &amp; public sector</a></li><li><a href="/industries/nonprofits">Nonprofits</a></li></ul><a class="mc-more" href="/industries">All industries →</a></div></div></li><li class="mc-item mc-has-panel"><a class="mc-top" href="/samples" aria-current="true">Resources</a><button class="mc-caret" type="button" aria-expanded="false" aria-controls="mc-panel-resources" aria-label="Show Resources menu"></button><div class="mc-panel mc-cols-2" id="mc-panel-resources"><div class="mc-col"><p class="mc-col-title">See the work</p><ul><li><a href="/samples">Sample reports<span>One full sample for each sprint</span></a></li><li><a href="/use-cases">Use cases<span>18 problems we solve, by sector</span></a></li><li><a href="/sample-intelligence-brief">Sample intelligence brief<span>A sourced market brief</span></a></li><li><a href="/how-it-works">How we work<span>Scope, method and review</span></a></li><li><a href="/editorial-standards">Editorial standards<span>How we source and check facts</span></a></li><li><a href="/briefings">Sector Briefings<span>Signals for your sector by email</span></a></li><li><a href="/faq">FAQs</a></li></ul></div><div class="mc-col"><p class="mc-col-title">Free tools</p><ul><li><a href="/#free-audit">Free website audit<span>Why visitors are not inquiring</span></a></li><li><a href="/ai-visibility-check">AI visibility check<span>Do AI assistants mention you?</span></a></li><li><a href="/ai-readiness-score">AI Readiness Score<span>Where AI fits in your business</span></a></li><li><a href="/growth-check">Growth checks<span>Local, ecommerce and modernization</span></a></li><li><a href="/toolkit">Free toolkit<span>Six templates to download</span></a></li><li><a href="/automation-payback-calculator">Automation payback calculator<span>Is a task worth automating?</span></a></li></ul></div></div></li><li class="mc-item"><a class="mc-top" href="/insights/">Insights</a></li><li class="mc-item"><a class="mc-top" href="/about">About</a></li></ul><a class="mc-cta" href="/contact">Book a scoping call</a></div></nav></div></div>
+<!-- /mc-nav -->
+<main id="main">
+<div class="wrap">
+  <header class="hero" style="padding-bottom:20px">
+    <div class="eyebrow">Free tool · Automation</div>
+    <h1>Is this task worth automating? Estimate the payback.</h1>
+    <p class="lead">Enter one recurring task. See the hours it could free each year, what that time is worth, and how soon an automation could pay for itself. It runs in your browser; nothing is stored or sent.</p>
+  </header>
+
+  <section id="calculator" aria-labelledby="calc-heading" style="border-top:0;padding-top:0">
+    <h2 id="calc-heading" class="sr-only">Calculator</h2>
+    <div class="calc">
+      <form id="payback" novalidate>
+        <label for="pb-task">Task <span class="hint">For example: copying invoice details into the accounts system</span></label>
+        <input id="pb-task" type="text" maxlength="120" placeholder="Name the task (optional)">
+        <div class="row2">
+          <div><label for="pb-people">People who do it</label><input id="pb-people" type="number" min="1" step="1" value="3" inputmode="numeric"></div>
+          <div><label for="pb-hours">Hours per person per week</label><input id="pb-hours" type="number" min="0" step="0.5" value="5" inputmode="decimal"></div>
+        </div>
+        <div class="row2">
+          <div><label for="pb-cost">Hourly cost of their time <span class="hint">Salary plus employer costs</span></label><input id="pb-cost" type="number" min="0" step="1" value="25" inputmode="decimal"></div>
+          <div><label for="pb-cur">Currency</label><select id="pb-cur"><option>USD</option><option>EUR</option><option>GBP</option><option>INR</option><option>AED</option><option>SAR</option><option>SGD</option><option>AUD</option><option>CAD</option></select></div>
+        </div>
+        <label for="pb-share">Share of the work automation could handle: <output id="pb-share-out" for="pb-share">50%</output> <span class="hint">Repetitive, rule-based steps score higher</span></label>
+        <input id="pb-share" type="range" min="10" max="90" step="5" value="50">
+        <label for="pb-review">Time kept for human review: <output id="pb-review-out" for="pb-review">20%</output> <span class="hint">Share of the saved time still spent checking output</span></label>
+        <input id="pb-review" type="range" min="0" max="60" step="5" value="20">
+        <label for="pb-weeks">Working weeks per year</label>
+        <input id="pb-weeks" type="number" min="1" max="52" step="1" value="46" inputmode="numeric">
+        <div class="row2">
+          <div><label for="pb-oneoff">One-off cost to set up <span class="hint">Optional: a quote or your own estimate</span></label><input id="pb-oneoff" type="number" min="0" step="1" placeholder="0" inputmode="decimal"></div>
+          <div><label for="pb-monthly">Running cost per month <span class="hint">Optional: tools, upkeep</span></label><input id="pb-monthly" type="number" min="0" step="1" placeholder="0" inputmode="decimal"></div>
+        </div>
+      </form>
+      <div class="out" aria-live="polite">
+        <div class="metric"><span>Hours freed per week</span><strong id="r-week">–</strong></div>
+        <div class="metric"><span>Hours freed per year</span><strong id="r-year">–</strong></div>
+        <div class="metric"><span>Value of that time per year</span><strong id="r-value">–</strong></div>
+        <div class="metric"><span>Payback</span><strong id="r-payback">–</strong></div>
+        <p class="note" id="r-note">Add a one-off cost to see the payback period.</p>
+        <p class="note">An estimate, not a promise. Real savings depend on volumes, exceptions and how much review stays with people.</p>
+        <a class="btn primary" style="margin-top:12px;width:100%;justify-content:center" id="r-cta" href="/contact?service=automation-opportunity-audit">Check it with an Automation Opportunity Audit</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="next-heading">
+    <div class="sectionhead"><div class="eyebrow">Next steps</div><h2 id="next-heading">From an estimate to a working automation</h2></div>
+    <div class="steps3">
+      <article class="card"><div class="tag">Diagnose</div><h3>Automation Opportunity Audit</h3><p>We map your workflows, measure the real hours and rank what to automate first by value, cost and risk.</p><a class="textlink bottom" href="/practices/automation-ai-agents#automation-opportunity-audit">See what's included →</a></article>
+      <article class="card"><div class="tag">Build</div><h3>Workflow Automation Sprint</h3><p>We design and deploy one clearly scoped workflow with testing, safeguards and handover.</p><a class="textlink bottom" href="/practices/automation-ai-agents#workflow-automation-sprint">See what's included →</a></article>
+      <article class="card"><div class="tag">Run</div><h3>Automation Care</h3><p>We keep your workflows monitored, maintained and improved as tools and processes change.</p><a class="textlink bottom" href="/practices/automation-ai-agents#automation-care">See what's included →</a></article>
+    </div>
+    <p class="muted small" style="margin-top:14px">Not sure which task to score? The free <a class="textlink" href="/toolkit">toolkit</a> includes an automation candidate scorecard.</p>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="sectionhead"><div class="eyebrow">Questions</div><h2 id="faq-heading">Frequently asked questions</h2></div>
+    <div class="faq-list"><details class="more"><summary>How accurate is this estimate?</summary><p>It is a planning estimate based on the numbers you enter. Real savings depend on how often the work happens, how much of it follows clear rules and how much review stays with people. An Automation Opportunity Audit measures this properly.</p></details><details class="more"><summary>Why does the calculator keep some review time?</summary><p>Automated work that affects customers, money or legal commitments should be checked by a person. Keeping review time in the estimate gives a more honest figure.</p></details><details class="more"><summary>What hourly cost should I use?</summary><p>Use the full cost of an hour of the person's time: salary plus employer costs such as benefits and taxes, divided by working hours. A rough figure is fine for a first comparison.</p></details><details class="more"><summary>Is anything I enter stored or sent anywhere?</summary><p>No. The calculation runs in your browser and nothing is saved or sent.</p></details></div>
+  </section>
+</div>
+</main>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var num = function (id) { var v = parseFloat($(id).value); return isFinite(v) && v > 0 ? v : 0; };
+  function money(v, cur) {
+    try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(v); }
+    catch (e) { return cur + ' ' + Math.round(v).toLocaleString(); }
+  }
+  function calc() {
+    var share = num('pb-share') / 100, review = parseFloat($('pb-review').value) / 100 || 0;
+    $('pb-share-out').textContent = Math.round(share * 100) + '%';
+    $('pb-review-out').textContent = Math.round(review * 100) + '%';
+    var cur = $('pb-cur').value;
+    var week = num('pb-people') * num('pb-hours') * share * (1 - review);
+    var year = week * num('pb-weeks');
+    var value = year * num('pb-cost');
+    var monthlyNet = value / 12 - num('pb-monthly');
+    var oneoff = num('pb-oneoff');
+    $('r-week').textContent = week.toFixed(1) + ' h';
+    $('r-year').textContent = Math.round(year).toLocaleString() + ' h';
+    $('r-value').textContent = money(value, cur);
+    if (!oneoff) { $('r-payback').textContent = '–'; $('r-note').textContent = 'Add a one-off cost to see the payback period.'; }
+    else if (monthlyNet <= 0) { $('r-payback').textContent = 'Not within a year'; $('r-note').textContent = 'At these numbers the running cost is higher than the time saved each month. Try a task that takes more hours, or one more of the work can be automated.'; }
+    else { var m = oneoff / monthlyNet; $('r-payback').textContent = m < 1 ? 'Under 1 month' : (m.toFixed(1) + ' months'); $('r-note').textContent = 'Net monthly benefit after running costs: ' + money(monthlyNet, cur) + '.'; }
+    var task = $('pb-task').value.trim();
+    var ctx = 'Automation payback estimate' + (task ? ' for: ' + task : '') + '. ' + week.toFixed(1) + ' hours a week, about ' + Math.round(year) + ' hours a year.';
+    $('r-cta').href = '/contact?service=automation-opportunity-audit&context=' + encodeURIComponent(ctx);
+  }
+  ['pb-task','pb-people','pb-hours','pb-cost','pb-cur','pb-share','pb-review','pb-weeks','pb-oneoff','pb-monthly'].forEach(function (id) {
+    $(id).addEventListener('input', calc); $(id).addEventListener('change', calc);
+  });
+  calc();
+})();
+</script>
+
+<div class="wrap">
+  <footer class="footer">
+    <div><strong>MarketCentaur</strong><br>AI-led transformation for every business · Serving businesses worldwide<br><a href="mailto:hello@marketcentaur.com">hello@marketcentaur.com</a><p class="footnote">AI-assisted work is reviewed by a person before it reaches you. Scope, deliverables and timelines are agreed in writing; business outcomes such as leads, rankings or AI mentions depend on many factors and are not guaranteed.</p></div>
+    <div><a href="/services">Services</a> · <a href="/industries">Industries</a> · <a href="/recurring-services">Ongoing support</a> · <a href="/labs">Labs</a> · <a href="/insights/">Insights</a> · <a href="/partners">Partners</a><br><a href="/ai-visibility-check">Free AI visibility check</a> · <a href="/website-enquiry-readiness">Free website check</a> · <a href="/growth-check">Growth checks</a> · <a href="/toolkit">Free toolkit</a> · <a href="/briefings">Briefings</a><br><a href="/about">About</a> · <a href="/faq">FAQs</a> · <a href="/contact">Contact</a> · <a href="/privacy-policy">Privacy</a> · <a href="/terms-of-service">Terms</a><br><a href="https://www.linkedin.com/company/marketcentaur" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://www.instagram.com/marketcentaur" rel="noopener" target="_blank">Instagram</a> · <a href="https://x.com/marketcentaur" rel="noopener" target="_blank">X</a></div>
+  </footer>
+</div>
+<script src="/assets/language-selector.js" defer></script>
+<script src="/assets/forms.js" defer></script>
+<script src="/assets/site-nav.js" defer></script>
+<script src="/assets/assistant.js" defer></script>
+</body>
+</html>

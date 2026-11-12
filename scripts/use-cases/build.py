@@ -13,7 +13,7 @@ import html, json, os, re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 SITE = 'https://marketcentaur.com'
-TODAY = '2026-11-11'
+TODAY = '2026-11-12'
 GROUPS = {'local': 'Local &amp; consumer', 'b2b': 'B2B &amp; industrial', 'pro': 'Professional &amp; public'}
 
 SERVICES = {
@@ -76,7 +76,7 @@ USE_CASES = [
   steps=[('Build the question set', 'We list the questions shoppers ask in your category, by product line.'), ('Test the assistants', 'Each question is tested across major AI assistants, recording who is named and the sources cited.'), ('Fix product information', 'We rank fixes to product pages, structured data and reviews by expected impact.'), ('Re-test', 'The same questions are re-run later so you can see what changed.')],
   gets=['A baseline of AI recommendations for your category', 'A ranked fix list for product pages and data', 'A re-test against the same questions'],
   service='ai-search-visibility', sprint='conversion-sprint', sample='conversion', industry='ecommerce',
-  faq=[('Is this the same as SEO?', 'It overlaps. Good product information helps both, but AI assistants also weigh reviews, comparisons and how clearly a page answers a specific question.'), ('Can you guarantee our products will be recommended?', 'No. AI answers change over time. We show where you stand, fix what is in your control and measure progress against the same questions.'), ('Do you change our store directly?', 'We can implement agreed fixes or hand them to your team or developer as a ranked list with rewritten copy.')]),
+  faq=[('Is this the same as SEO?', 'It overlaps. Good product information helps both, but AI assistants also weigh reviews, comparisons and how clearly a page answers a specific question.'), ('Can you guarantee our products will be recommended?', 'No. AI answers change over time. We show where you stand, fix what is in your control and measure progress against the same questions.'), ('Do you change our store directly?', 'We can implement agreed fixes or hand them to your team or developer as a ranked list with rewritten copy.'), ('Can you set up our business profile and product feed in ChatGPT?', 'Yes, where you are eligible. OpenAI began letting businesses claim profiles and add product feeds in November 2026, with business agents first offered to eligible US stores. We check what assistants say about you first, then set up the profile and feed and re-test. See <a class="textlink" href="/insights/chatgpt-business-profiles-what-to-check">what to check first</a>.')]),
  dict(slug='direct-bookings-hotels', group='local', title='More direct bookings for hotels',
   h1='More direct bookings for hotels and guesthouses',
   lead='For independent hotels and guesthouses that rely heavily on booking platforms and want more guests to book direct.',
@@ -113,7 +113,7 @@ USE_CASES = [
   steps=[('Agree the ideal buyer', 'Company type, size, products and regions, based on your best current customers.'), ('Research and rank', 'Target companies are researched from public sources and ranked by fit and timing signals.'), ('Map buying roles', 'We identify the roles likely to evaluate, approve and use your products.'), ('Suggest angles', 'An opening angle for each segment, based on what those buyers care about.')],
   gets=['A ranked list of target companies with sources', 'A buying-role map for priority accounts', 'Outreach angles for each segment'],
   service='account-persona-mapping', sprint='account-sprint', sample='account', industry='manufacturing-distribution',
-  faq=[('Do you provide contact details?', 'We identify roles and, where publicly available, the people in them. Contact data handling follows the privacy rules that apply in your target market.'), ('Can you cover markets outside Europe and North America?', 'Yes, where reliable public sources exist. Coverage is confirmed during scoping for each market.'), ('Do you do the outreach?', 'Your team does. We provide the list, the role map and the angles, so each conversation starts with you.')]),
+  faq=[('Do you provide contact details?', 'We identify roles and, where publicly available, the people in them. Contact data handling follows the privacy rules that apply in your target market.'), ('Can you cover markets outside Europe and North America?', 'Yes, where reliable public sources exist. Coverage is confirmed during scoping for each market.'), ('Do you do the outreach?', 'Your team does. We provide the list, the role map and the angles, so each conversation starts with you.'), ('We rely on one export market. Can you help us move into another?', 'Yes. The <a class="textlink" href="/practices/#export-pivot-pack">Export Pivot Pack</a> combines a market entry brief, a ranked buyer list, localized content and ready answers to buyer data requests, quoted as one engagement. See also <a class="textlink" href="/use-cases/export-pivot-to-europe">moving export sales towards Europe</a>.')]),
  dict(slug='quote-automation-manufacturers', group='b2b', title='Faster quotes for manufacturers',
   h1='Faster quote turnaround for manufacturers, with estimators in control',
   lead='For manufacturers whose quote requests are re-typed between email, spreadsheets and the ERP.',
@@ -151,6 +151,43 @@ USE_CASES = [
   service='partner-channel-discovery', sprint='account-sprint', sample='account', industry='saas-technology',
   faq=[('Do you build the partner programme?', 'We find and qualify partners. Programme terms and commercial structure stay with your team.'), ('Can you find integration partners specifically?', 'Yes. Technology partners whose products your customers already use are one of the partner types we research.'), ('Do you contact the partners?', 'No. Your team makes the introductions, so each relationship starts with you.')]),
 
+ dict(slug='export-pivot-to-europe', group='b2b', title='Moving export sales towards Europe',
+  h1='Moving export sales towards Europe when one market gets harder',
+  lead='For manufacturers and exporters, such as textile and engineering firms, that depend on one export market and want buyers in Europe.',
+  short='When tariffs or demand shift in one market, the fix is a short, well-researched route into another. We size the opportunity in your target European markets, build a ranked buyer list with buying roles, adapt key content into buyers\' languages, and prepare answers to the sustainability and traceability questions European buyers now send suppliers.',
+  problems=['Most export revenue depends on one market, so a tariff or demand change hits hard.', 'European buyers are hard to identify and qualify from trade directories alone.', 'Buyer questionnaires on sustainability, carbon and traceability arrive with no ready answers.'],
+  steps=[('Size the market', 'A market entry brief on demand, competitors, routes to market and rules for your products.'), ('Rank the buyers', 'Target companies researched and ranked by fit, with the roles involved in buying.'), ('Localize key content', 'Catalogue, product and company pages adapted into buyers\' languages, with human review.'), ('Prepare data answers', 'An answer library and evidence for the data requests European buyers send suppliers.')],
+  gets=['A decision-ready brief on your target markets', 'A ranked buyer list with buying roles and sources', 'Localized key content and ready answers to buyer data requests'],
+  service='account-persona-mapping', sprint='account-sprint', sample='account', industry='manufacturing-distribution',
+  start=('/practices/#export-pivot-pack', 'Export Pivot Pack'),
+  faq=[('Which European markets can you cover?', 'Most EU countries and the UK, where reliable public sources exist. Coverage is confirmed for each market during scoping.'), ('Do you verify our carbon or traceability data?', 'No. We organise your answers and evidence and show where data is missing. Verification, where a buyer or regulation requires it, is done by an accredited third party.'), ('Do you contact the buyers for us?', 'No. Your team makes the approaches. We provide the list, the buying roles, the angles and the localized material.')]),
+ dict(slug='e-invoicing-deadlines-finance-teams', group='b2b', title='E-invoicing deadlines for finance teams',
+  h1='Getting ready for e-invoicing deadlines in India, the UAE and Saudi Arabia',
+  lead='For finance teams, exporters and groups with entities in markets where e-invoicing becomes mandatory in 2027.',
+  short='Several countries are widening e-invoicing in 2027, and most delays come from invoice data and processes, not software. We list the deadlines that apply to each of your entities, check your invoice data and billing steps against them, and prepare a cut-over and testing plan with your accredited provider or ERP partner.',
+  problems=['Deadlines differ by country, entity and revenue, and nobody owns the full list.', 'Customer, tax and product data on invoices is incomplete or inconsistent.', 'Testing starts too late, so the first live invoices are rejected.'],
+  steps=[('List the deadlines', 'Every e-invoicing date that applies to each of your entities, with sources.'), ('Check the data', 'Invoice fields, customer records and tax codes compared with what each system will need.'), ('Fix the process', 'Billing steps, approvals and exception handling updated for the new flow.'), ('Plan cut-over', 'A testing and go-live checklist agreed with your provider or ERP partner.')],
+  gets=['A dated list of the deadlines that apply to you', 'A gap list for invoice data and billing steps', 'A cut-over and testing checklist'],
+  service='ai-automation', sprint='automation-sprint', sample='automation', industry='financial-services',
+  service_link=('/practices/operations-finance#finance-ops-automation', 'Finance Ops Automation'),
+  start=('/practices/operations-finance#e-invoicing-readiness-review', 'E-invoicing Readiness Review'),
+  contact='e-invoicing-readiness-review',
+  extra='''  <section aria-labelledby="dates-heading">
+    <div class="sectionhead"><div class="eyebrow">Key dates</div><h2 id="dates-heading">Deadlines reported so far</h2><p>Dates as reported in November 2026. Check the official notices for your entities; they can change.</p></div>
+    <div class="table-wrap"><table class="uc-table">
+      <thead><tr><th scope="col">Country</th><th scope="col">What changes</th><th scope="col">Date</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+        <tr><td>India</td><td>E-invoicing extended to exports, reverse-charge supplies and imports of services; schema moves to version 1.2</td><td>1 January 2027</td><td><a class="textlink" href="https://www.caclubindia.com/news/cgst-rules-2026-amended-e-invoicing-scope-expanded-from-1st-january-2027-26904.asp" rel="noopener">CAclubindia</a></td></tr>
+        <tr><td>UAE</td><td>Businesses with annual revenue of AED 50 million or more go live</td><td>1 January 2027</td><td><a class="textlink" href="https://www.arabianbusiness.com/finance/uae-e-invoicing-rules-key-deadlines" rel="noopener">Arabian Business</a></td></tr>
+        <tr><td>UAE</td><td>Smaller businesses appoint an accredited provider, then go live</td><td>31 March 2027, then 1 July 2027</td><td><a class="textlink" href="https://www.arabianbusiness.com/finance/uae-e-invoicing-rules-key-deadlines" rel="noopener">Arabian Business</a></td></tr>
+        <tr><td>Saudi Arabia</td><td>Businesses in integration Wave 25 must integrate</td><td>1 February 2027</td><td><a class="textlink" href="https://www.arabianbusiness.com/finance/saudi-2027-e-invoicing-deadline" rel="noopener">Arabian Business</a></td></tr>
+        <tr><td>United Kingdom</td><td>Mandatory VAT e-invoicing announced</td><td>1 April 2029</td><td><a class="textlink" href="https://www.forvismazars.com/uk/en/insights/the-chancellors-budget-and-forecast-statements/autumn-budget-summary" rel="noopener">Forvis Mazars</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+''',
+  faq=[('Are you an accredited e-invoicing provider?', 'No. We prepare your processes, data and testing, and work alongside the accredited provider or ERP partner you choose.'), ('Does this replace our tax adviser?', 'No. Your tax adviser confirms which rules apply. We turn those rules into clean data, clear steps and a tested cut-over.'), ('Can you automate invoice handling at the same time?', 'Yes. Finance Ops Automation can automate a defined invoice or payables workflow, with human approvals, once the e-invoicing basics are in place.')]),
+
  dict(slug='target-accounts-consultancies', group='pro', title='Target account lists for consultancies',
   h1='Target account lists for consultancies and agencies',
   lead='For consultancies and agencies whose new business depends on a few partners\' networks.',
@@ -168,7 +205,7 @@ USE_CASES = [
   steps=[('Discovery session', 'We meet a few team members to collect real tasks and current tool use.'), ('Hands-on workshop', 'Practical sessions on research, drafting support and checking output, built on your tasks.'), ('Policy and register', 'A plain-English AI-use policy and register, drafted for your firm to review.'), ('Follow-up', 'A short follow-up to answer questions and refine the prompt library.')],
   gets=['A workshop built around your firm\'s tasks', 'A draft AI-use policy and register for your review', 'A prompt library your team can keep using'],
   service='ai-training', sprint='automation-sprint', sample='automation', industry='legal-services',
-  faq=[('Do you give legal or regulatory advice?', 'No. We provide practical training and draft documents for your firm to review. Your own counsel decides what applies.'), ('Can the workshop run on-site?', 'Yes. Workshops run on-site or online, as a half day, a full day or a short programme.'), ('What should staff never put into an AI tool?', 'The policy sets this out for your firm, typically covering client-confidential information and any data your approved tools are not cleared to handle.')]),
+  faq=[('Do you give legal or regulatory advice?', 'No. We provide practical training and draft documents for your firm to review. Your own counsel decides what applies.'), ('Can the workshop run on-site?', 'Yes. Workshops run on-site or online, as a half day, a full day or a short programme.'), ('What should staff never put into an AI tool?', 'The policy sets this out for your firm, typically covering client-confidential information and any data your approved tools are not cleared to handle.'), ('Should we bill clients for time saved by AI?', 'That is for your firm and its regulators to decide. Guidance is emerging: in November 2026 the New York State Bar adopted a report that treats general AI tools as overhead, billable only where matter-specific and disclosed (<a class="textlink" href="https://www.abajournal.com/news/article/ny-bar-tells-lawyers-not-to-bill-for-time-saved-by-ai" rel="noopener">ABA Journal</a>). Our AI Use &amp; Billing Policy Pack drafts options for your counsel to review.')]),
  dict(slug='client-reporting-accounting-firms', group='pro', title='Automated client reporting for accounting firms',
   h1='Automating monthly client reporting for accounting firms',
   lead='For accounting and advisory firms that rebuild similar client reports by hand every month.',
@@ -205,6 +242,27 @@ USE_CASES = [
   gets=['Priority pages in the languages you serve', 'A shared glossary of approved terms', 'A routine for keeping translations current'],
   service='ai-localization', sprint='conversion-sprint', sample='conversion', industry='government-public-sector',
   faq=[('Are translations checked by people?', 'Yes. Reviewers check meaning, tone and terminology before anything is published.'), ('Can you meet our procurement and accessibility requirements?', 'We work within the requirements you share during scoping and confirm in writing what we can meet.'), ('Which languages can you cover?', 'Most widely spoken languages. Coverage for less common languages is confirmed during scoping.')]),
+ dict(slug='dpdp-readiness-small-businesses', group='pro', title='DPDP readiness for small businesses',
+  h1="Getting ready for India's DPDP Rules before 13 May 2027",
+  lead='For small and mid-sized businesses that collect personal data from people in India, from customers and leads to staff.',
+  short="India's DPDP Rules apply in phases, and the main duties on notice, consent, security, breach reporting and people's rights start on 13 May 2027. We map the personal data you hold, fix notices and consent wording, review vendor contracts, and set up breach and request handling. This is readiness work; your counsel confirms what applies.",
+  problems=['Personal data sits in forms, WhatsApp, spreadsheets, the CRM and email, with no single map.', 'Privacy notices are generic and consent wording does not match how data is used.', 'There is no agreed process for a breach or for a request to see or delete data.'],
+  steps=[('Map the data', 'Every place personal data comes in, where it is stored, who sees it and which vendors touch it.'), ('Fix notices and consent', 'Plain-language notices and consent wording for each collection point.'), ('Review vendors', 'Processor contracts checked for security and breach-notification terms.'), ('Set up handling', 'A breach process with the 72-hour report, and a simple request log with owners.')],
+  gets=['A personal-data map you can keep current', 'Updated notices, consent wording and a vendor checklist', 'Breach and request workflows your team can follow'],
+  service='ai-automation', sprint='automation-sprint', sample='automation', industry='professional-services',
+  service_link=('/practices/cyber-privacy#data-privacy-readiness', 'Data Privacy Readiness'),
+  start=('/practices/cyber-privacy#dpdp-readiness-kit', 'DPDP Readiness Kit &amp; Clinic'),
+  contact='data-privacy-readiness',
+  faq=[('Is this legal advice?', 'No. It is practical readiness work: maps, templates, workflows and training. Your own counsel confirms how the law applies to you.'), ('What started on 13 November 2026?', 'The rules for consent managers. Most businesses are not consent managers, so the main preparation is for 13 May 2027. See <a class="textlink" href="/insights/dpdp-what-to-finish-before-may-2027">our six-month plan</a>.'), ('We are outside India. Does it apply to us?', 'It can, if you process personal data in connection with offering goods or services to people in India. Your counsel can confirm.')]),
+ dict(slug='study-abroad-immigration-advisers', group='pro', title='Enquiries and content for study-abroad advisers',
+  h1='Handling enquiry spikes and rule changes for study-abroad and immigration advisers',
+  lead='For study-abroad agents, education consultants and immigration advisers whose enquiries jump every time visa or study rules change.',
+  short='When study or visa rules change, enquiries spike and the same questions arrive at all hours. An AI assistant answers routine questions from your approved information, collects documents and books calls with your advisers. We also turn each rule change into clear content. Advice on individual cases always stays with your qualified advisers.',
+  problems=['Rule changes trigger a flood of the same questions on WhatsApp, phone and email.', 'Advisers spend time on routine answers instead of individual cases.', 'Content about each change is slow to publish, so prospects read it elsewhere first.'],
+  steps=[('Collect approved answers', 'Your approved information on services, documents, timelines and processes.'), ('Set up the assistant', 'It answers routine questions, collects documents and books calls with advisers.'), ('Turn changes into content', 'Short articles, posts and videos explaining each change, checked against official sources.'), ('Review monthly', 'We review a sample of conversations and update answers as rules change.')],
+  gets=['Routine questions answered at any hour, in your approved words', 'Calls booked with advisers, with documents attached', 'Clear content on each rule change, checked by a person'],
+  service='ai-front-desk', sprint='conversion-sprint', sample='conversion', industry='education-training',
+  faq=[('Will the assistant give immigration or visa advice?', 'No. It shares only your approved general information and passes anything about an individual case to your qualified advisers.'), ('Can you work in several languages?', 'Yes, where your approved answers are available in those languages. We can help translate them with human review.'), ('Can we offer this to our own clients under our brand?', 'Agencies can, through our <a class="textlink" href="/white-label">white-label desk</a>.')]),
 ]
 
 src = open(os.path.join(ROOT, 'samples.html'), encoding='utf-8').read()
@@ -249,7 +307,8 @@ def page_head(url, title, desc, og, ld, extra_css=''):
 .cards{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}}
 .cards .num{{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em;margin-bottom:8px}}
 .cards h3{{margin:0 0 6px;font-size:17px}}.cards p{{margin:0;color:var(--muted);font-size:14.5px;line-height:1.6}}
-.uc-list{{margin:8px 0 0;padding-left:20px}}.uc-list li{{margin:8px 0;color:var(--muted);line-height:1.65}}
+.uc-list{{margin:8px 0 0;padding-left:20px}}
+.table-wrap{{overflow-x:auto;margin-top:18px}}.uc-table{{width:100%;border-collapse:collapse;font-size:14.5px}}.uc-table th,.uc-table td{{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}}.uc-table th{{color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase}}.uc-list li{{margin:8px 0;color:var(--muted);line-height:1.65}}
 @media(max-width:900px){{.uc-links{{grid-template-columns:repeat(2,minmax(0,1fr))}}}}
 @media(max-width:520px){{.uc-links{{grid-template-columns:1fr}}}}
 {extra_css}
@@ -271,12 +330,13 @@ def build_page(uc):
     desc = uc['lead'].replace('"', '&quot;')
     words = len(strip(uc['short']).split())
     assert 40 <= words <= 60, (uc['slug'], 'short answer words', words)
-    svc_url, svc_name = f"/services/{uc['service']}", SERVICES[uc['service']]
-    spr_url, spr_name = f"/services#{uc['sprint']}", SPRINTS[uc['sprint']]
+    svc_url, svc_name = uc.get('service_link') or (f"/services/{uc['service']}", SERVICES[uc['service']])
+    spr_url, spr_name = uc.get('start') or (f"/services#{uc['sprint']}", SPRINTS[uc['sprint']])
     smp_url, smp_name = SAMPLES[uc['sample']]
     ind_url, ind_name = f"/industries/{uc['industry']}", INDUSTRIES[uc['industry']]
     for u in (svc_url, smp_url, ind_url):
-        assert os.path.exists(os.path.join(ROOT, u.lstrip('/') + '.html')), (uc['slug'], u)
+        f = u.split('#')[0].lstrip('/')
+        assert os.path.exists(os.path.join(ROOT, f + '.html')) or os.path.exists(os.path.join(ROOT, f)), (uc['slug'], u)
     ld = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'WebPage', '@id': f'{SITE}{url}', 'name': strip(uc['h1']), 'description': strip(uc['lead']), 'url': f'{SITE}{url}',
          'dateModified': TODAY, 'inLanguage': 'en', 'isPartOf': {'@id': f'{SITE}/use-cases#collection'},
@@ -307,6 +367,7 @@ def build_page(uc):
     <div class="cards cards-4">{steps}</div>
   </section>
 
+{uc.get('extra', '')}
   <section aria-labelledby="get-heading">
     <div class="sectionhead"><div class="eyebrow">What you get</div><h2 id="get-heading">What you receive</h2></div>
     <ul class="uc-list">{gets}</ul>
@@ -326,7 +387,7 @@ def build_page(uc):
   <section aria-labelledby="cta-heading" style="border-top:0;padding-top:10px">
     <div class="cta">
       <div><h2 id="cta-heading">Is this your situation?</h2><p>Free 20-minute scoping call, then a written scope and a fixed quote before any work starts.</p></div>
-      <a class="btn primary" href="/contact?service={uc['service']}">Book a scoping call</a>
+      <a class="btn primary" href="/contact?service={uc.get('contact', uc['service'])}">Book a scoping call</a>
     </div>
   </section>
   <p class="muted small" style="margin-top:18px"><a class="textlink" href="/use-cases">← All use cases</a></p>
@@ -347,7 +408,7 @@ def build_page(uc):
 
 def build_hub():
     url = '/use-cases'
-    desc = 'Real business problems and how we solve them: 18 use cases across local, B2B and professional organizations, each linked to a service and a sample report.'
+    desc = f'Real business problems and how we solve them: {len(USE_CASES)} use cases across local, B2B and professional organizations, each linked to a service and a sample report.'
     ld = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'CollectionPage', '@id': f'{SITE}/use-cases#collection', 'name': 'Use cases', 'description': desc, 'url': f'{SITE}{url}', 'publisher': {'@id': f'{SITE}/#organization'},
          'hasPart': [{'@id': f"{SITE}/use-cases/{u['slug']}"} for u in USE_CASES]},
@@ -361,7 +422,7 @@ def build_hub():
   <header class="hero" style="padding-bottom:28px">
     <div class="eyebrow">Use cases</div>
     <h1>Find the problem that sounds like yours.</h1>
-    <p class="lead">Eighteen common situations, from missed calls at a clinic to tender monitoring for an engineering firm. Each one shows how we approach it, what you receive, and which service, sprint and sample report fit.</p>
+    <p class="lead">{len(USE_CASES)} common situations, from missed calls at a clinic to tender monitoring for an engineering firm. Each one shows how we approach it, what you receive, and which service, sprint and sample report fit.</p>
   </header>
   <section id="use-cases" aria-labelledby="list-heading" style="border-top:0;padding-top:0">
     <h2 id="list-heading" class="sr-only">All use cases</h2>

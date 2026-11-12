@@ -57,6 +57,19 @@
     "leadership-ai-workshop",
     "fractional-ai-officer"
    ]
+  },
+  {
+   "id": "export-pivot-pack",
+   "name": "Export Pivot Pack",
+   "tagline": "Reach buyers in a new export market: market research, a ranked buyer list, localized content and ready answers to buyer data requests.",
+   "timeline": "4–6 weeks",
+   "offerIds": [
+    "market-entry-brief",
+    "account-persona-map",
+    "localization",
+    "supplier-data-request-kit",
+    "tariff-exposure-brief"
+   ]
   }
  ],
  "industries": [

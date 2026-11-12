@@ -87,6 +87,7 @@ export const MENU = [
         ['AI Readiness Score', '/ai-readiness-score', 'Where AI fits in your business'],
         ['Growth checks', '/growth-check', 'Local, ecommerce and modernization'],
         ['Free toolkit', '/toolkit', 'Six templates to download'],
+        ['Automation payback calculator', '/automation-payback-calculator', 'Is a task worth automating?'],
       ] },
     ],
   },
@@ -99,7 +100,7 @@ export function sectionFor(urlPath) {
   const p = urlPath.replace(/index\.html$/, '');
   if (/^\/(services(\.html|\/|$)|practices\/|recurring-services|labs|partners|academy|white-label)/.test(p)) return 'services';
   if (/^\/industries/.test(p)) return 'industries';
-  if (/^\/(use-cases|samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit)/.test(p)) return 'resources';
+  if (/^\/(use-cases|samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit|automation-payback-calculator)/.test(p)) return 'resources';
   if (/^\/insights\//.test(p)) return 'insights';
   if (/^\/(about|contact)/.test(p)) return 'about';
   return '';

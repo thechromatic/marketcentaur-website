@@ -1,0 +1,42 @@
+{
+  "eyebrow": "AI search visibility",
+  "title": "Your business now has a profile in ChatGPT",
+  "subtitle": "Is it right? Five checks first",
+  "slides": [
+    {
+      "eyebrow": "Launched 10 November",
+      "title": "What changed",
+      "items": [
+        "Claim and verify a business profile",
+        "Add product feeds with price and stock",
+        "See how often you are mentioned",
+        "Business agents for eligible US firms"
+      ]
+    },
+    {
+      "eyebrow": "Before you claim",
+      "title": "Five checks",
+      "style": "numbered",
+      "items": [
+        "Ask the questions your buyers ask",
+        "Note every fact quoted about you",
+        "Trace where wrong facts come from",
+        "Match product data everywhere",
+        "Decide what an agent may say"
+      ]
+    },
+    {
+      "eyebrow": "Measure monthly",
+      "title": "Three numbers",
+      "items": [
+        "Presence: questions that name you",
+        "Accuracy: facts that are correct",
+        "Sources: pages assistants cite"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "Check what AI says about you"
+  }
+}

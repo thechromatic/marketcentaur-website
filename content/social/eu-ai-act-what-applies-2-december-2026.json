@@ -1,0 +1,40 @@
+{
+  "eyebrow": "AI governance",
+  "title": "EU AI Act: what applies on 2 December",
+  "subtitle": "and what moved to 2027",
+  "slides": [
+    {
+      "eyebrow": "Moved",
+      "title": "High-risk rules",
+      "items": [
+        "Annex III systems: 2 December 2027",
+        "Product safety components: 2 August 2028",
+        "AI literacy duty softened to 'support'"
+      ]
+    },
+    {
+      "eyebrow": "Did not move",
+      "title": "Transparency",
+      "items": [
+        "Tell people when they talk to AI",
+        "Disclose realistic deepfakes",
+        "Mark generative AI output by 2 December 2026"
+      ]
+    },
+    {
+      "eyebrow": "This month",
+      "title": "Four steps",
+      "style": "numbered",
+      "items": [
+        "List where you use AI",
+        "Check every public-facing assistant",
+        "Ask suppliers how output is marked",
+        "Flag possible high-risk uses"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "The EU AI Act dates, explained"
+  }
+}
