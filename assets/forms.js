@@ -128,6 +128,13 @@
 
     copyToWebhook(payload, form);
     send(payload).then(function () {
+      // Conversion event for Google Analytics (assets/events.js). Only the form's name is sent.
+      if (typeof window.mcTrack === "function") {
+        window.mcTrack("generate_lead", {
+          form_name: form.getAttribute("data-mc-form") || form.id || "form",
+          service: (payload.data.service || "").slice(0, 60)
+        });
+      }
       // Forms marked data-mc-inline stay on the page (assistant, readiness score).
       if (form.hasAttribute("data-mc-inline")) {
         if (button) { button.disabled = false; button.textContent = label; }
