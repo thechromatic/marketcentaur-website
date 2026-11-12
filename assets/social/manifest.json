@@ -75,6 +75,11 @@
     "slides": 1,
     "type": "card"
   },
+  "chatgpt-business-profiles-what-to-check": {
+    "hash": "6e6019c0f5566d72",
+    "template": "a9489520571b164a",
+    "slides": 5
+  },
   "competitive-intelligence-tools-vs-managed-service": {
     "hash": "4ba41628fc9fb4ee",
     "template": "a9489520571b164a",
@@ -94,6 +99,16 @@
     "hash": "56297d3bea7aa43e",
     "template": "a9489520571b164a",
     "slides": 6
+  },
+  "dpdp-what-to-finish-before-may-2027": {
+    "hash": "038c8afdd529f317",
+    "template": "a9489520571b164a",
+    "slides": 5
+  },
+  "eu-ai-act-what-applies-2-december-2026": {
+    "hash": "64bf7b7473f84dbb",
+    "template": "a9489520571b164a",
+    "slides": 5
   },
   "read-competitor-pricing-page": {
     "hash": "54dc91ae37f04eaf",
