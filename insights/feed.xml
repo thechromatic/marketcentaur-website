@@ -6,7 +6,14 @@
   <atom:link href="https://marketcentaur.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Practical guides on AI, automation, growth and competitive intelligence from MarketCentaur.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 05 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 12 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Where Should a Small Business Start with AI? A 30-Day Plan</title>
+    <link>https://marketcentaur.com/insights/where-to-start-with-ai-small-business</link>
+    <guid isPermaLink="true">https://marketcentaur.com/insights/where-to-start-with-ai-small-business</guid>
+    <pubDate>Thu, 12 Nov 2026 00:30:00 GMT</pubDate>
+    <description>A practical 30-day plan for starting with AI in a small or mid-sized business: pick one problem, set ground rules, run a small pilot and measure it.</description>
+  </item>
   <item>
     <title>12 Competitor Signals Worth Tracking (and 5 to Ignore)</title>
     <link>https://marketcentaur.com/insights/competitor-signals-worth-tracking</link>
