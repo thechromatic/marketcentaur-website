@@ -346,18 +346,19 @@ function ensureHead(rel, tag) {
   if (!text.includes(tag)) { text = text.replace('</head>', `${tag}\n</head>`); fs.writeFileSync(file, text); }
 }
 
-// Homepage: a compact strip of the 4 practice groups (the full grid lives on /practices/ and /services).
+// Homepage: the 4 practice groups with every practice listed (the full grid lives on /practices/ and /services).
 const homeBlock = `<section id="practices" aria-labelledby="practices-heading" class="mc-section mc-strip">
-<div class="eyebrow">Beyond the sprints</div>
-<h2 id="practices-heading">Need something broader? 17 practices, ${offers.size} services.</h2>
+<div class="eyebrow">What we do</div>
+<h2 id="practices-heading">AI across your whole organization: 17 practices, ${offers.size} services.</h2>
+<p class="mc-intro">Strategy, operations, finance, data, customer service, IT and security, people and growth. Start anywhere; every engagement is scoped and quoted in writing.</p>
 <div class="mc-cats">
 ${GROUPS.map((g) => {
   const list = practices.filter((p) => p.group === g);
   const id = g.toLowerCase().replace(/[^a-z]+/g, '-');
-  return `<a class="mc-cat" href="/practices/#${id}">${iconHtml(GROUP_ICON[g])}<span class="mc-cat-count">${list.length} practices</span><strong>${esc(g)}</strong><span class="mc-cat-eg">${list.slice(0, 3).map((p) => esc(p.name)).join(' · ')}</span></a>`;
+  return `<a class="mc-cat" href="/practices/#${id}">${iconHtml(GROUP_ICON[g])}<span class="mc-cat-count">${list.length} practices</span><strong>${esc(g)}</strong><span class="mc-cat-eg">${list.map((p) => esc(p.name)).join(' · ')}</span></a>`;
 }).join('\n')}
 </div>
-<p class="mc-links"><a href="/practices/">Browse all practices →</a> <a href="/ai-readiness-score">Free AI Readiness Score →</a></p>
+<p class="mc-links"><a href="/practices/">Browse all practices →</a> <a href="/services#catalog">Full service catalog →</a> <a href="/ai-readiness-score">Free AI Readiness Score →</a></p>
 </section>`;
 
 // Services page: all 17 practices as grouped links (descriptions live on each practice page).
@@ -400,7 +401,7 @@ const sectorGroup = (slug) => {
 };
 const industryCards = industries.map((i) => `      <article class="card" data-group="${sectorGroup(i.slug)}"><div class="tag">${SECTOR_LABEL[sectorGroup(i.slug)]}</div><h3>${esc(i.name)}</h3><p>${esc(i.headline)}</p><a class="textlink bottom" href="/industries/${i.slug}">Explore →</a></article>`).join('\n');
 
-updateBetweenMarkers('index.html', 'home', homeBlock, '<section id="ai-services"');
+updateBetweenMarkers('index.html', 'home', homeBlock, '<section id="sectors"');
 updateBetweenMarkers('services.html', 'services', servicesBlock, '<section id="sprints"');
 updateBetweenMarkers('how-it-works.html', 'engage', engageBlock, '<section><div class="cta"><div><h2>Start with the decis');
 updateBetweenMarkers('industries.html', 'industries', industryCards, '    </div>\n  </section>\n\n  <section id="across"');
