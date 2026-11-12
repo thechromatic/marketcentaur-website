@@ -302,6 +302,7 @@ function initReadiness(){
   var note=document.createElement("p");note.textContent="This is a directional self-check based only on your answers. It does not scan your website, verify accessibility or analytics, or predict inquiry volume. Actual priorities depend on your audience and evidence.";
   var link=document.createElement("a");link.className="experience-btn";link.href="/contact";link.textContent="Discuss your website goals";
   var capture=buildEmailCapture("Website Inquiry Readiness Check",score,gaps.length?gaps:["No major gaps flagged"]);
+  if(typeof window.mcTrack==="function")window.mcTrack("tool_complete",{tool_name:"website-enquiry-readiness"});
   result.append(h,p,heading,ul,capture,note,link);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
  });
 }
@@ -382,6 +383,7 @@ function initGrowthCheck(){
   var link=document.createElement("a");link.className="experience-btn";link.href="/contact?service="+encodeURIComponent(config.service)+"&context="+encodeURIComponent(context);link.textContent="Discuss these priorities with MarketCentaur";
   var secondary=document.createElement("a");secondary.className="experience-btn secondary";secondary.href="/";secondary.textContent="Back to homepage";
   var capture=buildEmailCapture(config.title,score,priorities);
+  if(typeof window.mcTrack==="function")window.mcTrack("tool_complete",{tool_name:"growth-check",tool_variant:config.service});
   result.append(h,p,strong,ul,capture,note,link,document.createTextNode(" "),secondary);result.hidden=false;result.scrollIntoView({behavior:"smooth",block:"nearest"});
  });
 }

@@ -135,6 +135,7 @@
       : score >= 40 ? ["Partial AI visibility", "AI assistants know some things about you, but you're missing from key questions or described inconsistently."]
       : ["Low AI visibility", "AI assistants rarely mention you for the questions buyers ask, so competitors are likely getting those recommendations."];
     var recs = recommendations(a, score);
+    if (typeof window.mcTrack === "function") window.mcTrack("tool_complete", { tool_name: "ai-visibility-check" });
 
     resultArea.innerHTML = "";
     var sb = el("div", { className: "scorebox", role: "status" });

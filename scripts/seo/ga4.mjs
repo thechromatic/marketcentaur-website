@@ -13,6 +13,9 @@
 // - window.mcLoadGa() grants analytics_storage and loads gtag.js. It runs on accept, or straight
 //   away on later visits when a stored "granted" choice is under 6 months old.
 // - Advertising storage, ad user data and ad personalisation stay denied (we run no ads).
+//
+// Conversion events (form sent, free tool completed, button clicks) are sent by assets/events.js,
+// which the block also loads. They use gtag(), so they follow the same consent rule.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,6 +44,7 @@ window.mcLoadGa = function () {
 try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c && c.v === 1 && c.analytics === 'granted' && Date.now() - c.t < ${CONSENT_MAX_AGE}) window.mcLoadGa(); } catch (e) {}
 </script>
 <script src="/assets/consent.js" defer></script>
+<script src="/assets/events.js" defer></script>
 ${GA4_END}`;
 
 export function applyGa4(html) {

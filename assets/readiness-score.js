@@ -81,6 +81,7 @@
       '<button class="btn primary" type="submit">Email me my results</button><p class="rs-err" hidden></p>' +
       '<p class="fine">See our <a class="textlink" href="/privacy-policy">Privacy Policy</a>.</p></div></form>';
     out.hidden = false;
+    if (typeof window.mcTrack === "function") window.mcTrack("tool_complete", { tool_name: "ai-readiness-score" });
     var lead = out.querySelector("form");
     lead.addEventListener("submit", function (ev) {
       var em = lead.querySelector("[name=email]").value.trim(), le = lead.querySelector(".rs-err");
