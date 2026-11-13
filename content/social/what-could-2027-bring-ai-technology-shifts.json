@@ -1,0 +1,50 @@
+{
+  "eyebrow": "Future & trends",
+  "title": "What could 2027 bring?",
+  "subtitle": "AI and technology shifts to watch, from published forecasts",
+  "slides": [
+    {
+      "eyebrow": "Where forecasters agree",
+      "title": "Three shifts for 2027",
+      "style": "numbered",
+      "items": [
+        "AI agents do more routine work",
+        "AI costs and governance get closer scrutiny",
+        "Buyers research and shortlist with AI"
+      ]
+    },
+    {
+      "eyebrow": "Forecasts, not facts",
+      "title": "What the analysts predict",
+      "items": [
+        "IDC: 60% of the largest firms AI-first by 2029, up from 13%",
+        "Forrester: AI agents influence 75% of B2B purchases",
+        "Gartner: 25% of breaches tied to AI agent abuse by 2028"
+      ]
+    },
+    {
+      "eyebrow": "Fixed dates",
+      "title": "Already in law for 2027",
+      "items": [
+        "13 May: India's main DPDP duties begin",
+        "2 Dec: EU AI Act high-risk rules apply"
+      ]
+    },
+    {
+      "eyebrow": "First quarter of 2027",
+      "title": "Five practical moves",
+      "style": "numbered",
+      "items": [
+        "Score your AI readiness",
+        "List every AI tool in use",
+        "Pilot one agent, with a human check",
+        "Check what AI assistants say about you",
+        "Put it all in a 12-month plan"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "2027 forecasts, sources and dates"
+  }
+}
