@@ -5,6 +5,8 @@
 //
 // Errors (exit 1): missing <title>, meta description, canonical, exactly one <h1>, valid JSON-LD,
 // og:image file, a page missing from sitemap.xml, or a page without the GA4 tag (scripts/seo/ga4.mjs).
+// Internal links (errors): a same-site href ending in .html (Cloudflare Pages redirects it, which
+// Search Console reports as "Page with redirect") or pointing at a page that does not exist (404).
 // Warnings: title over 65 chars, description over 160, thin pages (<300 words).
 
 import fs from 'node:fs';
@@ -26,6 +28,32 @@ function* walk(dir) {
 
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+const ASSET = /\.(css|js|mjs|png|jpe?g|gif|svg|webp|ico|xml|txt|pdf|json|zip|woff2?|csv|md|mp4)$/i;
+const POSTS = new Set(fs.readdirSync(path.join(ROOT, 'content', 'insights')).map((f) => (f.match(/^\d{4}-\d{2}-\d{2}-(.+)\.md$/) || [])[1]).filter(Boolean));
+// Returns [errors, warnings]. A link to an Insights post that exists in content/insights/ but is not
+// built yet (future-dated, or dated today before the daily build) is a warning, not an error.
+function linkIssues(rel, s) {
+  const out = new Set(); const later = new Set();
+  for (const m of s.matchAll(/<a\b[^>]*\shref="([^"]+)"/g)) {
+    let u = m[1];
+    if (u.startsWith(SITE)) u = u.slice(SITE.length) || '/';
+    else if (/^(?:[a-z]+:|\/\/|#)/i.test(u)) continue;
+    u = u.split('#')[0].split('?')[0];
+    if (!u) continue;
+    if (!u.startsWith('/')) u = path.posix.join('/', path.posix.dirname(rel), u) + (u.endsWith('/') ? '/' : '');
+    if (ASSET.test(u)) { if (!fs.existsSync(path.join(ROOT, u))) out.add(`broken link (404): ${m[1]}`); continue; }
+    if (u.endsWith('.html')) { out.add(`link ends in .html; use ${u.replace(/(?:index)?\.html$/, '')} (${m[1]})`); continue; }
+    const ok = u.endsWith('/') ? fs.existsSync(path.join(ROOT, u, 'index.html'))
+      : fs.existsSync(path.join(ROOT, `${u}.html`)) || fs.existsSync(path.join(ROOT, u, 'index.html'));
+    if (!ok) {
+      const post = (u.match(/^\/insights\/([a-z0-9-]+)$/) || [])[1];
+      if (post && POSTS.has(post)) later.add(`links to an Insights post that is not published yet (404 until then): ${m[1]}`);
+      else out.add(`broken link (404): ${m[1]}`);
+    }
+  }
+  return [[...out], [...later]];
+}
+
 let errors = 0;
 let warnings = 0;
 const report = [];
@@ -35,6 +63,8 @@ for (const file of [...walk(ROOT)].sort()) {
   const s = fs.readFileSync(file, 'utf8');
   const err = []; const warn = [];
   if (!s.includes(GA4_BLOCK)) { err.push('missing or outdated GA4 tag (run node scripts/seo/ga4.mjs)'); }
+  const [linkErr, linkWarn] = linkIssues(rel, s);
+  err.push(...linkErr); warn.push(...linkWarn);
   const noindex = /<meta name="robots" content="[^"]*noindex/.test(s);
   if (noindex) {
     if (!NOINDEX_OK.has(rel)) warn.push('page is noindex');

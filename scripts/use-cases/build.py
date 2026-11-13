@@ -321,6 +321,29 @@ def page_head(url, title, desc, og, ld, extra_css=''):
 
 def strip(s): return html.unescape(re.sub(r'<[^>]+>', '', s))
 
+# Insights posts publish on their front-matter date (scripts/build-insights.mjs). A link to a post that
+# is not live yet is a 404 for crawlers, so until then the anchor is rendered as plain text. The Build
+# Insights workflow reruns this script daily with BUILD_DATE, so the link appears on publication day.
+BUILD_DATE = os.environ.get('BUILD_DATE') or __import__('datetime').date.today().isoformat()
+
+def insight_dates():
+    out = {}
+    d = os.path.join(ROOT, 'content', 'insights')
+    for name in os.listdir(d):
+        m = re.match(r'(\d{4}-\d{2}-\d{2})-(.+)\.md$', name)
+        if not m: continue
+        fm = re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', open(os.path.join(d, name), encoding='utf-8').read(), re.M)
+        out[m.group(2)] = fm.group(1) if fm else m.group(1)
+    return out
+
+INSIGHT_DATES = insight_dates()
+
+def live_links(s):
+    def repl(m):
+        date = INSIGHT_DATES.get(m.group(1))
+        return m.group(0) if date and date <= BUILD_DATE else m.group(2)
+    return re.sub(r'<a [^>]*href="/insights/([a-z0-9-]+)"[^>]*>(.*?)</a>', repl, s)
+
 def crumbs(items):
     return {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': strip(n), 'item': f'{SITE}{u}'} for i, (n, u) in enumerate(items)]}
 
@@ -403,7 +426,7 @@ def build_page(uc):
         old = open(path, encoding='utf-8').read()
         m = re.search(r'<!-- mc-nav.*?<!-- /mc-nav -->', old, re.S)
         if m: out = out.replace(NAV_PLACEHOLDER, m.group(0))
-    open(path, 'w', encoding='utf-8').write(out)
+    open(path, 'w', encoding='utf-8').write(live_links(out))
     return url
 
 def build_hub():
@@ -453,7 +476,7 @@ def build_hub():
     if os.path.exists(path):
         m = re.search(r'<!-- mc-nav.*?<!-- /mc-nav -->', open(path, encoding='utf-8').read(), re.S)
         if m: out = out.replace(NAV_PLACEHOLDER, m.group(0))
-    open(path, 'w', encoding='utf-8').write(out)
+    open(path, 'w', encoding='utf-8').write(live_links(out))
     return url
 
 def update_sitemap(urls):

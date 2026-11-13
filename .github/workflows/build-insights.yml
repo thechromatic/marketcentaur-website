@@ -57,6 +57,13 @@ jobs:
           export BUILD_DATE="$(date +%F)"
           node scripts/build-catalog.mjs
 
+      - name: Rebuild use-case pages (links to Insights posts go live on the post's date)
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          export BUILD_DATE="$(date +%F)"
+          python3 scripts/use-cases/build.py
+
       - name: Render Open Graph images for new pages
         run: |
           pip install --quiet pillow
@@ -76,7 +83,7 @@ jobs:
 
       - name: Commit generated pages
         run: |
-          git add insights sitemap.xml llms.txt assets/social assets/og assets/catalog.json practices industries index.html services.html how-it-works.html industries.html
+          git add insights use-cases use-cases.html sitemap.xml llms.txt assets/social assets/og assets/catalog.json practices industries index.html services.html how-it-works.html industries.html
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
