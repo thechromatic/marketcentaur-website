@@ -65,7 +65,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
       "itemOffered": {
        "@type": "Service",
        "name": "Sales & Go-to-Market Audit",
-       "description": "A clear assessment of how your sales motion and market approach work together.",
+       "description": "A clear assessment of how your sales motion and market approach work together, and where deals stall or leak.",
        "url": "https://marketcentaur.com/practices/strategy-growth-advisory#sales-gtm-audit"
       }
      },
@@ -74,7 +74,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
       "itemOffered": {
        "@type": "Service",
        "name": "Pricing & Packaging Review",
-       "description": "An evidence-led review of your offer structure and how customers understand its value.",
+       "description": "An evidence-led review of your offer structure and how customers understand its value, so packaging decisions rest on evidence rather than guesswork.",
        "url": "https://marketcentaur.com/practices/strategy-growth-advisory#pricing-packaging-review"
       }
      },
@@ -83,7 +83,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
       "itemOffered": {
        "@type": "Service",
        "name": "Market Entry Brief",
-       "description": "A decision-ready brief for evaluating a new market opportunity.",
+       "description": "A decision-ready brief for evaluating a new country, sector or customer segment before you commit budget or people.",
        "url": "https://marketcentaur.com/practices/strategy-growth-advisory#market-entry-brief"
       }
      },
@@ -92,7 +92,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
       "itemOffered": {
        "@type": "Service",
        "name": "Business Plan & Pitch Deck",
-       "description": "A coherent business story and supporting plan for your next major conversation.",
+       "description": "A coherent business story and supporting plan for your next major conversation with investors, lenders or a board.",
        "url": "https://marketcentaur.com/practices/strategy-growth-advisory#business-plan-pitch-deck"
       }
      },
@@ -101,7 +101,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
       "itemOffered": {
        "@type": "Service",
        "name": "Fractional Growth Advisor",
-       "description": "Regular senior guidance to help your team make and execute growth decisions.",
+       "description": "Regular senior guidance to help your team make and execute growth decisions, without a full-time senior hire.",
        "url": "https://marketcentaur.com/practices/strategy-growth-advisory#fractional-growth-advisor"
       }
      }
@@ -121,6 +121,22 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
     },
     {
      "@type": "Question",
+     "name": "Which service should we start with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If sales feel harder than they should, start with the Sales & Go-to-Market Audit. If you are weighing a new country or segment, start with the Market Entry Brief. If customers struggle to choose between your offers, start with the Pricing & Packaging Review."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you use AI in this work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "AI speeds up desk research, such as scanning competitor sites and summarising public reports. A person checks every finding and its source, and every recommendation is a human judgement you can question."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Will a market brief guarantee success?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -132,7 +148,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
      "name": "Can you work alongside our existing advisors?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes, where responsibilities are clear."
+      "text": "Yes, where responsibilities are clear. We agree in writing who owns which decision before work starts."
      }
     }
    ]
@@ -178,7 +194,7 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
   <header class="hero">
     <div class="eyebrow">Strategy &amp; AI · Practice 8 of 17</div>
     <h1>Choose the next growth move with confidence.</h1>
-    <p class="lead">Growth decisions get harder when market signals, sales activity and internal priorities point in different directions. Teams can spend effort on plans that lack clear ownership or a route to execution. We bring structured analysis and experienced guidance to the decisions that matter.</p>
+    <p class="lead">Growth decisions get harder when market signals, sales activity and internal priorities point in different directions. Teams can spend months on plans that lack clear ownership or a route to execution. We bring structured analysis and experienced guidance to the decisions that matter: where to sell, what to offer, how to package it and what to do first.</p>
     <div class="actions"><a class="btn primary" href="/contact?service=strategy-growth-advisory">Request a quote</a><a class="textlink" href="/ai-readiness-score">Free AI Readiness Score →</a></div>
     
   </header>
@@ -186,30 +202,30 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
   <section aria-labelledby="who-heading">
     <div class="problem">
       <div><div class="eyebrow">Strategy &amp; Growth Advisory</div><h2 id="who-heading" class="h2">Who this helps</h2><p>Make clearer growth decisions with evidence, focus and an actionable plan. Every engagement is scoped to you and quoted in writing before work starts.</p></div>
-      <ul class="checklist" aria-label="Who this helps"><li>Leaders reassessing their go-to-market approach</li><li>Teams preparing to enter a new market</li><li>Founders shaping a business plan or investor story</li><li>Organisations wanting ongoing senior growth guidance</li></ul>
+      <ul class="checklist" aria-label="Who this helps"><li>Leaders reassessing their go-to-market approach</li><li>Teams preparing to enter a new market or segment</li><li>Founders shaping a business plan or investor story</li><li>Businesses whose offer or packaging has grown confusing</li><li>Organisations wanting ongoing senior growth guidance</li></ul>
     </div>
   </section>
 
   <section id="diagnose" aria-labelledby="diagnose-heading">
     <div class="sectionhead"><div class="eyebrow">Diagnose</div><h2 id="diagnose-heading">Find where AI fits</h2><p>A short, fixed-scope review that ends with a written recommendation.</p></div>
     <div class="grid g3">
-      <article class="card mc-offer" id="sales-gtm-audit"><div class="tag">Diagnose · 2 weeks</div><h3>Sales &amp; Go-to-Market Audit</h3><p>A clear assessment of how your sales motion and market approach work together.</p><ul class="mc-includes"><li>Leadership and team interviews</li><li>Positioning and sales materials review</li><li>Pipeline and process assessment</li><li>Prioritised recommendations and readout</li></ul><a class="textlink bottom" href="/contact?service=sales-gtm-audit">Request a quote →</a></article>
-      <article class="card mc-offer" id="pricing-packaging-review"><div class="tag">Diagnose · 2 weeks</div><h3>Pricing &amp; Packaging Review</h3><p>An evidence-led review of your offer structure and how customers understand its value.</p><ul class="mc-includes"><li>Offer and packaging inventory</li><li>Customer and stakeholder input</li><li>Competitive positioning analysis</li><li>Packaging options and decision workshop</li></ul><a class="textlink bottom" href="/contact?service=pricing-packaging-review">Request a quote →</a></article>
+      <article class="card mc-offer" id="sales-gtm-audit"><div class="tag">Diagnose · 2 weeks</div><h3>Sales &amp; Go-to-Market Audit</h3><p>A clear assessment of how your sales motion and market approach work together, and where deals stall or leak.</p><ul class="mc-includes"><li>Leadership and team interviews</li><li>Positioning and sales materials review</li><li>Pipeline and process assessment</li><li>Prioritised recommendations and readout</li></ul><a class="textlink bottom" href="/contact?service=sales-gtm-audit">Request a quote →</a></article>
+      <article class="card mc-offer" id="pricing-packaging-review"><div class="tag">Diagnose · 2 weeks</div><h3>Pricing &amp; Packaging Review</h3><p>An evidence-led review of your offer structure and how customers understand its value, so packaging decisions rest on evidence rather than guesswork.</p><ul class="mc-includes"><li>Offer and packaging inventory</li><li>Customer and stakeholder input</li><li>Competitive positioning analysis</li><li>Packaging options and decision workshop</li></ul><a class="textlink bottom" href="/contact?service=pricing-packaging-review">Request a quote →</a></article>
     </div>
   </section>
 
   <section id="build" aria-labelledby="build-heading">
     <div class="sectionhead"><div class="eyebrow">Build</div><h2 id="build-heading">Ship a working change</h2><p>A scoped project that puts something real into use, human-reviewed and handed over.</p></div>
     <div class="grid g3">
-      <article class="card mc-offer" id="market-entry-brief"><div class="tag">Build · 2–3 weeks</div><h3>Market Entry Brief</h3><p>A decision-ready brief for evaluating a new market opportunity.</p><ul class="mc-includes"><li>Market context and demand signals</li><li>Customer and channel hypotheses</li><li>Entry options and key risks</li><li>Recommended validation steps</li></ul><a class="textlink bottom" href="/contact?service=market-entry-brief">Request a quote →</a></article>
-      <article class="card mc-offer" id="business-plan-pitch-deck"><div class="tag">Build · 3–4 weeks</div><h3>Business Plan &amp; Pitch Deck</h3><p>A coherent business story and supporting plan for your next major conversation.</p><ul class="mc-includes"><li>Business model working session</li><li>Plan structure and narrative</li><li>Pitch deck content and design direction</li><li>Assumptions and evidence review</li></ul><a class="textlink bottom" href="/contact?service=business-plan-pitch-deck">Request a quote →</a></article>
+      <article class="card mc-offer" id="market-entry-brief"><div class="tag">Build · 2–3 weeks</div><h3>Market Entry Brief</h3><p>A decision-ready brief for evaluating a new country, sector or customer segment before you commit budget or people.</p><ul class="mc-includes"><li>Market context and demand signals</li><li>Customer and channel hypotheses</li><li>Entry options and key risks</li><li>Recommended validation steps</li></ul><a class="textlink bottom" href="/contact?service=market-entry-brief">Request a quote →</a></article>
+      <article class="card mc-offer" id="business-plan-pitch-deck"><div class="tag">Build · 3–4 weeks</div><h3>Business Plan &amp; Pitch Deck</h3><p>A coherent business story and supporting plan for your next major conversation with investors, lenders or a board.</p><ul class="mc-includes"><li>Business model working session</li><li>Plan structure and narrative</li><li>Pitch deck content and design direction</li><li>Assumptions and evidence review</li></ul><a class="textlink bottom" href="/contact?service=business-plan-pitch-deck">Request a quote →</a></article>
     </div>
   </section>
 
   <section id="run" aria-labelledby="run-heading">
     <div class="sectionhead"><div class="eyebrow">Run</div><h2 id="run-heading">We keep it running</h2><p>An ongoing plan that monitors, maintains and improves what we built, or runs a capability for you.</p></div>
     <div class="grid g3">
-      <article class="card mc-offer" id="fractional-growth-advisor"><div class="tag">Run · Ongoing, monthly</div><h3>Fractional Growth Advisor</h3><p>Regular senior guidance to help your team make and execute growth decisions.</p><ul class="mc-includes"><li>Recurring leadership sessions</li><li>Priority and initiative review</li><li>Decision support between sessions</li><li>Progress notes and next actions</li></ul><a class="textlink bottom" href="/contact?service=fractional-growth-advisor">Talk to us →</a></article>
+      <article class="card mc-offer" id="fractional-growth-advisor"><div class="tag">Run · Ongoing, monthly</div><h3>Fractional Growth Advisor</h3><p>Regular senior guidance to help your team make and execute growth decisions, without a full-time senior hire.</p><ul class="mc-includes"><li>Recurring leadership sessions</li><li>Priority and initiative review</li><li>Decision support between sessions</li><li>Progress notes and next actions</li></ul><a class="textlink bottom" href="/contact?service=fractional-growth-advisor">Talk to us →</a></article>
     </div>
   </section>
 
@@ -222,8 +238,10 @@ try { var c = JSON.parse(localStorage.getItem('mc-consent') || 'null'); if (c &&
     <div class="sectionhead"><div class="eyebrow">Questions</div><h2 id="faq-heading">Frequently asked questions</h2></div>
     <div class="faqlist">
       <details><summary>Do you bring a fixed playbook?</summary><p>No. We use structured methods but tailor the work to your context, evidence and decision.</p></details>
+      <details><summary>Which service should we start with?</summary><p>If sales feel harder than they should, start with the Sales &amp; Go-to-Market Audit. If you are weighing a new country or segment, start with the Market Entry Brief. If customers struggle to choose between your offers, start with the Pricing &amp; Packaging Review.</p></details>
+      <details><summary>How do you use AI in this work?</summary><p>AI speeds up desk research, such as scanning competitor sites and summarising public reports. A person checks every finding and its source, and every recommendation is a human judgement you can question.</p></details>
       <details><summary>Will a market brief guarantee success?</summary><p>No. It clarifies evidence, assumptions and risks so you can make a better-informed decision.</p></details>
-      <details><summary>Can you work alongside our existing advisors?</summary><p>Yes, where responsibilities are clear.</p></details>
+      <details><summary>Can you work alongside our existing advisors?</summary><p>Yes, where responsibilities are clear. We agree in writing who owns which decision before work starts.</p></details>
     </div>
   </section>
 
