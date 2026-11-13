@@ -112,6 +112,7 @@ MarketCentaur offers 121 services across 17 practices. Every engagement is scope
 <!-- insights:start -->
 ## Insights
 - [Insights hub](https://marketcentaur.com/insights/): Practical guides on competitive intelligence, B2B growth, AI and automation.
+- [Your Business Now Has a Profile in ChatGPT. Is It Right?](https://marketcentaur.com/insights/chatgpt-business-profiles-what-to-check): OpenAI now lets businesses claim a ChatGPT profile, add product feeds and launch an agent. What changed, what to check first and how to measure it.
 - [Where Should a Small Business Start with AI? A 30-Day Plan](https://marketcentaur.com/insights/where-to-start-with-ai-small-business): A practical 30-day plan for starting with AI in a small or mid-sized business: pick one problem, set ground rules, run a small pilot and measure it.
 - [12 Competitor Signals Worth Tracking (and 5 to Ignore)](https://marketcentaur.com/insights/competitor-signals-worth-tracking): Which public competitor signals actually predict a change in strategy, which ones are mostly noise, and how to tell the difference.
 - [How to Run Competitive Intelligence Without an Analyst Team](https://marketcentaur.com/insights/competitive-intelligence-without-an-analyst-team): A lightweight, weekly competitor-tracking system a one-person marketing team can set up in an afternoon, and how to turn what you collect into decisions.
