@@ -1,0 +1,41 @@
+{
+  "eyebrow": "Future watch",
+  "title": "Quantum computing: what's forecast",
+  "subtitle": "McKinsey's 2026 outlook, and a low-cost start",
+  "slides": [
+    {
+      "eyebrow": "The forecast",
+      "title": "McKinsey Quantum Monitor 2026",
+      "items": [
+        "$1.3–2.7 trillion of value by 2035",
+        "Quantum computing market: $43–71B",
+        "$12.6B invested in start-ups in 2025",
+        "300+ organisations already engaged"
+      ]
+    },
+    {
+      "eyebrow": "Early traction",
+      "title": "Where it starts",
+      "items": [
+        "Chemicals and life sciences",
+        "Travel and logistics",
+        "Financial services"
+      ]
+    },
+    {
+      "eyebrow": "Our view",
+      "title": "A low-cost start",
+      "style": "numbered",
+      "items": [
+        "List where you rely on public-key encryption",
+        "Ask vendors about post-quantum plans",
+        "Note one problem worth testing",
+        "Revisit once a year"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "More from us",
+    "title": "Practical guides on AI and security"
+  }
+}

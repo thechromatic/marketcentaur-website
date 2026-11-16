@@ -87,6 +87,12 @@
     "slides": 1,
     "type": "card"
   },
+  "card-2026-11-30-practical": {
+    "hash": "1d593b39691a72c7",
+    "template": "a9489520571b164a",
+    "slides": 1,
+    "type": "card"
+  },
   "chatgpt-business-profiles-what-to-check": {
     "hash": "6e6019c0f5566d72",
     "template": "a9489520571b164a",
@@ -119,6 +125,11 @@
   },
   "eu-ai-act-what-applies-2-december-2026": {
     "hash": "64bf7b7473f84dbb",
+    "template": "a9489520571b164a",
+    "slides": 5
+  },
+  "quantum-computing-business-readiness": {
+    "hash": "5b40919cb2c97717",
     "template": "a9489520571b164a",
     "slides": 5
   },
