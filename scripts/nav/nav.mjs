@@ -31,6 +31,7 @@ export const MENU = [
         ['Ongoing support', '/recurring-services'],
         ['Academy workshops', '/academy'],
         ['Labs', '/labs'],
+        ['Studio: for individuals & families', '/studio'],
         ['White-label desk for agencies', '/white-label'],
         ['Partner program', '/partners'],
       ] },
@@ -99,7 +100,7 @@ export const MENU = [
 // Which top-level item a URL path belongs to (for aria-current).
 export function sectionFor(urlPath) {
   const p = urlPath.replace(/index\.html$/, '');
-  if (/^\/(services(\.html|\/|$)|practices\/|recurring-services|labs|partners|academy|white-label)/.test(p)) return 'services';
+  if (/^\/(services(\.html|\/|$)|practices\/|recurring-services|labs|partners|academy|white-label|studio)/.test(p)) return 'services';
   if (/^\/industries/.test(p)) return 'industries';
   if (/^\/(use-cases|samples|sample-intelligence-brief|how-it-works|editorial-standards|briefings|faq|ai-visibility-check|ai-readiness-score|growth-check|website-enquiry-readiness|toolkit|automation-payback-calculator)/.test(p)) return 'resources';
   if (/^\/insights\//.test(p)) return 'insights';

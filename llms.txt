@@ -118,3 +118,19 @@ MarketCentaur offers 121 services across 17 practices. Every engagement is scope
 - [12 Competitor Signals Worth Tracking (and 5 to Ignore)](https://marketcentaur.com/insights/competitor-signals-worth-tracking): Which public competitor signals actually predict a change in strategy, which ones are mostly noise, and how to tell the difference.
 - [How to Run Competitive Intelligence Without an Analyst Team](https://marketcentaur.com/insights/competitive-intelligence-without-an-analyst-team): A lightweight, weekly competitor-tracking system a one-person marketing team can set up in an afternoon, and how to turn what you collect into decisions.
 <!-- insights:end -->
+
+<!-- studio:start -->
+## MarketCentaur Studio (for individuals and families)
+
+Done-for-you AI services for personal orders, each made with AI tools and reviewed by a person. Customers send a brief and receive a quote by email with payment options (UPI, cards and netbanking via Razorpay in India; Stripe, PayPal or bank transfer elsewhere). Prices are not published. See https://marketcentaur.com/studio
+
+- [Personalised occasion videos](https://marketcentaur.com/studio/occasion-videos): Wedding invites, save-the-dates, birthday and anniversary films, tributes and announcements, from your photos and story.
+- [Career makeover](https://marketcentaur.com/studio/career-makeover): Resume rewrite, LinkedIn profile makeover, cover letters and a simple portfolio page, aimed at the roles you want.
+- [Profile glow-up](https://marketcentaur.com/studio/profile-glow-up): Matrimonial biodata, dating profiles, personal bios and link-in-bio pages, with natural photo touch-ups.
+- [Personalised astrology reports](https://marketcentaur.com/studio/astrology-reports): Kundli summaries, compatibility reports, yearly outlooks and personal video horoscopes, in plain words.
+- [Done-for-you creator channels](https://marketcentaur.com/studio/creator-channels): YouTube and Instagram channels set up and produced for you: niche research, branding, scripts and weekly videos.
+- [AI concierge setup](https://marketcentaur.com/studio/ai-concierge): AI assistants set up for you or your parents: email, calendar, reminders, travel, documents and safe habits.
+- [Solo-pro starter kits](https://marketcentaur.com/studio/starter-kits): Brand kit, one-page website, WhatsApp Business, Google profile and launch posts for tutors, coaches, bakers and freelancers.
+- [Templates, prompt packs and mini-courses](https://marketcentaur.com/studio/digital-products): Prompt packs, Notion and Excel templates and short 'AI for everyday life' courses you can use the same day.
+- [AI study and exam-prep packs](https://marketcentaur.com/studio/study-packs): Day-by-day study plans, revision notes, practice sets and short revision videos for school and competitive exams.
+<!-- studio:end -->

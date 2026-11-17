@@ -1,0 +1,974 @@
+{
+  "_readme": "MarketCentaur Studio: done-for-you AI services for individuals and families. Edit this file, then run `node scripts/build-studio.mjs` from the repo root. Never add prices here: quotes are emailed after a brief is sent (see content/studio/README.md). Field types: text, email, tel, url, date, textarea, select, checkboxes.",
+  "offers": [
+    {
+      "id": "occasion-videos",
+      "name": "Personalised occasion videos",
+      "short": "Occasion videos",
+      "tag": "Celebrations",
+      "headline": "Personalised videos for weddings, birthdays and the moments that matter",
+      "title": "Personalised Occasion Videos: Invites, Birthdays, Tributes",
+      "description": "Wedding invites, save-the-dates, birthday surprises, anniversary films and tributes from your photos and story, in your language. Get a quote.",
+      "lead": "Send us your photos, names, dates and the feeling you want. We turn them into a polished video invite, greeting or tribute, ready to share on WhatsApp, Instagram or a big screen.",
+      "card": "Wedding invites, save-the-dates, birthday and anniversary films, tributes and announcements, from your photos and story.",
+      "gets": [
+        "A finished video in vertical (for WhatsApp and Reels) or landscape (for screens and YouTube) format, or both",
+        "Your names, dates, venue details and message, with titles in the language or languages you choose",
+        "Licensed background music and a style that fits the occasion, from traditional to modern",
+        "One round of changes after you see the first version",
+        "Optional extras: a short teaser cut, a still image card for printing or sharing, extra language versions"
+      ],
+      "goodFor": [
+        "Wedding invites and save-the-dates, including multi-event and multi-language weddings",
+        "Birthday surprises, milestone birthdays and anniversaries",
+        "Baby announcements, naming ceremonies, housewarmings and festival greetings",
+        "Retirement, farewell and memorial tributes, made with care"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us the occasion, date, names, language and style. Share a link to your photos and clips."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Review and share",
+          "We send a first version for review, make your changes, and deliver the final files."
+        ]
+      ],
+      "needs": "Photos or short clips in a shared folder (Google Drive, OneDrive, Dropbox or iCloud link), the exact text you want on screen, and any must-have details such as venue, timings or RSVP contacts.",
+      "fields": [
+        {
+          "name": "occasion",
+          "label": "Occasion",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Wedding invite or save-the-date",
+            "Birthday",
+            "Anniversary",
+            "Baby announcement or naming ceremony",
+            "Housewarming or family event",
+            "Festival greeting",
+            "Retirement or farewell",
+            "Memorial or tribute",
+            "Other"
+          ]
+        },
+        {
+          "name": "needed_by",
+          "label": "Needed by",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "video_format",
+          "label": "Format",
+          "type": "checkboxes",
+          "options": [
+            "Vertical (WhatsApp, Reels, Status)",
+            "Landscape (screens, YouTube)",
+            "Short teaser cut",
+            "Still image card"
+          ]
+        },
+        {
+          "name": "video_length",
+          "label": "Length",
+          "type": "select",
+          "options": [
+            "Up to 30 seconds",
+            "About 1 minute",
+            "2 to 3 minutes",
+            "Not sure, please suggest"
+          ]
+        },
+        {
+          "name": "languages",
+          "label": "Language or languages on screen",
+          "type": "text",
+          "placeholder": "e.g. English and Marathi"
+        },
+        {
+          "name": "names_and_details",
+          "label": "Names, dates, venue and text to show",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Names as they should appear, event dates and times, venue, RSVP contacts, a message or quote"
+        },
+        {
+          "name": "mood",
+          "label": "Style and mood",
+          "type": "text",
+          "placeholder": "e.g. traditional and elegant, fun and colourful, calm and respectful"
+        },
+        {
+          "name": "media_link",
+          "label": "Link to your photos or clips (optional)",
+          "type": "url",
+          "placeholder": "Google Drive, OneDrive, Dropbox or iCloud link"
+        }
+      ],
+      "faq": [
+        [
+          "Can you make the video in more than one language?",
+          "Yes. Tell us the languages in the brief. We can put several languages in one video or make a separate version for each, and the quote will reflect what you choose."
+        ],
+        [
+          "What music do you use?",
+          "We use licensed music from stock libraries so your video can be shared safely. We can't use film songs or other copyrighted tracks, but we will match the mood you ask for."
+        ],
+        [
+          "Can you make a tribute for someone who has passed away?",
+          "Yes. We handle memorial videos with care, keep the tone respectful, and share the draft privately with you before anything is final."
+        ],
+        [
+          "What if I need it urgently?",
+          "Put the real date in the brief. If we can meet it, the quote will say so; if we can't, we'll tell you before you pay."
+        ]
+      ]
+    },
+    {
+      "id": "career-makeover",
+      "name": "Career makeover",
+      "short": "Career makeover",
+      "tag": "Careers",
+      "headline": "A resume, LinkedIn profile and cover letter that get you to the interview",
+      "title": "Career Makeover: Resume, LinkedIn Profile and Cover Letter",
+      "description": "Resume rewrites, LinkedIn makeovers, cover letters and portfolio pages, tailored to the roles and countries you want. Send a brief for a quote.",
+      "lead": "Send us your current CV and the roles you want next. We rewrite your resume, LinkedIn profile and cover letter around your real achievements and the words recruiters and screening software look for.",
+      "card": "Resume rewrite, LinkedIn profile makeover, cover letters and a simple portfolio page, aimed at the roles you want.",
+      "gets": [
+        "A rewritten resume in an ATS-friendly layout (Word and PDF), built around your real results",
+        "LinkedIn headline, About section, experience entries and skills, ready to paste in",
+        "A cover letter template you can adapt for each application",
+        "Optional: a one-page portfolio or personal website with your work samples",
+        "Optional: versions for a second target role or country, and interview talking points"
+      ],
+      "goodFor": [
+        "Job seekers changing roles, industries or countries",
+        "Graduates and early-career professionals writing a first serious CV",
+        "Professionals returning to work after a break",
+        "Freelancers and consultants who need a profile that wins clients"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us the roles, industries and countries you're targeting and share your current CV and LinkedIn link."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Review and apply",
+          "We send the first drafts, make one round of changes, and hand over the final files."
+        ]
+      ],
+      "needs": "Your current CV (a shared link or paste the text), your LinkedIn profile URL, two or three job ads you'd like to apply for, and anything you're proud of that isn't on the CV yet.",
+      "fields": [
+        {
+          "name": "package",
+          "label": "What you need",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "Resume rewrite",
+            "LinkedIn profile makeover",
+            "Cover letter",
+            "Portfolio or personal website",
+            "Interview talking points"
+          ]
+        },
+        {
+          "name": "target_roles",
+          "label": "Target roles and industries",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g. Product marketing manager, SaaS"
+        },
+        {
+          "name": "target_countries",
+          "label": "Countries you're applying in",
+          "type": "text",
+          "placeholder": "e.g. India, UAE, UK"
+        },
+        {
+          "name": "experience",
+          "label": "Years of experience",
+          "type": "select",
+          "options": [
+            "Student or fresher",
+            "1 to 3 years",
+            "4 to 8 years",
+            "9 to 15 years",
+            "More than 15 years"
+          ]
+        },
+        {
+          "name": "linkedin_url",
+          "label": "LinkedIn profile URL (optional)",
+          "type": "url",
+          "placeholder": "https://www.linkedin.com/in/..."
+        },
+        {
+          "name": "cv_link",
+          "label": "Link to your current CV (optional)",
+          "type": "url",
+          "placeholder": "Google Drive, OneDrive or Dropbox link"
+        },
+        {
+          "name": "needed_by",
+          "label": "Needed by (optional)",
+          "type": "date"
+        }
+      ],
+      "faq": [
+        [
+          "Will the resume pass applicant tracking systems?",
+          "We use a clean, single-column layout and the keywords from the job ads you share, which is what screening software reads best. No one can guarantee a shortlist, but we remove the common formatting problems that get CVs filtered out."
+        ],
+        [
+          "Do you invent experience or skills?",
+          "No. Everything in your resume and profile is based on what you've actually done. We help you describe it clearly and measure it where you can."
+        ],
+        [
+          "Can you write for jobs abroad?",
+          "Yes. Tell us the countries and we'll follow the conventions there, for example CV length, photos and personal details."
+        ],
+        [
+          "Is my CV kept private?",
+          "Yes. We use your documents only to do the work and you can ask us to delete them once it's delivered. See our privacy policy for details."
+        ]
+      ]
+    },
+    {
+      "id": "profile-glow-up",
+      "name": "Profile glow-up",
+      "short": "Profile glow-up",
+      "tag": "Profiles",
+      "headline": "Matrimonial, dating and personal profiles that sound like you, at your best",
+      "title": "Profile Glow-up: Matrimonial, Dating and Personal Bio Writing",
+      "description": "Matrimonial biodata, dating profiles and personal bios written in your voice, with natural photo touch-ups. Send a brief for a quote.",
+      "lead": "Tell us about yourself and what you're looking for. We write a warm, honest profile in your voice, tidy up your photos so they look their best, and set out your details clearly.",
+      "card": "Matrimonial biodata, dating profiles, personal bios and link-in-bio pages, with natural photo touch-ups.",
+      "gets": [
+        "A profile or bio written in your voice, in English or the language you choose",
+        "A designed matrimonial biodata (PDF and image) if you need one",
+        "Natural photo touch-ups: lighting, colour, background clean-up and cropping",
+        "Short and long versions to fit different apps and sites",
+        "Optional: a simple personal link-in-bio page"
+      ],
+      "goodFor": [
+        "Matrimonial profiles and biodata, for yourself or a family member (with their consent)",
+        "Dating app profiles and prompts",
+        "Personal bios for speaking, social media or community roles",
+        "Anyone who finds it hard to write about themselves"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us the type of profile, the platform and a little about yourself, and share a link to your photos."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Review and publish",
+          "We send the drafts, make one round of changes, and deliver the final text, images and files."
+        ]
+      ],
+      "needs": "A few lines about yourself (work, interests, values, family), what you're looking for, three to six recent photos in a shared folder, and the platform or format you'll use.",
+      "fields": [
+        {
+          "name": "profile_type",
+          "label": "Profile type",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "Matrimonial profile",
+            "Matrimonial biodata (PDF)",
+            "Dating profile",
+            "Personal or professional bio",
+            "Link-in-bio page",
+            "Photo touch-ups"
+          ]
+        },
+        {
+          "name": "profile_for",
+          "label": "Who is the profile for?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Myself",
+            "A family member (they know and agree)"
+          ]
+        },
+        {
+          "name": "platform",
+          "label": "Platform or where it will be used",
+          "type": "text",
+          "placeholder": "e.g. Shaadi.com, Hinge, Instagram bio, printed biodata"
+        },
+        {
+          "name": "about",
+          "label": "About you (or them)",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Work, education, interests, values, what you're looking for"
+        },
+        {
+          "name": "profile_language",
+          "label": "Language",
+          "type": "text",
+          "placeholder": "e.g. English, Hindi"
+        },
+        {
+          "name": "media_link",
+          "label": "Link to photos (optional)",
+          "type": "url",
+          "placeholder": "Google Drive, OneDrive, Dropbox or iCloud link"
+        }
+      ],
+      "faq": [
+        [
+          "Will you change how I look in photos?",
+          "No. We improve lighting, colour, sharpness and backgrounds so the photos look like you on a good day. We don't change faces or body shape, and we won't make photos that misrepresent you."
+        ],
+        [
+          "Can I order a profile for my son, daughter or sibling?",
+          "Yes, as long as they know about it and agree. We write from the details you share and the final text should be checked by them."
+        ],
+        [
+          "Can you write in Indian languages?",
+          "Yes. Tell us the language in the brief and we'll confirm in the quote."
+        ],
+        [
+          "Will you write anything untrue?",
+          "No. A good profile is honest. We help you present real details warmly and clearly."
+        ]
+      ]
+    },
+    {
+      "id": "astrology-reports",
+      "name": "Personalised astrology reports",
+      "short": "Astrology reports",
+      "tag": "Jyotish",
+      "headline": "Personalised Vedic astrology reports and video horoscopes, explained in plain words",
+      "title": "Personalised Vedic Astrology Reports and Video Horoscopes",
+      "description": "Kundli summaries, compatibility reports, yearly outlooks and video horoscopes from Vedic (Jyotish) charts, in plain words. Send a brief for a quote.",
+      "lead": "Share your birth details and what you'd like to understand. We prepare a clear, personalised report from your Vedic chart, in your language, as a PDF or a short narrated video.",
+      "card": "Kundli summaries, compatibility reports, yearly outlooks and personal video horoscopes, in plain words.",
+      "gets": [
+        "A personalised report based on your Vedic (Jyotish) birth chart, written in plain language",
+        "Your choice of a designed PDF, a short narrated video, or both",
+        "Reports in English or another language you choose",
+        "Optional: a compatibility report for two people, or a monthly video horoscope"
+      ],
+      "goodFor": [
+        "Kundli (birth chart) summaries for yourself or a newborn",
+        "Compatibility reports before marriage, alongside family discussions",
+        "Yearly outlooks around birthdays or the new year",
+        "Gifts for parents and grandparents, in their language"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Choose the report and share the date, time and place of birth, and the language you'd like."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Receive your report",
+          "We prepare your chart and report and send the PDF or video to your email."
+        ]
+      ],
+      "needs": "Date of birth, the most accurate time of birth you have, and the town or city of birth for each person, plus the questions or areas you'd like the report to cover.",
+      "fields": [
+        {
+          "name": "report_type",
+          "label": "Report",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Kundli (birth chart) summary",
+            "Compatibility report for two people",
+            "Yearly outlook",
+            "Monthly video horoscope",
+            "Other"
+          ]
+        },
+        {
+          "name": "report_format",
+          "label": "Format",
+          "type": "checkboxes",
+          "options": [
+            "PDF report",
+            "Narrated video"
+          ]
+        },
+        {
+          "name": "birth_details",
+          "label": "Birth details",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "For each person: name, date of birth, time of birth (as exact as possible), town or city of birth"
+        },
+        {
+          "name": "focus",
+          "label": "What would you like the report to cover? (optional)",
+          "type": "textarea",
+          "placeholder": "e.g. career, relationships, the year ahead"
+        },
+        {
+          "name": "report_language",
+          "label": "Language",
+          "type": "text",
+          "placeholder": "e.g. English, Hindi, Marathi, Tamil"
+        }
+      ],
+      "faq": [
+        [
+          "How should I use the report?",
+          "Astrology reports are for reflection, tradition and personal interest. They are not medical, financial, legal or psychological advice, and important decisions should be made with the right professional and the people involved."
+        ],
+        [
+          "Which system do you use?",
+          "Reports are based on Vedic (Jyotish) charts calculated from your birth date, time and place, and explained in plain words."
+        ],
+        [
+          "What if I don't know my exact time of birth?",
+          "Give us the closest time you know and tell us how sure you are. Some parts of the chart depend on the time, and the report will say where that matters."
+        ],
+        [
+          "Are my birth details kept private?",
+          "Yes. We use them only to prepare your report and you can ask us to delete them afterwards."
+        ]
+      ]
+    },
+    {
+      "id": "creator-channels",
+      "name": "Done-for-you creator channels",
+      "short": "Creator channels",
+      "tag": "Creators",
+      "headline": "Your own YouTube or Instagram channel, set up and produced for you",
+      "title": "Done-for-You Creator Channels: YouTube and Instagram Setup",
+      "description": "YouTube and Instagram channels set up and produced for you: niche research, branding, scripts and AI-assisted videos. Send a brief for a quote.",
+      "lead": "Pick a topic you care about. We research the niche, brand the channel, and produce videos and Shorts for you each week, so you can build an audience without learning editing software.",
+      "card": "YouTube and Instagram channels set up and produced for you: niche research, branding, scripts and weekly videos.",
+      "gets": [
+        "Niche and topic research, with a list of video ideas people are searching for",
+        "Channel setup and branding: name ideas, logo, banner, profile and descriptions",
+        "Scripts and AI-assisted videos (landscape and Shorts or Reels), produced and checked by a person",
+        "Titles, descriptions, thumbnails and a posting calendar",
+        "Ongoing monthly production if you want it, with a simple monthly report"
+      ],
+      "goodFor": [
+        "People who want to start a channel on a topic they know, without the editing work",
+        "Teachers, coaches and experts who want to share knowledge on video",
+        "Families and hobbyists building a channel in their own language",
+        "Small creators who want to post more often"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us the platform, topic, language and how often you'd like to post."
+        ],
+        [
+          "Get your quote",
+          "We email a quote for setup and, if you want it, monthly production, with payment options."
+        ],
+        [
+          "Launch and grow",
+          "We set up the channel, deliver the first videos for your approval, and keep producing on the agreed schedule."
+        ]
+      ],
+      "needs": "Your topic and language, any existing channel links, examples of channels you like, and whether you want to appear on camera, use your voice, or stay faceless.",
+      "fields": [
+        {
+          "name": "platforms",
+          "label": "Platform",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "YouTube",
+            "YouTube Shorts",
+            "Instagram Reels",
+            "Facebook"
+          ]
+        },
+        {
+          "name": "niche",
+          "label": "Topic or niche",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g. personal finance basics, home cooking, travel in Maharashtra"
+        },
+        {
+          "name": "channel_language",
+          "label": "Language",
+          "type": "text",
+          "placeholder": "e.g. Hindi, English"
+        },
+        {
+          "name": "presence",
+          "label": "How do you want to appear?",
+          "type": "select",
+          "options": [
+            "Faceless (no one on camera)",
+            "My voice only",
+            "Me on camera",
+            "Not sure yet"
+          ]
+        },
+        {
+          "name": "frequency",
+          "label": "Videos per week",
+          "type": "select",
+          "options": [
+            "1",
+            "2 to 3",
+            "4 or more",
+            "Not sure, please suggest"
+          ]
+        },
+        {
+          "name": "existing_channel",
+          "label": "Existing channel link (optional)",
+          "type": "url",
+          "placeholder": "https://"
+        }
+      ],
+      "faq": [
+        [
+          "Can you guarantee views or income?",
+          "No. Growth depends on the topic, consistency, the platform and many things nobody controls. We focus on doing the parts that are in our hands well: research, quality, consistency and clear reporting."
+        ],
+        [
+          "Do you follow platform rules on AI content?",
+          "Yes. We follow YouTube and Meta rules, including labelling realistic AI-generated content where the platform requires it, and we use licensed music and footage."
+        ],
+        [
+          "Who owns the channel?",
+          "You do. The channel is created in your account and you keep all logins. We work with the access you give us and you can remove it at any time."
+        ],
+        [
+          "Can I pause or stop monthly production?",
+          "Yes. Monthly production runs month to month and can be paused or stopped with notice before the next month starts."
+        ]
+      ]
+    },
+    {
+      "id": "ai-concierge",
+      "name": "AI concierge setup",
+      "short": "AI concierge",
+      "tag": "Everyday AI",
+      "headline": "Your own AI assistant, set up for the way you live and work",
+      "title": "AI Concierge: Personal AI Assistant Setup for Individuals",
+      "description": "We set up ChatGPT, Claude, Gemini or Copilot for you or your parents: email, calendar, reminders, travel and safe habits. Send a brief for a quote.",
+      "lead": "AI assistants can save hours a week, but setting them up is fiddly. We configure the right tools on your phone and computer, connect them to your email and calendar if you want, and show you how to use them safely.",
+      "card": "AI assistants set up for you or your parents: email, calendar, reminders, travel, documents and safe habits.",
+      "gets": [
+        "A short call to understand your day and what you'd like help with",
+        "Setup of one or two AI assistants on your phone and computer, with privacy settings checked",
+        "Ready-made instructions and shortcuts for your common tasks (emails, planning, travel, documents, learning)",
+        "A guided session (online, screen share) and a one-page cheat sheet in your language",
+        "Optional: a separate, simpler setup for parents or older family members, with safety tips on scams and deepfakes"
+      ],
+      "goodFor": [
+        "Busy professionals who want help with email, planning and documents",
+        "Parents juggling school, household and work schedules",
+        "Older adults who want to use AI with confidence and stay safe online",
+        "Students who want to study with AI the right way"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us who it's for, the devices you use and what you'd like help with."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, session options and secure payment options."
+        ],
+        [
+          "Set up together",
+          "We set everything up with you over a screen-share session and send your cheat sheet."
+        ]
+      ],
+      "needs": "The devices you use (iPhone, Android, Windows, Mac), the email and calendar you use, the tasks you'd like help with, and any accounts or subscriptions you already have.",
+      "fields": [
+        {
+          "name": "for_whom",
+          "label": "Who is it for?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Myself",
+            "My parent or grandparent",
+            "My family",
+            "A student"
+          ]
+        },
+        {
+          "name": "devices",
+          "label": "Devices",
+          "type": "checkboxes",
+          "options": [
+            "iPhone or iPad",
+            "Android phone or tablet",
+            "Windows computer",
+            "Mac"
+          ]
+        },
+        {
+          "name": "help_with",
+          "label": "What would you like help with?",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "Email and messages",
+            "Calendar and reminders",
+            "Travel planning",
+            "Documents and forms",
+            "Learning and study",
+            "Shopping and household admin",
+            "Staying safe from scams"
+          ]
+        },
+        {
+          "name": "current_tools",
+          "label": "AI tools you already use (optional)",
+          "type": "text",
+          "placeholder": "e.g. ChatGPT free, Gemini, none yet"
+        },
+        {
+          "name": "session_language",
+          "label": "Language for the session",
+          "type": "text",
+          "placeholder": "e.g. English, Hindi"
+        }
+      ],
+      "faq": [
+        [
+          "Do I need to pay for AI subscriptions?",
+          "Not always. Many tasks work on free plans. If a paid plan would help, we'll explain the options and you decide; you pay the provider directly."
+        ],
+        [
+          "Do you need my passwords?",
+          "No. We guide you to sign in yourself during the session. We never ask you to send passwords by email or chat."
+        ],
+        [
+          "Is it safe to connect AI to my email?",
+          "It can be, with the right settings. We explain what each connection can see, switch on the privacy options available, and leave out anything you're not comfortable with."
+        ],
+        [
+          "Can you help my parents in another city?",
+          "Yes. Sessions are online, so we can help family members anywhere, at a time that suits them."
+        ]
+      ]
+    },
+    {
+      "id": "starter-kits",
+      "name": "Solo-pro starter kits",
+      "short": "Starter kits",
+      "tag": "Side hustles",
+      "headline": "Everything a tutor, coach, home baker or freelancer needs to look professional online",
+      "title": "Solo-Pro Starter Kits: Brand, Website and Social for Freelancers",
+      "description": "Starter kits for tutors, coaches, home bakers and freelancers: brand kit, one-page website, WhatsApp Business, Google profile and launch posts.",
+      "lead": "You're good at what you do; now people need to find you and trust you. We put together a brand, a simple website, your business profiles and a month of launch posts, so you can start taking orders.",
+      "card": "Brand kit, one-page website, WhatsApp Business, Google profile and launch posts for tutors, coaches, bakers and freelancers.",
+      "gets": [
+        "A simple brand kit: name ideas if you need them, logo, colours and fonts",
+        "A one-page website with your services, photos, reviews and a contact or order form",
+        "WhatsApp Business setup with a catalogue, greeting and quick replies",
+        "Google Business Profile and Instagram profile set up or tidied up",
+        "A month of launch posts and captions, made for you"
+      ],
+      "goodFor": [
+        "Home tutors, music and dance teachers, and coaches",
+        "Home bakers, caterers, crafters and small makers",
+        "Freelance designers, photographers, writers and consultants",
+        "Beauty, wellness and fitness professionals working on their own"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us what you do, who you serve, where you work and which parts of the kit you need."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Launch",
+          "We build the kit, review it with you, make one round of changes, and hand everything over."
+        ]
+      ],
+      "needs": "What you offer and to whom, your area or city, photos of your work, any logo or name you already use, and links to existing profiles.",
+      "fields": [
+        {
+          "name": "business",
+          "label": "What do you do?",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g. maths tutor for classes 6 to 10, home bakery"
+        },
+        {
+          "name": "kit_items",
+          "label": "What do you need?",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "Logo and brand kit",
+            "One-page website",
+            "WhatsApp Business setup",
+            "Google Business Profile",
+            "Instagram profile setup",
+            "A month of launch posts"
+          ]
+        },
+        {
+          "name": "area",
+          "label": "Where do you work?",
+          "type": "text",
+          "placeholder": "City or area, or online only"
+        },
+        {
+          "name": "existing_links",
+          "label": "Existing links (optional)",
+          "type": "textarea",
+          "placeholder": "Instagram, website, Google profile"
+        },
+        {
+          "name": "media_link",
+          "label": "Link to photos of your work (optional)",
+          "type": "url",
+          "placeholder": "Google Drive, OneDrive, Dropbox or iCloud link"
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a domain name?",
+          "Not to start. We can publish your one-page site on a free address, or set it up on your own domain if you buy one; we'll explain the options in the quote."
+        ],
+        [
+          "Who owns the website and profiles?",
+          "You do. Everything is set up in your name and accounts, and we hand over all files and logins."
+        ],
+        [
+          "Can you help me later with more?",
+          "Yes. Once you're up and running, you can order more posts, updates or a bigger website at any time."
+        ],
+        [
+          "I run a registered business with staff. Is this for me?",
+          "Our business services may suit you better. See the main MarketCentaur services for websites, AI front desks and content."
+        ]
+      ]
+    },
+    {
+      "id": "digital-products",
+      "name": "Templates, prompt packs and mini-courses",
+      "short": "Templates and courses",
+      "tag": "Learn and save time",
+      "headline": "Ready-to-use AI prompt packs, templates and short courses for everyday life",
+      "title": "AI Prompt Packs, Templates and Mini-Courses for Everyday Life",
+      "description": "AI prompt packs, Notion and Excel templates and short 'AI for everyday life' courses for students, parents and job seekers. Ask for early access.",
+      "lead": "Short, practical tools you can use the same day: prompt packs that get better answers from AI, templates that organise your money, home and studies, and mini-courses that teach one skill well.",
+      "card": "Prompt packs, Notion and Excel templates and short 'AI for everyday life' courses you can use the same day.",
+      "gets": [
+        "Prompt packs for common tasks: job hunting, studying, travel planning, writing, small selling",
+        "Notion and Excel templates: household budget, study planner, job-application tracker, wedding planner, trip planner",
+        "Mini-courses (video and worksheet) such as 'AI for everyday life', 'AI for parents' and 'Spot a deepfake'",
+        "Custom templates made to your needs, on request"
+      ],
+      "goodFor": [
+        "Students and job seekers who want to work faster with AI",
+        "Parents and families organising money, school and home",
+        "Couples planning weddings and big trips",
+        "Small sellers and freelancers who want simple systems"
+      ],
+      "steps": [
+        [
+          "Tell us what you want",
+          "Pick the products you're interested in, or describe a custom template."
+        ],
+        [
+          "Get your link",
+          "We email the price and a secure payment link, or add you to the early-access list for products in progress."
+        ],
+        [
+          "Download and use",
+          "After payment you receive the files or course access by email."
+        ]
+      ],
+      "needs": "Which products interest you, and for a custom template, what you want to track or organise and which app you use (Notion, Excel or Google Sheets).",
+      "fields": [
+        {
+          "name": "products",
+          "label": "Products you're interested in",
+          "type": "checkboxes",
+          "required": true,
+          "options": [
+            "Prompt pack: job hunting",
+            "Prompt pack: studying",
+            "Prompt pack: travel planning",
+            "Template: household budget",
+            "Template: study planner",
+            "Template: job-application tracker",
+            "Template: wedding planner",
+            "Mini-course: AI for everyday life",
+            "Mini-course: AI for parents",
+            "Mini-course: spot a deepfake",
+            "A custom template"
+          ]
+        },
+        {
+          "name": "app",
+          "label": "App you use",
+          "type": "select",
+          "options": [
+            "Notion",
+            "Excel",
+            "Google Sheets",
+            "No preference"
+          ]
+        },
+        {
+          "name": "custom_details",
+          "label": "Custom template details (optional)",
+          "type": "textarea",
+          "placeholder": "What do you want to track or organise?"
+        }
+      ],
+      "faq": [
+        [
+          "Are these products available now?",
+          "Some are ready and some are in production. When you send the form we'll email the price and payment link for what's ready, and add you to early access for the rest."
+        ],
+        [
+          "Do I need a paid AI plan for the prompt packs?",
+          "No. The prompts work with the free plans of the main AI assistants."
+        ],
+        [
+          "Can I share the templates?",
+          "Templates are for your personal or household use. Ask us if you'd like a licence for a class, team or community."
+        ],
+        [
+          "What if a file doesn't work for me?",
+          "Reply to your delivery email and we'll help you get it working or fix the file."
+        ]
+      ]
+    },
+    {
+      "id": "study-packs",
+      "name": "AI study and exam-prep packs",
+      "short": "Study packs",
+      "tag": "Students",
+      "headline": "Personalised study plans, revision notes and practice sets for exams",
+      "title": "AI Study and Exam-Prep Packs: Plans, Notes and Practice Sets",
+      "description": "Personalised study plans, revision notes, practice sets and revision videos for school, board and competitive exams. Send a brief for a quote.",
+      "lead": "Tell us the exam, the syllabus and the date. We build a day-by-day study plan, revision notes in clear language, practice questions with answers, and short revision videos, checked by a person before they reach you.",
+      "card": "Day-by-day study plans, revision notes, practice sets and short revision videos for school and competitive exams.",
+      "gets": [
+        "A day-by-day study plan from today to the exam date, built around the syllabus and the time available",
+        "Revision notes and summaries for the subjects and chapters you choose",
+        "Practice question sets with worked answers, in the style of the exam",
+        "Optional: short revision videos and a weekly check-in plan",
+        "Content in English or another language you choose"
+      ],
+      "goodFor": [
+        "School students preparing for unit tests, finals and board exams (ordered by a parent or guardian)",
+        "College students and adult learners preparing for university or professional exams",
+        "Competitive exam aspirants who need a structured revision plan",
+        "Parents who want a clear plan to support their child"
+      ],
+      "steps": [
+        [
+          "Send the brief",
+          "Tell us the exam, board or syllabus, the subjects, the exam date and the language."
+        ],
+        [
+          "Get your quote",
+          "We email a quote with the price, delivery time and secure payment options."
+        ],
+        [
+          "Study",
+          "We deliver the plan and materials in stages so the student can start straight away."
+        ]
+      ],
+      "needs": "The exam name and board or syllabus, the subjects and chapters, the exam date, the hours available each day, and any topics the student finds hard.",
+      "fields": [
+        {
+          "name": "ordered_by",
+          "label": "Who is ordering?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Parent or guardian (student is under 18)",
+            "Adult learner (18 or over)"
+          ]
+        },
+        {
+          "name": "exam",
+          "label": "Exam, board or syllabus",
+          "type": "text",
+          "required": true,
+          "placeholder": "e.g. CBSE Class 10, IELTS, CA Foundation"
+        },
+        {
+          "name": "subjects",
+          "label": "Subjects and chapters",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "List the subjects and, if you can, the chapters"
+        },
+        {
+          "name": "needed_by",
+          "label": "Exam date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "pack_items",
+          "label": "What you need",
+          "type": "checkboxes",
+          "options": [
+            "Study plan",
+            "Revision notes",
+            "Practice question sets",
+            "Revision videos"
+          ]
+        },
+        {
+          "name": "study_language",
+          "label": "Language",
+          "type": "text",
+          "placeholder": "e.g. English, Hindi"
+        }
+      ],
+      "faq": [
+        [
+          "Can students under 18 order?",
+          "Orders for students under 18 must be placed by a parent or guardian, who receives the quote and the materials."
+        ],
+        [
+          "Are the notes accurate?",
+          "Notes and questions are prepared with AI tools from the syllabus and checked by a person before delivery. Always use the official syllabus and the school's or exam body's guidance as the final word."
+        ],
+        [
+          "Is this a replacement for a teacher?",
+          "No. The pack gives structure and practice alongside teachers, classes and textbooks."
+        ],
+        [
+          "Can you include past-paper practice?",
+          "We write practice questions in the style of the exam. We don't copy questions from copyrighted papers or books, but we can point you to official sample papers where they exist."
+        ]
+      ]
+    }
+  ]
+}

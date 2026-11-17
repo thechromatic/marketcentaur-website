@@ -28,7 +28,7 @@ SECTIONS = [
     ('index.html', 'Strategy · Operations · Data · Growth'),
     ('insights/', 'Insights'), ('services/', 'Services'), ('industries/', 'Industries'),
     ('ai-visibility-check', 'Free tool'), ('growth-check', 'Free tool'), ('website-enquiry', 'Free tool'),
-    ('partners', 'Partner program'), ('labs', 'Labs'), ('sample-intelligence', 'Sample brief'), ('samples', 'Sample report'), ('use-cases', 'Use case'),
+    ('partners', 'Partner program'), ('labs', 'Labs'), ('studio', 'MarketCentaur Studio'), ('sample-intelligence', 'Sample brief'), ('samples', 'Sample report'), ('use-cases', 'Use case'),
 ]
 
 
