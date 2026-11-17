@@ -15,9 +15,18 @@
   // Optional: paste a Make.com (or Zapier) webhook URL to copy every lead into your CRM,
   // Google Sheets or Slack. Leave empty to send email only.
   var MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/g43pd65bjhdrts3x44buemetjmjuzss7";
+  // Studio brief forms (pages under /studio) are also sent here: the "MarketCentaur Studio quotes"
+  // scenario in Make.com logs the order and emails the customer a quote with payment links.
+  var STUDIO_WEBHOOK_URL = "https://hook.eu1.make.com/yxl9ale57n4qy9jcl6jsclfqcgqsj7nx";
 
   function copyToWebhook(payload, form) {
     if (!MAKE_WEBHOOK_URL) return;
+    var urls = [MAKE_WEBHOOK_URL];
+    if (STUDIO_WEBHOOK_URL && form.hasAttribute("data-mc-studio")) urls.push(STUDIO_WEBHOOK_URL);
+    urls.forEach(function (url) { postTo(url, payload, form); });
+  }
+
+  function postTo(url, payload, form) {
     try {
       // Sent as a normal form post so Make.com splits it into fields automatically.
       var body = new URLSearchParams(Object.assign({
@@ -26,8 +35,8 @@
         subject: payload.meta._subject || "",
         submitted_at: new Date().toISOString()
       }, payload.data));
-      if (!(navigator.sendBeacon && navigator.sendBeacon(MAKE_WEBHOOK_URL, body))) {
-        fetch(MAKE_WEBHOOK_URL, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+      if (!(navigator.sendBeacon && navigator.sendBeacon(url, body))) {
+        fetch(url, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
       }
     } catch (e) { /* the email copy still goes out */ }
   }
