@@ -6,7 +6,14 @@
   <atom:link href="https://marketcentaur.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Practical guides on AI, automation, growth and competitive intelligence from MarketCentaur.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 17 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <item>
+    <title>Which Processes Should You Automate First? A Simple Scoring Method</title>
+    <link>https://marketcentaur.com/insights/which-processes-to-automate-first</link>
+    <guid isPermaLink="true">https://marketcentaur.com/insights/which-processes-to-automate-first</guid>
+    <pubDate>Thu, 19 Nov 2026 00:30:00 GMT</pubDate>
+    <description>A five-factor scoring method to decide which business processes to automate first, with a worked example and the warning signs that mean &#39;not yet&#39;.</description>
+  </item>
   <item>
     <title>EU AI Act: What Applies on 2 December 2026, and What Moved to 2027</title>
     <link>https://marketcentaur.com/insights/eu-ai-act-what-applies-2-december-2026</link>
