@@ -1,0 +1,54 @@
+{
+  "eyebrow": "AI governance",
+  "title": "How to write an AI use policy",
+  "subtitle": "Two pages, seven sections, one week",
+  "slides": [
+    {
+      "eyebrow": "Why now",
+      "title": "Your team already uses AI",
+      "items": [
+        "75% of knowledge workers use generative AI at work",
+        "78% of them bring their own tools",
+        "Only 39% got training from their employer",
+        "Source: Microsoft and LinkedIn, 2024"
+      ]
+    },
+    {
+      "eyebrow": "What to cover",
+      "title": "Seven short sections",
+      "items": [
+        "Scope and approved tools",
+        "Data that never goes in",
+        "When a person reviews output",
+        "Disclosure and prohibited uses",
+        "Owner and quarterly review"
+      ]
+    },
+    {
+      "eyebrow": "Write it in a week",
+      "title": "Five steps",
+      "style": "numbered",
+      "items": [
+        "List the tools people already use",
+        "Sort: approved, public data only, not allowed",
+        "Write data rules as real examples",
+        "Name a reviewer for each output",
+        "Test the draft with three people"
+      ]
+    },
+    {
+      "eyebrow": "Make it stick",
+      "title": "What makes it work",
+      "items": [
+        "Make the safe tool the easy tool",
+        "Train on real tasks",
+        "A named owner who answers fast",
+        "Keep the AI-use register current"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "Your AI use policy, step by step"
+  }
+}
