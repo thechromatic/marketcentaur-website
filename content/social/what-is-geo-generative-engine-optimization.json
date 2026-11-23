@@ -1,0 +1,44 @@
+{
+  "eyebrow": "AI search visibility",
+  "title": "What is GEO?",
+  "subtitle": "Getting AI assistants to describe your business correctly",
+  "slides": [
+    {
+      "eyebrow": "SEO vs GEO",
+      "title": "Same foundation, new tests",
+      "items": [
+        "SEO: rank pages and earn clicks",
+        "GEO: be mentioned accurately and cited in answers",
+        "Both need crawlable pages and original content",
+        "GEO adds testing the answers themselves"
+      ]
+    },
+    {
+      "eyebrow": "First steps",
+      "title": "A sensible order",
+      "style": "numbered",
+      "items": [
+        "Test real buyer questions",
+        "Check crawler access",
+        "Make your core facts unmistakable",
+        "Publish what others can't",
+        "Earn real mentions, then measure and re-test"
+      ]
+    },
+    {
+      "eyebrow": "Question these claims",
+      "title": "Claims that go further than the evidence",
+      "style": "cross",
+      "items": [
+        "You must have an llms.txt file",
+        "You need special AI schema",
+        "Chunk everything into tiny pieces",
+        "We guarantee ChatGPT will recommend you"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "What is GEO? A guide for small businesses"
+  }
+}

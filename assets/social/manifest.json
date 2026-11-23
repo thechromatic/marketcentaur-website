@@ -93,6 +93,18 @@
     "slides": 1,
     "type": "card"
   },
+  "card-2026-12-02-signal": {
+    "hash": "09ae1a3551f72e66",
+    "template": "a9489520571b164a",
+    "slides": 1,
+    "type": "card"
+  },
+  "card-2026-12-06-practical": {
+    "hash": "3fc67dc5fd3d043e",
+    "template": "a9489520571b164a",
+    "slides": 1,
+    "type": "card"
+  },
   "chatgpt-business-profiles-what-to-check": {
     "hash": "6e6019c0f5566d72",
     "template": "a9489520571b164a",
@@ -142,6 +154,11 @@
     "hash": "b7791433ada68130",
     "template": "a9489520571b164a",
     "slides": 6
+  },
+  "what-is-geo-generative-engine-optimization": {
+    "hash": "05264672600ac3e1",
+    "template": "a9489520571b164a",
+    "slides": 5
   },
   "where-to-start-with-ai-small-business": {
     "hash": "9dcf2b41bf9a69c9",
