@@ -6,7 +6,14 @@
   <atom:link href="https://marketcentaur.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Practical guides on AI, automation, growth and competitive intelligence from MarketCentaur.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 00:30:00 GMT</lastBuildDate>
+  <item>
+    <title>AI Chat and Voice Assistants: What They Should and Shouldn&#39;t Handle</title>
+    <link>https://marketcentaur.com/insights/ai-chat-voice-assistants-what-to-handle</link>
+    <guid isPermaLink="true">https://marketcentaur.com/insights/ai-chat-voice-assistants-what-to-handle</guid>
+    <pubDate>Thu, 26 Nov 2026 00:30:00 GMT</pubDate>
+    <description>Which customer conversations to give an AI chat or voice assistant, which to keep with people, and the guardrails that keep both safe.</description>
+  </item>
   <item>
     <title>India&#39;s DPDP Rules: What to Finish Before 13 May 2027</title>
     <link>https://marketcentaur.com/insights/dpdp-what-to-finish-before-may-2027</link>
