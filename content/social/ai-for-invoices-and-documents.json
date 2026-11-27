@@ -1,0 +1,53 @@
+{
+  "eyebrow": "Automation",
+  "title": "AI for invoices and documents",
+  "subtitle": "Where it works, and where it doesn't",
+  "slides": [
+    {
+      "eyebrow": "Works well",
+      "title": "Repeating, digital documents",
+      "items": [
+        "Invoices from regular suppliers",
+        "Purchase orders and delivery notes",
+        "Standard forms with typed answers",
+        "Key dates and parties in contracts"
+      ]
+    },
+    {
+      "eyebrow": "Needs a person",
+      "title": "Where it struggles",
+      "style": "cross",
+      "items": [
+        "Faint photos and skewed scans",
+        "A long tail of one-off layouts",
+        "Judgement calls and duplicates",
+        "Anything that approves payment"
+      ]
+    },
+    {
+      "eyebrow": "Check first",
+      "title": "E-invoices may need no AI",
+      "items": [
+        "Structured e-invoices are already data",
+        "EU and Germany rules are expanding",
+        "A PDF is not a structured e-invoice"
+      ]
+    },
+    {
+      "eyebrow": "Set it up safely",
+      "title": "Start in five steps",
+      "style": "numbered",
+      "items": [
+        "Count and sort your documents",
+        "Start with one document type",
+        "Define fields and automatic checks",
+        "Route low-confidence fields to review",
+        "Test on real samples, then measure"
+      ]
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read the full guide",
+    "title": "Automate documents with review built in"
+  }
+}
